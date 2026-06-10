@@ -1,0 +1,3103 @@
+{
+ "page": {
+  "object": "page",
+  "id": "335dbe27-5992-8079-80fa-c7b4455e26c6",
+  "icon": {
+   "emoji": "\ud83d\ude0e",
+   "type": "emoji"
+  },
+  "cover": null,
+  "properties": {
+   "title": {
+    "id": "title",
+    "title": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Core Applications 2026 Vision",
+      "text": {
+       "content": "Core Applications 2026 Vision",
+       "link": null
+      },
+      "type": "text"
+     }
+    ],
+    "type": "title"
+   }
+  },
+  "url": "https://app.notion.com/p/Core-Applications-2026-Vision-335dbe275992807980fac7b4455e26c6",
+  "title": null
+ },
+ "blocks": [
+  {
+   "has_children": false,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": false,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Why We're Building This",
+      "text": {
+       "content": "Why We're Building This",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "335dbe27-5992-80f7-8ace-fc3e4bc203d0",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80b8-91d1-ca2cf658fcdf",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Through our design sprints, customer research, and direct work with enterprise customers, we heard the same pain point over and over: workflow fragmentation. Traders spend hours every morning toggling between weather sites, market data platforms, spreadsheets, and internal tools just to build a picture of what kind of day it is. The analysis that should take 10 minutes takes two hours, and most of that time is gathering context, not making decisions. ",
+      "text": {
+       "content": "Through our design sprints, customer research, and direct work with enterprise customers, we heard the same pain point over and over: workflow fragmentation. Traders spend hours every morning toggling between weather sites, market data platforms, spreadsheets, and internal tools just to build a picture of what kind of day it is. The analysis that should take 10 minutes takes two hours, and most of that time is gathering context, not making decisions. ",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "33bdbe27-5992-80dc-a98e-c2163b005a22",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Two things are driving this effort: we have emerging product-market fit with our enterprise customers, and the competitive landscape has shifted with agentic AI. We're doubling down on what's working, with some targeted tweaks.",
+      "text": {
+       "content": "Two things are driving this effort: we have emerging product-market fit with our enterprise customers, and the competitive landscape has shifted with agentic AI. We're doubling down on what's working, with some targeted tweaks.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80b9-bc79-e748229bf6ed",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Our enterprise engagements (NRG, BP, Gunvor) have validated that EQ's platform solves real problems for real traders. But enterprise sales cycles are long, resource-intensive, and vulnerable to single points of failure if there are skeptical users. We are targeting the hardest, most expensive place to enter a customer relationship: the top of the enterprise. A common application suite with progressive access levels changes this for our customers and for us.  An individual trader signs up and immediately gets value of workflow fragmentation relief through unified market data, probabilistic forecasts, AI-native capabilities, and full transparency into the data behind every assumption (what we call \"glass box\"). No enterprise sales cycle required. We build brand rapport with individual users, then provide the right hooks and carrots to encourage them deeper into our enterprise solutions. This is the tweaked GTM motion: lower friction entry, brand recognition with individual users, and natural expansion into team and enterprise contracts.",
+      "text": {
+       "content": "Our enterprise engagements (NRG, BP, Gunvor) have validated that EQ's platform solves real problems for real traders. But enterprise sales cycles are long, resource-intensive, and vulnerable to single points of failure if there are skeptical users. We are targeting the hardest, most expensive place to enter a customer relationship: the top of the enterprise. A common application suite with progressive access levels changes this for our customers and for us.  An individual trader signs up and immediately gets value of workflow fragmentation relief through unified market data, probabilistic forecasts, AI-native capabilities, and full transparency into the data behind every assumption (what we call \"glass box\"). No enterprise sales cycle required. We build brand rapport with individual users, then provide the right hooks and carrots to encourage them deeper into our enterprise solutions. This is the tweaked GTM motion: lower friction entry, brand recognition with individual users, and natural expansion into team and enterprise contracts.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80aa-8aec-f988e6bdb1e6",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As customers invest more, the platform grows with them. Bring your own data, forecasts, and strategies into the same unified surface, and our AI workflows seamlessly pick them up. Connect your existing pipelines through our APIs and SDKs. Our enterprise platform offering is the infrastructure that enables traders to understand markets, evaluate positions, and take action, whether EQ develops strategies for them or they develop their own.",
+      "text": {
+       "content": "As customers invest more, the platform grows with them. Bring your own data, forecasts, and strategies into the same unified surface, and our AI workflows seamlessly pick them up. Connect your existing pipelines through our APIs and SDKs. Our enterprise platform offering is the infrastructure that enables traders to understand markets, evaluate positions, and take action, whether EQ develops strategies for them or they develop their own.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80ef-ba82-d4625c870002",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "What makes this approach sticky is not any single feature. It's that each layer of investment compounds. Workflow embedding gets us in (traders adopt because it replaces the 20-tab morning routine, not because we sold them a feature list). Speaking trader language from day one means zero learning curve due to exceptional UX. Co-optimization across market products (DART + CRRs + futures + gas on one platform) creates value no individual tool can replicate. And intelligence that learns, remembers, and compounds over time means a trader who's used the product for six months has a system that understands how they think. Switching means starting over.",
+      "text": {
+       "content": "What makes this approach sticky is not any single feature. It's that each layer of investment compounds. Workflow embedding gets us in (traders adopt because it replaces the 20-tab morning routine, not because we sold them a feature list). Speaking trader language from day one means zero learning curve due to exceptional UX. Co-optimization across market products (DART + CRRs + futures + gas on one platform) creates value no individual tool can replicate. And intelligence that learns, remembers, and compounds over time means a trader who's used the product for six months has a system that understands how they think. Switching means starting over.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "divider": {},
+   "has_children": false,
+   "id": "335dbe27-5992-80b6-b852-eee57052073f",
+   "object": "block",
+   "type": "divider"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80b4-8173-f616cf46c53a",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": []
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": false,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "The Beta Build (Launch Target TBD pending scoping)",
+      "text": {
+       "content": "The Beta Build (Launch Target TBD pending scoping)",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "335dbe27-5992-8092-9f1b-dea0e992d638",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "has_children": false,
+   "heading_3": {
+    "color": "default",
+    "is_toggleable": false,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Individual Trader Beta - Q2 Target (Marketed as \u201cThe Helm\u201d)",
+      "text": {
+       "content": "Individual Trader Beta - Q2 Target (Marketed as \u201cThe Helm\u201d)",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "335dbe27-5992-80f1-86ed-c0d025f41840",
+   "object": "block",
+   "type": "heading_3"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80db-8241-e5321478d983",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "What it is:",
+      "text": {
+       "content": "What it is:",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " Invite-only beta, ~12-20 users, full-featured trial. Design partner program that validates the PLG motion and generates real usage data.",
+      "text": {
+       "content": " Invite-only beta, ~12-20 users, full-featured trial. Design partner program that validates the PLG motion and generates real usage data.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8011-bc68-dcfe53ee2653",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Features Scope:",
+      "text": {
+       "content": "Features Scope:",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Explorer",
+      "text": {
+       "content": "Explorer",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": ":",
+      "text": {
+       "content": ":",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " ",
+      "text": {
+       "content": " ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Probabilistic price forecasts",
+      "text": {
+       "content": "Probabilistic price forecasts",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": ", ",
+      "text": {
+       "content": ", ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "market data, constraint analysis, system-wide views",
+      "text": {
+       "content": "market data, constraint analysis, system-wide views",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": ". Unified data layer replacing the 20-tab workflow.",
+      "text": {
+       "content": ". Unified data layer replacing the 20-tab workflow.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-8026-afd0-c7f56e2e9b57",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "AI Chat:",
+      "text": {
+       "content": "AI Chat:",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " Agentic analysis grounded in EQ's 60+ code frameworks. Not generic summaries; power-industry-native intelligence with full transparency on reasoning.",
+      "text": {
+       "content": " Agentic analysis grounded in EQ's 60+ code frameworks. Not generic summaries; power-industry-native intelligence with full transparency on reasoning.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-804f-947f-ed679b458943",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Constraints deep dive",
+      "text": {
+       "content": "Constraints deep dive",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": ":",
+      "text": {
+       "content": ":",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " Automated backstory and context for individual constraints (the \"hour of research in 10 minutes\" use case).",
+      "text": {
+       "content": " Automated backstory and context for individual constraints (the \"hour of research in 10 minutes\" use case).",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-80ff-9c29-e3ec67a39e66",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Lineage (fast follow):",
+      "text": {
+       "content": "Lineage (fast follow):",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " DAG visibility showing data sources, transformations, and point-in-time correctness. Every number has a receipt.",
+      "text": {
+       "content": " DAG visibility showing data sources, transformations, and point-in-time correctness. Every number has a receipt.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-80f4-9c48-e5ef91833639",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "336dbe27-5992-80f1-be42-c6a6c01faf29",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "JTBD Scope:",
+      "text": {
+       "content": "JTBD Scope:",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a user, I want to understand what kind of day tomorrow is as quickly as possible",
+      "text": {
+       "content": "As a user, I want to understand what kind of day tomorrow is as quickly as possible",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-8014-9516-f676c3d0460e",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a user, I want to be able to do constraint analysis before bid close to find potential high-return opportunities",
+      "text": {
+       "content": "As a user, I want to be able to do constraint analysis before bid close to find potential high-return opportunities",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-80d7-9789-feb67451995c",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a user, I want to ask a question and get an answer grounded in power market fundamentals, not generic AI",
+      "text": {
+       "content": "As a user, I want to ask a question and get an answer grounded in power market fundamentals, not generic AI",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-80ac-8c01-f3441b7bbd81",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a user, I don\u2019t trust others to understand the complexities of my work, so I want to be able to interrogate all of the assumptions that i\u2019m provided (forecasts, chat responses, market summaries, etc)",
+      "text": {
+       "content": "As a user, I don\u2019t trust others to understand the complexities of my work, so I want to be able to interrogate all of the assumptions that i\u2019m provided (forecasts, chat responses, market summaries, etc)",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-809d-b091-e43be8a10e81",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80c9-9b48-e0b115018176",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "What is NOT in beta:",
+      "text": {
+       "content": "What is NOT in beta:",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "No portfolio data",
+      "text": {
+       "content": "No portfolio data",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-805a-91d7-c51dd339879b",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "No SCED what-if scenarios",
+      "text": {
+       "content": "No SCED what-if scenarios",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-80ea-a369-e971eb1e4f8c",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "No strategy/forecast workbench",
+      "text": {
+       "content": "No strategy/forecast workbench",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-800e-8cdd-fa826f103186",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "No BYO Forecast integration",
+      "text": {
+       "content": "No BYO Forecast integration",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-8044-b3aa-c6ab68589f40",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8095-8825-cdc264f3f543",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Science dependencies for beta:",
+      "text": {
+       "content": "Science dependencies for beta:",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " Minimal. Beta uses existing probabilistic forecasts and market data already in the platform. No new model development required.",
+      "text": {
+       "content": " Minimal. Beta uses existing probabilistic forecasts and market data already in the platform. No new model development required.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8050-93e5-eaeadad48244",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Architecture:",
+      "text": {
+       "content": "Architecture:",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " Beta proceeds without ArchV2. Learnings from beta feed ArchV2 requirements. Beta stack to be defined by engineering & infrastructure.",
+      "text": {
+       "content": " Beta proceeds without ArchV2. Learnings from beta feed ArchV2 requirements. Beta stack to be defined by engineering & infrastructure.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8050-884c-c8cbd0fe7588",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Release cadence:",
+      "text": {
+       "content": "Release cadence:",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " New feature every 1-2 weeks. Feedback loop through release notes + direct user feedback requests.",
+      "text": {
+       "content": " New feature every 1-2 weeks. Feedback loop through release notes + direct user feedback requests.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80aa-bbad-d9309e19135b",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Beta users:",
+      "text": {
+       "content": "Beta users:",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " Currently users from 2+ companies. Max 20 users total. Controlled rollout, not public.",
+      "text": {
+       "content": " Currently users from 2+ companies. Max 20 users total. Controlled rollout, not public.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "heading_3": {
+    "color": "default",
+    "is_toggleable": false,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "6-Month Vision (End of Q3 MVP)",
+      "text": {
+       "content": "6-Month Vision (End of Q3 MVP)",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "335dbe27-5992-80de-bff2-ec3bd25c80eb",
+   "object": "block",
+   "type": "heading_3"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8086-b4c2-f18d504ba8d3",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Q3 MVP (OKR2.2 Target: October)",
+      "text": {
+       "content": "Q3 MVP (OKR2.2 Target: October)",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8062-9060-c28fb24fac01",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "What it is:",
+      "text": {
+       "content": "What it is:",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " A self-serve, low friction entry point onto our platform and application suite not limited to design partners",
+      "text": {
+       "content": " A self-serve, low friction entry point onto our platform and application suite not limited to design partners",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8079-81ce-eaa49b864265",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "What changes from beta to MVP:",
+      "text": {
+       "content": "What changes from beta to MVP:",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Users can self-serve sign-up and pay with credit card",
+      "text": {
+       "content": "Users can self-serve sign-up and pay with credit card",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-80d0-bb22-cfbedab22678",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Core Applications & SA & Delivery propose feature graduation criteria by end of beta based on customer usage and feedback",
+      "text": {
+       "content": "Core Applications & SA & Delivery propose feature graduation criteria by end of beta based on customer usage and feedback",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-8044-8b0c-d46d0d2a1f82",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "GTM finalize pricing plan",
+      "text": {
+       "content": "GTM finalize pricing plan",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-80fa-841c-f954a778c4a2",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "OKR1.5: [\u2026] The Helm ",
+      "text": {
+       "content": "OKR1.5: [\u2026] The Helm ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": true,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "MVP",
+      "text": {
+       "content": "MVP",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " by end of Q3\u201926. Add 20 paid subscribers by the end of Q4\u201926 to drive $60K in new ARR.",
+      "text": {
+       "content": " by end of Q3\u201926. Add 20 paid subscribers by the end of Q4\u201926 to drive $60K in new ARR.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "335dbe27-5992-80de-b13d-cad61ab1e168",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8016-aa1b-fdbadd798aa3",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Architecture",
+      "text": {
+       "content": "Architecture",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": ": Multi-tenant environment, detailed requirements to be put together with engineering & infrastructure",
+      "text": {
+       "content": ": Multi-tenant environment, detailed requirements to be put together with engineering & infrastructure",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8089-9dd7-fb4825f54f16",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Release cadence: ",
+      "text": {
+       "content": "Release cadence: ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Continue our Beta momentum with new features every 1-2 weeks. Ideally SA & Delivery also can choose to release these features to enterprise customers.",
+      "text": {
+       "content": "Continue our Beta momentum with new features every 1-2 weeks. Ideally SA & Delivery also can choose to release these features to enterprise customers.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "divider": {},
+   "has_children": false,
+   "id": "335dbe27-5992-80e2-925c-c3699ca9db2d",
+   "object": "block",
+   "type": "divider"
+  },
+  {
+   "has_children": false,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": false,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Application Suite 2-Year Vision (2026 \u2013 2028)",
+      "text": {
+       "content": "Application Suite 2-Year Vision (2026 \u2013 2028)",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "335dbe27-5992-8019-b0eb-ed440b349f65",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "has_children": false,
+   "heading_3": {
+    "color": "default",
+    "is_toggleable": false,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "One Product That Grows With You",
+      "text": {
+       "content": "One Product That Grows With You",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "335dbe27-5992-8030-a828-f50b4b4345c0",
+   "object": "block",
+   "type": "heading_3"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80cb-adce-c8f96be1312e",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "This is one application suite. It starts as an individual trader's daily operating environment and scales as customers invest more: more data, more users, more automation, more integration. We use \"doors\" to describe natural expansion moments, not tiers or gates, because a customer can enter through any door and does not need to proceed sequentially. Each door is an \"I want more\" signal where the platform meets the customer where they are. There are value levers that can be controlled throughout the application to help control the funnel and GTM motion as well (usage caps, limitations on scenarios, limitations on agents, etc.).",
+      "text": {
+       "content": "This is one application suite. It starts as an individual trader's daily operating environment and scales as customers invest more: more data, more users, more automation, more integration. We use \"doors\" to describe natural expansion moments, not tiers or gates, because a customer can enter through any door and does not need to proceed sequentially. Each door is an \"I want more\" signal where the platform meets the customer where they are. There are value levers that can be controlled throughout the application to help control the funnel and GTM motion as well (usage caps, limitations on scenarios, limitations on agents, etc.).",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80fb-8111-ce7a4bc92bec",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Door 1: Individual Trader",
+      "text": {
+       "content": "Door 1: Individual Trader",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " \u2014 ",
+      "text": {
+       "content": " \u2014 ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": true,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "\"I want an army of analysts at my back\"",
+      "text": {
+       "content": "\"I want an army of analysts at my back\"",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80a8-852d-ccda441f1be4",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "An individual trader signs up and gets immediate value: unified market data, probabilistic forecasts at every node, constraint analysis with automated AI investigation, cross-commodity views, and full system visualization with weather, wind, and temperature layers over time. Glass box transparency on every number. But this isn't just a dashboard. From day one, traders have agents that help them explore: research a constraint move, investigate a price spike, run a scenario to test an intuition, generate a performance attribution report. AI chat grounded in EQ's analytical frameworks turns questions into analysis, not just answers. The platform learns the trader's patterns, preferences, and past analyses through personal context memory. Custom views, saved prompts, and personalized layouts make it theirs.",
+      "text": {
+       "content": "An individual trader signs up and gets immediate value: unified market data, probabilistic forecasts at every node, constraint analysis with automated AI investigation, cross-commodity views, and full system visualization with weather, wind, and temperature layers over time. Glass box transparency on every number. But this isn't just a dashboard. From day one, traders have agents that help them explore: research a constraint move, investigate a price spike, run a scenario to test an intuition, generate a performance attribution report. AI chat grounded in EQ's analytical frameworks turns questions into analysis, not just answers. The platform learns the trader's patterns, preferences, and past analyses through personal context memory. Custom views, saved prompts, and personalized layouts make it theirs.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "336dbe27-5992-80c7-b0a2-f2d969dd1e97",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "JTBD \u2192 grow from \u201cHelp me understand\u201d (Beta) to \u201chelp me investigate and act on my thinking\u201d",
+      "text": {
+       "content": "JTBD \u2192 grow from \u201cHelp me understand\u201d (Beta) to \u201chelp me investigate and act on my thinking\u201d",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a user, I want to test a hypothesis about what happens to my positions if gas spikes or wind drops, without building a spreadsheet",
+      "text": {
+       "content": "As a user, I want to test a hypothesis about what happens to my positions if gas spikes or wind drops, without building a spreadsheet",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-80c8-a163-c7663b8ca92a",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a user, I want to be alerted when something changes that affects my positions, not discover it during my morning routine",
+      "text": {
+       "content": "As a user, I want to be alerted when something changes that affects my positions, not discover it during my morning routine",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-80e3-aef4-f796649b149b",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a user, I want the system to remember my patterns and preferences so it gets smarter the more I use it",
+      "text": {
+       "content": "As a user, I want the system to remember my patterns and preferences so it gets smarter the more I use it",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-8041-8111-cde0ace7e5e6",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80b2-916f-ed5a4119bc9f",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Door 2: My Data",
+      "text": {
+       "content": "Door 2: My Data",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " \u2014 ",
+      "text": {
+       "content": " \u2014 ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": true,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "\"I want my data and forecasts in here\"",
+      "text": {
+       "content": "\"I want my data and forecasts in here\"",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80e0-a4f5-c93d674eb9b7",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Customers bring their own forecasts, proprietary data, and market views into the same unified surface. This triggers an isolated environment and unlocks a vertical AI for power which includes portfolio-aware AI and memory. The platform now reasons over their world, not just the market. Our AI workflows seamlessly pick up customer data alongside EQ's, organized, versioned, and queryable. EQ offers white-glove service to make this an exceptional experience for our customers with integrations starting at this point and at every integration point in the additional doors. These engagements are where Product learns what to 'productize'. The patterns SA & Delivery sees across enterprise customers become the templates and workflows that scale through the offering.",
+      "text": {
+       "content": "Customers bring their own forecasts, proprietary data, and market views into the same unified surface. This triggers an isolated environment and unlocks a vertical AI for power which includes portfolio-aware AI and memory. The platform now reasons over their world, not just the market. Our AI workflows seamlessly pick up customer data alongside EQ's, organized, versioned, and queryable. EQ offers white-glove service to make this an exceptional experience for our customers with integrations starting at this point and at every integration point in the additional doors. These engagements are where Product learns what to 'productize'. The patterns SA & Delivery sees across enterprise customers become the templates and workflows that scale through the offering.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "336dbe27-5992-809f-afda-c20f9fc0799f",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "JTBD \u2192 shifts from EQ\u2019s world to the customer\u2019s own alpha",
+      "text": {
+       "content": "JTBD \u2192 shifts from EQ\u2019s world to the customer\u2019s own alpha",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a user, I want the same AI and analysis capabilities applied to my proprietary data, not just market data",
+      "text": {
+       "content": "As a user, I want the same AI and analysis capabilities applied to my proprietary data, not just market data",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-801a-a1d8-cc4d641e828e",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a user, I want to bring my own forecasts in and see them with the same glass box treatment",
+      "text": {
+       "content": "As a user, I want to bring my own forecasts in and see them with the same glass box treatment",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-80b5-a70b-d60bdba8f4b0",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80c0-9368-e300e3834945",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Door 3: My Strategies",
+      "text": {
+       "content": "Door 3: My Strategies",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " \u2014 ",
+      "text": {
+       "content": " \u2014 ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": true,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "\"I want to build and run strategies on this\"",
+      "text": {
+       "content": "\"I want to build and run strategies on this\"",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8045-8918-cc4b33d038f9",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "The shift from exploration to operations. Door 1 agents help you understand the market. Door 3 expands to run your trading business. Strategy pipelines, automated briefings, backtesting across historical conditions. Agents that follow Science and Strategy's proven analytical workflows: run a DART analysis, evaluate a CRR position, stress-test a gas portfolio using the same artifacts and methodologies our quants use internally. The platform tracks what worked and why through operational memory. Co-optimization across market products (DART + CRRs + futures + gas) creates value no individual tool can replicate. The 2-year trajectory is from EQ-assisted to fully self-serve. Customers have told us directly that they want to build it themselves. Product's job is to make that possible by turning what we've learned from enterprise engagements into capabilities any user can access independently.",
+      "text": {
+       "content": "The shift from exploration to operations. Door 1 agents help you understand the market. Door 3 expands to run your trading business. Strategy pipelines, automated briefings, backtesting across historical conditions. Agents that follow Science and Strategy's proven analytical workflows: run a DART analysis, evaluate a CRR position, stress-test a gas portfolio using the same artifacts and methodologies our quants use internally. The platform tracks what worked and why through operational memory. Co-optimization across market products (DART + CRRs + futures + gas) creates value no individual tool can replicate. The 2-year trajectory is from EQ-assisted to fully self-serve. Customers have told us directly that they want to build it themselves. Product's job is to make that possible by turning what we've learned from enterprise engagements into capabilities any user can access independently.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "336dbe27-5992-80ea-b3fa-df249bac0f9d",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "JTBD \u2192 shifts from analysis to operations",
+      "text": {
+       "content": "JTBD \u2192 shifts from analysis to operations",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a trader, I want to be able to easily research, build, monitor, and deploy strategies",
+      "text": {
+       "content": "As a trader, I want to be able to easily research, build, monitor, and deploy strategies",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-805f-99ab-d26c14f5ba31",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a trader, I want to evaluate how my strategy performs across a range of market conditions before I commit capital",
+      "text": {
+       "content": "As a trader, I want to evaluate how my strategy performs across a range of market conditions before I commit capital",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-8089-84ef-e8321a759f61",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a trader, I want to know what's actually driving my PnL",
+      "text": {
+       "content": "As a trader, I want to know what's actually driving my PnL",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-80e5-a4cc-e061f702b281",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a desk, we want to see our portfolio together, understand our strategy interactions and behaviors, and maximize risk adjusted return across all of our individual work",
+      "text": {
+       "content": "As a desk, we want to see our portfolio together, understand our strategy interactions and behaviors, and maximize risk adjusted return across all of our individual work",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-8024-970e-f63aa8f12bf2",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "33bdbe27-5992-8070-868a-e768aff132b7",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Door 4: My Team",
+      "text": {
+       "content": "Door 4: My Team",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " \u2014 ",
+      "text": {
+       "content": " \u2014 ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": true,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "\"I want my team to have these capabilities\"",
+      "text": {
+       "content": "\"I want my team to have these capabilities\"",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "33bdbe27-5992-80ae-976e-ec30295ef52a",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "A desk lead notices the value. Shared workspaces, team memory that cross-pollinates context across the desk, shared prompt libraries and agent results. The buying authority shifts from personal credit card to team budget. The transition is concierge-assisted, not a migration.",
+      "text": {
+       "content": "A desk lead notices the value. Shared workspaces, team memory that cross-pollinates context across the desk, shared prompt libraries and agent results. The buying authority shifts from personal credit card to team budget. The transition is concierge-assisted, not a migration.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "33bdbe27-5992-80fb-b8f3-eecb0d6f0fa4",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "JTBD \u2192 grows from individual to collective intelligence",
+      "text": {
+       "content": "JTBD \u2192 grows from individual to collective intelligence",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a desk lead, I want my team to share context without scheduling a meeting",
+      "text": {
+       "content": "As a desk lead, I want my team to share context without scheduling a meeting",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "33bdbe27-5992-8066-bc6f-eeca00e646b7",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a team, we want our best analyst's research to benefit everyone, not live in one person's head or desktop",
+      "text": {
+       "content": "As a team, we want our best analyst's research to benefit everyone, not live in one person's head or desktop",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "33bdbe27-5992-8093-9ee0-f9d9dd9de1f5",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a desk lead, I want visibility into what my team is watching and what they might be missing",
+      "text": {
+       "content": "As a desk lead, I want visibility into what my team is watching and what they might be missing",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "33bdbe27-5992-80fd-bbe1-f9e567fd2e12",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80c4-9df7-c82fd2a3456c",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Door 5: My Enterprise",
+      "text": {
+       "content": "Door 5: My Enterprise",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " \u2014 ",
+      "text": {
+       "content": " \u2014 ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": true,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "\"I want to embed PowerOS into my systems\"",
+      "text": {
+       "content": "\"I want to embed PowerOS into my systems\"",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-801b-8a70-ff9ef3a933b6",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "The product is no longer standalone. SDK access, API integrations, ETRM/EMS connectors. Customer engineering teams build on EQ's primitives. DAG-driven real-time updates as new data arrives. Cross-system reasoning and memory span EQ and connected tools. SSO, compliance certifications, self-serve extensions.",
+      "text": {
+       "content": "The product is no longer standalone. SDK access, API integrations, ETRM/EMS connectors. Customer engineering teams build on EQ's primitives. DAG-driven real-time updates as new data arrives. Cross-system reasoning and memory span EQ and connected tools. SSO, compliance certifications, self-serve extensions.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a technical user, I want to build on EQ's capabilities with my own tools and code, not be limited to what the UI offers",
+      "text": {
+       "content": "As a technical user, I want to build on EQ's capabilities with my own tools and code, not be limited to what the UI offers",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-8029-9d97-f4c9c35ee0e4",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a firm, I want my team to be able to build, modify, and maintain our own workflows on this platform without submitting a ticket and waiting for EQ to do it for us",
+      "text": {
+       "content": "As a firm, I want my team to be able to build, modify, and maintain our own workflows on this platform without submitting a ticket and waiting for EQ to do it for us",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-807e-9f98-e4f36806c128",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As an engineering team, I want one API surface that works the same way whether I'm powering a dashboard, an automated pipeline, or an agent",
+      "text": {
+       "content": "As an engineering team, I want one API surface that works the same way whether I'm powering a dashboard, an automated pipeline, or an agent",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-8069-914c-e58cf0b07456",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8064-be43-c807bd02cd5d",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Door 6: Self-Service",
+      "text": {
+       "content": "Door 6: Self-Service",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " \u2014 ",
+      "text": {
+       "content": " \u2014 ",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": true,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "\"I want this running my org\"",
+      "text": {
+       "content": "\"I want this running my org\"",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-800a-ba28-fe4514a52b62",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Org-wide deployment, cross-desk intelligence, institutional memory that compounds over years. Users build their own workflows, agents, and strategies on the platform. Full self-serve application customization: users vibe-code their own views and tools. A trader who's been on the Helm for six months has a system that understands how they think. An organization that's been on it for a year has an institutional memory that no individual departure can erase. This is where EQ's moat becomes existential, because switching means starting over.",
+      "text": {
+       "content": "Org-wide deployment, cross-desk intelligence, institutional memory that compounds over years. Users build their own workflows, agents, and strategies on the platform. Full self-serve application customization: users vibe-code their own views and tools. A trader who's been on the Helm for six months has a system that understands how they think. An organization that's been on it for a year has an institutional memory that no individual departure can erase. This is where EQ's moat becomes existential, because switching means starting over.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a head of trading, I want intelligence that compounds across desks, not just within them. What the gas desk learns about a regime shift should inform the power desk automatically.",
+      "text": {
+       "content": "As a head of trading, I want intelligence that compounds across desks, not just within them. What the gas desk learns about a regime shift should inform the power desk automatically.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-8093-bdb6-fcfe017d11b2",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a COO, I want institutional knowledge that survives when my best trader leaves",
+      "text": {
+       "content": "As a COO, I want institutional knowledge that survives when my best trader leaves",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-80e6-84c9-c669fa02e3f9",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "bulleted_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "As a firm, I want my people building their own tools and workflows on this platform, not waiting for a vendor roadmap",
+      "text": {
+       "content": "As a firm, I want my people building their own tools and workflows on this platform, not waiting for a vendor roadmap",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "has_children": false,
+   "id": "336dbe27-5992-8013-b8a4-f3a8d60b4f71",
+   "object": "block",
+   "type": "bulleted_list_item"
+  },
+  {
+   "has_children": false,
+   "heading_3": {
+    "color": "default",
+    "is_toggleable": false,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "What This Requires From the Platform",
+      "text": {
+       "content": "What This Requires From the Platform",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "335dbe27-5992-80b7-ada8-eeee0f8a19d6",
+   "object": "block",
+   "type": "heading_3"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80f5-a334-d65e4639766f",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "The doors describe what customers experience. Underneath, the platform needs to evolve to support it. That's where architecture v2 comes in.",
+      "text": {
+       "content": "The doors describe what customers experience. Underneath, the platform needs to evolve to support it. That's where architecture v2 comes in.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80e2-9e31-f2b874009fb5",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "We want to make sure SA & Delivery can easily deploy core features from the core application suite to enterprise customers, that we can grow our capabilities horizontally FAST, and that we can explore > build > ship new features in fast iteration. We also want to make sure there's alignment between the APIs & primitives that power internal applications, customer-facing integrations, and agents so we can provide a unified customer experience. Agents are present from Door 1 (scenario agents, research agents) and scale in sophistication through Door 6 (org-wide agent fleets, custom-trained models). The infrastructure needs to support the full spectrum.",
+      "text": {
+       "content": "We want to make sure SA & Delivery can easily deploy core features from the core application suite to enterprise customers, that we can grow our capabilities horizontally FAST, and that we can explore > build > ship new features in fast iteration. We also want to make sure there's alignment between the APIs & primitives that power internal applications, customer-facing integrations, and agents so we can provide a unified customer experience. Agents are present from Door 1 (scenario agents, research agents) and scale in sophistication through Door 6 (org-wide agent fleets, custom-trained models). The infrastructure needs to support the full spectrum.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "divider": {},
+   "has_children": false,
+   "id": "335dbe27-5992-805c-a29c-c8fa098fffd1",
+   "object": "block",
+   "type": "divider"
+  },
+  {
+   "has_children": false,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": false,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "How This Connects to Science & Algorithms + Trading Teams",
+      "text": {
+       "content": "How This Connects to Science & Algorithms + Trading Teams",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "335dbe27-5992-80eb-8ad3-c174d9eb21df",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80d6-ae23-f0807b47cfd3",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Beta (now \u2013 June):",
+      "text": {
+       "content": "Beta (now \u2013 June):",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " Science dependencies are minimal. Existing probabilistic forecasts and market data. No new model development needed for beta scope.",
+      "text": {
+       "content": " Science dependencies are minimal. Existing probabilistic forecasts and market data. No new model development needed for beta scope.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8044-a17b-ef266be655a5",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "MVP (Q3):",
+      "text": {
+       "content": "MVP (Q3):",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " MVP Science scope to be defined jointly with Tyler based on beta signal. What-if is not critical path for MVP.",
+      "text": {
+       "content": " MVP Science scope to be defined jointly with Tyler based on beta signal. What-if is not critical path for MVP.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-8068-b225-f7e5addd3b90",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": true,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "2-Year:",
+      "text": {
+       "content": "2-Year:",
+       "link": null
+      },
+      "type": "text"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " Central to the full vision. SCED what-if scenarios, co-optimization across market products, new market expansion (gas, futures, ftrs, etc.). EQ's application suite makes our best thinking accessible at scale. Workflows, skills, and predefined artifacts turn proven methodologies into capabilities any user can leverage, whether EQ develops the strategies or the customer develops their own.",
+      "text": {
+       "content": " Central to the full vision. SCED what-if scenarios, co-optimization across market products, new market expansion (gas, futures, ftrs, etc.). EQ's application suite makes our best thinking accessible at scale. Workflows, skills, and predefined artifacts turn proven methodologies into capabilities any user can leverage, whether EQ develops the strategies or the customer develops their own.",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "type": "paragraph"
+  },
+  {
+   "divider": {},
+   "has_children": false,
+   "id": "335dbe27-5992-8020-96db-dd98f0c3a170",
+   "object": "block",
+   "type": "divider"
+  },
+  {
+   "has_children": false,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": false,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Open Questions",
+      "text": {
+       "content": "Open Questions",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "335dbe27-5992-803a-b535-f80eada23e59",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-807e-8af1-d0082fd31635",
+   "numbered_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "How do we communicate the application suite framing externally? (naming is \"early discovery,\" not finalized for GTM)",
+      "text": {
+       "content": "How do we communicate the application suite framing externally? (naming is \"early discovery,\" not finalized for GTM)",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "object": "block",
+   "type": "numbered_list_item"
+  },
+  {
+   "has_children": false,
+   "id": "335dbe27-5992-80ec-a188-cb340388f402",
+   "numbered_list_item": {
+    "color": "default",
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "ArchV2 sequencing: how does Helm beta feed ArchV2 priorities vs. other demand signals?",
+      "text": {
+       "content": "ArchV2 sequencing: how does Helm beta feed ArchV2 priorities vs. other demand signals?",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "object": "block",
+   "type": "numbered_list_item"
+  }
+ ]
+}

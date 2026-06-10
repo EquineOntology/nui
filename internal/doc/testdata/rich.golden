@@ -1,0 +1,336 @@
+Document 360dbe275992809d86c6e0a3c1a2c55d
+  title: McBeta UAT Plan
+  icon: 🍔
+  cover: https://images.unsplash.com/photo-1606720335177-3d04e70fb13b?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb
+  prop[Document Type/select]: Test
+  prop[Status/status]: In progress
+---
+callout  "Welcome to the Testing Page for the McBeta June 1st Launch!"  [color=gray_background]
+  paragraph  "Table of Contents"
+    table_of_contents
+heading_1  "Log-ins"  [h1 toggleable]
+  bulleted_list_item  "We will ask some people to login and test with their EQ Logi…"
+    bulleted_list_item  "Website = https://portal.mtprod01.eeek.io/login/"
+    bulleted_list_item  "Use your EQ login"
+  bulleted_list_item  "We will ask others to login using a test account"
+  bulleted_list_item  "Slack message from Matthew E on how to test locally - https:…"  [mention:link_preview]
+heading_1  "UI Test Database"  [h1 toggleable]
+  child_database  "McBeta Test Database"  [target=360dbe2759928046b2dae3e055f73a69]
+divider
+paragraph  "Seeking EQ AI Chat Go-Live approval for MC Beta"
+paragraph  "May 27th, 2026"
+divider
+heading_2  "The Process"  [h2]
+bulleted_list_item  "Split Q&A dataset into 3 core domains: forecasting, trading,…"
+bulleted_list_item  "Ran experimental Q&A dataset through EQ AI to simulate user …"
+column_list
+  column
+    image
+  column
+    image
+heading_3  "Executive Summary"  [h3]
+image
+table  [w=6 col-header]
+  table_row
+    | Domain
+    | n
+    | Reject (1)
+    | OK (2)
+    | Great (3)
+    | Avg score
+  table_row
+    | Forecasting
+    | 72
+    | 65%
+    | 19%
+    | 15%
+    | 1.50
+  table_row
+    | Trading
+    | 50
+    | 36%
+    | 46%
+    | 16%
+    | 1.79
+  table_row
+    | Analytics
+    | 17
+    | 35%
+    | 35%
+    | 29%
+    | 1.94
+  table_row
+    | Total
+    | 139
+    | 51%
+    | 31%
+    | 17%
+    | 1.66
+heading_2  "Forecasting domain underperformance is not representative of…"  [h2]
+numbered_list_item  "Forecasting questions rely on information contained in the c…"
+toggle  "Example"
+  paragraph  "Question: \"For ERCOT__DART__PROF__UNIVARIATE__DAYZER config …"
+  paragraph  "Context needed: documents like PROF: Probabilistic Regime Ov…"  [mention:page=196dbe27599280fe821aef46de0dd9fb]
+image
+numbered_list_item  "Flawed experiment design - questions in the dataset asked ab…"
+  numbered_list_item  "These questions were closer to how we would expect an intern…"
+toggle  "Examples"
+  paragraph  "\"For ERCOT__DART__PROF__SMOOTH_UNIVARIATE__DAYZER config ver…"
+  paragraph  "\"For ERCOT__RTMEC__PROF__UNIVARIATE__DAYZER config version 3…"
+heading_3  "Solutions"  [h3]
+image
+unsupported  [raw]
+  paragraph  "Forecasting"
+    table  [w=6]
+      table_row
+        | Domain
+        | n
+        | Reject (1)
+        | Ok (2)
+        | Great (3)
+        | Avg
+      table_row
+        | Forecasting
+        | 72
+        | 65%
+        | 19%
+        | 15%
+        | 1.50
+    paragraph  "What went well"
+    bulleted_list_item  "When asked about cval data in dev, it answers the question c…"
+    bulleted_list_item  "Catches malformed questions (i.e. when the user asks about a…"
+    paragraph  "What needs fixing"
+    bulleted_list_item  "Answer search is limited to dev env, cannot answer questions…"
+    bulleted_list_item  "Deploy the vector store (forecast model and run context)"
+    bulleted_list_item  "Investment in the context layer"
+    paragraph  "Examples"
+    toggle  "Good"
+      paragraph  "Question:"
+      paragraph  "\"What ERCOT__DART__PROF__UNIVARIATE__DAYZER model version is…"
+      paragraph  "Response:"
+      paragraph  "Here's what ran on 2026-05-15 for ERCOT__DART__PROF__UNIVARI…"
+      paragraph  "There were two concurrent inference runs that day, one per a…"
+      table  [w=5 col-header]
+        table_row
+          | Config Version
+          | MLflow Model Version
+          | Run Start (UTC)
+          | Deployment Name
+          | Coverage
+        table_row
+          | v1.4
+          | 152
+          | 2026-05-15 12:31:45
+          | erc_dart_prf_dz_da2p1_rt3
+          | 1,102 ERCOT nodes
+        table_row
+          | v1.2
+          | 217
+          | 2026-05-15 12:31:23
+          | erc_dart_prof_dzr_da2p1_rt4p0
+          | 61 ERCOT nodes
+      paragraph  "Both ran successfully (100% success rate, zero failures)."
+      paragraph  "For ERCOT hub forecasts specifically, v1.4 / MLflow model ve…"
+      paragraph  "Let me know if you want to dig into the run details, forecas…"
+    toggle  "Bad"
+      paragraph  "Question:"
+      paragraph  "\"Compare EQ's ERCOT__DART__PROF__UNIVARIATE__DAYZER hub fore…"
+      paragraph  "Response:"
+      paragraph  "I've done a thorough search across the agentic context. Here…"
+      divider
+      heading_2  "ERCOT DART PROF UNIVARIATE DAYZER — 2026-05-15 Forecast Comp…"  [h2]
+      heading_3  "What's available in the agentic context"  [h3]
+      paragraph  "EQ DAYZER inference run — confirmed and healthy"
+      paragraph  "The inference run for 2026-05-15 completed successfully:"
+      table  [w=2 col-header]
+        table_row
+          | Attribute
+          | Value
+        table_row
+          | Model
+          | ERCOT__DART__PROF__UNIVARIATE__DAYZER
+        table_row
+          | Config version
+          | 1.2
+        table_row
+          | MLflow model version
+          | 218
+        table_row
+          | Run start
+          | 2026-05-15 12:31:47 UTC
+        table_row
+          | Forecast type
+          | Quantile (probabilistic)
+        table_row
+          | Nodes covered
+          | 61 ERCOT nodes
+        table_row
+          | Success rate
+          | 100% (0 failures)
+        table_row
+          | Deployment
+          | erc_dart_prf_dz_da2p1_rt4
+        table_row
+          | Metaflow run
+          | View in Metaflow UI
+      paragraph  "The model covers both DA LMP (v2.1) and RT LMP (v4.0) for 61…"
+      divider
+      heading_3  "What I can't provide"  [h3]
+      paragraph  "The three-way hourly comparison you're asking for — EQ DAYZE…"
+      bulleted_list_item  "Hourly forecast values from the DAYZER run are not surfaced …"
+      bulleted_list_item  "ERCOT's published DA LMP forecast (e.g., from the ERCOT DAM …"
+      bulleted_list_item  "External vendor forecasts — no vendor forecast EQRNs (e.g., …"
+      paragraph  "To do this comparison, you'd need to pull the DAYZER output …"
+  paragraph  "Trading"
+    table  [w=6]
+      table_row
+        | Domain
+        | n
+        | Reject (1)
+        | Ok (2)
+        | Great (3)
+        | Avg
+      table_row
+        | Trading
+        | 25
+        | 36%
+        | 46%
+        | 16%
+        | 1.79
+    paragraph  "What went well"
+    bulleted_list_item  "The agent has the domain knowledge to deliver causal chain a…"
+      bulleted_list_item  "\"Wind + solar oversupply → exceeds local load → transmission…"
+    paragraph  "What needs fixing"
+    bulleted_list_item  "Lean more into analysis, rather than description"
+      bulleted_list_item  "\"The answer describes what happened, not what was at risk\""
+    paragraph  "Examples"
+    toggle  "Good"
+      paragraph  "Question:"
+      paragraph  "\"For ERCOT operating day 2026-05-15, why are LMPs forecast s…"
+      paragraph  "Response:"
+      paragraph  "“The short answer: a classic West Texas renewable oversupply…"
+      paragraph  "HB_WEST was negative or near-zero for 10 consecutive hours (…"
+    toggle  "Bad"
+      paragraph  "Question:"
+      paragraph  "\"For ERCOT operating day 2026-05-15, which Load Zone is fore…"
+      paragraph  "Response:"
+      paragraph  "“The load profiles are charted above. NORTH_ERCOT's dominanc…"
+      paragraph  "Reviewer Comment:"
+      paragraph  "“No chart outputted. The answer never states which zone has …"
+  paragraph  "Analytics"
+    table  [w=6]
+      table_row
+        | Domain
+        | n
+        | Reject (1)
+        | Ok (2)
+        | Great (3)
+        | Avg
+      table_row
+        | Analytics
+        | 17
+        | 35%
+        | 45%
+        | 29%
+        | 1.94
+    paragraph  "What went well"
+    bulleted_list_item  "Performed well in broad summarization questions, and well-sc…"
+    paragraph  "What needs fixing"
+    bulleted_list_item  "Wrong DART sign convention - giving RT - DA"
+    bulleted_list_item  "Wrong metrics comparisons - comparing DA forecasts with RT a…"
+    bulleted_list_item  "Data access - when asked about the existing like-days, the a…"
+    paragraph  "Examples"
+    toggle  "Good"
+      paragraph  "Question:"
+      paragraph  "\"How did ERCOT real-time prices settle relative to DA foreca…"
+      paragraph  "Response:"
+      paragraph  "Here's the DA vs. RT settlement picture for May 15."
+      paragraph  "Key themes:"
+      paragraph  "West/Panhandle — RT ran well above DA overnight, then flippe…"
+      paragraph  "South — persistent RT discount through the afternoon HB_SOUT…"
+      paragraph  "Houston — RT outperformed DA in the afternoon peak HB_HOUSTO…"
+      paragraph  "North — roughly flat on the day HB_NORTH tracked DA closely,…"
+      divider
+      paragraph  "Want me to break any of these hubs down to the node level, o…"
+    toggle  "Bad"
+      paragraph  "Question:"
+      paragraph  "\"For ERCOT operating day 2026-05-15, how did uncertainty pen…"
+      paragraph  "Response:"
+      paragraph  "Key observations:"
+      table  [w=4 col-header]
+        table_row
+          | Period
+          | DA-RT Spread (DART)
+          | Direction
+          | Signal
+        table_row
+          | HE9–HE13
+          | +$4.5 to +$8.2
+          | DA > RT
+          | DA overbid midday — solar suppressed RT below DA
+        table_row
+          | HE15–HE17
+          | -$1.3 to -$8.7
+          | RT > DA
+          | RT ran above DA into evening ramp
+        table_row
+          | HE18–HE22
+          | +$1.7 to +$5.9
+          | DA > RT
+          | DA again above RT in evening peak
+        table_row
+          | HE24
+          | -$6.4
+          | RT > DA
+          | RT spiked overnight
+      paragraph  "What this tells you about DA bid behavior:"
+      bulleted_list_item  "The midday DA premium (HE9–HE13) — up to $8.21 at HE12 — is …"
+      bulleted_list_item  "The HE15–HE17 reversal (RT > DA by up to $8.70) points to an…"
+      bulleted_list_item  "DAM volumes show buy-side demand peaking in HE17–HE22 (~17,5…"
+      divider
+      paragraph  "If you're working with a specific model or framework that us…"
+      paragraph  "Reviewer Comment:"
+      paragraph  "This response erodes my confidence in the chatbot. Question …"
+      paragraph  "I see how this response (likely) doesn't rely on bid data at…"
+      paragraph  "Additionally, it's unclear if the data referenced in the res…"
+      paragraph  "If actuals: this response is not helpful, as it doesn't incl…"
+      paragraph  "If forecasts: a point forecast is always an estimate, but it…"
+image
+table  [w=4 col-header]
+  table_row
+    | Failure Theme
+    | Desc.
+    | Fix
+    | Timeframe
+  table_row
+    | Data access gaps
+    | Some questions require prod data access. Agent tested only h…
+    | Allow agents in all envs to read prod data
+    | Now
+  table_row
+    | Verbose answers
+    | Buried lede, long answers for straightforward factual questi…
+    | Update system prompt
+    | Now
+  table_row
+    | Question data set errors
+    | Still references ExplainabilityAgent. References data in oth…
+    | Route all questions to EQTradingAssistant
+    | Now
+  table_row
+    | Missing ability to do multi-step analysis
+    | Missing the procedural knowledge or tools required to perfor…
+    | Build skills to close gap
+    | Next
+  table_row
+    | Vector store access
+    | The agent tested did not have access to the DBR vector store…
+    | Deploy dagster and DBR vector store
+    | Next
+  table_row
+    | Vector store investment
+    | Context layer has not been invested in due to lack of priori…
+    | Inject more relevant information into context layer to bette…
+    | Next, on-going
+image
+child_database  "MC Beta EQ AI SME QA - Sheet1.csv"  [target=36bdbe27599280b0913dc7dd2361e878]

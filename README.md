@@ -116,6 +116,29 @@ All optional, via environment variables:
 | `TMPDIR` | `/tmp` | where the per-session render cache lives |
 | `NUI_OUTLINE_FILE` | _(unset)_ | if set, the reader pipeline also writes a heading-outline JSON sidecar here (`[{level,text,line}]`) — a hook for richer readers |
 
+## Development (Go reader)
+
+A Go rewrite of the reader is underway: a single static binary targeting
+~5–25 MB resident, replacing the `mdcat`/`less` pipeline with a block-tree
+renderer that owns its own viewport. The Bash script above remains the
+front-end (search, list, recents) during the buildout.
+
+Requires Go ≥ 1.26. Build and run the dev loop:
+
+```sh
+# The Bash front-end currently occupies the `nui` filename, so build the Go
+# binary under a different name while both coexist:
+go build -o nui-go .
+./nui-go whoami        # prints the authenticated Notion identity
+./nui-go login         # wraps `ntn login` (browser OAuth)
+
+go test ./...          # pure unit tests, no network
+```
+
+`nui-go` shells out to `ntn` for all Notion I/O (it stores no credentials of its
+own) and degrades gracefully — e.g. with `ntn` missing it prints an install
+nudge rather than a stack trace.
+
 ## License
 
 [MIT](LICENSE).

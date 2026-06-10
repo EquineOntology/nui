@@ -1,0 +1,166 @@
+Document 353dbe2759928028ab76e64b78b05ded
+  title: Winning DART Meeting Notes
+  icon: 📓
+  cover: https://images.unsplash.com/photo-1520076794559-6a1229412a42?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb
+  prop[Document Type/multi_select]: Meeting Notes
+  prop[Status/status]: In progress
+---
+unsupported  [raw]
+heading_2  "2026-06-09"  [h2 toggleable mention:date]
+  bulleted_list_item  "Gemini Notes - https://docs.google.com/document/d/1JF7Up2fEl…"  [mention:link_preview]
+  bulleted_list_item  "Gemini Recording - https://drive.google.com/file/d/126teXzVr…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART & Friends Projects - https://linear.app/equilib…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART Projects - https://linear.app/equilibrium-energ…"  [mention:link_preview]
+  bulleted_list_item  "& Friends Projects - https://linear.app/equilibrium-energy/t…"  [mention:link_mention]
+  bulleted_list_item  "Parking Lot / Deep Dive"
+    bulleted_list_item  "Ideas for next steps for NRG - maybe take offline for Josh a…"
+    bulleted_list_item  "Scenarios meeting exists tomorrow for the first time - weekl…"
+      bulleted_list_item  "#topic-scenarios"
+heading_2  "2026-06-02"  [h2 toggleable mention:date]
+  bulleted_list_item  "Gemini Notes - https://docs.google.com/document/d/1JdE6sgSq6…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART & Friends Projects - https://linear.app/equilib…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART Projects - https://linear.app/equilibrium-energ…"  [mention:link_preview]
+  bulleted_list_item  "& Friends Projects - https://linear.app/equilibrium-energy/t…"  [mention:link_mention]
+  bulleted_list_item  "Parking Lot / Deep Dive"
+    bulleted_list_item  "Parallel tracking & awards of multiple strategies"
+      bulleted_list_item  "Want to be able to track all of the strategies that we have …"
+        bulleted_list_item  "Architecture ticket to think about this - conversation next …"
+        bulleted_list_item  "Track pnl on strategies, actual awarded, maximally useful"
+        bulleted_list_item  "Somewhat related, but not really with https://linear.app/equ…"  [mention:link_preview mention:link_preview]
+heading_2  "2026-05-26"  [h2 toggleable mention:date]
+  bulleted_list_item  "Gemini Notes - https://docs.google.com/document/d/14rPXWD8D6…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART & Friends Projects - https://linear.app/equilib…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART Projects - https://linear.app/equilibrium-energ…"  [mention:link_preview]
+  bulleted_list_item  "& Friends Projects - https://linear.app/equilibrium-energy/t…"  [mention:link_mention]
+  bulleted_list_item  "Parking Lot / Deep Dive"
+    bulleted_list_item  "Submission to market (Zoltán wants to delete things)"
+      bulleted_list_item  "Trading ourselves - We want to keep the option open, but we …"
+      bulleted_list_item  "We could possibly delete, but we may need to bring it back f…"
+      bulleted_list_item  "Decision = Zoltán is going to keep it around for a few month…"
+heading_2  "2026-05-19"  [h2 toggleable mention:date]
+  bulleted_list_item  "Gemini Notes - https://docs.google.com/document/d/1T0qzeeIRL…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART & Friends Projects - https://linear.app/equilib…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART Projects - https://linear.app/equilibrium-energ…"  [mention:link_preview]
+  bulleted_list_item  "& Friends Projects - https://linear.app/equilibrium-energy/t…"  [mention:link_mention]
+heading_2  "2026-05-12"  [h2 toggleable mention:date]
+  bulleted_list_item  "Gemini Notes - https://docs.google.com/document/d/1lWfpfjDO4…"  [mention:link_preview]
+  bulleted_list_item  "Gemini recording - https://drive.google.com/file/d/1ft-xd0KM…"  [mention:link_preview]
+  bulleted_list_item  "Coverage for Carolyn - Carolyn Coverage Command Center"  [mention:page=34fdbe27599280d896e2e5d4da3791f5]
+  bulleted_list_item  "Winning DART & Friends Projects - https://linear.app/equilib…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART Projects - https://linear.app/equilibrium-energ…"  [mention:link_preview]
+  bulleted_list_item  "& Friends Projects - https://linear.app/equilibrium-energy/t…"  [mention:link_mention]
+  bulleted_list_item  "Deep Dive / Parking Lot"
+    bulleted_list_item  "NRG gate closure"
+    bulleted_list_item  "Awards data (thanks Andrew & co!) - Cristobal"
+      bulleted_list_item  "Flowing that info into performance page - meeting tomorrow"
+heading_2  "2026-05-07 - NRG product prioritization"  [h2 toggleable mention:date]
+  unsupported  [raw]
+    paragraph
+      paragraph
+    paragraph
+      paragraph  "Cool. Notion AI is transcribing this meeting. Okay."
+      paragraph  "So that's, oops. What just happened? What is going on? Oh my…"
+      paragraph  "Cool. I pulled up all of the projects in Linear and actually…"
+      paragraph  "It's not really much product work left, so I figured the han…"
+      paragraph  "So yeah, this should all wrap up. Did you have any like ques…"
+      paragraph  "My only thought on communication to NRG, well, just wanted t…"
+      paragraph  "I think that we phrase it more as a scale I think we should …"
+      paragraph  "Okay. So that makes it kind of sound like it's temporary. Is…"
+      paragraph  "It is. So the goal is actually to scale it to the 250. Um..."
+      paragraph  "Sorry, I know the spec volume, but there's the-Is the like..…"
+      paragraph  "And maybe we do need to talk a little bit about that specifi…"
+      paragraph  "So I would imagine, and honestly, I don't know that this wor…"
+      paragraph  "Cool, yeah. So I'll draft that up and also on like what I ne…"
+      paragraph  "There is an innovation services tag too."
+      paragraph  "Oh, cool. OK. We can put that on there."
+      paragraph  "Yeah. I think. The customer? The customer stuff is not, I li…"
+      paragraph  "Yeah, that makes sense. Okay."
+      paragraph  "But I mean, it can't hurt to add it. I just remember having …"
+      paragraph  "Cool. Then let's just use your methods and it'll sort of jus…"
+      paragraph  "It's, like, the customer support function of delivery or, li…"
+      paragraph  "And then Sam is stepping into cover as the PM lead for energ…"
+      paragraph  "So under this one, this is one that has been coming up recen…"
+      paragraph  "I don't think so. I don't think so. It sounds like this is..…"
+      paragraph  "Well, someone said I made that comment in a meeting where we…"
+      paragraph  "But you can still run it."
+      paragraph  "Yeah, no, it's a good point. When I said that out loud, I wa…"
+      paragraph  "What's the value of running at that point?"
+      paragraph  "And so I think that's sort of like some of the confirmations…"
+      paragraph  "If there's any..."
+      paragraph  "or invoicing repercussions or implications of that. Like I d…"
+      paragraph  "Usually takes a run."
+      paragraph  "Like three minutes? Yeah, three. A five. Okay."
+      paragraph  "Um... Cool."
+      paragraph  "Da-da-da-da-da. Moving. So yeah, just I like the I mean, you…"
+      paragraph  "Um... They're a funny bunch. Yes. Okay, great."
+      paragraph  "And the one thing that I wanted Lydia for, but she stuck in …"
+      paragraph  "Or maybe they like used a stale run and like it wasn't ideal…"
+      paragraph  "Until then. I also think There's the winning dart and friend…"
+      paragraph  "I'm confused how... like the NRG stuff and the winning dart …"
+      paragraph  "I don't know."
+      paragraph  "That's sort of the right read-aLike, so you could start your…"
+      paragraph  "So I see. I see. Yeah."
+      paragraph  "Hi Lydia."
+      paragraph  "Sorry, Google undownloaded. Oh no. I had to like download it…"
+      paragraph  "We've just gone over like, I handed off spec trading to Cris…"
+      paragraph  "You can rerun."
+      paragraph  "cut off from 905 to 945. And I think Sam had a good question…"
+      paragraph  "So one option we called out was like maybe Sam just sets up …"
+      paragraph  "Yeah, that would be fine, but then it's the same people So l…"
+      paragraph  "And then they could go to whatever, like you could just like…"
+      paragraph  "Yeah, so they could stop going to winning dart until their s…"
+      paragraph  "Yeah, that seems fair. Cool."
+      paragraph  "So, yeah, Sam, I guess maybe you could also just ask Josh, Y…"
+      paragraph  "So the next thing that I have is actually this has to happen…"
+      paragraph  "I think Sam, where you can help is Like time boxing this, pr…"
+      paragraph  "Order comparison in viz. Um. So this is the ability to compa…"
+      paragraph  "Or actually, I'll just move it to next week so that you can …"
+      paragraph  "I think Sam, the two of you should maybe collaborate on like…"
+      paragraph  "Does anybody know?"
+      paragraph  "The only way you must connect."
+      paragraph  "This was very helpful for actually understanding what the te…"
+      paragraph  "And then the order selector, which is the snapshot stuff is …"
+      paragraph  "Super cool."
+      paragraph  "Sean is going to do the technical design and the product. Li…"
+      paragraph  "I haven't reviewed them or audited them yet. So I need to do…"
+      paragraph  "Yeah. Cool."
+      paragraph  "Yeah, to that end, Like this one seems quite meaty. It's mas…"
+      paragraph  "Well, I want them to start just with the optimized and basel…"
+      paragraph  "And so instead of having to be like, oh, like, hours 18 to 1…"
+      paragraph  "This is why I want Roman. running with this one in the near …"
+      paragraph  "And if there's stuff that goes to energy, obviously Cristoba…"
+      paragraph  "100%. Yeah, I think it starts with Roman and gets handed off…"
+      paragraph  "Oh."
+      paragraph  "I can't tell, am I next? Yeah, you are. Can we... Okay, so t…"
+      paragraph  "The snapshot orders can be in parallel if Sean is driving th…"
+      paragraph  "Can I poke at that a little bit? Because didn't you want Sea…"
+      paragraph  "Yes, but I feel like that's easy. Like I think that's like..…"
+      paragraph  "Three or four doesn't work. Yeah. That's fair, but I think w…"
+      paragraph  "I don't think it really hurts us. Let's just set the expecta…"
+      paragraph  "Yeah, sorry. Who's not what?"
+      paragraph  "I think that's mostly Matt."
+      paragraph  "Okay, so they're not. Yeah."
+      paragraph  "Okay. I think this is Matt, but it's a good question. We're …"
+      paragraph  "You might've made it an update."
+      paragraph  "Oh, did I? Shit."
+      paragraph  "Yeah, you're right, I did. Sorry, I'm not good at this yet. …"
+      paragraph  "I have to leave a meeting that I joined rudely late."
+      paragraph  "No worries, we're continuing to record and I have to hop sho…"
+      paragraph  "You said you're going to talk to Roman, Carolyn?"
+      paragraph  "Yeah, I am. All right."
+      paragraph  "Thanks all."
+      paragraph  "And honestly, that was pretty much everything. Like that was…"
+      paragraph  "Because it is a new type of approval that we're seeking. I'l…"
+heading_2  "2026-05-05"  [h2 toggleable mention:date]
+  bulleted_list_item  "Gemini Notes - https://docs.google.com/document/d/1Sy8ieZoz4…"  [mention:link_preview]
+  bulleted_list_item  "Recording - https://drive.google.com/file/d/1xQm5CrAUxhw-m41…"  [mention:link_preview]
+  bulleted_list_item  "Winning DART Linear Projects"
+  bulleted_list_item  "& Friends Linear Projects"
+heading_2  "2026-04-28"  [h2 toggleable mention:date]
+  bulleted_list_item  "Deck"
+  bulleted_list_item  "Winning DART Linear Projects"
+  bulleted_list_item  "& Friends Linear Projects"
+  bulleted_list_item  "Winning DART Linear Issues"
+  bulleted_list_item  "Gemini Notes"
+  bulleted_list_item  "Gemini Recording"
+paragraph

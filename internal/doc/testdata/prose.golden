@@ -1,0 +1,94 @@
+Document 335dbe275992807980fac7b4455e26c6
+  title: Core Applications 2026 Vision
+  icon: 😎
+---
+heading_2  "Why We're Building This"  [h2]
+paragraph  "Through our design sprints, customer research, and direct wo…"
+paragraph  "Two things are driving this effort: we have emerging product…"
+paragraph  "Our enterprise engagements (NRG, BP, Gunvor) have validated …"
+paragraph  "As customers invest more, the platform grows with them. Brin…"
+paragraph  "What makes this approach sticky is not any single feature. I…"
+divider
+paragraph
+heading_2  "The Beta Build (Launch Target TBD pending scoping)"  [h2]
+heading_3  "Individual Trader Beta - Q2 Target (Marketed as “The Helm”)"  [h3]
+paragraph  "What it is: Invite-only beta, ~12-20 users, full-featured tr…"
+paragraph  "Features Scope:"
+bulleted_list_item  "Explorer: Probabilistic price forecasts, market data, constr…"
+bulleted_list_item  "AI Chat: Agentic analysis grounded in EQ's 60+ code framewor…"
+bulleted_list_item  "Constraints deep dive: Automated backstory and context for i…"
+bulleted_list_item  "Lineage (fast follow): DAG visibility showing data sources, …"
+paragraph  "JTBD Scope:"
+bulleted_list_item  "As a user, I want to understand what kind of day tomorrow is…"
+bulleted_list_item  "As a user, I want to be able to do constraint analysis befor…"
+bulleted_list_item  "As a user, I want to ask a question and get an answer ground…"
+bulleted_list_item  "As a user, I don’t trust others to understand the complexiti…"
+paragraph  "What is NOT in beta:"
+bulleted_list_item  "No portfolio data"
+bulleted_list_item  "No SCED what-if scenarios"
+bulleted_list_item  "No strategy/forecast workbench"
+bulleted_list_item  "No BYO Forecast integration"
+paragraph  "Science dependencies for beta: Minimal. Beta uses existing p…"
+paragraph  "Architecture: Beta proceeds without ArchV2. Learnings from b…"
+paragraph  "Release cadence: New feature every 1-2 weeks. Feedback loop …"
+paragraph  "Beta users: Currently users from 2+ companies. Max 20 users …"
+heading_3  "6-Month Vision (End of Q3 MVP)"  [h3]
+paragraph  "Q3 MVP (OKR2.2 Target: October)"
+paragraph  "What it is: A self-serve, low friction entry point onto our …"
+paragraph  "What changes from beta to MVP:"
+bulleted_list_item  "Users can self-serve sign-up and pay with credit card"
+bulleted_list_item  "Core Applications & SA & Delivery propose feature graduation…"
+bulleted_list_item  "GTM finalize pricing plan"
+bulleted_list_item  "OKR1.5: […] The Helm MVP by end of Q3’26. Add 20 paid subscr…"
+paragraph  "Architecture: Multi-tenant environment, detailed requirement…"
+paragraph  "Release cadence: Continue our Beta momentum with new feature…"
+divider
+heading_2  "Application Suite 2-Year Vision (2026 – 2028)"  [h2]
+heading_3  "One Product That Grows With You"  [h3]
+paragraph  "This is one application suite. It starts as an individual tr…"
+paragraph  "Door 1: Individual Trader — \"I want an army of analysts at m…"
+paragraph  "An individual trader signs up and gets immediate value: unif…"
+paragraph  "JTBD → grow from “Help me understand” (Beta) to “help me inv…"
+bulleted_list_item  "As a user, I want to test a hypothesis about what happens to…"
+bulleted_list_item  "As a user, I want to be alerted when something changes that …"
+bulleted_list_item  "As a user, I want the system to remember my patterns and pre…"
+paragraph  "Door 2: My Data — \"I want my data and forecasts in here\""
+paragraph  "Customers bring their own forecasts, proprietary data, and m…"
+paragraph  "JTBD → shifts from EQ’s world to the customer’s own alpha"
+bulleted_list_item  "As a user, I want the same AI and analysis capabilities appl…"
+bulleted_list_item  "As a user, I want to bring my own forecasts in and see them …"
+paragraph  "Door 3: My Strategies — \"I want to build and run strategies …"
+paragraph  "The shift from exploration to operations. Door 1 agents help…"
+paragraph  "JTBD → shifts from analysis to operations"
+bulleted_list_item  "As a trader, I want to be able to easily research, build, mo…"
+bulleted_list_item  "As a trader, I want to evaluate how my strategy performs acr…"
+bulleted_list_item  "As a trader, I want to know what's actually driving my PnL"
+bulleted_list_item  "As a desk, we want to see our portfolio together, understand…"
+paragraph  "Door 4: My Team — \"I want my team to have these capabilities…"
+paragraph  "A desk lead notices the value. Shared workspaces, team memor…"
+paragraph  "JTBD → grows from individual to collective intelligence"
+bulleted_list_item  "As a desk lead, I want my team to share context without sche…"
+bulleted_list_item  "As a team, we want our best analyst's research to benefit ev…"
+bulleted_list_item  "As a desk lead, I want visibility into what my team is watch…"
+paragraph  "Door 5: My Enterprise — \"I want to embed PowerOS into my sys…"
+paragraph  "The product is no longer standalone. SDK access, API integra…"
+bulleted_list_item  "As a technical user, I want to build on EQ's capabilities wi…"
+bulleted_list_item  "As a firm, I want my team to be able to build, modify, and m…"
+bulleted_list_item  "As an engineering team, I want one API surface that works th…"
+paragraph  "Door 6: Self-Service — \"I want this running my org\""
+paragraph  "Org-wide deployment, cross-desk intelligence, institutional …"
+bulleted_list_item  "As a head of trading, I want intelligence that compounds acr…"
+bulleted_list_item  "As a COO, I want institutional knowledge that survives when …"
+bulleted_list_item  "As a firm, I want my people building their own tools and wor…"
+heading_3  "What This Requires From the Platform"  [h3]
+paragraph  "The doors describe what customers experience. Underneath, th…"
+paragraph  "We want to make sure SA & Delivery can easily deploy core fe…"
+divider
+heading_2  "How This Connects to Science & Algorithms + Trading Teams"  [h2]
+paragraph  "Beta (now – June): Science dependencies are minimal. Existin…"
+paragraph  "MVP (Q3): MVP Science scope to be defined jointly with Tyler…"
+paragraph  "2-Year: Central to the full vision. SCED what-if scenarios, …"
+divider
+heading_2  "Open Questions"  [h2]
+numbered_list_item  "How do we communicate the application suite framing external…"
+numbered_list_item  "ArchV2 sequencing: how does Helm beta feed ArchV2 priorities…"

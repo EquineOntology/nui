@@ -1,0 +1,5349 @@
+{
+ "page": {
+  "object": "page",
+  "id": "353dbe27-5992-8028-ab76-e64b78b05ded",
+  "icon": {
+   "emoji": "\ud83d\udcd3",
+   "type": "emoji"
+  },
+  "cover": {
+   "external": {
+    "url": "https://images.unsplash.com/photo-1520076794559-6a1229412a42?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
+   },
+   "type": "external"
+  },
+  "properties": {
+   "Created by": {
+    "id": "%3Bk%60o",
+    "type": "created_by"
+   },
+   "Document Type": {
+    "id": "5615ce0d-aa7a-45eb-b6eb-194a635e0aac",
+    "multi_select": [
+     {
+      "color": "default",
+      "id": "45a61694-b886-49be-b5da-7b430585ce2c",
+      "name": "Meeting Notes"
+     }
+    ],
+    "type": "multi_select"
+   },
+   "Last edited by": {
+    "id": "SIaa",
+    "type": "last_edited_by"
+   },
+   "Name": {
+    "id": "title",
+    "title": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": "Winning DART Meeting Notes",
+      "text": {
+       "content": "Winning DART Meeting Notes",
+       "link": null
+      },
+      "type": "text"
+     }
+    ],
+    "type": "title"
+   },
+   "Status": {
+    "id": "fc04f3d6-8001-4eab-b8e6-cf793d789db9",
+    "status": {
+     "color": "blue",
+     "id": "63a63e56-ed2f-4111-9da7-3ae798c7f871",
+     "name": "In progress"
+    },
+    "type": "status"
+   }
+  },
+  "url": "https://app.notion.com/p/Winning-DART-Meeting-Notes-353dbe2759928028ab76e64b78b05ded",
+  "title": null
+ },
+ "blocks": [
+  {
+   "has_children": false,
+   "id": "353dbe27-5992-80f0-a9cd-c655d07525e2",
+   "object": "block",
+   "type": "unsupported",
+   "unsupported": {
+    "block_type": "button"
+   }
+  },
+  {
+   "children": [
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Gemini Notes - ",
+        "text": {
+         "content": "Gemini Notes - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://docs.google.com/document/d/1JF7Up2fEl0fJEMB91dm8v46G4TIJdlIXSTdCNfhWYyE/edit?tab=t.nyqt7xbdf5m2",
+        "mention": {
+         "link_preview": {
+          "url": "https://docs.google.com/document/d/1JF7Up2fEl0fJEMB91dm8v46G4TIJdlIXSTdCNfhWYyE/edit?tab=t.nyqt7xbdf5m2"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://docs.google.com/document/d/1JF7Up2fEl0fJEMB91dm8v46G4TIJdlIXSTdCNfhWYyE/edit?tab=t.nyqt7xbdf5m2",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "37adbe27-5992-80f0-82df-e9c91b2a011e",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Gemini Recording - ",
+        "text": {
+         "content": "Gemini Recording - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://drive.google.com/file/d/126teXzVrp15XjNSou1veVrUhkQcbXb_U/view",
+        "mention": {
+         "link_preview": {
+          "url": "https://drive.google.com/file/d/126teXzVrp15XjNSou1veVrUhkQcbXb_U/view"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://drive.google.com/file/d/126teXzVrp15XjNSou1veVrUhkQcbXb_U/view",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "37adbe27-5992-80d2-88ff-e8fe894f6eca",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART & Friends Projects - ",
+        "text": {
+         "content": "Winning DART & Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "37adbe27-5992-80a8-b23e-e28b1d844e44",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART Projects - ",
+        "text": {
+         "content": "Winning DART Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "37adbe27-5992-8003-83b9-d036f16c56e2",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "& Friends Projects - ",
+        "text": {
+         "content": "& Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "mention": {
+         "link_mention": {
+          "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+          "icon_url": "https://static.linear.app/client/assets/apple-touch-icon-Ca-Mp0P3.png",
+          "title": "Linear"
+         },
+         "type": "link_mention"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "37adbe27-5992-8045-bafb-da93a69c69fc",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Parking Lot / Deep Dive",
+        "text": {
+         "content": "Parking Lot / Deep Dive",
+         "link": null
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "children": [
+      {
+       "bulleted_list_item": {
+        "color": "default",
+        "rich_text": [
+         {
+          "annotations": {
+           "bold": false,
+           "code": false,
+           "color": "default",
+           "italic": false,
+           "strikethrough": false,
+           "underline": false
+          },
+          "href": null,
+          "plain_text": "Ideas for next steps for NRG - maybe take offline for Josh and Ljube",
+          "text": {
+           "content": "Ideas for next steps for NRG - maybe take offline for Josh and Ljube",
+           "link": null
+          },
+          "type": "text"
+         }
+        ]
+       },
+       "has_children": false,
+       "id": "37adbe27-5992-806f-a1bd-e3e1182a3249",
+       "object": "block",
+       "type": "bulleted_list_item"
+      },
+      {
+       "bulleted_list_item": {
+        "color": "default",
+        "rich_text": [
+         {
+          "annotations": {
+           "bold": false,
+           "code": false,
+           "color": "default",
+           "italic": false,
+           "strikethrough": false,
+           "underline": false
+          },
+          "href": null,
+          "plain_text": "Scenarios meeting exists tomorrow for the first time - weekly - Raphael to lead",
+          "text": {
+           "content": "Scenarios meeting exists tomorrow for the first time - weekly - Raphael to lead",
+           "link": null
+          },
+          "type": "text"
+         }
+        ]
+       },
+       "children": [
+        {
+         "bulleted_list_item": {
+          "color": "default",
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "#topic-scenarios",
+            "text": {
+             "content": "#topic-scenarios",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "has_children": false,
+         "id": "37adbe27-5992-80ec-8ae1-e5442aa7238c",
+         "object": "block",
+         "type": "bulleted_list_item"
+        }
+       ],
+       "has_children": true,
+       "id": "37adbe27-5992-8069-83f6-fd7df1018de8",
+       "object": "block",
+       "type": "bulleted_list_item"
+      }
+     ],
+     "has_children": true,
+     "id": "37adbe27-5992-80dc-ad32-c41a6a367b51",
+     "object": "block",
+     "type": "bulleted_list_item"
+    }
+   ],
+   "has_children": true,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": true,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "mention": {
+       "date": {
+        "end": null,
+        "start": "2026-06-09",
+        "time_zone": null
+       },
+       "type": "date"
+      },
+      "plain_text": "2026-06-09",
+      "type": "mention"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " ",
+      "text": {
+       "content": " ",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "37adbe27-5992-80bf-bea8-c4e46826a4bf",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "children": [
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Gemini Notes - ",
+        "text": {
+         "content": "Gemini Notes - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://docs.google.com/document/d/1JdE6sgSq6hY4TCZ4dPql9nlTMJSSgur7oEr3mE0tO_w/edit?tab=t.za3qgi2ecelt",
+        "mention": {
+         "link_preview": {
+          "url": "https://docs.google.com/document/d/1JdE6sgSq6hY4TCZ4dPql9nlTMJSSgur7oEr3mE0tO_w/edit?tab=t.za3qgi2ecelt"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://docs.google.com/document/d/1JdE6sgSq6hY4TCZ4dPql9nlTMJSSgur7oEr3mE0tO_w/edit?tab=t.za3qgi2ecelt",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "373dbe27-5992-80dd-b154-f959faea3956",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART & Friends Projects - ",
+        "text": {
+         "content": "Winning DART & Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "373dbe27-5992-80f6-9382-d51cebd087e0",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART Projects - ",
+        "text": {
+         "content": "Winning DART Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "373dbe27-5992-80f1-8c73-c74087736a92",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "& Friends Projects - ",
+        "text": {
+         "content": "& Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "mention": {
+         "link_mention": {
+          "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+          "icon_url": "https://static.linear.app/client/assets/apple-touch-icon-Ca-Mp0P3.png",
+          "title": "Linear"
+         },
+         "type": "link_mention"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "373dbe27-5992-802c-9200-fbbb70a76dca",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Parking Lot / Deep Dive",
+        "text": {
+         "content": "Parking Lot / Deep Dive",
+         "link": null
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "children": [
+      {
+       "bulleted_list_item": {
+        "color": "default",
+        "rich_text": [
+         {
+          "annotations": {
+           "bold": false,
+           "code": false,
+           "color": "default",
+           "italic": false,
+           "strikethrough": false,
+           "underline": false
+          },
+          "href": null,
+          "plain_text": "Parallel tracking & awards of multiple strategies",
+          "text": {
+           "content": "Parallel tracking & awards of multiple strategies",
+           "link": null
+          },
+          "type": "text"
+         }
+        ]
+       },
+       "children": [
+        {
+         "bulleted_list_item": {
+          "color": "default",
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Want to be able to track all of the strategies that we have deployed, not just the one that was submitted",
+            "text": {
+             "content": "Want to be able to track all of the strategies that we have deployed, not just the one that was submitted",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "children": [
+          {
+           "bulleted_list_item": {
+            "color": "default",
+            "rich_text": [
+             {
+              "annotations": {
+               "bold": false,
+               "code": false,
+               "color": "default",
+               "italic": false,
+               "strikethrough": false,
+               "underline": false
+              },
+              "href": null,
+              "plain_text": "Architecture ticket to think about this - conversation next week and then figure it out",
+              "text": {
+               "content": "Architecture ticket to think about this - conversation next week and then figure it out",
+               "link": null
+              },
+              "type": "text"
+             }
+            ]
+           },
+           "has_children": false,
+           "id": "373dbe27-5992-80fa-8333-ea20277853f8",
+           "object": "block",
+           "type": "bulleted_list_item"
+          },
+          {
+           "bulleted_list_item": {
+            "color": "default",
+            "rich_text": [
+             {
+              "annotations": {
+               "bold": false,
+               "code": false,
+               "color": "default",
+               "italic": false,
+               "strikethrough": false,
+               "underline": false
+              },
+              "href": null,
+              "plain_text": "Track pnl on strategies, actual awarded, maximally useful",
+              "text": {
+               "content": "Track pnl on strategies, actual awarded, maximally useful",
+               "link": null
+              },
+              "type": "text"
+             }
+            ]
+           },
+           "has_children": false,
+           "id": "373dbe27-5992-8019-bd3e-d8845a9ee451",
+           "object": "block",
+           "type": "bulleted_list_item"
+          },
+          {
+           "bulleted_list_item": {
+            "color": "default",
+            "rich_text": [
+             {
+              "annotations": {
+               "bold": false,
+               "code": false,
+               "color": "default",
+               "italic": false,
+               "strikethrough": false,
+               "underline": false
+              },
+              "href": null,
+              "plain_text": "Somewhat related, but not really with ",
+              "text": {
+               "content": "Somewhat related, but not really with ",
+               "link": null
+              },
+              "type": "text"
+             },
+             {
+              "annotations": {
+               "bold": false,
+               "code": false,
+               "color": "default",
+               "italic": false,
+               "strikethrough": false,
+               "underline": false
+              },
+              "href": "https://linear.app/equilibrium-energy/project/snapshot-order-selection-decisions-58b248945fec/overview",
+              "mention": {
+               "link_preview": {
+                "url": "https://linear.app/equilibrium-energy/project/snapshot-order-selection-decisions-58b248945fec/overview"
+               },
+               "type": "link_preview"
+              },
+              "plain_text": "https://linear.app/equilibrium-energy/project/snapshot-order-selection-decisions-58b248945fec/overview",
+              "type": "mention"
+             },
+             {
+              "annotations": {
+               "bold": false,
+               "code": false,
+               "color": "default",
+               "italic": false,
+               "strikethrough": false,
+               "underline": false
+              },
+              "href": null,
+              "plain_text": " and ",
+              "text": {
+               "content": " and ",
+               "link": null
+              },
+              "type": "text"
+             },
+             {
+              "annotations": {
+               "bold": false,
+               "code": false,
+               "color": "default",
+               "italic": false,
+               "strikethrough": false,
+               "underline": false
+              },
+              "href": "https://linear.app/equilibrium-energy/project/eq-strategy-composite-order-generation-d8565c5daa1a/overview",
+              "mention": {
+               "link_preview": {
+                "url": "https://linear.app/equilibrium-energy/project/eq-strategy-composite-order-generation-d8565c5daa1a/overview"
+               },
+               "type": "link_preview"
+              },
+              "plain_text": "https://linear.app/equilibrium-energy/project/eq-strategy-composite-order-generation-d8565c5daa1a/overview",
+              "type": "mention"
+             }
+            ]
+           },
+           "has_children": false,
+           "id": "373dbe27-5992-809f-b2dd-d06b50669fa7",
+           "object": "block",
+           "type": "bulleted_list_item"
+          }
+         ],
+         "has_children": true,
+         "id": "373dbe27-5992-8065-8bad-e1ccee4700af",
+         "object": "block",
+         "type": "bulleted_list_item"
+        }
+       ],
+       "has_children": true,
+       "id": "373dbe27-5992-80b7-94d2-fbadfddcc90d",
+       "object": "block",
+       "type": "bulleted_list_item"
+      }
+     ],
+     "has_children": true,
+     "id": "373dbe27-5992-8097-8f6c-f291e25b144e",
+     "object": "block",
+     "type": "bulleted_list_item"
+    }
+   ],
+   "has_children": true,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": true,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "mention": {
+       "date": {
+        "end": null,
+        "start": "2026-06-02",
+        "time_zone": null
+       },
+       "type": "date"
+      },
+      "plain_text": "2026-06-02",
+      "type": "mention"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " ",
+      "text": {
+       "content": " ",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "373dbe27-5992-8068-9634-cd492d2b2847",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "children": [
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Gemini Notes - ",
+        "text": {
+         "content": "Gemini Notes - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://docs.google.com/document/d/14rPXWD8D66cyhCEfxKDu_p8jV8VK57CKH9ZM-_LSk_g/edit?usp=sharing",
+        "mention": {
+         "link_preview": {
+          "url": "https://docs.google.com/document/d/14rPXWD8D66cyhCEfxKDu_p8jV8VK57CKH9ZM-_LSk_g/edit?usp=sharing"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://docs.google.com/document/d/14rPXWD8D66cyhCEfxKDu_p8jV8VK57CKH9ZM-_LSk_g/edit?usp=sharing",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "36cdbe27-5992-8010-8329-c82ad4573488",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART & Friends Projects - ",
+        "text": {
+         "content": "Winning DART & Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "36cdbe27-5992-800e-8eb3-d3a58c977190",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART Projects - ",
+        "text": {
+         "content": "Winning DART Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "36cdbe27-5992-803b-9e9f-ebef6c2bcbdc",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "& Friends Projects - ",
+        "text": {
+         "content": "& Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "mention": {
+         "link_mention": {
+          "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+          "icon_url": "https://static.linear.app/client/assets/apple-touch-icon-Ca-Mp0P3.png",
+          "title": "Linear"
+         },
+         "type": "link_mention"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "36cdbe27-5992-80e8-be12-cccc6c1db8c1",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Parking Lot / Deep Dive",
+        "text": {
+         "content": "Parking Lot / Deep Dive",
+         "link": null
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "children": [
+      {
+       "bulleted_list_item": {
+        "color": "default",
+        "rich_text": [
+         {
+          "annotations": {
+           "bold": false,
+           "code": false,
+           "color": "default",
+           "italic": false,
+           "strikethrough": false,
+           "underline": false
+          },
+          "href": null,
+          "plain_text": "Submission to market (Zolt\u00e1n wants to delete things)",
+          "text": {
+           "content": "Submission to market (Zolt\u00e1n wants to delete things)",
+           "link": null
+          },
+          "type": "text"
+         }
+        ]
+       },
+       "children": [
+        {
+         "bulleted_list_item": {
+          "color": "default",
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Trading ourselves - We want to keep the option open, but we do not have any immediate plans to trade on our own behalf",
+            "text": {
+             "content": "Trading ourselves - We want to keep the option open, but we do not have any immediate plans to trade on our own behalf",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "has_children": false,
+         "id": "36cdbe27-5992-80db-863e-e1f88c18ad4c",
+         "object": "block",
+         "type": "bulleted_list_item"
+        },
+        {
+         "bulleted_list_item": {
+          "color": "default",
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "We could possibly delete, but we may need to bring it back fast, we just don\u2019t know",
+            "text": {
+             "content": "We could possibly delete, but we may need to bring it back fast, we just don\u2019t know",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "has_children": false,
+         "id": "36cdbe27-5992-8030-9d59-cc800e2b0640",
+         "object": "block",
+         "type": "bulleted_list_item"
+        },
+        {
+         "bulleted_list_item": {
+          "color": "default",
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Decision = Zolt\u00e1n is going to keep it around for a few months and then revisit to see how rotten it is",
+            "text": {
+             "content": "Decision = Zolt\u00e1n is going to keep it around for a few months and then revisit to see how rotten it is",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "has_children": false,
+         "id": "36cdbe27-5992-80f1-8f54-caff995cff64",
+         "object": "block",
+         "type": "bulleted_list_item"
+        }
+       ],
+       "has_children": true,
+       "id": "36cdbe27-5992-80a8-8641-c125dc0dec7b",
+       "object": "block",
+       "type": "bulleted_list_item"
+      }
+     ],
+     "has_children": true,
+     "id": "36cdbe27-5992-8070-b2f3-c19921392666",
+     "object": "block",
+     "type": "bulleted_list_item"
+    }
+   ],
+   "has_children": true,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": true,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "mention": {
+       "date": {
+        "end": null,
+        "start": "2026-05-26",
+        "time_zone": null
+       },
+       "type": "date"
+      },
+      "plain_text": "2026-05-26",
+      "type": "mention"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " ",
+      "text": {
+       "content": " ",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "36cdbe27-5992-80e6-aba9-f93aed24c0da",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "children": [
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Gemini Notes - ",
+        "text": {
+         "content": "Gemini Notes - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://docs.google.com/document/d/1T0qzeeIRL79d_g5NwQTCj13V4YdQF5U69lnt81Ywcqk/edit?usp=sharing",
+        "mention": {
+         "link_preview": {
+          "url": "https://docs.google.com/document/d/1T0qzeeIRL79d_g5NwQTCj13V4YdQF5U69lnt81Ywcqk/edit?usp=sharing"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://docs.google.com/document/d/1T0qzeeIRL79d_g5NwQTCj13V4YdQF5U69lnt81Ywcqk/edit?usp=sharing",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "365dbe27-5992-801e-a914-ed65e2e5afd0",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART & Friends Projects - ",
+        "text": {
+         "content": "Winning DART & Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "365dbe27-5992-80e4-b06d-d377bac76c3d",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART Projects - ",
+        "text": {
+         "content": "Winning DART Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "365dbe27-5992-800e-810c-e2cb9ecd29fc",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "& Friends Projects - ",
+        "text": {
+         "content": "& Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "mention": {
+         "link_mention": {
+          "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+          "icon_url": "https://static.linear.app/client/assets/apple-touch-icon-Ca-Mp0P3.png",
+          "title": "Linear"
+         },
+         "type": "link_mention"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "365dbe27-5992-80a7-9cd2-f47f4fa2cbdd",
+     "object": "block",
+     "type": "bulleted_list_item"
+    }
+   ],
+   "has_children": true,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": true,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "mention": {
+       "date": {
+        "end": null,
+        "start": "2026-05-19",
+        "time_zone": null
+       },
+       "type": "date"
+      },
+      "plain_text": "2026-05-19",
+      "type": "mention"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " ",
+      "text": {
+       "content": " ",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "365dbe27-5992-8010-858a-fc40c3e29fb5",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "children": [
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Gemini Notes - ",
+        "text": {
+         "content": "Gemini Notes - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://docs.google.com/document/d/1lWfpfjDO4q0aIKubIEcolDFrAkLHwnqadCj1rxyvIW4/edit?tab=t.uoywsec1gxit",
+        "mention": {
+         "link_preview": {
+          "url": "https://docs.google.com/document/d/1lWfpfjDO4q0aIKubIEcolDFrAkLHwnqadCj1rxyvIW4/edit?tab=t.uoywsec1gxit"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://docs.google.com/document/d/1lWfpfjDO4q0aIKubIEcolDFrAkLHwnqadCj1rxyvIW4/edit?tab=t.uoywsec1gxit",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "35edbe27-5992-80e1-8bba-eda1a4eef172",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Gemini recording - ",
+        "text": {
+         "content": "Gemini recording - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://drive.google.com/file/d/1ft-xd0KMVd48xPoE7bHII8evenpS5gUQ/view",
+        "mention": {
+         "link_preview": {
+          "url": "https://drive.google.com/file/d/1ft-xd0KMVd48xPoE7bHII8evenpS5gUQ/view"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://drive.google.com/file/d/1ft-xd0KMVd48xPoE7bHII8evenpS5gUQ/view",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "35edbe27-5992-80dc-b53c-eeaa45701a36",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Coverage for Carolyn - ",
+        "text": {
+         "content": "Coverage for Carolyn - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://app.notion.com/p/34fdbe27599280d896e2e5d4da3791f5",
+        "mention": {
+         "page": {
+          "id": "34fdbe27-5992-80d8-96e2-e5d4da3791f5"
+         },
+         "type": "page"
+        },
+        "plain_text": "Carolyn Coverage Command Center ",
+        "type": "mention"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": " ",
+        "text": {
+         "content": " ",
+         "link": null
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "35edbe27-5992-8061-91cb-f0d339e3392c",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART & Friends Projects - ",
+        "text": {
+         "content": "Winning DART & Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "35edbe27-5992-8083-8cc3-c66990f75a63",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Winning DART Projects - ",
+        "text": {
+         "content": "Winning DART Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "mention": {
+         "link_preview": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "35edbe27-5992-8033-ac7c-fcc7ba6c718c",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "& Friends Projects - ",
+        "text": {
+         "content": "& Friends Projects - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "mention": {
+         "link_mention": {
+          "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+          "icon_url": "https://static.linear.app/client/assets/apple-touch-icon-Ca-Mp0P3.png",
+          "title": "Linear"
+         },
+         "type": "link_mention"
+        },
+        "plain_text": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "35edbe27-5992-80d0-880b-cd867bcc43c3",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Deep Dive / Parking Lot",
+        "text": {
+         "content": "Deep Dive / Parking Lot",
+         "link": null
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "children": [
+      {
+       "bulleted_list_item": {
+        "color": "default",
+        "rich_text": [
+         {
+          "annotations": {
+           "bold": false,
+           "code": false,
+           "color": "default",
+           "italic": false,
+           "strikethrough": false,
+           "underline": false
+          },
+          "href": null,
+          "plain_text": "NRG gate closure",
+          "text": {
+           "content": "NRG gate closure",
+           "link": null
+          },
+          "type": "text"
+         }
+        ]
+       },
+       "has_children": false,
+       "id": "35edbe27-5992-8064-9f16-e9689bd7f07d",
+       "object": "block",
+       "type": "bulleted_list_item"
+      },
+      {
+       "bulleted_list_item": {
+        "color": "default",
+        "rich_text": [
+         {
+          "annotations": {
+           "bold": false,
+           "code": false,
+           "color": "default",
+           "italic": false,
+           "strikethrough": false,
+           "underline": false
+          },
+          "href": null,
+          "plain_text": "Awards data (thanks Andrew & co!) - Cristobal",
+          "text": {
+           "content": "Awards data (thanks Andrew & co!) - Cristobal",
+           "link": null
+          },
+          "type": "text"
+         }
+        ]
+       },
+       "children": [
+        {
+         "bulleted_list_item": {
+          "color": "default",
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Flowing that info into performance page - meeting tomorrow",
+            "text": {
+             "content": "Flowing that info into performance page - meeting tomorrow",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "has_children": false,
+         "id": "35edbe27-5992-80f4-a1e5-f7b9a8e10f3f",
+         "object": "block",
+         "type": "bulleted_list_item"
+        }
+       ],
+       "has_children": true,
+       "id": "35edbe27-5992-807e-9be3-dcc33499fd61",
+       "object": "block",
+       "type": "bulleted_list_item"
+      }
+     ],
+     "has_children": true,
+     "id": "35edbe27-5992-80dc-9aea-dd35ceef2474",
+     "object": "block",
+     "type": "bulleted_list_item"
+    }
+   ],
+   "has_children": true,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": true,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "mention": {
+       "date": {
+        "end": null,
+        "start": "2026-05-12",
+        "time_zone": null
+       },
+       "type": "date"
+      },
+      "plain_text": "2026-05-12",
+      "type": "mention"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " ",
+      "text": {
+       "content": " ",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "35edbe27-5992-8019-87a2-df7a498656c7",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "children": [
+    {
+     "children": [
+      {
+       "children": [
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8081-bc46-ca89285b98cf",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": []
+         },
+         "type": "paragraph"
+        }
+       ],
+       "has_children": true,
+       "id": "359dbe27-5992-8012-8002-c4bd0376158b",
+       "object": "block",
+       "paragraph": {
+        "color": "default",
+        "icon": null,
+        "rich_text": []
+       },
+       "type": "paragraph"
+      },
+      {
+       "children": [
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80ae-9c25-f80e9acf2a1b",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Cool. Notion AI is transcribing this meeting. Okay.",
+            "text": {
+             "content": "Cool. Notion AI is transcribing this meeting. Okay.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80fb-856f-ed84d35833f8",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "So that's, oops. What just happened? What is going on? Oh my god. Okay.",
+            "text": {
+             "content": "So that's, oops. What just happened? What is going on? Oh my god. Okay.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80c5-9a48-f7ed26332f21",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Cool. I pulled up all of the projects in Linear and actually let's just like start with Spock just to like go over all of them um all of the in-flight work but that that is like sort of not winning dart i guess um i mean we we're considering spec trading winning dart but like it's not really um so i sent christobal the message in the spec trading slack let me make sure you're You're in there too. Okay, what you are.",
+            "text": {
+             "content": "Cool. I pulled up all of the projects in Linear and actually let's just like start with Spock just to like go over all of them um all of the in-flight work but that that is like sort of not winning dart i guess um i mean we we're considering spec trading winning dart but like it's not really um so i sent christobal the message in the spec trading slack let me make sure you're You're in there too. Okay, what you are.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8084-8916-ca60499d76ab",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "It's not really much product work left, so I figured the handoff to Cristobal made more sense for this one specifically. It's just coordinating the NRG testing and release. And I feel like it's going to be a... Like I bet what will happen is it ends up being The third week of May, like I bought everything will be ready to go sometime the 18th plus. And I would push for no later, like closing this project out by the 29th. Um, cause that'll be sort of a month after we intended to do everything.",
+            "text": {
+             "content": "It's not really much product work left, so I figured the handoff to Cristobal made more sense for this one specifically. It's just coordinating the NRG testing and release. And I feel like it's going to be a... Like I bet what will happen is it ends up being The third week of May, like I bought everything will be ready to go sometime the 18th plus. And I would push for no later, like closing this project out by the 29th. Um, cause that'll be sort of a month after we intended to do everything.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8080-8963-f2a2c5ee87c3",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "So yeah, this should all wrap up. Did you have any like questions or concerns with this one?",
+            "text": {
+             "content": "So yeah, this should all wrap up. Did you have any like questions or concerns with this one?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8024-89c2-e94c90e27dd9",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "My only thought on communication to NRG, well, just wanted to get your thoughts. Do you think... Like, do we want to show back tests and stuff? I guess my only concern is I was looking at the TSRB and the back tests. We do so much worse with this update.",
+            "text": {
+             "content": "My only thought on communication to NRG, well, just wanted to get your thoughts. Do you think... Like, do we want to show back tests and stuff? I guess my only concern is I was looking at the TSRB and the back tests. We do so much worse with this update.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8002-99b8-c596c3d25834",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I think that we phrase it more as a scale I think we should frame it as like, We've been monitoring the strategy in shadow mode and we added some additional risk mitigation parameters. We want to scale it live so we don't want to go live with the full thing just to ensure that we don't have any big lost days like what we saw on April, whatever that was. I think that's the right framing. What do you think?",
+            "text": {
+             "content": "I think that we phrase it more as a scale I think we should frame it as like, We've been monitoring the strategy in shadow mode and we added some additional risk mitigation parameters. We want to scale it live so we don't want to go live with the full thing just to ensure that we don't have any big lost days like what we saw on April, whatever that was. I think that's the right framing. What do you think?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-805b-86ca-e619eda1fa98",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Okay. So that makes it kind of sound like it's temporary. Is it temporary? Maybe I haven't been.",
+            "text": {
+             "content": "Okay. So that makes it kind of sound like it's temporary. Is it temporary? Maybe I haven't been.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-803f-aeb9-fba0806ccb0d",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "It is. So the goal is actually to scale it to the 250. Um...",
+            "text": {
+             "content": "It is. So the goal is actually to scale it to the 250. Um...",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80d3-99a4-f4a55a870330",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Sorry, I know the spec volume, but there's the-Is the like... whatever spike Oh. Is that temporary? That like penalization of spike risk. I think it is.",
+            "text": {
+             "content": "Sorry, I know the spec volume, but there's the-Is the like... whatever spike Oh. Is that temporary? That like penalization of spike risk. I think it is.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80f7-8073-e8c183f7f9ac",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "And maybe we do need to talk a little bit about that specifically. And that's sort of part of the scaling is like right now we have this, um, like risk mitigation measure in place until we have the next version of our forecast models is I think framing. Yeah. Cause like basically the problem is that we don't, a, we don't trust or we don't have full confidence in our forecast on a day-to-day basis. And then B we're overexposed to the MEC.",
+            "text": {
+             "content": "And maybe we do need to talk a little bit about that specifically. And that's sort of part of the scaling is like right now we have this, um, like risk mitigation measure in place until we have the next version of our forecast models is I think framing. Yeah. Cause like basically the problem is that we don't, a, we don't trust or we don't have full confidence in our forecast on a day-to-day basis. And then B we're overexposed to the MEC.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80ae-9e1e-c31d40e627c3",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "So I would imagine, and honestly, I don't know that this work has kicked off and I should probably, um, Put it in my to-do list. That's endless. Um... But we need a forecast model that just takes that into consideration. Thank you. Okay.",
+            "text": {
+             "content": "So I would imagine, and honestly, I don't know that this work has kicked off and I should probably, um, Put it in my to-do list. That's endless. Um... But we need a forecast model that just takes that into consideration. Thank you. Okay.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8098-af03-cb589fbb2def",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Cool, yeah. So I'll draft that up and also on like what I need to also send them With that is the analysis of April 24th, which is already complete. I just need to synthesize it into the right message. Okay. Cool. So that's back. Then I put this mission control enhancements items so that you could tie because you can't do this on an issue level you can only do it on a project level um but I was going to tie it to NRG to make the innovation services tracking easier, and then we can put the other work under this project.",
+            "text": {
+             "content": "Cool, yeah. So I'll draft that up and also on like what I need to also send them With that is the analysis of April 24th, which is already complete. I just need to synthesize it into the right message. Okay. Cool. So that's back. Then I put this mission control enhancements items so that you could tie because you can't do this on an issue level you can only do it on a project level um but I was going to tie it to NRG to make the innovation services tracking easier, and then we can put the other work under this project.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-802c-95ad-e6c11db5c844",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "There is an innovation services tag too.",
+            "text": {
+             "content": "There is an innovation services tag too.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-808d-a0ed-ea9b59f904fd",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Oh, cool. OK. We can put that on there.",
+            "text": {
+             "content": "Oh, cool. OK. We can put that on there.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8016-a56e-e43e70076c1b",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah. I think. The customer? The customer stuff is not, I like, maybe I didn't go deeply enough, but I didn't like feel like it was that helpful actually. Oh, well. The way I was doing it was, based on the team. So like the delivery, it would be like if it's done by the delivery NRG team. And it has innovation services tag on it.",
+            "text": {
+             "content": "Yeah. I think. The customer? The customer stuff is not, I like, maybe I didn't go deeply enough, but I didn't like feel like it was that helpful actually. Oh, well. The way I was doing it was, based on the team. So like the delivery, it would be like if it's done by the delivery NRG team. And it has innovation services tag on it.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80c1-b592-ff72a7f93f4b",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah, that makes sense. Okay.",
+            "text": {
+             "content": "Yeah, that makes sense. Okay.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8030-a94f-e3896302ed97",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "But I mean, it can't hurt to add it. I just remember having that issue being like, it's sort of not that, it's actually not that robust, the customer tracking stuff. Okay.",
+            "text": {
+             "content": "But I mean, it can't hurt to add it. I just remember having that issue being like, it's sort of not that, it's actually not that robust, the customer tracking stuff. Okay.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80b1-84c0-dbd33e2d4c0c",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Cool. Then let's just use your methods and it'll sort of just be like a process and process, like learning as we go. I guess I should have started this call too by saying like, have I shared, I think I've shared this with people, but let me just share it again just in case. But the roles and responsibilities here are like, Josh is gonna basically, And I guess this sort of changed a little bit. Anyways, don't read too much into the fine print here. But, Cristobal, like, you're going to lead the NRG interface and support the delivery function.",
+            "text": {
+             "content": "Cool. Then let's just use your methods and it'll sort of just be like a process and process, like learning as we go. I guess I should have started this call too by saying like, have I shared, I think I've shared this with people, but let me just share it again just in case. But the roles and responsibilities here are like, Josh is gonna basically, And I guess this sort of changed a little bit. Anyways, don't read too much into the fine print here. But, Cristobal, like, you're going to lead the NRG interface and support the delivery function.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-801b-9572-fe26a8e3814c",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "It's, like, the customer support function of delivery or, like, account management function of delivery that all of us sort of, like, wear the hats of without a full customer support team. Like, hopefully one day we hire those people. But until we do, it's us. Luckily, NRG is the best, so they're easy. Like the one you're already doing this for the most part, but it's like, I'm just going to obviously stop responding to things. And so then you'd be accountable for all those responses and then also accountable to run this meeting. But I'll run it tomorrow. I think it's scheduled for, or I'll run the next iteration and then cool.",
+            "text": {
+             "content": "It's, like, the customer support function of delivery or, like, account management function of delivery that all of us sort of, like, wear the hats of without a full customer support team. Like, hopefully one day we hire those people. But until we do, it's us. Luckily, NRG is the best, so they're easy. Like the one you're already doing this for the most part, but it's like, I'm just going to obviously stop responding to things. And so then you'd be accountable for all those responses and then also accountable to run this meeting. But I'll run it tomorrow. I think it's scheduled for, or I'll run the next iteration and then cool.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80c0-a2c2-fc33c78b6b6e",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "And then Sam is stepping into cover as the PM lead for energy. And so for a lot of the work that's already scoped, I'm just trying to close it off. Hand it to you, Chris Wall, because it's the less interesting side of work. Sorry. Not less interesting, but you know, it's not like the product stuff. And then for the new projects, which we'll go over in just a second, Sam, like there's probably going to be some scoping or design work that I don't get to that will get handed off to you.",
+            "text": {
+             "content": "And then Sam is stepping into cover as the PM lead for energy. And so for a lot of the work that's already scoped, I'm just trying to close it off. Hand it to you, Chris Wall, because it's the less interesting side of work. Sorry. Not less interesting, but you know, it's not like the product stuff. And then for the new projects, which we'll go over in just a second, Sam, like there's probably going to be some scoping or design work that I don't get to that will get handed off to you.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-805f-811c-c8c37ee7b49b",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "So under this one, this is one that has been coming up recently. Like it was part of three different issues over the last few weeks and it's moving the energy order Energy customer submission cut off to 10. The reason we made it nine before was because we didn't want to get confused about what they were actually submitting to the market. I don't know if that's a concern anymore, Cristobal.",
+            "text": {
+             "content": "So under this one, this is one that has been coming up recently. Like it was part of three different issues over the last few weeks and it's moving the energy order Energy customer submission cut off to 10. The reason we made it nine before was because we didn't want to get confused about what they were actually submitting to the market. I don't know if that's a concern anymore, Cristobal.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80f9-8798-d0057e98266d",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I don't think so. I don't think so. It sounds like this is... way worth the benefit of like potential confusion in the future. Exactly. Have you confirmed whether, 'cause like I know for Gunvor, at least like 9:45 is the hard cut up only because it takes 30 TRM like 10 minutes to the grades. Well... It's like, man, if we deliberate of 10, they can't submit it.",
+            "text": {
+             "content": "I don't think so. I don't think so. It sounds like this is... way worth the benefit of like potential confusion in the future. Exactly. Have you confirmed whether, 'cause like I know for Gunvor, at least like 9:45 is the hard cut up only because it takes 30 TRM like 10 minutes to the grades. Well... It's like, man, if we deliberate of 10, they can't submit it.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80ef-b599-f767668d8d77",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Well, someone said I made that comment in a meeting where we were talking about this. I don't remember what meeting and the response from someone, maybe it was Sean or Josh, was... like we can allow them to run things up to 10 Um... Or up to whatever time like the runtime would take. I don't know. It was something like we could air message them like, hey, this isn't going to complete on time. Use last run or something.",
+            "text": {
+             "content": "Well, someone said I made that comment in a meeting where we were talking about this. I don't remember what meeting and the response from someone, maybe it was Sean or Josh, was... like we can allow them to run things up to 10 Um... Or up to whatever time like the runtime would take. I don't know. It was something like we could air message them like, hey, this isn't going to complete on time. Use last run or something.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8078-9775-dd8852c5e2a6",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "But you can still run it.",
+            "text": {
+             "content": "But you can still run it.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-803f-b165-d671e103bac9",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah, no, it's a good point. When I said that out loud, I was like, that doesn't really make sense anymore.",
+            "text": {
+             "content": "Yeah, no, it's a good point. When I said that out loud, I was like, that doesn't really make sense anymore.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8063-a0de-c8e09cea8ed4",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "What's the value of running at that point?",
+            "text": {
+             "content": "What's the value of running at that point?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80e9-b539-d29ff726f079",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "And so I think that's sort of like some of the confirmations you'll have to do is like do a little shaping session with the engineers on exactly like the exact timing and.",
+            "text": {
+             "content": "And so I think that's sort of like some of the confirmations you'll have to do is like do a little shaping session with the engineers on exactly like the exact timing and.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-802b-ba16-c09213f16fab",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "If there's any...",
+            "text": {
+             "content": "If there's any...",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80f3-8d37-e1bcdd6583a4",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "or invoicing repercussions or implications of that. Like I don't want, I want to make sure we know what set of orders they're submitting and it was just easiest for us to say we're taking the latest set as of 9:05 I think is what you guys are using so we just need to be alert",
+            "text": {
+             "content": "or invoicing repercussions or implications of that. Like I don't want, I want to make sure we know what set of orders they're submitting and it was just easiest for us to say we're taking the latest set as of 9:05 I think is what you guys are using so we just need to be alert",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80da-a39f-fd53bfa083aa",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Usually takes a run.",
+            "text": {
+             "content": "Usually takes a run.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8020-bf22-c1e7fe137dc7",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Like three minutes? Yeah, three. A five. Okay.",
+            "text": {
+             "content": "Like three minutes? Yeah, three. A five. Okay.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-806b-89a7-c3fe341e04aa",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Um... Cool.",
+            "text": {
+             "content": "Um... Cool.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8076-88d7-e4f94caee7e8",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Da-da-da-da-da. Moving. So yeah, just I like the I mean, you let's put 945 because it makes sense. And if the engineers want to challenge that they they will. Yeah.",
+            "text": {
+             "content": "Da-da-da-da-da. Moving. So yeah, just I like the I mean, you let's put 945 because it makes sense. And if the engineers want to challenge that they they will. Yeah.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-809b-bccf-cc85a2efee4e",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Um... They're a funny bunch. Yes. Okay, great.",
+            "text": {
+             "content": "Um... They're a funny bunch. Yes. Okay, great.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8065-8814-dd1beebb83be",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "And the one thing that I wanted Lydia for, but she stuck in the last meeting, which was, well, I'm not going to say I'll hold my comment till we stop recording. Um, the one thing I'm not sure is like, I think this is, um, falls into the category. If we go to the prioritization, I always is do that. If we go to my rough way to prioritize requests, I do think this falls into The tier one tier one, which is revenue at risk because it's blocked them from being able to run the strategy or like rerun and then they just didn't submit or something like that.",
+            "text": {
+             "content": "And the one thing that I wanted Lydia for, but she stuck in the last meeting, which was, well, I'm not going to say I'll hold my comment till we stop recording. Um, the one thing I'm not sure is like, I think this is, um, falls into the category. If we go to the prioritization, I always is do that. If we go to my rough way to prioritize requests, I do think this falls into The tier one tier one, which is revenue at risk because it's blocked them from being able to run the strategy or like rerun and then they just didn't submit or something like that.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-800e-b7fe-d4cfc7326626",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Or maybe they like used a stale run and like it wasn't ideal, whatever. So I think that we should Pause on some of the other ones I'm gonna go through and I have this, like my tabs in order of priority and it would probably be like a Sean or a Josh probably Sean who would work on this and I just needed Lydia to help like with the resourcing of things So... I guess I'll assign him for now and It will stay in the backlog.",
+            "text": {
+             "content": "Or maybe they like used a stale run and like it wasn't ideal, whatever. So I think that we should Pause on some of the other ones I'm gonna go through and I have this, like my tabs in order of priority and it would probably be like a Sean or a Josh probably Sean who would work on this and I just needed Lydia to help like with the resourcing of things So... I guess I'll assign him for now and It will stay in the backlog.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8021-948a-cb116a2c9bfb",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Until then. I also think There's the winning dart and friends meeting next Tuesday and that is where Sam, you could raise this project and then it would probably be more of a one on one with Sean to confirm the details and like do the execution piece of the delivery.",
+            "text": {
+             "content": "Until then. I also think There's the winning dart and friends meeting next Tuesday and that is where Sam, you could raise this project and then it would probably be more of a one on one with Sean to confirm the details and like do the execution piece of the delivery.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-804d-a8d0-c01d47b5861b",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I'm confused how... like the NRG stuff and the winning dart stuff, like, interact, 'cause I feel like they're like, parallel There's interweaving. friends or have like Lydia extend it to be winning dart friends and solutions arc I don't know yeah I'm only asking because like Lauren had told me or I'm trying to like protect my calendar a little more now that I'm doing energy and gun board because there's just like a shitload of meetings yeah um and Lauren said that the winning dart meetings were probably not important but She might not have the full context.",
+            "text": {
+             "content": "I'm confused how... like the NRG stuff and the winning dart stuff, like, interact, 'cause I feel like they're like, parallel There's interweaving. friends or have like Lydia extend it to be winning dart friends and solutions arc I don't know yeah I'm only asking because like Lauren had told me or I'm trying to like protect my calendar a little more now that I'm doing energy and gun board because there's just like a shitload of meetings yeah um and Lauren said that the winning dart meetings were probably not important but She might not have the full context.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80c8-aa5c-ce140924b501",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I don't know.",
+            "text": {
+             "content": "I don't know.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8033-b92d-e500e9201882",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "That's sort of the right read-aLike, so you could start your own check-in on like any solutions arc specific stuff, right? Mm-hmm. Yeah, I mean, and honestly, I haven't even gotten there yet. So it's a bit new. These are new. These are things that like we've been sitting on while we got through the really important stuff and now have the time to like make the fast follows.",
+            "text": {
+             "content": "That's sort of the right read-aLike, so you could start your own check-in on like any solutions arc specific stuff, right? Mm-hmm. Yeah, I mean, and honestly, I haven't even gotten there yet. So it's a bit new. These are new. These are things that like we've been sitting on while we got through the really important stuff and now have the time to like make the fast follows.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8065-91b6-e3bb364ea611",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "So I see. I see. Yeah.",
+            "text": {
+             "content": "So I see. I see. Yeah.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80ec-acfd-e9899564c2a5",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Hi Lydia.",
+            "text": {
+             "content": "Hi Lydia.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80e2-92dd-d4b47c9745f3",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Sorry, Google undownloaded. Oh no. I had to like download it. No worries. Anyways, I'm here.",
+            "text": {
+             "content": "Sorry, Google undownloaded. Oh no. I had to like download it. No worries. Anyways, I'm here.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8047-889f-e5f5d9d17be1",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "We've just gone over like, I handed off spec trading to Cristobal and then we were talking about this first new request, which is moving the submission cutoff or like the rerun cutoff. Let me write rerun. Ah.",
+            "text": {
+             "content": "We've just gone over like, I handed off spec trading to Cristobal and then we were talking about this first new request, which is moving the submission cutoff or like the rerun cutoff. Let me write rerun. Ah.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80dd-9ebb-d308ea0e1993",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "You can rerun.",
+            "text": {
+             "content": "You can rerun.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8083-8f42-d5c69c5eec11",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "cut off from 905 to 945. And I think Sam had a good question that like could use your ears, Lydia, which is, how do we want to sort of plan for and I got to set up cadences for the work that is not really winning dart related. So pretty much anything that falls into innovation services and other solutions arc isn't really winning dart. And I have about five projects pulled up here. And Sam is trying to like manage the problem too of balancing his capacity for Gunvern and stepping into NRG, but not overloading with things that are not relevant to those two things, which a lot of the winning dart stuff sort of is.",
+            "text": {
+             "content": "cut off from 905 to 945. And I think Sam had a good question that like could use your ears, Lydia, which is, how do we want to sort of plan for and I got to set up cadences for the work that is not really winning dart related. So pretty much anything that falls into innovation services and other solutions arc isn't really winning dart. And I have about five projects pulled up here. And Sam is trying to like manage the problem too of balancing his capacity for Gunvern and stepping into NRG, but not overloading with things that are not relevant to those two things, which a lot of the winning dart stuff sort of is.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80ee-855c-fbb95946702e",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "So one option we called out was like maybe Sam just sets up his own series for SolutionsArc and Innovation Services that's a smaller group to focus on these projects and check in on them.",
+            "text": {
+             "content": "So one option we called out was like maybe Sam just sets up his own series for SolutionsArc and Innovation Services that's a smaller group to focus on these projects and check in on them.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80b3-9fdb-c74fe3608331",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah, that would be fine, but then it's the same people So like the people that would work on stuff like that is like Yube, Matt Hoffman, Sean Connor, like that crew. And so they can only do so much at a time. So it just is prioritizing their time and just sequencing it, I think. Okay. And they're on winning guard too. They're more, they were doing spec trading and then they were going to go over to, I think, what is it, Carolyn, the next one's like snapshot order. Yeah. That was the highest priority. Yeah.",
+            "text": {
+             "content": "Yeah, that would be fine, but then it's the same people So like the people that would work on stuff like that is like Yube, Matt Hoffman, Sean Connor, like that crew. And so they can only do so much at a time. So it just is prioritizing their time and just sequencing it, I think. Okay. And they're on winning guard too. They're more, they were doing spec trading and then they were going to go over to, I think, what is it, Carolyn, the next one's like snapshot order. Yeah. That was the highest priority. Yeah.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8072-bbfc-ee3f8b39a7a9",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "And then they could go to whatever, like you could just like move them along.",
+            "text": {
+             "content": "And then they could go to whatever, like you could just like move them along.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8009-b4db-c4d6f7d6616c",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah, so they could stop going to winning dart until their support needed from them from the scientists and strategy team and just work on like the next project, which now Lydia for your, for your next project, For your knowledge, I'm moving this to the highest priority to tackle next for Sean's plate before he moves on to another Ticket All review in a second.",
+            "text": {
+             "content": "Yeah, so they could stop going to winning dart until their support needed from them from the scientists and strategy team and just work on like the next project, which now Lydia for your, for your next project, For your knowledge, I'm moving this to the highest priority to tackle next for Sean's plate before he moves on to another Ticket All review in a second.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8062-a2fc-e9cda3ed1ff5",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah, that seems fair. Cool.",
+            "text": {
+             "content": "Yeah, that seems fair. Cool.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80ab-ba89-fe4783db107d",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "So, yeah, Sam, I guess maybe you could also just ask Josh, Yube and Sean where they want to coordinate work. Like it's possible that you guys can do most of it async and just schedule one offs when you need to like have a scoping conversation and align on, you know, a linear ticket like that's an option. Yeah. maybe just feel it out and decide what works best for you. Okay. And also I think Chris, if you disagree with any of the prioritization as we go along, please let me know because you have the same sort of context I do.",
+            "text": {
+             "content": "So, yeah, Sam, I guess maybe you could also just ask Josh, Yube and Sean where they want to coordinate work. Like it's possible that you guys can do most of it async and just schedule one offs when you need to like have a scoping conversation and align on, you know, a linear ticket like that's an option. Yeah. maybe just feel it out and decide what works best for you. Okay. And also I think Chris, if you disagree with any of the prioritization as we go along, please let me know because you have the same sort of context I do.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-802a-af0c-f12763c895c1",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "So the next thing that I have is actually this has to happen a bit before it's the snapshot order selection decisions. To be honest, like I don't This is tech debt that is apparently important that I have not spent the time to understand exactly what it unlocks or doesn't unlock, but trust Josh and Yue that like we need this in order to do the following projects that I'm about to show. So I think they're already good to go on this.",
+            "text": {
+             "content": "So the next thing that I have is actually this has to happen a bit before it's the snapshot order selection decisions. To be honest, like I don't This is tech debt that is apparently important that I have not spent the time to understand exactly what it unlocks or doesn't unlock, but trust Josh and Yue that like we need this in order to do the following projects that I'm about to show. So I think they're already good to go on this.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80dc-86ea-c9b9b038319f",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I think Sam, where you can help is Like time boxing this, preventing scope creep, and just ensuring that we're prioritizing the things that unlock the following projects versus like pure tech deck. You know, tech deck we get to over time, but let's prioritize any bottlenecks or blockers first. But yeah, Josh is already set up and working on this. And yeah, Lydia can also help there. So what's more interesting for product is The strategy-run comparisons and visibility, I think I'm supposed to call it something else.",
+            "text": {
+             "content": "I think Sam, where you can help is Like time boxing this, preventing scope creep, and just ensuring that we're prioritizing the things that unlock the following projects versus like pure tech deck. You know, tech deck we get to over time, but let's prioritize any bottlenecks or blockers first. But yeah, Josh is already set up and working on this. And yeah, Lydia can also help there. So what's more interesting for product is The strategy-run comparisons and visibility, I think I'm supposed to call it something else.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8055-863f-f41d82732370",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Order comparison in viz. Um. So this is the ability to compare multiple reruns against each other in the UI. And at first, Julia was working-we just reviewed some of the information from our discovery session with NRG a few weeks ago. And Julia was going to work on some designs. I think she's maybe ready to review those with us tomorrow. I think she accepted. Let me see. Yeah, she did. Sam, you're out, so I'll record it.",
+            "text": {
+             "content": "Order comparison in viz. Um. So this is the ability to compare multiple reruns against each other in the UI. And at first, Julia was working-we just reviewed some of the information from our discovery session with NRG a few weeks ago. And Julia was going to work on some designs. I think she's maybe ready to review those with us tomorrow. I think she accepted. Let me see. Yeah, she did. Sam, you're out, so I'll record it.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80ca-808e-d9342850af02",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Or actually, I'll just move it to next week so that you can start to be in the loop of that. But from there, you would just iterate on design and... the delivery process to NRG. Any questions on that one? Okay, cool. Hi, Josh. Sorry, we only now have seven minutes, but I did record it. And so far we're smooth sailing. Thank you. This one, I think I'm handing this off to Roman. He and I have a one-on-one on Monday for handoff stuff, but...",
+            "text": {
+             "content": "Or actually, I'll just move it to next week so that you can start to be in the loop of that. But from there, you would just iterate on design and... the delivery process to NRG. Any questions on that one? Okay, cool. Hi, Josh. Sorry, we only now have seven minutes, but I did record it. And so far we're smooth sailing. Thank you. This one, I think I'm handing this off to Roman. He and I have a one-on-one on Monday for handoff stuff, but...",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-806e-9d42-ef5602a8216e",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I think Sam, the two of you should maybe collaborate on like how this project evolves. It's the EQ strategy composite order generation. And it's like a, for now an EQ operator facing system, but I think this evolves into a Gunver product feature. So a system to select mix and run strategy variants per hour or day. And that becomes the strategy. And I think that John's mural board is, How do I make this go away?",
+            "text": {
+             "content": "I think Sam, the two of you should maybe collaborate on like how this project evolves. It's the EQ strategy composite order generation. And it's like a, for now an EQ operator facing system, but I think this evolves into a Gunver product feature. So a system to select mix and run strategy variants per hour or day. And that becomes the strategy. And I think that John's mural board is, How do I make this go away?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8044-99f8-e708786eac05",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Does anybody know?",
+            "text": {
+             "content": "Does anybody know?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8047-9f61-d3a515fe070f",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "The only way you must connect.",
+            "text": {
+             "content": "The only way you must connect.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8033-bc51-e7667bb1e722",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "This was very helpful for actually understanding what the team is looking to do, which is Based on the energy setup today, but to go through that, there's the optimized strategy, the fallback strategy and the baseline strategy. And they want the ability to mix and match hours into like what becomes the pick and mix strategy. So it's not... it's an ensemble strategy, meaning like it is its own variant, not like a combination of multiples, sort of like how it should reflect to NRG.",
+            "text": {
+             "content": "This was very helpful for actually understanding what the team is looking to do, which is Based on the energy setup today, but to go through that, there's the optimized strategy, the fallback strategy and the baseline strategy. And they want the ability to mix and match hours into like what becomes the pick and mix strategy. So it's not... it's an ensemble strategy, meaning like it is its own variant, not like a combination of multiples, sort of like how it should reflect to NRG.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80c6-8cb8-ecc77ed0231c",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "And then the order selector, which is the snapshot stuff is how you would prioritize it if something fails, right? So then after the operators decide on order generator D, when they run the big kahuna, that's like the order generator that big kahuna is running on. Gotcha. So it's quite technically complex. And like the next step is, um,Yeah, it was pretty cool functionality actually.",
+            "text": {
+             "content": "And then the order selector, which is the snapshot stuff is how you would prioritize it if something fails, right? So then after the operators decide on order generator D, when they run the big kahuna, that's like the order generator that big kahuna is running on. Gotcha. So it's quite technically complex. And like the next step is, um,Yeah, it was pretty cool functionality actually.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8023-ad18-c538e3896bfd",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Super cool.",
+            "text": {
+             "content": "Super cool.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80f7-9f8a-d985616f8456",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Sean is going to do the technical design and the product. Like the product role here is one ensuring that The strategy team, who are sort of the users in the SMEs of this have communicated like the experience that they're looking for and then the product person translates that into what we want to build and then Sean designs the technical design for that build. I have the jobs to be done here and I did have cloud make issues.",
+            "text": {
+             "content": "Sean is going to do the technical design and the product. Like the product role here is one ensuring that The strategy team, who are sort of the users in the SMEs of this have communicated like the experience that they're looking for and then the product person translates that into what we want to build and then Sean designs the technical design for that build. I have the jobs to be done here and I did have cloud make issues.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80c4-814f-cc20b1b5ca5f",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I haven't reviewed them or audited them yet. So I need to do that before having Kyle and John review it. And then it would be, I do think we need to have some level of TSRB on. this type of strategy I don't know, like... whatever, I don't even know what to call it, type of strategy. with NRG. And so I think Cristobal would play that role there with the strategy team. And then Sam, I think like, this can evolve into a core feature of our platform.",
+            "text": {
+             "content": "I haven't reviewed them or audited them yet. So I need to do that before having Kyle and John review it. And then it would be, I do think we need to have some level of TSRB on. this type of strategy I don't know, like... whatever, I don't even know what to call it, type of strategy. with NRG. And so I think Cristobal would play that role there with the strategy team. And then Sam, I think like, this can evolve into a core feature of our platform.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8007-afd5-e5c56eb9e39a",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah. Cool.",
+            "text": {
+             "content": "Yeah. Cool.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8005-a123-e716ec450cc6",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah, to that end, Like this one seems quite meaty. It's massive. a lot of other stuff to do. Like, is there, has anyone done any sizing of like the,Not yet. Values to be captured here. I guess it's like a little bit ambiguous 'cause we don't really have other strategies to be selected. Right now, so it's like kind of building towards that.",
+            "text": {
+             "content": "Yeah, to that end, Like this one seems quite meaty. It's massive. a lot of other stuff to do. Like, is there, has anyone done any sizing of like the,Not yet. Values to be captured here. I guess it's like a little bit ambiguous 'cause we don't really have other strategies to be selected. Right now, so it's like kind of building towards that.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80b5-86d8-e48597241209",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Well, I want them to start just with the optimized and baseline. Because right now, when we tell NRG, like, this just happened last week. Like, hey, tomorrow's looking really risky. We just lost $500,000. Like, we don't want to submit a strategy tomorrow. They don't actually use the baseline orders. Like, they don't care about our baseline orders. They then have their desk manage the volume that we manage.",
+            "text": {
+             "content": "Well, I want them to start just with the optimized and baseline. Because right now, when we tell NRG, like, this just happened last week. Like, hey, tomorrow's looking really risky. We just lost $500,000. Like, we don't want to submit a strategy tomorrow. They don't actually use the baseline orders. Like, they don't care about our baseline orders. They then have their desk manage the volume that we manage.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80aa-ae6c-eac35fa33281",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "And so instead of having to be like, oh, like, hours 18 to 19 look so risky that we don't want to operate at all, we would want to just mix the, Optimize strategy with like 18 to 19 with baseline. So I think that's the start simple but I do agree that this could spin out of control really easily and so that's another like thing that you guys should help manage.",
+            "text": {
+             "content": "And so instead of having to be like, oh, like, hours 18 to 19 look so risky that we don't want to operate at all, we would want to just mix the, Optimize strategy with like 18 to 19 with baseline. So I think that's the start simple but I do agree that this could spin out of control really easily and so that's another like thing that you guys should help manage.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80a2-898b-e16cca916763",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "This is why I want Roman. running with this one in the near term largely because I think he's good at keeping stuff efficient enough that it gets done and doesn't run away. And then if it does turn into more, like that's for the internal, like solve this for our internal operators, strategy operators. Yeah. And then if it does turn into more of a product feature, then on application, then yeah, Sam, we can engage with you.",
+            "text": {
+             "content": "This is why I want Roman. running with this one in the near term largely because I think he's good at keeping stuff efficient enough that it gets done and doesn't run away. And then if it does turn into more, like that's for the internal, like solve this for our internal operators, strategy operators. Yeah. And then if it does turn into more of a product feature, then on application, then yeah, Sam, we can engage with you.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8041-ad64-ffccd7b82331",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "And if there's stuff that goes to energy, obviously Cristobal, but I feel like because of the ambiguity, I want Roman to help make sure this doesn't explode.",
+            "text": {
+             "content": "And if there's stuff that goes to energy, obviously Cristobal, but I feel like because of the ambiguity, I want Roman to help make sure this doesn't explode.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8034-a5de-dfac0c060550",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "100%. Yeah, I think it starts with Roman and gets handed off. Or like, I do want Sam and Roman to stay in touch on like what we're building. And just because Sam will have like,Sam's customers or users are our EQ strategist, Kyle, John, Raphael, Steve, and the Gunverse strategists. And so I think like though they make up the user requirements and sort of like personas that we're building this for. But Roman taking the first start simple SOBs totally makes sense.",
+            "text": {
+             "content": "100%. Yeah, I think it starts with Roman and gets handed off. Or like, I do want Sam and Roman to stay in touch on like what we're building. And just because Sam will have like,Sam's customers or users are our EQ strategist, Kyle, John, Raphael, Steve, and the Gunverse strategists. And so I think like though they make up the user requirements and sort of like personas that we're building this for. But Roman taking the first start simple SOBs totally makes sense.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8004-99db-e68fe3e7ff4a",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Oh.",
+            "text": {
+             "content": "Oh.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8094-82e1-f6cbbf094bea",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I can't tell, am I next? Yeah, you are. Can we... Okay, so timing of this. Could we hold off for a few weeks on starting to scope it out until spec trading is done and Josh has done the snapshot order stuff?",
+            "text": {
+             "content": "I can't tell, am I next? Yeah, you are. Can we... Okay, so timing of this. Could we hold off for a few weeks on starting to scope it out until spec trading is done and Josh has done the snapshot order stuff?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80f6-8359-ee8264d55a48",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "The snapshot orders can be in parallel if Sean is driving that, but I agree that holding off, I think the next sprint should be Roman confirming scope and tickets for, and Sean maybe starting to think about the technical design, but then... There should be a project kickoff for this in about a sprint or so.",
+            "text": {
+             "content": "The snapshot orders can be in parallel if Sean is driving that, but I agree that holding off, I think the next sprint should be Roman confirming scope and tickets for, and Sean maybe starting to think about the technical design, but then... There should be a project kickoff for this in about a sprint or so.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80da-bc9e-e9c4fd6937e5",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Can I poke at that a little bit? Because didn't you want Sean to do the timing thing?",
+            "text": {
+             "content": "Can I poke at that a little bit? Because didn't you want Sean to do the timing thing?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8022-8ef0-e82cc4449dd8",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yes, but I feel like that's easy. Like I think that's like...",
+            "text": {
+             "content": "Yes, but I feel like that's easy. Like I think that's like...",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-801a-86c1-ebddea3a93fd",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Three or four doesn't work. Yeah. That's fair, but I think what I'm trying to do is we're As we looked at yesterday, we have too many things going on. Like, could we say just not yet for two weeks? Or will that really hurt us for two weeks?",
+            "text": {
+             "content": "Three or four doesn't work. Yeah. That's fair, but I think what I'm trying to do is we're As we looked at yesterday, we have too many things going on. Like, could we say just not yet for two weeks? Or will that really hurt us for two weeks?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8047-9f52-edcfe692e324",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I don't think it really hurts us. Let's just set the expectations with the strategy team and make sure I'm not missing anything. I can send that note. Ah. What's... Or do you mean who's going to do the other order visit the this?",
+            "text": {
+             "content": "I don't think it really hurts us. Let's just set the expectations with the strategy team and make sure I'm not missing anything. I can send that note. Ah. What's... Or do you mean who's going to do the other order visit the this?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80b2-986a-f0a964378424",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah, sorry. Who's not what?",
+            "text": {
+             "content": "Yeah, sorry. Who's not what?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80d3-bcae-e5f80f88d0bb",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I think that's mostly Matt.",
+            "text": {
+             "content": "I think that's mostly Matt.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8037-bd4a-dfcd3c1c6e9e",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Okay, so they're not. Yeah.",
+            "text": {
+             "content": "Okay, so they're not. Yeah.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80c9-939f-e872bd1562d3",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Okay. I think this is Matt, but it's a good question. We're like, yes, the tabs are in order of how I think the work should be sequenced and therefore it would be on. Lydia to help us like determine who and when and so if Until everything before this tab is done, it's okay to hold off on doing this one. But I will confirm that with the strategy team today. Um... Where did that TSRB thing just go? Did anyone notice I created it and then it disappeared?",
+            "text": {
+             "content": "Okay. I think this is Matt, but it's a good question. We're like, yes, the tabs are in order of how I think the work should be sequenced and therefore it would be on. Lydia to help us like determine who and when and so if Until everything before this tab is done, it's okay to hold off on doing this one. But I will confirm that with the strategy team today. Um... Where did that TSRB thing just go? Did anyone notice I created it and then it disappeared?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8027-bdfa-f90dfef8170d",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "You might've made it an update.",
+            "text": {
+             "content": "You might've made it an update.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-805e-b78c-e027628aeca4",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Oh, did I? Shit.",
+            "text": {
+             "content": "Oh, did I? Shit.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-804e-acbd-c8c6b6ca0be6",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah, you're right, I did. Sorry, I'm not good at this yet. I'm trying to get good at it, but it's taking me some time. The learning curve is curving.",
+            "text": {
+             "content": "Yeah, you're right, I did. Sorry, I'm not good at this yet. I'm trying to get good at it, but it's taking me some time. The learning curve is curving.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8086-b6ba-fb1436e0e25b",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "I have to leave a meeting that I joined rudely late.",
+            "text": {
+             "content": "I have to leave a meeting that I joined rudely late.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-802d-982b-c5b882dee28e",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "No worries, we're continuing to record and I have to hop shortly here too.",
+            "text": {
+             "content": "No worries, we're continuing to record and I have to hop shortly here too.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-803e-90bb-f70d99becff1",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "You said you're going to talk to Roman, Carolyn?",
+            "text": {
+             "content": "You said you're going to talk to Roman, Carolyn?",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8076-a3a5-d41e293e2ddb",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Yeah, I am. All right.",
+            "text": {
+             "content": "Yeah, I am. All right.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-8047-989f-dbee349599ea",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Thanks all.",
+            "text": {
+             "content": "Thanks all.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80fe-874c-ddad5153572d",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "And honestly, that was pretty much everything. Like that was the prioritization and handoff I guess two so two for one um And yeah, I guess we can wrap up unless there's additional questions or comments. I'll figure out where that TSRB thing went. I think that that doesn't necessarily need to be a blocker for anything or like you could start figuring out what a TSRB like that even looks like earlier than later, Cristobal, with the strategy team.",
+            "text": {
+             "content": "And honestly, that was pretty much everything. Like that was the prioritization and handoff I guess two so two for one um And yeah, I guess we can wrap up unless there's additional questions or comments. I'll figure out where that TSRB thing went. I think that that doesn't necessarily need to be a blocker for anything or like you could start figuring out what a TSRB like that even looks like earlier than later, Cristobal, with the strategy team.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        },
+        {
+         "has_children": false,
+         "id": "359dbe27-5992-80f9-946e-f4625f5a1d5e",
+         "object": "block",
+         "paragraph": {
+          "color": "default",
+          "icon": null,
+          "rich_text": [
+           {
+            "annotations": {
+             "bold": false,
+             "code": false,
+             "color": "default",
+             "italic": false,
+             "strikethrough": false,
+             "underline": false
+            },
+            "href": null,
+            "plain_text": "Because it is a new type of approval that we're seeking. I'll find that ticket and assign it to you or whatever I did. Cool. Thank you guys. Talk to you later. Bye. See you.",
+            "text": {
+             "content": "Because it is a new type of approval that we're seeking. I'll find that ticket and assign it to you or whatever I did. Cool. Thank you guys. Talk to you later. Bye. See you.",
+             "link": null
+            },
+            "type": "text"
+           }
+          ]
+         },
+         "type": "paragraph"
+        }
+       ],
+       "has_children": true,
+       "id": "359dbe27-5992-80ee-9826-fbb7dc9d948a",
+       "object": "block",
+       "paragraph": {
+        "color": "default",
+        "icon": null,
+        "rich_text": []
+       },
+       "type": "paragraph"
+      }
+     ],
+     "has_children": true,
+     "id": "359dbe27-5992-8098-a8d0-e3df0d2e5662",
+     "meeting_notes": {
+      "children": {
+       "notes_block_id": "359dbe27-5992-8012-8002-c4bd0376158b",
+       "transcript_block_id": "359dbe27-5992-80ee-9826-fbb7dc9d948a"
+      },
+      "recording": {
+       "end_time": "2026-05-07T21:36:00.000Z",
+       "start_time": "2026-05-07T19:34:00.000Z"
+      },
+      "status": "summary_in_progress",
+      "title": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Meeting ",
+        "text": {
+         "content": "Meeting ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "mention": {
+         "date": {
+          "end": null,
+          "start": "2026-05-07",
+          "time_zone": null
+         },
+         "type": "date"
+        },
+        "plain_text": "2026-05-07",
+        "type": "mention"
+       }
+      ]
+     },
+     "object": "block",
+     "type": "meeting_notes"
+    }
+   ],
+   "has_children": true,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": true,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "mention": {
+       "date": {
+        "end": null,
+        "start": "2026-05-07",
+        "time_zone": null
+       },
+       "type": "date"
+      },
+      "plain_text": "2026-05-07",
+      "type": "mention"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " - NRG product prioritization",
+      "text": {
+       "content": " - NRG product prioritization",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "359dbe27-5992-80e0-9353-e8c13279ccfa",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "children": [
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Gemini Notes - ",
+        "text": {
+         "content": "Gemini Notes - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://docs.google.com/document/d/1Sy8ieZoz4CetNBlR0AzjuhUxcLjyODv32_Txj0g_K_Q/edit?tab=t.4xh8ua7ah5ys",
+        "mention": {
+         "link_preview": {
+          "url": "https://docs.google.com/document/d/1Sy8ieZoz4CetNBlR0AzjuhUxcLjyODv32_Txj0g_K_Q/edit?tab=t.4xh8ua7ah5ys"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://docs.google.com/document/d/1Sy8ieZoz4CetNBlR0AzjuhUxcLjyODv32_Txj0g_K_Q/edit?tab=t.4xh8ua7ah5ys",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "357dbe27-5992-80d4-9dc2-cb57b0ffb24e",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": null,
+        "plain_text": "Recording - ",
+        "text": {
+         "content": "Recording - ",
+         "link": null
+        },
+        "type": "text"
+       },
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://drive.google.com/file/d/1xQm5CrAUxhw-m414DuBW8UhOPa3QveYD/view",
+        "mention": {
+         "link_preview": {
+          "url": "https://drive.google.com/file/d/1xQm5CrAUxhw-m414DuBW8UhOPa3QveYD/view"
+         },
+         "type": "link_preview"
+        },
+        "plain_text": "https://drive.google.com/file/d/1xQm5CrAUxhw-m414DuBW8UhOPa3QveYD/view",
+        "type": "mention"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "357dbe27-5992-80db-a978-da793ea62f2e",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://www.google.com/url?q=https%3A%2F%2Flinear.app%2Fequilibrium-energy%2Fview%2Fwinning-dart-projects-34eade228d76&sa=D&ust=1778430037932518&usg=AOvVaw17tUkuWUS_8w04p2nkMB0f",
+        "plain_text": "Winning DART Linear Projects",
+        "text": {
+         "content": "Winning DART Linear Projects",
+         "link": {
+          "url": "https://www.google.com/url?q=https%3A%2F%2Flinear.app%2Fequilibrium-energy%2Fview%2Fwinning-dart-projects-34eade228d76&sa=D&ust=1778430037932518&usg=AOvVaw17tUkuWUS_8w04p2nkMB0f"
+         }
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "357dbe27-5992-80d8-97be-d7bec0a58a26",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://www.google.com/url?q=https%3A%2F%2Flinear.app%2Fequilibrium-energy%2Fteam%2FDEL%2Fprojects%2Fview%2Fprojects-minus-winning-dart-a92af61791e3&sa=D&ust=1778430037932518&usg=AOvVaw19-ErABlwwyxCxqUjARd1a",
+        "plain_text": "& Friends Linear Projects",
+        "text": {
+         "content": "& Friends Linear Projects",
+         "link": {
+          "url": "https://www.google.com/url?q=https%3A%2F%2Flinear.app%2Fequilibrium-energy%2Fteam%2FDEL%2Fprojects%2Fview%2Fprojects-minus-winning-dart-a92af61791e3&sa=D&ust=1778430037932518&usg=AOvVaw19-ErABlwwyxCxqUjARd1a"
+         }
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "357dbe27-5992-802d-bff9-d3540d72ab44",
+     "object": "block",
+     "type": "bulleted_list_item"
+    }
+   ],
+   "has_children": true,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": true,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "mention": {
+       "date": {
+        "end": null,
+        "start": "2026-05-05",
+        "time_zone": null
+       },
+       "type": "date"
+      },
+      "plain_text": "2026-05-05",
+      "type": "mention"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " ",
+      "text": {
+       "content": " ",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "357dbe27-5992-8097-9890-e699516254ef",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "children": [
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://docs.google.com/presentation/d/1mhLp44Lv8GI-pzDLmDpEXb_2_EbNGeSYWD2TOu2mS7M/edit?slide=id.g3e61a213d06_0_0#slide=id.g3e61a213d06_0_0",
+        "plain_text": "Deck",
+        "text": {
+         "content": "Deck",
+         "link": {
+          "url": "https://docs.google.com/presentation/d/1mhLp44Lv8GI-pzDLmDpEXb_2_EbNGeSYWD2TOu2mS7M/edit?slide=id.g3e61a213d06_0_0#slide=id.g3e61a213d06_0_0"
+         }
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "353dbe27-5992-8006-af69-c9ae6af2ae15",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76",
+        "plain_text": "Winning DART Linear Projects",
+        "text": {
+         "content": "Winning DART Linear Projects",
+         "link": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76"
+         }
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "353dbe27-5992-8056-ab7b-e46016ef05c5",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3",
+        "plain_text": "& Friends Linear Projects",
+        "text": {
+         "content": "& Friends Linear Projects",
+         "link": {
+          "url": "https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3"
+         }
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "353dbe27-5992-80cd-b59f-fe0535fe7680",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://linear.app/equilibrium-energy/view/winning-dart-issues-0e667d703222",
+        "plain_text": "Winning DART Linear Issues",
+        "text": {
+         "content": "Winning DART Linear Issues",
+         "link": {
+          "url": "https://linear.app/equilibrium-energy/view/winning-dart-issues-0e667d703222"
+         }
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "353dbe27-5992-80f6-a109-d3d943c4d5aa",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://docs.google.com/document/d/1V5q_djDWO5d0EDEuiW97S5buq7GoGHq6e4Jbr2l0QWY/edit?tab=t.6sp6peufzpal",
+        "plain_text": "Gemini Notes",
+        "text": {
+         "content": "Gemini Notes",
+         "link": {
+          "url": "https://docs.google.com/document/d/1V5q_djDWO5d0EDEuiW97S5buq7GoGHq6e4Jbr2l0QWY/edit?tab=t.6sp6peufzpal"
+         }
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "353dbe27-5992-8070-afc0-fd10e19f041f",
+     "object": "block",
+     "type": "bulleted_list_item"
+    },
+    {
+     "bulleted_list_item": {
+      "color": "default",
+      "rich_text": [
+       {
+        "annotations": {
+         "bold": false,
+         "code": false,
+         "color": "default",
+         "italic": false,
+         "strikethrough": false,
+         "underline": false
+        },
+        "href": "https://drive.google.com/file/d/1WgrNOyeaTDPej7GnH39d7MAtGPfk2HEW/view?usp=sharing",
+        "plain_text": "Gemini Recording",
+        "text": {
+         "content": "Gemini Recording",
+         "link": {
+          "url": "https://drive.google.com/file/d/1WgrNOyeaTDPej7GnH39d7MAtGPfk2HEW/view?usp=sharing"
+         }
+        },
+        "type": "text"
+       }
+      ]
+     },
+     "has_children": false,
+     "id": "353dbe27-5992-802d-ab57-ce5065aae3f6",
+     "object": "block",
+     "type": "bulleted_list_item"
+    }
+   ],
+   "has_children": true,
+   "heading_2": {
+    "color": "default",
+    "is_toggleable": true,
+    "rich_text": [
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "mention": {
+       "date": {
+        "end": null,
+        "start": "2026-04-28",
+        "time_zone": null
+       },
+       "type": "date"
+      },
+      "plain_text": "2026-04-28",
+      "type": "mention"
+     },
+     {
+      "annotations": {
+       "bold": false,
+       "code": false,
+       "color": "default",
+       "italic": false,
+       "strikethrough": false,
+       "underline": false
+      },
+      "href": null,
+      "plain_text": " ",
+      "text": {
+       "content": " ",
+       "link": null
+      },
+      "type": "text"
+     }
+    ]
+   },
+   "id": "353dbe27-5992-80eb-a4aa-ffc413e9ce03",
+   "object": "block",
+   "type": "heading_2"
+  },
+  {
+   "has_children": false,
+   "id": "353dbe27-5992-80b6-b889-c0b5bff7b69a",
+   "object": "block",
+   "paragraph": {
+    "color": "default",
+    "icon": null,
+    "rich_text": []
+   },
+   "type": "paragraph"
+  }
+ ]
+}
