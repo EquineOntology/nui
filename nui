@@ -1,0 +1,612 @@
+#!/usr/bin/env bash
+#
+# nui — a low-memory TUI for reading Notion.
+#
+# Wraps the official Notion CLI (`ntn`) with fzf (search-as-you-type) and
+# mdcat (markdown rendering). No Electron, no browser: just three small native
+# binaries. Built as a lightweight replacement for the RAM-heavy Notion
+# desktop app when you only need to search and read.
+#
+# Usage:
+#   nui                 # interactive TUI; empty query shows your recents
+#   nui <query>         # start the TUI with an initial query
+#
+# Controls (inside the TUI):
+#   type            search Notion by title (live)
+#   up / down       move selection (preview updates)
+#   enter           open the selected page full-screen in the pager
+#                   (also records it to your recents list)
+#   ctrl-o          open the selected page in the browser
+#   ctrl-y          copy the selected page URL to the clipboard
+#   esc / ctrl-c    quit
+#
+# Recents: pages you open with `enter` are remembered (most-recent first,
+# deduped, capped). With an empty search box, nui shows those recents — handy
+# when you keep returning to the same pages.
+#
+# Requirements: ntn (authenticated via `ntn login`), fzf, mdcat, python3.
+#
+# Note: Notion's public-API search matches page/database *titles* only, and
+# returns just the content your `ntn login` session has been granted access to.
+
+set -euo pipefail
+
+# Per-session render cache so re-highlighting a page doesn't re-hit the network.
+CACHE_DIR="${TMPDIR:-/tmp}/nui-cache"
+CACHE_TTL=600 # seconds
+mkdir -p "$CACHE_DIR"
+
+# Durable state: the recents list (id<TAB>title<TAB>url, newest first).
+STATE_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/nui"
+RECENTS="$STATE_DIR/recents.tsv"
+RECENTS_MAX=50
+
+# Shared fzf theme for the main list and the database row picker. Defined here
+# (not in the launch section) so the _open_db subcommand path — which exits via
+# the dispatch table before that section runs — still sees it.
+FZF_COLORS='fg+:bright-white,bg+:24,hl+:bright-yellow,pointer:bright-cyan'
+
+
+# --- shared helpers -------------------------------------------------------
+
+# Detect the controlling terminal's column width. Under fzf's execute() our
+# stdout is a pipe, so `tput cols` reads nothing — query the real tty first,
+# then fall back to $COLUMNS and tput. Each candidate must be a plausible
+# integer (>0 and <1000) before we accept it; otherwise default to 100.
+_get_tty_width() {
+	local c
+	for c in \
+		"$(stty size </dev/tty 2>/dev/null | awk '{print $2}')" \
+		"${COLUMNS:-}" \
+		"$(tput cols 2>/dev/null)"; do
+		if [[ "$c" =~ ^[0-9]+$ ]] && ((c > 0 && c < 1000)); then
+			echo "$c"
+			return 0
+		fi
+	done
+	echo 100
+}
+
+
+# --- internal subcommands invoked by fzf bindings -------------------------
+
+# Emit "id<TAB>title<TAB>url" rows for fzf.
+# Empty query shows your recents (or, if none yet, Notion's default results).
+#
+# Notion's /v1/search is unreliable: it ranks by an opaque relevance score that
+# buries exact-title matches under noise, returns invalid JSON (unescaped
+# control chars from some pages) that breaks jq, and reports databases as
+# "data_source" objects. So we: (1) ask the API to sort by last edit (recent
+# things you actually touch rank higher than stale noise), (2) parse with
+# Python's lenient JSON reader, (3) dedupe, and (4) re-rank client-side by how
+# well each title matches the query, floating real matches to the top.
+_search() {
+	local query="${1:-}"
+	if [[ -z "$query" && -s "$RECENTS" ]]; then
+		cat "$RECENTS"
+		return
+	fi
+	# Build the request body, escaping backslashes and quotes in the query.
+	local q="${query//\\/\\\\}"
+	q="${q//\"/\\\"}"
+	local body="{\"query\":\"$q\",\"page_size\":100,\"sort\":{\"direction\":\"descending\",\"timestamp\":\"last_edited_time\"}}"
+
+	ntn api /v1/search -d "$body" 2>/dev/null | NUI_QUERY="$query" python3 -c '
+import sys, os, json
+
+query = os.environ.get("NUI_QUERY", "").strip().lower()
+qtokens = query.split()
+
+def relevance(title):
+    """Score how well a page title matches the query (higher = better)."""
+    t = title.lower()
+    if not query:
+        return 0
+    if t == query:
+        return 100
+    if t.startswith(query):
+        return 80
+    if query in t:
+        return 60
+    if qtokens and all(tok in t for tok in qtokens):
+        return 40
+    return sum(5 for tok in qtokens if tok in t)
+
+try:
+    data = json.loads(sys.stdin.buffer.read().decode("utf-8", "replace"), strict=False)
+except Exception:
+    sys.exit(0)
+
+seen, rows = set(), []
+for r in data.get("results", []):
+    rid = r.get("id", "")
+    if not rid or rid in seen:
+        continue
+    seen.add(rid)
+    if r.get("object") in ("database", "data_source"):
+        title = "".join(t.get("plain_text", "") for t in (r.get("title") or []))
+    else:
+        title = ""
+        for v in (r.get("properties") or {}).values():
+            if isinstance(v, dict) and v.get("type") == "title":
+                title = "".join(t.get("plain_text", "") for t in v.get("title", []))
+                break
+    title = "".join(c if c >= " " else " " for c in title).replace("\t", " ").strip() or "(untitled)"
+    url = "".join(c for c in (r.get("url") or "") if c >= " ")
+    kind = "database" if r.get("object") in ("database", "data_source") else "page"
+    rows.append((relevance(title), title, rid, url, kind))
+
+# Sort by relevance desc; ties keep the API order (recency), which Python sort
+# preserves because it is stable.
+rows.sort(key=lambda x: x[0], reverse=True)
+for _, title, rid, url, kind in rows:
+    print("\t".join((rid, title, url, kind)))
+'
+}
+
+# Prepend a page to the recents list, deduping by id and capping the length.
+_record() {
+	local id="$1" title="${2:-}" url="${3:-}" kind="${4:-page}"
+	[[ -z "$id" ]] && return
+	mkdir -p "$STATE_DIR"
+	local tmp
+	tmp="$(mktemp)"
+	printf '%s\t%s\t%s\t%s\n' "$id" "$title" "$url" "$kind" >"$tmp"
+	if [[ -f "$RECENTS" ]]; then
+		# Keep prior entries except this id (awk avoids tab/regex escaping pains).
+		awk -F'\t' -v id="$id" '$1 != id' "$RECENTS" >>"$tmp" 2>/dev/null || true
+	fi
+	head -n "$RECENTS_MAX" "$tmp" >"$RECENTS"
+	rm -f "$tmp"
+}
+
+# Render a database/data source as a markdown table of its entries. Databases
+# aren't "pages", so `ntn pages get` 404s on them; instead we query the data
+# source's rows and lay them out as a table (title column first, then the rest
+# in schema order), formatting each property by its type. mdcat renders the
+# markdown table with borders and wrapping. Exits non-zero if the id is not a
+# queryable data source, so the caller can fall through to an error message.
+_datasource_md() {
+	local id="$1"
+	ntn api "/v1/data_sources/$id/query" -d '{"page_size":100}' 2>/dev/null | python3 -c '
+import sys, json
+
+def cell(v):
+    """Render one property value as a short plain-text string for a table cell."""
+    t = v.get("type")
+    if t in ("title", "rich_text"):
+        return "".join(x.get("plain_text", "") for x in v.get(t, []))
+    if t == "select":
+        return (v.get("select") or {}).get("name", "")
+    if t == "status":
+        return (v.get("status") or {}).get("name", "")
+    if t == "multi_select":
+        return ", ".join(o.get("name", "") for o in v.get("multi_select", []))
+    if t == "people":
+        return ", ".join(p.get("name", "") or "?" for p in v.get("people", []))
+    if t == "date":
+        dd = v.get("date") or {}
+        s = dd.get("start", "") or ""
+        return s + (" → " + dd["end"] if dd.get("end") else "")
+    if t == "number":
+        return "" if v.get("number") is None else str(v["number"])
+    if t == "checkbox":
+        return "x" if v.get("checkbox") else ""
+    if t in ("url", "email", "phone_number"):
+        return v.get(t) or ""
+    if t == "unique_id":
+        uid = v.get("unique_id") or {}
+        pre = uid.get("prefix") or ""
+        return (pre + "-" if pre else "") + str(uid.get("number", ""))
+    return ""
+
+def clean(s, n):
+    s = "".join(c if c >= " " else " " for c in s).replace("|", "/").strip()
+    return (s[: n - 1] + "…") if len(s) > n else s
+
+try:
+    d = json.loads(sys.stdin.buffer.read().decode("utf-8", "replace"), strict=False)
+except Exception:
+    sys.exit(1)
+if "results" not in d:  # an error response (not a data source) — let caller handle
+    sys.exit(1)
+rows = d["results"]
+print("**Database** · %d entries\n" % len(rows))
+if not rows:
+    print("_(no entries)_")
+    sys.exit(0)
+
+# Column order: title column first, then the rest as they appear in the row.
+names = list((rows[0].get("properties") or {}).keys())
+title_name = next((n for n, v in (rows[0].get("properties") or {}).items()
+                   if v.get("type") == "title"), None)
+if title_name:
+    names = [title_name] + [n for n in names if n != title_name]
+
+# Per-column truncation: generous for the title, tighter for the rest.
+width = {n: (48 if n == title_name else 24) for n in names}
+
+print("| " + " | ".join(names) + " |")
+print("|" + "|".join(["---"] * len(names)) + "|")
+for r in rows:
+    props = r.get("properties") or {}
+    print("| " + " | ".join(clean(cell(props.get(n, {})), width[n]) for n in names) + " |")
+'
+}
+
+# Emit one tab-delimited row per database entry, for the interactive row
+# picker (_open_db). Columns are padded into an aligned, table-like display
+# string (field 2, shown by fzf). The first line is a non-selectable header.
+# Fields: id <TAB> aligned-display <TAB> url <TAB> kind <TAB> clean-title
+_db_rows() {
+	local id="$1"
+	ntn api "/v1/data_sources/$id/query" -d '{"page_size":100}' 2>/dev/null | python3 -c '
+import sys, json
+
+def cell(v):
+    t = v.get("type")
+    if t in ("title", "rich_text"):
+        return "".join(x.get("plain_text", "") for x in v.get(t, []))
+    if t == "select":
+        return (v.get("select") or {}).get("name", "")
+    if t == "status":
+        return (v.get("status") or {}).get("name", "")
+    if t == "multi_select":
+        return ", ".join(o.get("name", "") for o in v.get("multi_select", []))
+    if t == "people":
+        return ", ".join(p.get("name", "") or "?" for p in v.get("people", []))
+    if t == "date":
+        dd = v.get("date") or {}
+        return (dd.get("start", "") or "") + (" → " + dd["end"] if dd.get("end") else "")
+    if t == "number":
+        return "" if v.get("number") is None else str(v["number"])
+    if t == "checkbox":
+        return "x" if v.get("checkbox") else ""
+    if t in ("url", "email", "phone_number"):
+        return v.get(t) or ""
+    if t == "unique_id":
+        uid = v.get("unique_id") or {}
+        pre = uid.get("prefix") or ""
+        return (pre + "-" if pre else "") + str(uid.get("number", ""))
+    return ""
+
+def fit(s, w):
+    s = "".join(c if c >= " " else " " for c in s).replace("\t", " ").strip()
+    if len(s) > w:
+        s = s[: w - 1] + "…"
+    return s.ljust(w)
+
+try:
+    d = json.loads(sys.stdin.buffer.read().decode("utf-8", "replace"), strict=False)
+except Exception:
+    sys.exit(0)
+rows = d.get("results", [])
+if not rows:
+    sys.exit(0)
+
+TW, OW = 44, 14  # title width, other-column width
+names = list((rows[0].get("properties") or {}).keys())
+tn = next((n for n, v in (rows[0].get("properties") or {}).items()
+           if v.get("type") == "title"), None)
+others = [n for n in names if n != tn]
+
+def line(title_text, values):
+    return fit(title_text, TW) + "  " + "  ".join(fit(v, OW) for v in values)
+
+# Header row (excluded from selection via fzf --header-lines=1).
+print("\t".join(("HDR", line(tn or "Title", others), "", "hdr", "")))
+for r in rows:
+    p = r.get("properties") or {}
+    title = cell(p.get(tn, {})) if tn else ""
+    disp = line(title, [cell(p.get(n, {})) for n in others])
+    url = "".join(c for c in (r.get("url") or "") if c >= " ")
+    clean = "".join(c if c >= " " else " " for c in title).replace("\t", " ").strip() or "(untitled)"
+    print("\t".join((r.get("id", ""), disp, url, "page", clean)))
+'
+}
+
+# Fetch an item's raw markdown: a page rendered by `ntn`, or — if it isn't a
+# page (e.g. a database 404s) — the data source listed as a table. Writes to
+# stdout; returns non-zero if the item can't be loaded at all.
+_fetch_raw() {
+	local id="$1"
+	ntn pages get "$id" 2>/dev/null && return 0
+	_datasource_md "$id"
+}
+
+# Portable file mtime in epoch seconds: BSD/macOS uses `stat -f %m`, GNU/Linux
+# uses `stat -c %Y`. Echoes 0 when the file is missing so the age arithmetic in
+# callers stays safe under `set -e` (a bare stat failure would leak non-zero).
+_get_mtime() {
+	if [[ "$(uname)" == Darwin ]]; then
+		stat -f %m "$1" 2>/dev/null || echo 0
+	else
+		stat -c %Y "$1" 2>/dev/null || echo 0
+	fi
+}
+
+# Kick off a detached, deduplicated background refresh of a cache entry, so a
+# stale read can revalidate without blocking. An atomic mkdir lock ensures only
+# one refresh per id runs at a time (stale locks older than 60s are stolen).
+_refresh_bg() {
+	local id="$1" cache_file="$2" lock="$2.lock"
+	if ! mkdir "$lock" 2>/dev/null; then
+		local lage
+		lage=$(($(date +%s) - $(_get_mtime "$lock")))
+		((lage < 60)) && return # a fresh refresh is already in flight
+	fi
+	(
+		trap 'rm -rf "$lock"' EXIT
+		local tmp="$cache_file.new.$$"
+		if _fetch_raw "$id" >"$tmp" 2>/dev/null && [[ -s "$tmp" ]]; then
+			mv -f "$tmp" "$cache_file" # atomic swap
+		else
+			rm -f "$tmp"
+		fi
+	) </dev/null >/dev/null 2>&1 &
+	disown 2>/dev/null || true
+}
+
+# Return an item's markdown, caching it (stale-while-revalidate): a cached copy
+# is served immediately — even if past CACHE_TTL — and an expired copy triggers
+# a background refresh so the next read is fresh. Only a cold miss blocks.
+_page_md() {
+	local id="$1"
+	local cache_file="$CACHE_DIR/${id//[^a-zA-Z0-9]/_}.md"
+	if [[ -f "$cache_file" ]]; then
+		cat "$cache_file"
+		local age
+		age=$(($(date +%s) - $(_get_mtime "$cache_file")))
+		((age >= CACHE_TTL)) && _refresh_bg "$id" "$cache_file"
+		return 0 # never inherit the test's exit status (would trip `set -e` in callers)
+	fi
+	# Cold miss: nothing to serve, so fetch synchronously.
+	local tmp="$cache_file.new.$$"
+	if _fetch_raw "$id" >"$tmp" 2>/dev/null && [[ -s "$tmp" ]]; then
+		mv -f "$tmp" "$cache_file"
+		cat "$cache_file"
+	else
+		rm -f "$tmp"
+		echo "_(couldn't load this item — try \`ntn doctor\`)_"
+	fi
+}
+
+# Clean ntn's Notion-flavored markdown (on stdin) into plain CommonMark that a
+# standard renderer can handle. ntn emits XML-ish block/inline tags (<callout>,
+# <database>, <span>, <table_of_contents/>, …), heading attribute annotations
+# like {toggle="true"}, and indents nesting with tabs (which CommonMark reads as
+# code blocks). We strip the tags (keeping inner text), drop the annotations,
+# convert leading tabs to spaces, and surface the leading YAML front matter
+# (page properties) as a visible code block.
+_clean_md() {
+	python3 -c '
+import sys, re
+
+lines = sys.stdin.read().split("\n")
+out, i = [], 0
+
+# Leading front matter (--- ... ---) -> a labeled YAML block so properties show.
+if lines and lines[0].strip() == "---":
+    j = 1
+    while j < len(lines) and lines[j].strip() != "---":
+        j += 1
+    if j < len(lines):
+        out += ["**Page properties**", "", "```yaml"] + lines[1:j] + ["```", ""]
+        i = j + 1
+
+TAG = re.compile(r"</?[a-zA-Z_][\w-]*(?:\s[^>]*?)?/?>")  # Notion block/inline tags
+ATTR = re.compile(r"\s*\{[^{}]*\}\s*$")                  # trailing {toggle="true"} etc.
+
+in_fence = False
+for ln in lines[i:]:
+    if ln.lstrip().startswith("```"):
+        in_fence = not in_fence
+        out.append(ln)
+        continue
+    if in_fence:
+        out.append(ln)
+        continue
+    n = len(ln) - len(ln.lstrip("\t"))   # leading tabs -> 2 spaces (else read as code)
+    ln = "  " * n + ln[n:]
+    ln = ATTR.sub("", TAG.sub("", ln))
+    out.append("" if ln.strip() == "" else ln)
+
+sys.stdout.write("\n".join(out))
+'
+}
+
+# Indent each section's content by its heading depth, so the document's logical
+# nesting reads visually (terminals can't enlarge heading fonts). mdcat marks a
+# level-N heading with N leading "┄" glyphs, which we count to drive indentation:
+# the heading sits at (level-1)*INDENT and its body at level*INDENT, capped at
+# RESERVE columns (which _render holds back from mdcat's wrap width so indented
+# lines still fit). The original ANSI line is re-emitted verbatim, just shifted.
+#
+# Side channel: when NUI_OUTLINE_FILE is set, the heading outline (level, clean
+# text, 0-indexed output line) is also written there as JSON — first-class data
+# a viewport-owning reader needs for sticky headings, jump-to-heading, and a
+# command palette. The stdout body is byte-identical whether or not an outline
+# is requested, so `less` and the fzf preview pane are unaffected.
+_indent_by_heading() {
+	python3 -c '
+import sys, re, os, json
+SGR = re.compile(r"\x1b\[[0-9;]*m")
+INDENT, RESERVE = 2, 8
+body = 0
+out = []
+outline = []
+for raw in sys.stdin.read().split("\n"):
+    vis = SGR.sub("", raw)
+    level = len(vis) - len(vis.lstrip("┄"))
+    if level:
+        # `line` is the index into out[] — the OUTPUT row a viewport seeks to.
+        outline.append({"level": level, "text": vis.lstrip("┄").strip(), "line": len(out)})
+        out.append(" " * min((level - 1) * INDENT, RESERVE) + raw)
+        body = min(level * INDENT, RESERVE)
+    elif vis.strip():
+        out.append(" " * body + raw)
+    else:
+        out.append(raw)  # blank line: no trailing indent
+sys.stdout.write("\n".join(out))
+
+outfile = os.environ.get("NUI_OUTLINE_FILE")
+if outfile:
+    with open(outfile, "w") as f:
+        json.dump(outline, f)
+'
+}
+
+# Render markdown (on stdin) to styled ANSI, wrapped to `cols` columns. Uses
+# mdcat for true rendering — real headings/bold/italic and rendered tables, with
+# no visible markdown markers (the `#`/`**` source markers are consumed, not just
+# recolored). --ansi: plain ANSI, no terminal-specific escapes; --local: never fetch remote
+# images. OSC-8 hyperlinks are kept so links stay clickable/openable in the
+# reader (less 668 understands them; -R passes them to the terminal).
+# Content is indented by heading depth unless NUI_NEST=0.
+_render() {
+	local cols="$1"
+	if [[ "${NUI_NEST:-1}" == 0 ]]; then
+		mdcat --ansi --local --columns "$cols" 2>/dev/null
+		return
+	fi
+	# Hold back RESERVE (8) columns from mdcat's wrap so indented lines still fit.
+	local rw=$((cols > 12 ? cols - 8 : cols))
+	mdcat --ansi --local --columns "$rw" 2>/dev/null | _indent_by_heading
+}
+
+# Strip OSC-8 hyperlink escapes. Used where they'd show as raw codes rather than
+# render as links — notably fzf's preview pane.
+_strip_osc8() {
+	python3 -c 'import sys, re; sys.stdout.write(re.sub(r"\x1b\]8;;[^\x1b]*\x1b\\", "", sys.stdin.read()))'
+}
+
+# The shared render seam: fetch an item and emit its rendered ANSI body. This is
+# the single pipeline both the preview pane and the full-screen reader run, and
+# the one entry point a future viewport-owning reader will call instead of
+# duplicating the pipe. When the caller exports NUI_OUTLINE_FILE, _render (via
+# _indent_by_heading) also drops a heading-outline JSON sidecar there; today's
+# callers leave it unset, so there is zero extra work on the existing paths.
+_render_document() {
+	local id="$1" width="${2:-80}"
+	_page_md "$id" | _clean_md | _render "$width"
+}
+
+# Render a page into the fzf preview pane (sized to the pane width). Links are
+# flattened here since the preview pane shows OSC-8 sequences as raw text.
+_preview() {
+	local id="$1" width="${2:-80}"
+	_render_document "$id" "$width" | _strip_osc8
+}
+
+# Open an item and record it to recents. Pages render full-screen in `less`
+# (with a statusbar: title, nav hints, scroll %); databases open as an
+# interactive row-by-row picker instead.
+_open() {
+	local id="$1" title="${2:-}" url="${3:-}"
+
+	# Decide page vs database from the actual fetched content, not from a passed
+	# hint: recents entries written before the type field existed would otherwise
+	# misroute a database into the pager. _page_md is cached, so this is cheap.
+	local md
+	md="$(_page_md "$id")"
+	if [[ "$md" == "**Database** ·"* ]]; then
+		_record "$id" "$title" "$url" "database"
+		_open_db "$id" "$title"
+		return
+	fi
+	_record "$id" "$title" "$url" "page"
+
+	# Render to the full terminal width. _get_tty_width handles the fzf-execute()
+	# case where our stdout is a pipe and `tput cols` reads nothing.
+	local cols width
+	cols=$(_get_tty_width)
+	width=$((cols > 6 ? cols - 2 : cols))
+
+	# Escape characters that are special inside a less prompt string.
+	local bar="${title//%/\\%}"
+	bar="${bar//\?/\\?}"
+
+	# -Pm sets the medium prompt (the bottom statusbar shown while paging).
+	# %pb is the scroll position as a percentage; \% prints a literal '%'.
+	# _render_document re-fetches via the SWR cache (a cheap hit — $md above was
+	# only needed to detect page-vs-database) and runs the shared render pipe.
+	_render_document "$id" "$width" |
+		less -R "-Pm ${bar}    ↑↓/space: scroll · /: search · q: back to list    %pb\% "
+}
+
+# Open a database as an interactive row picker: each entry is one line (arrow
+# keys move row-by-row), the preview shows the highlighted row's page, and
+# enter opens that page. The first input line is the column header.
+_open_db() {
+	local id="$1" title="${2:-}" self="$0"
+	_db_rows "$id" | fzf \
+		--ansi \
+		--layout=reverse \
+		--delimiter='\t' \
+		--with-nth=2 \
+		--header-lines=1 \
+		--highlight-line \
+		--pointer='▶' \
+		--color="$FZF_COLORS" \
+		--prompt='row ❯ ' \
+		--footer="${title}    ·   enter: open · ctrl-o: browser · ctrl-y: copy url · esc: back" \
+		--footer-border=top \
+		--bind="enter:execute($self _open {1} {5} {3} {4})" \
+		--bind="ctrl-o:execute-silent(open {3})" \
+		--bind="ctrl-y:execute-silent(printf %s {3} | pbcopy)" \
+		--preview="$self _preview {1} \${FZF_PREVIEW_COLUMNS:-80}" \
+		--preview-window='right,55%,wrap'
+}
+
+case "${1:-}" in
+_search) shift; _search "$@"; exit 0 ;;
+_preview) shift; _preview "$@"; exit 0 ;;
+_open) shift; _open "$@"; exit 0 ;;
+_open_db) shift; _open_db "$@"; exit 0 ;;
+_db_rows) shift; _db_rows "$@"; exit 0 ;;
+esac
+
+# --- preflight ------------------------------------------------------------
+
+for bin in ntn fzf mdcat python3; do
+	command -v "$bin" >/dev/null 2>&1 || {
+		echo "nui: missing dependency '$bin'" >&2
+		exit 1
+	}
+done
+
+if ! ntn whoami >/dev/null 2>&1; then
+	echo "nui: not logged in. Run: ntn login" >&2
+	exit 1
+fi
+
+# --- launch the TUI -------------------------------------------------------
+
+self="$0"
+initial_query="${*:-}"
+
+# fzf drives everything: `change`/`start` reload the result list from Notion
+# (or recents when empty), the preview renders the highlighted page, and key
+# bindings open/copy it. Opening a page records it to recents.
+fzf \
+	--ansi \
+	--layout=reverse \
+	--delimiter='\t' \
+	--with-nth=2 \
+	--highlight-line \
+	--pointer='▶' \
+	--color='fg+:bright-white,bg+:24,hl+:bright-yellow,pointer:bright-cyan' \
+	--query="$initial_query" \
+	--prompt='notion ❯ ' \
+	--footer=' (no page selected)    ·   enter: read · ctrl-o: browser · ctrl-y: copy url · ctrl-f/ctrl-b: scroll · empty query = recents' \
+	--footer-border=top \
+	--bind="start:reload($self _search {q})" \
+	--bind="change:reload(sleep 0.2; $self _search {q})" \
+	--bind="focus:change-footer( {2}    ·   enter: read · ctrl-o: browser · ctrl-y: copy url · ctrl-f/ctrl-b: scroll · empty query = recents )" \
+	--bind="enter:execute($self _open {1} {2} {3} {4})" \
+	--bind="ctrl-o:execute-silent(open {3})" \
+	--bind="ctrl-y:execute-silent(printf %s {3} | pbcopy)" \
+	--bind="ctrl-f:preview-page-down,ctrl-b:preview-page-up" \
+	--preview="$self _preview {1} \${FZF_PREVIEW_COLUMNS:-80}" \
+	--preview-window='right,60%,wrap' \
+	--disabled
