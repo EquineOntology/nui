@@ -12,10 +12,14 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"strings"
 
 	"github.com/EQuineOntology/nui/internal/doc"
 	"github.com/EQuineOntology/nui/internal/notion"
 	"github.com/EQuineOntology/nui/internal/state"
+	"github.com/EQuineOntology/nui/internal/tui"
+
+	"github.com/mattn/go-isatty"
 )
 
 const usage = `nui — a low-memory terminal reader for Notion
@@ -91,15 +95,22 @@ func cmdWhoAmI(ctx context.Context) int {
 	return 0
 }
 
-// cmdRead is the future Go reader entry point (G2). Dispatch routes here now so
-// later phases only fill in the body; today it is an honest stub.
+// cmdRead launches the TUI straight into reader mode for one page id (SPEC §8,
+// G2 deliverable 10). Handy for testing + scripting; it shares the same app
+// model as the bare search list.
 func cmdRead(_ context.Context, args []string) int {
 	if len(args) == 0 {
 		fmt.Fprintln(os.Stderr, "nui read: missing page id\n\nusage: nui read <id>")
 		return 2
 	}
-	fmt.Fprintf(os.Stderr, "nui read %s: not yet implemented (G2)\n", args[0])
-	return 1
+	if !ttyOK() {
+		return 1
+	}
+	src := tui.NewClientSource(notion.NewClient())
+	if err := tui.Run(src, "", args[0]); err != nil {
+		return fail(err)
+	}
+	return 0
 }
 
 // cmdDump implements `nui dump <id> [--json]` (SPEC G1 deliverable 6). With
@@ -201,11 +212,34 @@ func inventoryIDs(args []string) ([]string, error) {
 	return state.IDs(recents), nil
 }
 
-// cmdSearch is the future interactive list (G4, currently fronted by the bash
-// nui). Dispatch routes here now; today it is an honest stub.
-func cmdSearch(_ context.Context, _ []string) int {
-	fmt.Fprintln(os.Stderr, "nui search: not yet implemented (G4)")
-	return 1
+// cmdSearch launches the self-contained TUI in list mode (SPEC §8, G2
+// deliverable 10): bare `nui` shows recents; `nui <query>` pre-seeds the search
+// box. The args (if any) are joined into the seed query so `nui foo bar` searches
+// "foo bar" without the user quoting.
+func cmdSearch(_ context.Context, args []string) int {
+	if !ttyOK() {
+		return 1
+	}
+	seed := strings.Join(args, " ")
+	src := tui.NewClientSource(notion.NewClient())
+	if err := tui.Run(src, seed, ""); err != nil {
+		return fail(err)
+	}
+	return 0
+}
+
+// ttyOK reports whether stdout is a terminal, printing an actionable message and
+// returning false when it is not. The Bubble Tea TUI needs a TTY to draw; without
+// one (piped/redirected stdout) it would emit control-sequence garbage, so we
+// refuse cleanly rather than corrupt the output (SPEC: never garbage/panic on a
+// missing TTY).
+func ttyOK() bool {
+	if isatty.IsTerminal(os.Stdout.Fd()) || isatty.IsCygwinTerminal(os.Stdout.Fd()) {
+		return true
+	}
+	fmt.Fprintln(os.Stderr, "nui: the interactive reader needs a terminal (stdout is not a TTY).")
+	fmt.Fprintln(os.Stderr, "     use `nui dump <id>` for non-interactive output.")
+	return false
 }
 
 // fail prints a typed notion error as an actionable, no-stack-trace message and

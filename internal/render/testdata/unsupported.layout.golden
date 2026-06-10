@@ -1,0 +1,1141 @@
+lines=508 outline=9 anchors=160
+=== OUTLINE ===
+  L0 h1 "📓 Winning DART Meeting Notes"
+  L5 h2 "2026-06-09 "
+  L27 h2 "2026-06-02 "
+  L52 h2 "2026-05-26 "
+  L73 h2 "2026-05-19 "
+  L86 h2 "2026-05-12 "
+  L107 h2 "2026-05-07 - NRG product prioritization"
+  L491 h2 "2026-05-05 "
+  L500 h2 "2026-04-28 "
+=== LINES ===
+[000] indent=0 block=353dbe27 H1
+      "📓 "
+      "Winning DART Meeting Notes" {b}
+[001] indent=0 block=353dbe27
+      "Document Type: " {b fg=#9b9a97}
+      "Meeting Notes"
+[002] indent=0 block=353dbe27
+      "Status: " {b fg=#9b9a97}
+      "In progress"
+[003] indent=0 block=353dbe27
+      "────────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+[004] indent=0 block=353dbe27
+      "[unsupported block]" {i fg=#9b9a97}
+[005] indent=0 block=37adbe27 H2
+      "2026-06-09 " {b}
+[006] indent=2 block=37adbe27
+      "◦ "
+      "Gemini Notes - "
+[007] indent=2 block=37adbe27
+      "  "
+      "https://docs.google.com/document/d/1JF7Up2fEl0fJEMB91dm8v46G4TIJdlIX" {href=https://docs.google.com/document/d/1JF7Up2fEl0fJEMB91dm8v46G4TIJdlIXSTdCNfhWYyE/edit?tab=t.nyqt7xbdf5m2}
+[008] indent=2 block=37adbe27
+      "  "
+      "STdCNfhWYyE/edit?tab=t.nyqt7xbdf5m2" {href=https://docs.google.com/document/d/1JF7Up2fEl0fJEMB91dm8v46G4TIJdlIXSTdCNfhWYyE/edit?tab=t.nyqt7xbdf5m2}
+[009] indent=2 block=37adbe27
+      "◦ "
+      "Gemini Recording - "
+[010] indent=2 block=37adbe27
+      "  "
+      "https://drive.google.com/file/d/126teXzVrp15XjNSou1veVrUhkQcbXb_U/vi" {href=https://drive.google.com/file/d/126teXzVrp15XjNSou1veVrUhkQcbXb_U/view}
+[011] indent=2 block=37adbe27
+      "  "
+      "ew" {href=https://drive.google.com/file/d/126teXzVrp15XjNSou1veVrUhkQcbXb_U/view}
+[012] indent=2 block=37adbe27
+      "◦ "
+      "Winning DART & Friends Projects - "
+[013] indent=2 block=37adbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[014] indent=2 block=37adbe27
+      "  "
+      "projects-1cdbddafbb88" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[015] indent=2 block=37adbe27
+      "◦ "
+      "Winning DART Projects - "
+[016] indent=2 block=37adbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-projects-34e" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[017] indent=2 block=37adbe27
+      "  "
+      "ade228d76" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[018] indent=2 block=37adbe27
+      "◦ "
+      "& Friends Projects - "
+[019] indent=2 block=37adbe27
+      "  "
+      "https://linear.app/equilibrium-energy/team/DEL/projects/view/project" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[020] indent=2 block=37adbe27
+      "  "
+      "s-minus-winning-dart-a92af61791e3" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[021] indent=2 block=37adbe27
+      "◦ "
+      "Parking Lot / Deep Dive"
+[022] indent=4 block=37adbe27
+      "▪ "
+      "Ideas for next steps for NRG - maybe take offline for Josh and "
+[023] indent=4 block=37adbe27
+      "  "
+      "Ljube"
+[024] indent=4 block=37adbe27
+      "▪ "
+      "Scenarios meeting exists tomorrow for the first time - weekly - "
+[025] indent=4 block=37adbe27
+      "  "
+      "Raphael to lead"
+[026] indent=6 block=37adbe27
+      "• "
+      "#topic-scenarios"
+[027] indent=0 block=373dbe27 H2
+      "2026-06-02 " {b}
+[028] indent=2 block=373dbe27
+      "◦ "
+      "Gemini Notes - "
+[029] indent=2 block=373dbe27
+      "  "
+      "https://docs.google.com/document/d/1JdE6sgSq6hY4TCZ4dPql9nlTMJSSgur7" {href=https://docs.google.com/document/d/1JdE6sgSq6hY4TCZ4dPql9nlTMJSSgur7oEr3mE0tO_w/edit?tab=t.za3qgi2ecelt}
+[030] indent=2 block=373dbe27
+      "  "
+      "oEr3mE0tO_w/edit?tab=t.za3qgi2ecelt" {href=https://docs.google.com/document/d/1JdE6sgSq6hY4TCZ4dPql9nlTMJSSgur7oEr3mE0tO_w/edit?tab=t.za3qgi2ecelt}
+[031] indent=2 block=373dbe27
+      "◦ "
+      "Winning DART & Friends Projects - "
+[032] indent=2 block=373dbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[033] indent=2 block=373dbe27
+      "  "
+      "projects-1cdbddafbb88" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[034] indent=2 block=373dbe27
+      "◦ "
+      "Winning DART Projects - "
+[035] indent=2 block=373dbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-projects-34e" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[036] indent=2 block=373dbe27
+      "  "
+      "ade228d76" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[037] indent=2 block=373dbe27
+      "◦ "
+      "& Friends Projects - "
+[038] indent=2 block=373dbe27
+      "  "
+      "https://linear.app/equilibrium-energy/team/DEL/projects/view/project" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[039] indent=2 block=373dbe27
+      "  "
+      "s-minus-winning-dart-a92af61791e3" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[040] indent=2 block=373dbe27
+      "◦ "
+      "Parking Lot / Deep Dive"
+[041] indent=4 block=373dbe27
+      "▪ "
+      "Parallel tracking & awards of multiple strategies"
+[042] indent=6 block=373dbe27
+      "• "
+      "Want to be able to track all of the strategies that we have "
+[043] indent=6 block=373dbe27
+      "  "
+      "deployed, not just the one that was submitted"
+[044] indent=8 block=373dbe27
+      "◦ "
+      "Architecture ticket to think about this - conversation next "
+[045] indent=8 block=373dbe27
+      "  "
+      "week and then figure it out"
+[046] indent=8 block=373dbe27
+      "◦ "
+      "Track pnl on strategies, actual awarded, maximally useful"
+[047] indent=8 block=373dbe27
+      "◦ "
+      "Somewhat related, but not really with "
+[048] indent=8 block=373dbe27
+      "  "
+      "https://linear.app/equilibrium-energy/project/snapshot-order-s" {href=https://linear.app/equilibrium-energy/project/snapshot-order-selection-decisions-58b248945fec/overview}
+[049] indent=8 block=373dbe27
+      "  "
+      "election-decisions-58b248945fec/overview" {href=https://linear.app/equilibrium-energy/project/snapshot-order-selection-decisions-58b248945fec/overview}
+      " and "
+[050] indent=8 block=373dbe27
+      "  "
+      "https://linear.app/equilibrium-energy/project/eq-strategy-comp" {href=https://linear.app/equilibrium-energy/project/eq-strategy-composite-order-generation-d8565c5daa1a/overview}
+[051] indent=8 block=373dbe27
+      "  "
+      "osite-order-generation-d8565c5daa1a/overview" {href=https://linear.app/equilibrium-energy/project/eq-strategy-composite-order-generation-d8565c5daa1a/overview}
+[052] indent=0 block=36cdbe27 H2
+      "2026-05-26 " {b}
+[053] indent=2 block=36cdbe27
+      "◦ "
+      "Gemini Notes - "
+[054] indent=2 block=36cdbe27
+      "  "
+      "https://docs.google.com/document/d/14rPXWD8D66cyhCEfxKDu_p8jV8VK57CK" {href=https://docs.google.com/document/d/14rPXWD8D66cyhCEfxKDu_p8jV8VK57CKH9ZM-_LSk_g/edit?usp=sharing}
+[055] indent=2 block=36cdbe27
+      "  "
+      "H9ZM-_LSk_g/edit?usp=sharing" {href=https://docs.google.com/document/d/14rPXWD8D66cyhCEfxKDu_p8jV8VK57CKH9ZM-_LSk_g/edit?usp=sharing}
+[056] indent=2 block=36cdbe27
+      "◦ "
+      "Winning DART & Friends Projects - "
+[057] indent=2 block=36cdbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[058] indent=2 block=36cdbe27
+      "  "
+      "projects-1cdbddafbb88" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[059] indent=2 block=36cdbe27
+      "◦ "
+      "Winning DART Projects - "
+[060] indent=2 block=36cdbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-projects-34e" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[061] indent=2 block=36cdbe27
+      "  "
+      "ade228d76" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[062] indent=2 block=36cdbe27
+      "◦ "
+      "& Friends Projects - "
+[063] indent=2 block=36cdbe27
+      "  "
+      "https://linear.app/equilibrium-energy/team/DEL/projects/view/project" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[064] indent=2 block=36cdbe27
+      "  "
+      "s-minus-winning-dart-a92af61791e3" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[065] indent=2 block=36cdbe27
+      "◦ "
+      "Parking Lot / Deep Dive"
+[066] indent=4 block=36cdbe27
+      "▪ "
+      "Submission to market (Zoltán wants to delete things)"
+[067] indent=6 block=36cdbe27
+      "• "
+      "Trading ourselves - We want to keep the option open, but we do "
+[068] indent=6 block=36cdbe27
+      "  "
+      "not have any immediate plans to trade on our own behalf"
+[069] indent=6 block=36cdbe27
+      "• "
+      "We could possibly delete, but we may need to bring it back fast,"
+[070] indent=6 block=36cdbe27
+      "  "
+      "we just don’t know"
+[071] indent=6 block=36cdbe27
+      "• "
+      "Decision = Zoltán is going to keep it around for a few months "
+[072] indent=6 block=36cdbe27
+      "  "
+      "and then revisit to see how rotten it is"
+[073] indent=0 block=365dbe27 H2
+      "2026-05-19 " {b}
+[074] indent=2 block=365dbe27
+      "◦ "
+      "Gemini Notes - "
+[075] indent=2 block=365dbe27
+      "  "
+      "https://docs.google.com/document/d/1T0qzeeIRL79d_g5NwQTCj13V4YdQF5U6" {href=https://docs.google.com/document/d/1T0qzeeIRL79d_g5NwQTCj13V4YdQF5U69lnt81Ywcqk/edit?usp=sharing}
+[076] indent=2 block=365dbe27
+      "  "
+      "9lnt81Ywcqk/edit?usp=sharing" {href=https://docs.google.com/document/d/1T0qzeeIRL79d_g5NwQTCj13V4YdQF5U69lnt81Ywcqk/edit?usp=sharing}
+[077] indent=2 block=365dbe27
+      "◦ "
+      "Winning DART & Friends Projects - "
+[078] indent=2 block=365dbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[079] indent=2 block=365dbe27
+      "  "
+      "projects-1cdbddafbb88" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[080] indent=2 block=365dbe27
+      "◦ "
+      "Winning DART Projects - "
+[081] indent=2 block=365dbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-projects-34e" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[082] indent=2 block=365dbe27
+      "  "
+      "ade228d76" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[083] indent=2 block=365dbe27
+      "◦ "
+      "& Friends Projects - "
+[084] indent=2 block=365dbe27
+      "  "
+      "https://linear.app/equilibrium-energy/team/DEL/projects/view/project" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[085] indent=2 block=365dbe27
+      "  "
+      "s-minus-winning-dart-a92af61791e3" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[086] indent=0 block=35edbe27 H2
+      "2026-05-12 " {b}
+[087] indent=2 block=35edbe27
+      "◦ "
+      "Gemini Notes - "
+[088] indent=2 block=35edbe27
+      "  "
+      "https://docs.google.com/document/d/1lWfpfjDO4q0aIKubIEcolDFrAkLHwnqa" {href=https://docs.google.com/document/d/1lWfpfjDO4q0aIKubIEcolDFrAkLHwnqadCj1rxyvIW4/edit?tab=t.uoywsec1gxit}
+[089] indent=2 block=35edbe27
+      "  "
+      "dCj1rxyvIW4/edit?tab=t.uoywsec1gxit" {href=https://docs.google.com/document/d/1lWfpfjDO4q0aIKubIEcolDFrAkLHwnqadCj1rxyvIW4/edit?tab=t.uoywsec1gxit}
+[090] indent=2 block=35edbe27
+      "◦ "
+      "Gemini recording - "
+[091] indent=2 block=35edbe27
+      "  "
+      "https://drive.google.com/file/d/1ft-xd0KMVd48xPoE7bHII8evenpS5gUQ/vi" {href=https://drive.google.com/file/d/1ft-xd0KMVd48xPoE7bHII8evenpS5gUQ/view}
+[092] indent=2 block=35edbe27
+      "  "
+      "ew" {href=https://drive.google.com/file/d/1ft-xd0KMVd48xPoE7bHII8evenpS5gUQ/view}
+[093] indent=2 block=35edbe27
+      "◦ "
+      "Coverage for Carolyn - "
+      "Carolyn Coverage Command Center " {href=https://app.notion.com/p/34fdbe27599280d896e2e5d4da3791f5}
+      " "
+[094] indent=2 block=35edbe27
+      "◦ "
+      "Winning DART & Friends Projects - "
+[095] indent=2 block=35edbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-and-friends-" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[096] indent=2 block=35edbe27
+      "  "
+      "projects-1cdbddafbb88" {href=https://linear.app/equilibrium-energy/view/winning-dart-and-friends-projects-1cdbddafbb88}
+[097] indent=2 block=35edbe27
+      "◦ "
+      "Winning DART Projects - "
+[098] indent=2 block=35edbe27
+      "  "
+      "https://linear.app/equilibrium-energy/view/winning-dart-projects-34e" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[099] indent=2 block=35edbe27
+      "  "
+      "ade228d76" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[100] indent=2 block=35edbe27
+      "◦ "
+      "& Friends Projects - "
+[101] indent=2 block=35edbe27
+      "  "
+      "https://linear.app/equilibrium-energy/team/DEL/projects/view/project" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[102] indent=2 block=35edbe27
+      "  "
+      "s-minus-winning-dart-a92af61791e3" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[103] indent=2 block=35edbe27
+      "◦ "
+      "Deep Dive / Parking Lot"
+[104] indent=4 block=35edbe27
+      "▪ "
+      "NRG gate closure"
+[105] indent=4 block=35edbe27
+      "▪ "
+      "Awards data (thanks Andrew & co!) - Cristobal"
+[106] indent=6 block=35edbe27
+      "• "
+      "Flowing that info into performance page - meeting tomorrow"
+[107] indent=0 block=359dbe27 H2
+      "2026-05-07 - NRG product prioritization" {b}
+[108] indent=2 block=359dbe27
+      "[unsupported block]" {i fg=#9b9a97}
+[109] indent=4 block=359dbe27
+[110] indent=6 block=359dbe27
+[111] indent=4 block=359dbe27
+[112] indent=6 block=359dbe27
+      "Cool. Notion AI is transcribing this meeting. Okay."
+[113] indent=6 block=359dbe27
+      "So that's, oops. What just happened? What is going on? Oh my god. "
+[114] indent=6 block=359dbe27
+      "Okay."
+[115] indent=6 block=359dbe27
+      "Cool. I pulled up all of the projects in Linear and actually let's"
+[116] indent=6 block=359dbe27
+      "just like start with Spock just to like go over all of them um all"
+[117] indent=6 block=359dbe27
+      "of the in-flight work but that that is like sort of not winning "
+[118] indent=6 block=359dbe27
+      "dart i guess um i mean we we're considering spec trading winning "
+[119] indent=6 block=359dbe27
+      "dart but like it's not really um so i sent christobal the message "
+[120] indent=6 block=359dbe27
+      "in the spec trading slack let me make sure you're You're in there "
+[121] indent=6 block=359dbe27
+      "too. Okay, what you are."
+[122] indent=6 block=359dbe27
+      "It's not really much product work left, so I figured the handoff "
+[123] indent=6 block=359dbe27
+      "to Cristobal made more sense for this one specifically. It's just "
+[124] indent=6 block=359dbe27
+      "coordinating the NRG testing and release. And I feel like it's "
+[125] indent=6 block=359dbe27
+      "going to be a... Like I bet what will happen is it ends up being "
+[126] indent=6 block=359dbe27
+      "The third week of May, like I bought everything will be ready to "
+[127] indent=6 block=359dbe27
+      "go sometime the 18th plus. And I would push for no later, like "
+[128] indent=6 block=359dbe27
+      "closing this project out by the 29th. Um, cause that'll be sort of"
+[129] indent=6 block=359dbe27
+      "a month after we intended to do everything."
+[130] indent=6 block=359dbe27
+      "So yeah, this should all wrap up. Did you have any like questions "
+[131] indent=6 block=359dbe27
+      "or concerns with this one?"
+[132] indent=6 block=359dbe27
+      "My only thought on communication to NRG, well, just wanted to get "
+[133] indent=6 block=359dbe27
+      "your thoughts. Do you think... Like, do we want to show back tests"
+[134] indent=6 block=359dbe27
+      "and stuff? I guess my only concern is I was looking at the TSRB "
+[135] indent=6 block=359dbe27
+      "and the back tests. We do so much worse with this update."
+[136] indent=6 block=359dbe27
+      "I think that we phrase it more as a scale I think we should frame "
+[137] indent=6 block=359dbe27
+      "it as like, We've been monitoring the strategy in shadow mode and "
+[138] indent=6 block=359dbe27
+      "we added some additional risk mitigation parameters. We want to "
+[139] indent=6 block=359dbe27
+      "scale it live so we don't want to go live with the full thing just"
+[140] indent=6 block=359dbe27
+      "to ensure that we don't have any big lost days like what we saw on"
+[141] indent=6 block=359dbe27
+      "April, whatever that was. I think that's the right framing. What "
+[142] indent=6 block=359dbe27
+      "do you think?"
+[143] indent=6 block=359dbe27
+      "Okay. So that makes it kind of sound like it's temporary. Is it "
+[144] indent=6 block=359dbe27
+      "temporary? Maybe I haven't been."
+[145] indent=6 block=359dbe27
+      "It is. So the goal is actually to scale it to the 250. Um..."
+[146] indent=6 block=359dbe27
+      "Sorry, I know the spec volume, but there's the-Is the like... "
+[147] indent=6 block=359dbe27
+      "whatever spike Oh. Is that temporary? That like penalization of "
+[148] indent=6 block=359dbe27
+      "spike risk. I think it is."
+[149] indent=6 block=359dbe27
+      "And maybe we do need to talk a little bit about that specifically."
+[150] indent=6 block=359dbe27
+      "And that's sort of part of the scaling is like right now we have "
+[151] indent=6 block=359dbe27
+      "this, um, like risk mitigation measure in place until we have the "
+[152] indent=6 block=359dbe27
+      "next version of our forecast models is I think framing. Yeah. "
+[153] indent=6 block=359dbe27
+      "Cause like basically the problem is that we don't, a, we don't "
+[154] indent=6 block=359dbe27
+      "trust or we don't have full confidence in our forecast on a "
+[155] indent=6 block=359dbe27
+      "day-to-day basis. And then B we're overexposed to the MEC."
+[156] indent=6 block=359dbe27
+      "So I would imagine, and honestly, I don't know that this work has "
+[157] indent=6 block=359dbe27
+      "kicked off and I should probably, um, Put it in my to-do list. "
+[158] indent=6 block=359dbe27
+      "That's endless. Um... But we need a forecast model that just takes"
+[159] indent=6 block=359dbe27
+      "that into consideration. Thank you. Okay."
+[160] indent=6 block=359dbe27
+      "Cool, yeah. So I'll draft that up and also on like what I need to "
+[161] indent=6 block=359dbe27
+      "also send them With that is the analysis of April 24th, which is "
+[162] indent=6 block=359dbe27
+      "already complete. I just need to synthesize it into the right "
+[163] indent=6 block=359dbe27
+      "message. Okay. Cool. So that's back. Then I put this mission "
+[164] indent=6 block=359dbe27
+      "control enhancements items so that you could tie because you can't"
+[165] indent=6 block=359dbe27
+      "do this on an issue level you can only do it on a project level um"
+[166] indent=6 block=359dbe27
+      "but I was going to tie it to NRG to make the innovation services "
+[167] indent=6 block=359dbe27
+      "tracking easier, and then we can put the other work under this "
+[168] indent=6 block=359dbe27
+      "project."
+[169] indent=6 block=359dbe27
+      "There is an innovation services tag too."
+[170] indent=6 block=359dbe27
+      "Oh, cool. OK. We can put that on there."
+[171] indent=6 block=359dbe27
+      "Yeah. I think. The customer? The customer stuff is not, I like, "
+[172] indent=6 block=359dbe27
+      "maybe I didn't go deeply enough, but I didn't like feel like it "
+[173] indent=6 block=359dbe27
+      "was that helpful actually. Oh, well. The way I was doing it was, "
+[174] indent=6 block=359dbe27
+      "based on the team. So like the delivery, it would be like if it's "
+[175] indent=6 block=359dbe27
+      "done by the delivery NRG team. And it has innovation services tag "
+[176] indent=6 block=359dbe27
+      "on it."
+[177] indent=6 block=359dbe27
+      "Yeah, that makes sense. Okay."
+[178] indent=6 block=359dbe27
+      "But I mean, it can't hurt to add it. I just remember having that "
+[179] indent=6 block=359dbe27
+      "issue being like, it's sort of not that, it's actually not that "
+[180] indent=6 block=359dbe27
+      "robust, the customer tracking stuff. Okay."
+[181] indent=6 block=359dbe27
+      "Cool. Then let's just use your methods and it'll sort of just be "
+[182] indent=6 block=359dbe27
+      "like a process and process, like learning as we go. I guess I "
+[183] indent=6 block=359dbe27
+      "should have started this call too by saying like, have I shared, I"
+[184] indent=6 block=359dbe27
+      "think I've shared this with people, but let me just share it again"
+[185] indent=6 block=359dbe27
+      "just in case. But the roles and responsibilities here are like, "
+[186] indent=6 block=359dbe27
+      "Josh is gonna basically, And I guess this sort of changed a little"
+[187] indent=6 block=359dbe27
+      "bit. Anyways, don't read too much into the fine print here. But, "
+[188] indent=6 block=359dbe27
+      "Cristobal, like, you're going to lead the NRG interface and "
+[189] indent=6 block=359dbe27
+      "support the delivery function."
+[190] indent=6 block=359dbe27
+      "It's, like, the customer support function of delivery or, like, "
+[191] indent=6 block=359dbe27
+      "account management function of delivery that all of us sort of, "
+[192] indent=6 block=359dbe27
+      "like, wear the hats of without a full customer support team. Like,"
+[193] indent=6 block=359dbe27
+      "hopefully one day we hire those people. But until we do, it's us. "
+[194] indent=6 block=359dbe27
+      "Luckily, NRG is the best, so they're easy. Like the one you're "
+[195] indent=6 block=359dbe27
+      "already doing this for the most part, but it's like, I'm just "
+[196] indent=6 block=359dbe27
+      "going to obviously stop responding to things. And so then you'd be"
+[197] indent=6 block=359dbe27
+      "accountable for all those responses and then also accountable to "
+[198] indent=6 block=359dbe27
+      "run this meeting. But I'll run it tomorrow. I think it's scheduled"
+[199] indent=6 block=359dbe27
+      "for, or I'll run the next iteration and then cool."
+[200] indent=6 block=359dbe27
+      "And then Sam is stepping into cover as the PM lead for energy. And"
+[201] indent=6 block=359dbe27
+      "so for a lot of the work that's already scoped, I'm just trying to"
+[202] indent=6 block=359dbe27
+      "close it off. Hand it to you, Chris Wall, because it's the less "
+[203] indent=6 block=359dbe27
+      "interesting side of work. Sorry. Not less interesting, but you "
+[204] indent=6 block=359dbe27
+      "know, it's not like the product stuff. And then for the new "
+[205] indent=6 block=359dbe27
+      "projects, which we'll go over in just a second, Sam, like there's "
+[206] indent=6 block=359dbe27
+      "probably going to be some scoping or design work that I don't get "
+[207] indent=6 block=359dbe27
+      "to that will get handed off to you."
+[208] indent=6 block=359dbe27
+      "So under this one, this is one that has been coming up recently. "
+[209] indent=6 block=359dbe27
+      "Like it was part of three different issues over the last few weeks"
+[210] indent=6 block=359dbe27
+      "and it's moving the energy order Energy customer submission cut "
+[211] indent=6 block=359dbe27
+      "off to 10. The reason we made it nine before was because we didn't"
+[212] indent=6 block=359dbe27
+      "want to get confused about what they were actually submitting to "
+[213] indent=6 block=359dbe27
+      "the market. I don't know if that's a concern anymore, Cristobal."
+[214] indent=6 block=359dbe27
+      "I don't think so. I don't think so. It sounds like this is... way "
+[215] indent=6 block=359dbe27
+      "worth the benefit of like potential confusion in the future. "
+[216] indent=6 block=359dbe27
+      "Exactly. Have you confirmed whether, 'cause like I know for "
+[217] indent=6 block=359dbe27
+      "Gunvor, at least like 9:45 is the hard cut up only because it "
+[218] indent=6 block=359dbe27
+      "takes 30 TRM like 10 minutes to the grades. Well... It's like, "
+[219] indent=6 block=359dbe27
+      "man, if we deliberate of 10, they can't submit it."
+[220] indent=6 block=359dbe27
+      "Well, someone said I made that comment in a meeting where we were "
+[221] indent=6 block=359dbe27
+      "talking about this. I don't remember what meeting and the response"
+[222] indent=6 block=359dbe27
+      "from someone, maybe it was Sean or Josh, was... like we can allow "
+[223] indent=6 block=359dbe27
+      "them to run things up to 10 Um... Or up to whatever time like the "
+[224] indent=6 block=359dbe27
+      "runtime would take. I don't know. It was something like we could "
+[225] indent=6 block=359dbe27
+      "air message them like, hey, this isn't going to complete on time. "
+[226] indent=6 block=359dbe27
+      "Use last run or something."
+[227] indent=6 block=359dbe27
+      "But you can still run it."
+[228] indent=6 block=359dbe27
+      "Yeah, no, it's a good point. When I said that out loud, I was "
+[229] indent=6 block=359dbe27
+      "like, that doesn't really make sense anymore."
+[230] indent=6 block=359dbe27
+      "What's the value of running at that point?"
+[231] indent=6 block=359dbe27
+      "And so I think that's sort of like some of the confirmations "
+[232] indent=6 block=359dbe27
+      "you'll have to do is like do a little shaping session with the "
+[233] indent=6 block=359dbe27
+      "engineers on exactly like the exact timing and."
+[234] indent=6 block=359dbe27
+      "If there's any..."
+[235] indent=6 block=359dbe27
+      "or invoicing repercussions or implications of that. Like I don't "
+[236] indent=6 block=359dbe27
+      "want, I want to make sure we know what set of orders they're "
+[237] indent=6 block=359dbe27
+      "submitting and it was just easiest for us to say we're taking the "
+[238] indent=6 block=359dbe27
+      "latest set as of 9:05 I think is what you guys are using so we "
+[239] indent=6 block=359dbe27
+      "just need to be alert"
+[240] indent=6 block=359dbe27
+      "Usually takes a run."
+[241] indent=6 block=359dbe27
+      "Like three minutes? Yeah, three. A five. Okay."
+[242] indent=6 block=359dbe27
+      "Um... Cool."
+[243] indent=6 block=359dbe27
+      "Da-da-da-da-da. Moving. So yeah, just I like the I mean, you let's"
+[244] indent=6 block=359dbe27
+      "put 945 because it makes sense. And if the engineers want to "
+[245] indent=6 block=359dbe27
+      "challenge that they they will. Yeah."
+[246] indent=6 block=359dbe27
+      "Um... They're a funny bunch. Yes. Okay, great."
+[247] indent=6 block=359dbe27
+      "And the one thing that I wanted Lydia for, but she stuck in the "
+[248] indent=6 block=359dbe27
+      "last meeting, which was, well, I'm not going to say I'll hold my "
+[249] indent=6 block=359dbe27
+      "comment till we stop recording. Um, the one thing I'm not sure is "
+[250] indent=6 block=359dbe27
+      "like, I think this is, um, falls into the category. If we go to "
+[251] indent=6 block=359dbe27
+      "the prioritization, I always is do that. If we go to my rough way "
+[252] indent=6 block=359dbe27
+      "to prioritize requests, I do think this falls into The tier one "
+[253] indent=6 block=359dbe27
+      "tier one, which is revenue at risk because it's blocked them from "
+[254] indent=6 block=359dbe27
+      "being able to run the strategy or like rerun and then they just "
+[255] indent=6 block=359dbe27
+      "didn't submit or something like that."
+[256] indent=6 block=359dbe27
+      "Or maybe they like used a stale run and like it wasn't ideal, "
+[257] indent=6 block=359dbe27
+      "whatever. So I think that we should Pause on some of the other "
+[258] indent=6 block=359dbe27
+      "ones I'm gonna go through and I have this, like my tabs in order "
+[259] indent=6 block=359dbe27
+      "of priority and it would probably be like a Sean or a Josh "
+[260] indent=6 block=359dbe27
+      "probably Sean who would work on this and I just needed Lydia to "
+[261] indent=6 block=359dbe27
+      "help like with the resourcing of things So... I guess I'll assign "
+[262] indent=6 block=359dbe27
+      "him for now and It will stay in the backlog."
+[263] indent=6 block=359dbe27
+      "Until then. I also think There's the winning dart and friends "
+[264] indent=6 block=359dbe27
+      "meeting next Tuesday and that is where Sam, you could raise this "
+[265] indent=6 block=359dbe27
+      "project and then it would probably be more of a one on one with "
+[266] indent=6 block=359dbe27
+      "Sean to confirm the details and like do the execution piece of the"
+[267] indent=6 block=359dbe27
+      "delivery."
+[268] indent=6 block=359dbe27
+      "I'm confused how... like the NRG stuff and the winning dart stuff,"
+[269] indent=6 block=359dbe27
+      "like, interact, 'cause I feel like they're like, parallel There's "
+[270] indent=6 block=359dbe27
+      "interweaving. friends or have like Lydia extend it to be winning "
+[271] indent=6 block=359dbe27
+      "dart friends and solutions arc I don't know yeah I'm only asking "
+[272] indent=6 block=359dbe27
+      "because like Lauren had told me or I'm trying to like protect my "
+[273] indent=6 block=359dbe27
+      "calendar a little more now that I'm doing energy and gun board "
+[274] indent=6 block=359dbe27
+      "because there's just like a shitload of meetings yeah um and "
+[275] indent=6 block=359dbe27
+      "Lauren said that the winning dart meetings were probably not "
+[276] indent=6 block=359dbe27
+      "important but She might not have the full context."
+[277] indent=6 block=359dbe27
+      "I don't know."
+[278] indent=6 block=359dbe27
+      "That's sort of the right read-aLike, so you could start your own "
+[279] indent=6 block=359dbe27
+      "check-in on like any solutions arc specific stuff, right? Mm-hmm. "
+[280] indent=6 block=359dbe27
+      "Yeah, I mean, and honestly, I haven't even gotten there yet. So "
+[281] indent=6 block=359dbe27
+      "it's a bit new. These are new. These are things that like we've "
+[282] indent=6 block=359dbe27
+      "been sitting on while we got through the really important stuff "
+[283] indent=6 block=359dbe27
+      "and now have the time to like make the fast follows."
+[284] indent=6 block=359dbe27
+      "So I see. I see. Yeah."
+[285] indent=6 block=359dbe27
+      "Hi Lydia."
+[286] indent=6 block=359dbe27
+      "Sorry, Google undownloaded. Oh no. I had to like download it. No "
+[287] indent=6 block=359dbe27
+      "worries. Anyways, I'm here."
+[288] indent=6 block=359dbe27
+      "We've just gone over like, I handed off spec trading to Cristobal "
+[289] indent=6 block=359dbe27
+      "and then we were talking about this first new request, which is "
+[290] indent=6 block=359dbe27
+      "moving the submission cutoff or like the rerun cutoff. Let me "
+[291] indent=6 block=359dbe27
+      "write rerun. Ah."
+[292] indent=6 block=359dbe27
+      "You can rerun."
+[293] indent=6 block=359dbe27
+      "cut off from 905 to 945. And I think Sam had a good question that "
+[294] indent=6 block=359dbe27
+      "like could use your ears, Lydia, which is, how do we want to sort "
+[295] indent=6 block=359dbe27
+      "of plan for and I got to set up cadences for the work that is not "
+[296] indent=6 block=359dbe27
+      "really winning dart related. So pretty much anything that falls "
+[297] indent=6 block=359dbe27
+      "into innovation services and other solutions arc isn't really "
+[298] indent=6 block=359dbe27
+      "winning dart. And I have about five projects pulled up here. And "
+[299] indent=6 block=359dbe27
+      "Sam is trying to like manage the problem too of balancing his "
+[300] indent=6 block=359dbe27
+      "capacity for Gunvern and stepping into NRG, but not overloading "
+[301] indent=6 block=359dbe27
+      "with things that are not relevant to those two things, which a lot"
+[302] indent=6 block=359dbe27
+      "of the winning dart stuff sort of is."
+[303] indent=6 block=359dbe27
+      "So one option we called out was like maybe Sam just sets up his "
+[304] indent=6 block=359dbe27
+      "own series for SolutionsArc and Innovation Services that's a "
+[305] indent=6 block=359dbe27
+      "smaller group to focus on these projects and check in on them."
+[306] indent=6 block=359dbe27
+      "Yeah, that would be fine, but then it's the same people So like "
+[307] indent=6 block=359dbe27
+      "the people that would work on stuff like that is like Yube, Matt "
+[308] indent=6 block=359dbe27
+      "Hoffman, Sean Connor, like that crew. And so they can only do so "
+[309] indent=6 block=359dbe27
+      "much at a time. So it just is prioritizing their time and just "
+[310] indent=6 block=359dbe27
+      "sequencing it, I think. Okay. And they're on winning guard too. "
+[311] indent=6 block=359dbe27
+      "They're more, they were doing spec trading and then they were "
+[312] indent=6 block=359dbe27
+      "going to go over to, I think, what is it, Carolyn, the next one's "
+[313] indent=6 block=359dbe27
+      "like snapshot order. Yeah. That was the highest priority. Yeah."
+[314] indent=6 block=359dbe27
+      "And then they could go to whatever, like you could just like move "
+[315] indent=6 block=359dbe27
+      "them along."
+[316] indent=6 block=359dbe27
+      "Yeah, so they could stop going to winning dart until their support"
+[317] indent=6 block=359dbe27
+      "needed from them from the scientists and strategy team and just "
+[318] indent=6 block=359dbe27
+      "work on like the next project, which now Lydia for your, for your "
+[319] indent=6 block=359dbe27
+      "next project, For your knowledge, I'm moving this to the highest "
+[320] indent=6 block=359dbe27
+      "priority to tackle next for Sean's plate before he moves on to "
+[321] indent=6 block=359dbe27
+      "another Ticket All review in a second."
+[322] indent=6 block=359dbe27
+      "Yeah, that seems fair. Cool."
+[323] indent=6 block=359dbe27
+      "So, yeah, Sam, I guess maybe you could also just ask Josh, Yube "
+[324] indent=6 block=359dbe27
+      "and Sean where they want to coordinate work. Like it's possible "
+[325] indent=6 block=359dbe27
+      "that you guys can do most of it async and just schedule one offs "
+[326] indent=6 block=359dbe27
+      "when you need to like have a scoping conversation and align on, "
+[327] indent=6 block=359dbe27
+      "you know, a linear ticket like that's an option. Yeah. maybe just "
+[328] indent=6 block=359dbe27
+      "feel it out and decide what works best for you. Okay. And also I "
+[329] indent=6 block=359dbe27
+      "think Chris, if you disagree with any of the prioritization as we "
+[330] indent=6 block=359dbe27
+      "go along, please let me know because you have the same sort of "
+[331] indent=6 block=359dbe27
+      "context I do."
+[332] indent=6 block=359dbe27
+      "So the next thing that I have is actually this has to happen a bit"
+[333] indent=6 block=359dbe27
+      "before it's the snapshot order selection decisions. To be honest, "
+[334] indent=6 block=359dbe27
+      "like I don't This is tech debt that is apparently important that I"
+[335] indent=6 block=359dbe27
+      "have not spent the time to understand exactly what it unlocks or "
+[336] indent=6 block=359dbe27
+      "doesn't unlock, but trust Josh and Yue that like we need this in "
+[337] indent=6 block=359dbe27
+      "order to do the following projects that I'm about to show. So I "
+[338] indent=6 block=359dbe27
+      "think they're already good to go on this."
+[339] indent=6 block=359dbe27
+      "I think Sam, where you can help is Like time boxing this, "
+[340] indent=6 block=359dbe27
+      "preventing scope creep, and just ensuring that we're prioritizing "
+[341] indent=6 block=359dbe27
+      "the things that unlock the following projects versus like pure "
+[342] indent=6 block=359dbe27
+      "tech deck. You know, tech deck we get to over time, but let's "
+[343] indent=6 block=359dbe27
+      "prioritize any bottlenecks or blockers first. But yeah, Josh is "
+[344] indent=6 block=359dbe27
+      "already set up and working on this. And yeah, Lydia can also help "
+[345] indent=6 block=359dbe27
+      "there. So what's more interesting for product is The strategy-run "
+[346] indent=6 block=359dbe27
+      "comparisons and visibility, I think I'm supposed to call it "
+[347] indent=6 block=359dbe27
+      "something else."
+[348] indent=6 block=359dbe27
+      "Order comparison in viz. Um. So this is the ability to compare "
+[349] indent=6 block=359dbe27
+      "multiple reruns against each other in the UI. And at first, Julia "
+[350] indent=6 block=359dbe27
+      "was working-we just reviewed some of the information from our "
+[351] indent=6 block=359dbe27
+      "discovery session with NRG a few weeks ago. And Julia was going to"
+[352] indent=6 block=359dbe27
+      "work on some designs. I think she's maybe ready to review those "
+[353] indent=6 block=359dbe27
+      "with us tomorrow. I think she accepted. Let me see. Yeah, she did."
+[354] indent=6 block=359dbe27
+      "Sam, you're out, so I'll record it."
+[355] indent=6 block=359dbe27
+      "Or actually, I'll just move it to next week so that you can start "
+[356] indent=6 block=359dbe27
+      "to be in the loop of that. But from there, you would just iterate "
+[357] indent=6 block=359dbe27
+      "on design and... the delivery process to NRG. Any questions on "
+[358] indent=6 block=359dbe27
+      "that one? Okay, cool. Hi, Josh. Sorry, we only now have seven "
+[359] indent=6 block=359dbe27
+      "minutes, but I did record it. And so far we're smooth sailing. "
+[360] indent=6 block=359dbe27
+      "Thank you. This one, I think I'm handing this off to Roman. He and"
+[361] indent=6 block=359dbe27
+      "I have a one-on-one on Monday for handoff stuff, but..."
+[362] indent=6 block=359dbe27
+      "I think Sam, the two of you should maybe collaborate on like how "
+[363] indent=6 block=359dbe27
+      "this project evolves. It's the EQ strategy composite order "
+[364] indent=6 block=359dbe27
+      "generation. And it's like a, for now an EQ operator facing system,"
+[365] indent=6 block=359dbe27
+      "but I think this evolves into a Gunver product feature. So a "
+[366] indent=6 block=359dbe27
+      "system to select mix and run strategy variants per hour or day. "
+[367] indent=6 block=359dbe27
+      "And that becomes the strategy. And I think that John's mural board"
+[368] indent=6 block=359dbe27
+      "is, How do I make this go away?"
+[369] indent=6 block=359dbe27
+      "Does anybody know?"
+[370] indent=6 block=359dbe27
+      "The only way you must connect."
+[371] indent=6 block=359dbe27
+      "This was very helpful for actually understanding what the team is "
+[372] indent=6 block=359dbe27
+      "looking to do, which is Based on the energy setup today, but to go"
+[373] indent=6 block=359dbe27
+      "through that, there's the optimized strategy, the fallback "
+[374] indent=6 block=359dbe27
+      "strategy and the baseline strategy. And they want the ability to "
+[375] indent=6 block=359dbe27
+      "mix and match hours into like what becomes the pick and mix "
+[376] indent=6 block=359dbe27
+      "strategy. So it's not... it's an ensemble strategy, meaning like "
+[377] indent=6 block=359dbe27
+      "it is its own variant, not like a combination of multiples, sort "
+[378] indent=6 block=359dbe27
+      "of like how it should reflect to NRG."
+[379] indent=6 block=359dbe27
+      "And then the order selector, which is the snapshot stuff is how "
+[380] indent=6 block=359dbe27
+      "you would prioritize it if something fails, right? So then after "
+[381] indent=6 block=359dbe27
+      "the operators decide on order generator D, when they run the big "
+[382] indent=6 block=359dbe27
+      "kahuna, that's like the order generator that big kahuna is running"
+[383] indent=6 block=359dbe27
+      "on. Gotcha. So it's quite technically complex. And like the next "
+[384] indent=6 block=359dbe27
+      "step is, um,Yeah, it was pretty cool functionality actually."
+[385] indent=6 block=359dbe27
+      "Super cool."
+[386] indent=6 block=359dbe27
+      "Sean is going to do the technical design and the product. Like the"
+[387] indent=6 block=359dbe27
+      "product role here is one ensuring that The strategy team, who are "
+[388] indent=6 block=359dbe27
+      "sort of the users in the SMEs of this have communicated like the "
+[389] indent=6 block=359dbe27
+      "experience that they're looking for and then the product person "
+[390] indent=6 block=359dbe27
+      "translates that into what we want to build and then Sean designs "
+[391] indent=6 block=359dbe27
+      "the technical design for that build. I have the jobs to be done "
+[392] indent=6 block=359dbe27
+      "here and I did have cloud make issues."
+[393] indent=6 block=359dbe27
+      "I haven't reviewed them or audited them yet. So I need to do that "
+[394] indent=6 block=359dbe27
+      "before having Kyle and John review it. And then it would be, I do "
+[395] indent=6 block=359dbe27
+      "think we need to have some level of TSRB on. this type of strategy"
+[396] indent=6 block=359dbe27
+      "I don't know, like... whatever, I don't even know what to call it,"
+[397] indent=6 block=359dbe27
+      "type of strategy. with NRG. And so I think Cristobal would play "
+[398] indent=6 block=359dbe27
+      "that role there with the strategy team. And then Sam, I think "
+[399] indent=6 block=359dbe27
+      "like, this can evolve into a core feature of our platform."
+[400] indent=6 block=359dbe27
+      "Yeah. Cool."
+[401] indent=6 block=359dbe27
+      "Yeah, to that end, Like this one seems quite meaty. It's massive. "
+[402] indent=6 block=359dbe27
+      "a lot of other stuff to do. Like, is there, has anyone done any "
+[403] indent=6 block=359dbe27
+      "sizing of like the,Not yet. Values to be captured here. I guess "
+[404] indent=6 block=359dbe27
+      "it's like a little bit ambiguous 'cause we don't really have other"
+[405] indent=6 block=359dbe27
+      "strategies to be selected. Right now, so it's like kind of "
+[406] indent=6 block=359dbe27
+      "building towards that."
+[407] indent=6 block=359dbe27
+      "Well, I want them to start just with the optimized and baseline. "
+[408] indent=6 block=359dbe27
+      "Because right now, when we tell NRG, like, this just happened last"
+[409] indent=6 block=359dbe27
+      "week. Like, hey, tomorrow's looking really risky. We just lost "
+[410] indent=6 block=359dbe27
+      "$500,000. Like, we don't want to submit a strategy tomorrow. They "
+[411] indent=6 block=359dbe27
+      "don't actually use the baseline orders. Like, they don't care "
+[412] indent=6 block=359dbe27
+      "about our baseline orders. They then have their desk manage the "
+[413] indent=6 block=359dbe27
+      "volume that we manage."
+[414] indent=6 block=359dbe27
+      "And so instead of having to be like, oh, like, hours 18 to 19 look"
+[415] indent=6 block=359dbe27
+      "so risky that we don't want to operate at all, we would want to "
+[416] indent=6 block=359dbe27
+      "just mix the, Optimize strategy with like 18 to 19 with baseline. "
+[417] indent=6 block=359dbe27
+      "So I think that's the start simple but I do agree that this could "
+[418] indent=6 block=359dbe27
+      "spin out of control really easily and so that's another like thing"
+[419] indent=6 block=359dbe27
+      "that you guys should help manage."
+[420] indent=6 block=359dbe27
+      "This is why I want Roman. running with this one in the near term "
+[421] indent=6 block=359dbe27
+      "largely because I think he's good at keeping stuff efficient "
+[422] indent=6 block=359dbe27
+      "enough that it gets done and doesn't run away. And then if it does"
+[423] indent=6 block=359dbe27
+      "turn into more, like that's for the internal, like solve this for "
+[424] indent=6 block=359dbe27
+      "our internal operators, strategy operators. Yeah. And then if it "
+[425] indent=6 block=359dbe27
+      "does turn into more of a product feature, then on application, "
+[426] indent=6 block=359dbe27
+      "then yeah, Sam, we can engage with you."
+[427] indent=6 block=359dbe27
+      "And if there's stuff that goes to energy, obviously Cristobal, but"
+[428] indent=6 block=359dbe27
+      "I feel like because of the ambiguity, I want Roman to help make "
+[429] indent=6 block=359dbe27
+      "sure this doesn't explode."
+[430] indent=6 block=359dbe27
+      "100%. Yeah, I think it starts with Roman and gets handed off. Or "
+[431] indent=6 block=359dbe27
+      "like, I do want Sam and Roman to stay in touch on like what we're "
+[432] indent=6 block=359dbe27
+      "building. And just because Sam will have like,Sam's customers or "
+[433] indent=6 block=359dbe27
+      "users are our EQ strategist, Kyle, John, Raphael, Steve, and the "
+[434] indent=6 block=359dbe27
+      "Gunverse strategists. And so I think like though they make up the "
+[435] indent=6 block=359dbe27
+      "user requirements and sort of like personas that we're building "
+[436] indent=6 block=359dbe27
+      "this for. But Roman taking the first start simple SOBs totally "
+[437] indent=6 block=359dbe27
+      "makes sense."
+[438] indent=6 block=359dbe27
+      "Oh."
+[439] indent=6 block=359dbe27
+      "I can't tell, am I next? Yeah, you are. Can we... Okay, so timing "
+[440] indent=6 block=359dbe27
+      "of this. Could we hold off for a few weeks on starting to scope it"
+[441] indent=6 block=359dbe27
+      "out until spec trading is done and Josh has done the snapshot "
+[442] indent=6 block=359dbe27
+      "order stuff?"
+[443] indent=6 block=359dbe27
+      "The snapshot orders can be in parallel if Sean is driving that, "
+[444] indent=6 block=359dbe27
+      "but I agree that holding off, I think the next sprint should be "
+[445] indent=6 block=359dbe27
+      "Roman confirming scope and tickets for, and Sean maybe starting to"
+[446] indent=6 block=359dbe27
+      "think about the technical design, but then... There should be a "
+[447] indent=6 block=359dbe27
+      "project kickoff for this in about a sprint or so."
+[448] indent=6 block=359dbe27
+      "Can I poke at that a little bit? Because didn't you want Sean to "
+[449] indent=6 block=359dbe27
+      "do the timing thing?"
+[450] indent=6 block=359dbe27
+      "Yes, but I feel like that's easy. Like I think that's like..."
+[451] indent=6 block=359dbe27
+      "Three or four doesn't work. Yeah. That's fair, but I think what "
+[452] indent=6 block=359dbe27
+      "I'm trying to do is we're As we looked at yesterday, we have too "
+[453] indent=6 block=359dbe27
+      "many things going on. Like, could we say just not yet for two "
+[454] indent=6 block=359dbe27
+      "weeks? Or will that really hurt us for two weeks?"
+[455] indent=6 block=359dbe27
+      "I don't think it really hurts us. Let's just set the expectations "
+[456] indent=6 block=359dbe27
+      "with the strategy team and make sure I'm not missing anything. I "
+[457] indent=6 block=359dbe27
+      "can send that note. Ah. What's... Or do you mean who's going to do"
+[458] indent=6 block=359dbe27
+      "the other order visit the this?"
+[459] indent=6 block=359dbe27
+      "Yeah, sorry. Who's not what?"
+[460] indent=6 block=359dbe27
+      "I think that's mostly Matt."
+[461] indent=6 block=359dbe27
+      "Okay, so they're not. Yeah."
+[462] indent=6 block=359dbe27
+      "Okay. I think this is Matt, but it's a good question. We're like, "
+[463] indent=6 block=359dbe27
+      "yes, the tabs are in order of how I think the work should be "
+[464] indent=6 block=359dbe27
+      "sequenced and therefore it would be on. Lydia to help us like "
+[465] indent=6 block=359dbe27
+      "determine who and when and so if Until everything before this tab "
+[466] indent=6 block=359dbe27
+      "is done, it's okay to hold off on doing this one. But I will "
+[467] indent=6 block=359dbe27
+      "confirm that with the strategy team today. Um... Where did that "
+[468] indent=6 block=359dbe27
+      "TSRB thing just go? Did anyone notice I created it and then it "
+[469] indent=6 block=359dbe27
+      "disappeared?"
+[470] indent=6 block=359dbe27
+      "You might've made it an update."
+[471] indent=6 block=359dbe27
+      "Oh, did I? Shit."
+[472] indent=6 block=359dbe27
+      "Yeah, you're right, I did. Sorry, I'm not good at this yet. I'm "
+[473] indent=6 block=359dbe27
+      "trying to get good at it, but it's taking me some time. The "
+[474] indent=6 block=359dbe27
+      "learning curve is curving."
+[475] indent=6 block=359dbe27
+      "I have to leave a meeting that I joined rudely late."
+[476] indent=6 block=359dbe27
+      "No worries, we're continuing to record and I have to hop shortly "
+[477] indent=6 block=359dbe27
+      "here too."
+[478] indent=6 block=359dbe27
+      "You said you're going to talk to Roman, Carolyn?"
+[479] indent=6 block=359dbe27
+      "Yeah, I am. All right."
+[480] indent=6 block=359dbe27
+      "Thanks all."
+[481] indent=6 block=359dbe27
+      "And honestly, that was pretty much everything. Like that was the "
+[482] indent=6 block=359dbe27
+      "prioritization and handoff I guess two so two for one um And yeah,"
+[483] indent=6 block=359dbe27
+      "I guess we can wrap up unless there's additional questions or "
+[484] indent=6 block=359dbe27
+      "comments. I'll figure out where that TSRB thing went. I think that"
+[485] indent=6 block=359dbe27
+      "that doesn't necessarily need to be a blocker for anything or like"
+[486] indent=6 block=359dbe27
+      "you could start figuring out what a TSRB like that even looks like"
+[487] indent=6 block=359dbe27
+      "earlier than later, Cristobal, with the strategy team."
+[488] indent=6 block=359dbe27
+      "Because it is a new type of approval that we're seeking. I'll find"
+[489] indent=6 block=359dbe27
+      "that ticket and assign it to you or whatever I did. Cool. Thank "
+[490] indent=6 block=359dbe27
+      "you guys. Talk to you later. Bye. See you."
+[491] indent=0 block=357dbe27 H2
+      "2026-05-05 " {b}
+[492] indent=2 block=357dbe27
+      "◦ "
+      "Gemini Notes - "
+[493] indent=2 block=357dbe27
+      "  "
+      "https://docs.google.com/document/d/1Sy8ieZoz4CetNBlR0AzjuhUxcLjyODv3" {href=https://docs.google.com/document/d/1Sy8ieZoz4CetNBlR0AzjuhUxcLjyODv32_Txj0g_K_Q/edit?tab=t.4xh8ua7ah5ys}
+[494] indent=2 block=357dbe27
+      "  "
+      "2_Txj0g_K_Q/edit?tab=t.4xh8ua7ah5ys" {href=https://docs.google.com/document/d/1Sy8ieZoz4CetNBlR0AzjuhUxcLjyODv32_Txj0g_K_Q/edit?tab=t.4xh8ua7ah5ys}
+[495] indent=2 block=357dbe27
+      "◦ "
+      "Recording - "
+[496] indent=2 block=357dbe27
+      "  "
+      "https://drive.google.com/file/d/1xQm5CrAUxhw-m414DuBW8UhOPa3QveYD/vi" {href=https://drive.google.com/file/d/1xQm5CrAUxhw-m414DuBW8UhOPa3QveYD/view}
+[497] indent=2 block=357dbe27
+      "  "
+      "ew" {href=https://drive.google.com/file/d/1xQm5CrAUxhw-m414DuBW8UhOPa3QveYD/view}
+[498] indent=2 block=357dbe27
+      "◦ "
+      "Winning DART Linear Projects" {href=https://www.google.com/url?q=https%3A%2F%2Flinear.app%2Fequilibrium-energy%2Fview%2Fwinning-dart-projects-34eade228d76&sa=D&ust=1778430037932518&usg=AOvVaw17tUkuWUS_8w04p2nkMB0f}
+[499] indent=2 block=357dbe27
+      "◦ "
+      "& Friends Linear Projects" {href=https://www.google.com/url?q=https%3A%2F%2Flinear.app%2Fequilibrium-energy%2Fteam%2FDEL%2Fprojects%2Fview%2Fprojects-minus-winning-dart-a92af61791e3&sa=D&ust=1778430037932518&usg=AOvVaw19-ErABlwwyxCxqUjARd1a}
+[500] indent=0 block=353dbe27 H2
+      "2026-04-28 " {b}
+[501] indent=2 block=353dbe27
+      "◦ "
+      "Deck" {href=https://docs.google.com/presentation/d/1mhLp44Lv8GI-pzDLmDpEXb_2_EbNGeSYWD2TOu2mS7M/edit?slide=id.g3e61a213d06_0_0#slide=id.g3e61a213d06_0_0}
+[502] indent=2 block=353dbe27
+      "◦ "
+      "Winning DART Linear Projects" {href=https://linear.app/equilibrium-energy/view/winning-dart-projects-34eade228d76}
+[503] indent=2 block=353dbe27
+      "◦ "
+      "& Friends Linear Projects" {href=https://linear.app/equilibrium-energy/team/DEL/projects/view/projects-minus-winning-dart-a92af61791e3}
+[504] indent=2 block=353dbe27
+      "◦ "
+      "Winning DART Linear Issues" {href=https://linear.app/equilibrium-energy/view/winning-dart-issues-0e667d703222}
+[505] indent=2 block=353dbe27
+      "◦ "
+      "Gemini Notes" {href=https://docs.google.com/document/d/1V5q_djDWO5d0EDEuiW97S5buq7GoGHq6e4Jbr2l0QWY/edit?tab=t.6sp6peufzpal}
+[506] indent=2 block=353dbe27
+      "◦ "
+      "Gemini Recording" {href=https://drive.google.com/file/d/1WgrNOyeaTDPej7GnH39d7MAtGPfk2HEW/view?usp=sharing}
+[507] indent=0 block=353dbe27

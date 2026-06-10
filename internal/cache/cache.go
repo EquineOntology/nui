@@ -6,7 +6,9 @@
 //   - A read of an expired copy kicks off a single deduplicated background
 //     refresh (an mkdir-style lock prevents a thundering herd); the next read is
 //     fresh.
-//   - Only a cold miss blocks on the upstream fetch.
+//   - Only a cold miss blocks on the upstream fetch; concurrent cold misses for
+//     the same id collapse to one fetch via an in-process single-flight (so a
+//     preview→reader burst on the same page does not double-fetch).
 //   - Writes are atomic (temp file + rename) so a reader never sees a half-written
 //     entry.
 //
@@ -23,6 +25,8 @@ import (
 	"regexp"
 	"sync"
 	"time"
+
+	"golang.org/x/sync/singleflight"
 )
 
 const (
@@ -53,6 +57,17 @@ type Cache struct {
 
 	mu       sync.Mutex
 	inflight map[string]bool // ids currently being refreshed in this process
+
+	// cold collapses concurrent COLD misses for the same id into one upstream
+	// fetch (the in-process single-flight, G2 carryover). It is distinct from the
+	// inflight map / on-disk lock above, which dedupe only the BACKGROUND refresh
+	// of an already-present (stale) entry. A cold miss has nothing on disk yet, so
+	// the on-disk lock cannot help it; without this, a live preview pane plus the
+	// reader would fire two cold reads of the most expensive op in the system
+	// (highlight a result, then Enter the same id). Cross-process cold-miss races
+	// still exist — singleflight is per-process and the on-disk lock only guards
+	// background refresh — but in-process collapse covers the hot path.
+	cold singleflight.Group
 }
 
 // New returns a Cache rooted at dir with the given TTL (use DefaultTTL for the
@@ -92,17 +107,45 @@ func (c *Cache) Get(ctx context.Context, id string, fetch Fetcher) ([]byte, erro
 		return data, nil
 	}
 
-	// Cold miss: nothing to serve, so fetch synchronously.
-	data, err := fetch(ctx, id)
-	if err != nil {
-		return nil, err
-	}
-	if writeErr := c.writeAtomic(path, data); writeErr != nil {
+	// Cold miss: nothing to serve. Route concurrent cold misses for the same id
+	// through a single in-flight fetch so a preview→reader burst (highlight then
+	// open the same page) does not double-fetch the most expensive op in the
+	// system. DoChan (not Do) lets a waiter honor its OWN ctx cancellation via the
+	// select below; the shared fetch itself runs under the LEADER's ctx — a
+	// waiter cancelling does not cancel the leader's in-flight call (and vice
+	// versa), so a cancelled waiter just stops waiting while the fetch completes
+	// for whoever remains. Cross-process cold-miss races are NOT covered (the
+	// on-disk lock only guards background refresh, and singleflight is in-process).
+	ch := c.cold.DoChan(id, func() (any, error) {
+		// Re-check the cache inside the flight: between joining the group and
+		// running, a background refresh or another process may have written the
+		// entry, in which case we should serve it rather than re-fetch.
+		if data, _, ok := readFile(path); ok {
+			return data, nil
+		}
+		data, err := fetch(ctx, id)
+		if err != nil {
+			return nil, err
+		}
 		// A cache write failure must not fail the read — the bytes are valid, we
 		// just couldn't persist them. Return them anyway.
+		_ = c.writeAtomic(path, data)
+		return data, nil
+	})
+
+	select {
+	case <-ctx.Done():
+		// This waiter gave up; the shared fetch continues for the others.
+		return nil, ctx.Err()
+	case res := <-ch:
+		if res.Err != nil {
+			return nil, res.Err
+		}
+		// res.Val is the []byte the flight returned; the type assertion is safe
+		// because the flight func above only ever returns []byte on success.
+		data, _ := res.Val.([]byte)
 		return data, nil
 	}
-	return data, nil
 }
 
 // refreshBackground launches one deduplicated background refresh for id. It

@@ -164,6 +164,118 @@ func TestDedupConcurrentRefresh(t *testing.T) {
 	waitLockCleared(t, path)
 }
 
+// TestDedupConcurrentColdMiss: N concurrent cold Get calls for the same id must
+// collapse to a single upstream fetch (the in-process single-flight). This is
+// the G2 hot path: highlighting a result (preview) then opening it (reader) is
+// two cold reads of the same id in quick succession.
+func TestDedupConcurrentColdMiss(t *testing.T) {
+	dir := t.TempDir()
+	c := New(dir, time.Hour)
+
+	var fetches atomic.Int64
+	enter := make(chan struct{}) // first fetcher signals it has started
+	release := make(chan struct{})
+	fetch := func(_ context.Context, _ string) ([]byte, error) {
+		if fetches.Add(1) == 1 {
+			close(enter)
+		}
+		<-release // hold the flight open so every caller queues behind the leader
+		return []byte("payload"), nil
+	}
+
+	const n = 20
+	results := make([][]byte, n)
+	errs := make([]error, n)
+	var wg sync.WaitGroup
+	wg.Add(n)
+	for i := 0; i < n; i++ {
+		go func(i int) {
+			defer wg.Done()
+			results[i], errs[i] = c.Get(context.Background(), "id1", fetch)
+		}(i)
+	}
+
+	// Ensure the leader is in-flight before releasing, so the other 19 callers
+	// have a window to join the single-flight group rather than each racing in
+	// as their own cold miss.
+	<-enter
+	// Give the remaining goroutines a moment to reach DoChan and join.
+	time.Sleep(20 * time.Millisecond)
+	close(release)
+	wg.Wait()
+
+	if got := fetches.Load(); got != 1 {
+		t.Errorf("concurrent cold misses fetched %d times, want exactly 1", got)
+	}
+	for i := 0; i < n; i++ {
+		if errs[i] != nil {
+			t.Errorf("caller %d: unexpected error %v", i, errs[i])
+		}
+		if string(results[i]) != "payload" {
+			t.Errorf("caller %d: got %q, want payload", i, results[i])
+		}
+	}
+}
+
+// TestColdMissWaiterHonorsOwnCtx: a waiter whose ctx is cancelled while the
+// shared flight is still running returns its own ctx error promptly, without
+// affecting the leader's fetch (which still completes and caches).
+func TestColdMissWaiterHonorsOwnCtx(t *testing.T) {
+	dir := t.TempDir()
+	c := New(dir, time.Hour)
+
+	release := make(chan struct{})
+	leaderStarted := make(chan struct{})
+	var fetches atomic.Int64
+	fetch := func(_ context.Context, _ string) ([]byte, error) {
+		if fetches.Add(1) == 1 {
+			close(leaderStarted)
+		}
+		<-release
+		return []byte("payload"), nil
+	}
+
+	// Leader: a long-lived context that drives the actual fetch.
+	leaderDone := make(chan struct{})
+	go func() {
+		defer close(leaderDone)
+		data, err := c.Get(context.Background(), "id1", fetch)
+		if err != nil || string(data) != "payload" {
+			t.Errorf("leader Get = (%q, %v), want (payload, nil)", data, err)
+		}
+	}()
+
+	<-leaderStarted
+
+	// Waiter: joins the same flight, then has its ctx cancelled. It must return
+	// ctx.Err() without waiting for release.
+	waiterCtx, cancel := context.WithCancel(context.Background())
+	waiterErr := make(chan error, 1)
+	go func() {
+		_, err := c.Get(waiterCtx, "id1", fetch)
+		waiterErr <- err
+	}()
+	// Let the waiter reach its select, then cancel it.
+	time.Sleep(20 * time.Millisecond)
+	cancel()
+
+	select {
+	case err := <-waiterErr:
+		if err != context.Canceled {
+			t.Errorf("cancelled waiter err = %v, want context.Canceled", err)
+		}
+	case <-time.After(2 * time.Second):
+		t.Fatal("cancelled waiter did not return promptly")
+	}
+
+	// The leader's fetch was unaffected by the waiter's cancellation.
+	close(release)
+	<-leaderDone
+	if got := fetches.Load(); got != 1 {
+		t.Errorf("fetch ran %d times, want 1 (waiter must not trigger its own)", got)
+	}
+}
+
 // TestAtomicWriteNoPartialReads: a reader concurrent with a write sees either the
 // old bytes or the new bytes, never a torn write (the rename swap).
 func TestAtomicWriteNoPartialReads(t *testing.T) {

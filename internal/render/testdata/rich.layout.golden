@@ -1,0 +1,1568 @@
+lines=338 outline=11 anchors=141
+=== OUTLINE ===
+  L0 h1 "🍔 McBeta UAT Plan"
+  L8 h1 "Log-ins"
+  L16 h1 "UI Test Database"
+  L22 h2 "The Process"
+  L27 h3 "Executive Summary"
+  L37 h2 "Forecasting domain underperformance is not representative of MC Beta "
+  L38 h2 "performance"
+  L61 h3 "Solutions"
+  L117 h2 "ERCOT DART PROF UNIVARIATE DAYZER — 2026-05-15 Forecast Comparison"
+  L118 h3 "What's available in the agentic context"
+  L137 h3 "What I can't provide"
+=== LINES ===
+[000] indent=0 block=360dbe27 H1
+      "🍔 "
+      "McBeta UAT Plan" {b}
+[001] indent=0 block=360dbe27
+      "Document Type: " {b fg=#9b9a97}
+      "Test"
+[002] indent=0 block=360dbe27
+      "Status: " {b fg=#9b9a97}
+      "In progress"
+[003] indent=0 block=360dbe27
+      "────────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+[004] indent=0 block=360dbe27
+      "╭──────────────────────────────────────────────────────────────────────╮" {fg=#9b9a97 bg=#ebeced}
+[005] indent=0 block=360dbe27
+      "│ " {fg=#9b9a97 bg=#ebeced}
+      "💡 " {bg=#ebeced}
+      "Welcome to the Testing Page for the McBeta June 1st Launch! " {b bg=#ebeced}
+      "     " {bg=#ebeced}
+      " │" {fg=#9b9a97 bg=#ebeced}
+[006] indent=0 block=360dbe27
+      "╰──────────────────────────────────────────────────────────────────────╯" {fg=#9b9a97 bg=#ebeced}
+[007] indent=2 block=360dbe27
+      "Table of Contents"
+[008] indent=0 block=360dbe27 H1
+      "Log-ins" {b}
+[009] indent=2 block=366dbe27
+      "◦ "
+      "We will ask some people to login and test with their EQ Logins"
+[010] indent=4 block=366dbe27
+      "▪ "
+      "Website = "
+      "https://portal.mtprod01.eeek.io/login/" {href=https://portal.mtprod01.eeek.io/login/}
+[011] indent=4 block=366dbe27
+      "▪ "
+      "Use your EQ login"
+[012] indent=2 block=366dbe27
+      "◦ "
+      "We will ask others to login using a test account"
+[013] indent=2 block=366dbe27
+      "◦ "
+      "Slack message from Matthew E on how to test locally - "
+[014] indent=2 block=366dbe27
+      "  "
+      "https://equilibriumenergy.slack.com/archives/C03590XQ8GL/p1779235277" {href=https://equilibriumenergy.slack.com/archives/C03590XQ8GL/p1779235277928819}
+[015] indent=2 block=366dbe27
+      "  "
+      "928819" {href=https://equilibriumenergy.slack.com/archives/C03590XQ8GL/p1779235277928819}
+[016] indent=0 block=360dbe27 H1
+      "UI Test Database" {b}
+[017] indent=2 block=360dbe27
+      "🗂 "
+      "McBeta Test Database" {u fg=#337ea9}
+[018] indent=0 block=36ddbe27
+      "────────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+[019] indent=0 block=36bdbe27
+      "Seeking EQ AI Chat Go-Live approval for MC Beta" {i}
+[020] indent=0 block=36bdbe27
+      "May 27th, 2026"
+[021] indent=0 block=36bdbe27
+      "────────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+[022] indent=0 block=36bdbe27 H2
+      "The Process" {b}
+[023] indent=0 block=36bdbe27
+      "• "
+      "Split Q&A dataset into 3 core domains: forecasting, trading, analytics"
+[024] indent=0 block=36ddbe27
+      "• "
+      "Ran experimental Q&A dataset through EQ AI to simulate user behavior"
+[025] indent=4 block=36bdbe27
+      "[image]" {i fg=#9b9a97}
+[026] indent=4 block=36bdbe27
+      "[image]" {i fg=#9b9a97}
+[027] indent=0 block=36bdbe27 H3
+      "Executive Summary" {b}
+[028] indent=0 block=36bdbe27
+      "[image]" {i fg=#9b9a97}
+[029] indent=0 block=36bdbe27
+      "┌─────────────┬─────┬────────────┬────────┬───────────┬───────────┐" {fg=#9b9a97}
+[030] indent=0 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Domain" {b}
+      "     "
+      " │ " {fg=#9b9a97}
+      "n" {b}
+      "  "
+      " │ " {fg=#9b9a97}
+      "Reject (1)" {b}
+      " │ " {fg=#9b9a97}
+      "OK (2)" {b}
+      " │ " {fg=#9b9a97}
+      "Great (3)" {b}
+      " │ " {fg=#9b9a97}
+      "Avg score" {b}
+      " │ " {fg=#9b9a97}
+[031] indent=0 block=36bdbe27
+      "├─────────────┼─────┼────────────┼────────┼───────────┼───────────┤" {fg=#9b9a97}
+[032] indent=0 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Forecasting"
+      " │ " {fg=#9b9a97}
+      "72"
+      " "
+      " │ " {fg=#9b9a97}
+      "65%"
+      "       "
+      " │ " {fg=#9b9a97}
+      "19%"
+      "   "
+      " │ " {fg=#9b9a97}
+      "15%"
+      "      "
+      " │ " {fg=#9b9a97}
+      "1.50"
+      "     "
+      " │ " {fg=#9b9a97}
+[033] indent=0 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Trading"
+      "    "
+      " │ " {fg=#9b9a97}
+      "50"
+      " "
+      " │ " {fg=#9b9a97}
+      "36%"
+      "       "
+      " │ " {fg=#9b9a97}
+      "46%"
+      "   "
+      " │ " {fg=#9b9a97}
+      "16%"
+      "      "
+      " │ " {fg=#9b9a97}
+      "1.79"
+      "     "
+      " │ " {fg=#9b9a97}
+[034] indent=0 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Analytics"
+      "  "
+      " │ " {fg=#9b9a97}
+      "17"
+      " "
+      " │ " {fg=#9b9a97}
+      "35%"
+      "       "
+      " │ " {fg=#9b9a97}
+      "35%"
+      "   "
+      " │ " {fg=#9b9a97}
+      "29%"
+      "      "
+      " │ " {fg=#9b9a97}
+      "1.94"
+      "     "
+      " │ " {fg=#9b9a97}
+[035] indent=0 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Total" {b}
+      "      "
+      " │ " {fg=#9b9a97}
+      "139" {b}
+      " │ " {fg=#9b9a97}
+      "51%" {b}
+      "       "
+      " │ " {fg=#9b9a97}
+      "31%" {b}
+      "   "
+      " │ " {fg=#9b9a97}
+      "17%" {b}
+      "      "
+      " │ " {fg=#9b9a97}
+      "1.66" {b}
+      "     "
+      " │ " {fg=#9b9a97}
+[036] indent=0 block=36bdbe27
+      "└─────────────┴─────┴────────────┴────────┴───────────┴───────────┘" {fg=#9b9a97}
+[037] indent=0 block=36ddbe27 H2
+      "Forecasting domain underperformance is not representative of MC Beta " {b}
+[038] indent=0 block=36ddbe27 H2
+      "performance" {b}
+[039] indent=0 block=36ddbe27
+      "1. "
+      "Forecasting questions rely on information contained in the context " {b}
+[040] indent=0 block=36ddbe27
+      "   "
+      "layer" {b}
+      " (cross-validation runs, forecast model methodology documents), "
+[041] indent=0 block=36ddbe27
+      "   "
+      "which is not deployed in the MT environment, and has not been "
+[042] indent=0 block=36ddbe27
+      "   "
+      "invested in."
+[043] indent=0 block=36ddbe27
+      "▾ "
+      "Example" {b}
+[044] indent=2 block=36ddbe27
+      "Question:" {b}
+      " \"For ERCOT__DART__PROF__UNIVARIATE__DAYZER config version "
+[045] indent=2 block=36ddbe27
+      "1.2, explain at a high level what PROF does and which inputs it uses.”"
+[046] indent=2 block=36ddbe27
+      "Context needed:" {b}
+      " documents like "
+      "PROF: Probabilistic Regime Overlayed " {href=https://app.notion.com/p/196dbe27599280fe821aef46de0dd9fb}
+[047] indent=2 block=36ddbe27
+      "Forecasting " {href=https://app.notion.com/p/196dbe27599280fe821aef46de0dd9fb}
+      " "
+[048] indent=0 block=36cdbe27
+      "[image]" {i fg=#9b9a97}
+[049] indent=0 block=36ddbe27
+      "1. "
+      "Flawed experiment design" {b}
+      " - questions in the dataset asked about "
+[050] indent=0 block=36ddbe27
+      "   "
+      "models and information that MC Beta users would not be privy to"
+[051] indent=2 block=36ddbe27
+      "1. "
+      "These questions were closer to how we would expect an internal "
+[052] indent=2 block=36ddbe27
+      "   "
+      "scientist to use the chat. In that context, it did not perform "
+[053] indent=2 block=36ddbe27
+      "   "
+      "well. "
+[054] indent=0 block=36ddbe27
+      "▾ "
+      "Examples" {b}
+[055] indent=2 block=36ddbe27
+      "\"For ERCOT__DART__PROF__SMOOTH_UNIVARIATE__DAYZER config version 1.0, "
+[056] indent=2 block=36ddbe27
+      "list the Dayzer fundamentals and other input models used for operating"
+[057] indent=2 block=36ddbe27
+      "day 2026-05-15.”"
+[058] indent=2 block=36ddbe27
+      "\"For ERCOT__RTMEC__PROF__UNIVARIATE__DAYZER config version 3.1, "
+[059] indent=2 block=36ddbe27
+      "summarize analyses completed between 2026-05-01 and 2026-05-15 and "
+[060] indent=2 block=36ddbe27
+      "identify the most promising version by validation MAE.”"
+[061] indent=0 block=36ddbe27 H3
+      "Solutions" {b}
+[062] indent=0 block=36bdbe27
+      "[image]" {i fg=#9b9a97}
+[063] indent=0 block=36bdbe27
+      "[unsupported block]" {i fg=#9b9a97}
+[064] indent=2 block=36bdbe27
+      "Forecasting"
+[065] indent=4 block=36bdbe27
+      "┌─────────────┬────┬────────────┬─────────┬───────────┬──────┐" {fg=#9b9a97}
+[066] indent=4 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Domain" {b}
+      "     "
+      " │ " {fg=#9b9a97}
+      "n" {b}
+      " "
+      " │ " {fg=#9b9a97}
+      "Reject (1)" {b}
+      " │ " {fg=#9b9a97}
+      "Ok (2) " {b}
+      " │ " {fg=#9b9a97}
+      "Great (3)" {b}
+      " │ " {fg=#9b9a97}
+      "Avg" {b}
+      " "
+      " │ " {fg=#9b9a97}
+[067] indent=4 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Forecasting"
+      " │ " {fg=#9b9a97}
+      "72"
+      " │ " {fg=#9b9a97}
+      "65%"
+      "       "
+      " │ " {fg=#9b9a97}
+      "19%"
+      "    "
+      " │ " {fg=#9b9a97}
+      "15%"
+      "      "
+      " │ " {fg=#9b9a97}
+      "1.50"
+      " │ " {fg=#9b9a97}
+[068] indent=4 block=36bdbe27
+      "└─────────────┴────┴────────────┴─────────┴───────────┴──────┘" {fg=#9b9a97}
+[069] indent=4 block=36bdbe27
+      "What went well" {b}
+[070] indent=4 block=36bdbe27
+      "▪ "
+      "When asked about cval data in dev, it answers the question "
+[071] indent=4 block=36bdbe27
+      "  "
+      "completely and correctly"
+[072] indent=4 block=36bdbe27
+      "▪ "
+      "Catches malformed questions (i.e. when the user asks about a "
+[073] indent=4 block=36bdbe27
+      "  "
+      "“solar price forecast”, it flags that there is no such thing)"
+[074] indent=4 block=36bdbe27
+      "What needs fixing" {b}
+[075] indent=4 block=36bdbe27
+      "▪ "
+      "Answer search is limited to "
+      "dev" {code}
+      " env, cannot answer questions about"
+[076] indent=4 block=36bdbe27
+      "  "
+      "prod" {code}
+      " runs"
+[077] indent=4 block=36cdbe27
+      "▪ "
+      "Deploy the vector store (forecast model and run context)"
+[078] indent=4 block=36cdbe27
+      "▪ "
+      "Investment in the context layer"
+[079] indent=4 block=36bdbe27
+      "Examples" {b}
+[080] indent=4 block=36cdbe27
+      "▾ "
+      "Good"
+[081] indent=6 block=36cdbe27
+      "Question:" {b}
+[082] indent=6 block=36cdbe27
+      "\"What ERCOT__DART__PROF__UNIVARIATE__DAYZER model version is "
+[083] indent=6 block=36cdbe27
+      "active for ERCOT hub forecasts on 2026-05-15?”"
+[084] indent=6 block=36cdbe27
+      "Response:" {b}
+[085] indent=6 block=36cdbe27
+      "Here's what ran on 2026-05-15 for " {i}
+[086] indent=6 block=36cdbe27
+      "ERCOT__DART__PROF__UNIVARIATE__DAYZER" {i code}
+      ":" {i}
+[087] indent=6 block=36cdbe27
+      "There were " {i}
+      "two concurrent inference runs" {b i}
+      " that day, one per active " {i}
+[088] indent=6 block=36cdbe27
+      "config version:" {i}
+[089] indent=6 block=36cdbe27
+      "┌─────────┬────────────┬───────────┬────────────────┬────────────┐" {fg=#9b9a97}
+[090] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Config " {b}
+      " │ " {fg=#9b9a97}
+      "MLflow " {b}
+      "   "
+      " │ " {fg=#9b9a97}
+      "Run Start" {b}
+      " │ " {fg=#9b9a97}
+      "Deployment " {b}
+      "   "
+      " │ " {fg=#9b9a97}
+      "Coverage" {b}
+      "  "
+      " │ " {fg=#9b9a97}
+[091] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Version" {b}
+      " │ " {fg=#9b9a97}
+      "Model " {b}
+      "    "
+      " │ " {fg=#9b9a97}
+      "(UTC)" {b}
+      "    "
+      " │ " {fg=#9b9a97}
+      "Name" {b}
+      "          "
+      " │ " {fg=#9b9a97}
+      "          "
+      " │ " {fg=#9b9a97}
+[092] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "       "
+      " │ " {fg=#9b9a97}
+      "Version" {b}
+      "   "
+      " │ " {fg=#9b9a97}
+      "         "
+      " │ " {fg=#9b9a97}
+      "              "
+      " │ " {fg=#9b9a97}
+      "          "
+      " │ " {fg=#9b9a97}
+[093] indent=6 block=36cdbe27
+      "├─────────┼────────────┼───────────┼────────────────┼────────────┤" {fg=#9b9a97}
+[094] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "v1.4" {b}
+      "   "
+      " │ " {fg=#9b9a97}
+      "152" {b}
+      "       "
+      " │ " {fg=#9b9a97}
+      "2026-05-1"
+      " │ " {fg=#9b9a97}
+      "erc_dart_prf_d" {code}
+      " │ " {fg=#9b9a97}
+      "1,102 "
+      "    "
+      " │ " {fg=#9b9a97}
+[095] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "       "
+      " │ " {fg=#9b9a97}
+      "          "
+      " │ " {fg=#9b9a97}
+      "5 "
+      "       "
+      " │ " {fg=#9b9a97}
+      "z_da2p1_rt3" {code}
+      "   "
+      " │ " {fg=#9b9a97}
+      "ERCOT "
+      "    "
+      " │ " {fg=#9b9a97}
+[096] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "       "
+      " │ " {fg=#9b9a97}
+      "          "
+      " │ " {fg=#9b9a97}
+      "12:31:45"
+      " "
+      " │ " {fg=#9b9a97}
+      "              "
+      " │ " {fg=#9b9a97}
+      "nodes"
+      "     "
+      " │ " {fg=#9b9a97}
+[097] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "v1.2"
+      "   "
+      " │ " {fg=#9b9a97}
+      "217"
+      "       "
+      " │ " {fg=#9b9a97}
+      "2026-05-1"
+      " │ " {fg=#9b9a97}
+      "erc_dart_prof_" {code}
+      " │ " {fg=#9b9a97}
+      "61 ERCOT "
+      " "
+      " │ " {fg=#9b9a97}
+[098] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "       "
+      " │ " {fg=#9b9a97}
+      "          "
+      " │ " {fg=#9b9a97}
+      "5 "
+      "       "
+      " │ " {fg=#9b9a97}
+      "dzr_da2p1_rt4p" {code}
+      " │ " {fg=#9b9a97}
+      "nodes"
+      "     "
+      " │ " {fg=#9b9a97}
+[099] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "       "
+      " │ " {fg=#9b9a97}
+      "          "
+      " │ " {fg=#9b9a97}
+      "12:31:23"
+      " "
+      " │ " {fg=#9b9a97}
+      "0" {code}
+      "             "
+      " │ " {fg=#9b9a97}
+      "          "
+      " │ " {fg=#9b9a97}
+[100] indent=6 block=36cdbe27
+      "└─────────┴────────────┴───────────┴────────────────┴────────────┘" {fg=#9b9a97}
+[101] indent=6 block=36cdbe27
+      "Both ran successfully (100% success rate, zero failures)."
+[102] indent=6 block=36cdbe27
+      "For ERCOT hub forecasts specifically" {b}
+      ", v1.4 / MLflow model version "
+[103] indent=6 block=36cdbe27
+      "152" {b}
+      " is the one to focus on — it's the broader deployment covering "
+[104] indent=6 block=36cdbe27
+      "1,102 nodes (DALMP v2.1 – RTLMP v3.0), while v1.2 is a narrower "
+[105] indent=6 block=36cdbe27
+      "61-node deployment running the older RTLMP v4.0 spec."
+[106] indent=6 block=36cdbe27
+      "Let me know if you want to dig into the run details, forecaster "
+[107] indent=6 block=36cdbe27
+      "stats, or compare against a different operating day."
+[108] indent=4 block=36cdbe27
+      "▾ "
+      "Bad"
+[109] indent=6 block=36cdbe27
+      "Question:" {b}
+[110] indent=6 block=36cdbe27
+      "\"Compare EQ's ERCOT__DART__PROF__UNIVARIATE__DAYZER hub forecast "
+[111] indent=6 block=36cdbe27
+      "to ERCOT's published forecast and one external vendor forecast for"
+[112] indent=6 block=36cdbe27
+      "2026-05-15.”"
+[113] indent=6 block=36cdbe27
+      "Response:" {b}
+[114] indent=6 block=36cdbe27
+      "I've done a thorough search across the agentic context. Here's an "
+[115] indent=6 block=36cdbe27
+      "honest assessment of what I found and what I can't provide:"
+[116] indent=6 block=36cdbe27
+      "──────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+[117] indent=6 block=36cdbe27 H2
+      "ERCOT DART PROF UNIVARIATE DAYZER — 2026-05-15 Forecast Comparison" {b}
+[118] indent=6 block=36cdbe27 H3
+      "What's available in the agentic context" {b}
+[119] indent=6 block=36cdbe27
+      "EQ DAYZER inference run — confirmed and healthy" {b}
+[120] indent=6 block=36cdbe27
+      "The inference run for 2026-05-15 completed successfully:"
+[121] indent=6 block=36cdbe27
+      "┌──────────────────────┬───────────────────────────────────────┐" {fg=#9b9a97}
+[122] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Attribute" {b}
+      "           "
+      " │ " {fg=#9b9a97}
+      "Value" {b}
+      "                                "
+      " │ " {fg=#9b9a97}
+[123] indent=6 block=36cdbe27
+      "├──────────────────────┼───────────────────────────────────────┤" {fg=#9b9a97}
+[124] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Model"
+      "               "
+      " │ " {fg=#9b9a97}
+      "ERCOT__DART__PROF__UNIVARIATE__DAYZER" {code}
+      " │ " {fg=#9b9a97}
+[125] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Config version"
+      "      "
+      " │ " {fg=#9b9a97}
+      "1.2"
+      "                                  "
+      " │ " {fg=#9b9a97}
+[126] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "MLflow model version"
+      " │ " {fg=#9b9a97}
+      "218"
+      "                                  "
+      " │ " {fg=#9b9a97}
+[127] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Run start"
+      "           "
+      " │ " {fg=#9b9a97}
+      "2026-05-15 12:31:47 UTC"
+      "              "
+      " │ " {fg=#9b9a97}
+[128] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Forecast type"
+      "       "
+      " │ " {fg=#9b9a97}
+      "Quantile (probabilistic)"
+      "             "
+      " │ " {fg=#9b9a97}
+[129] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Nodes covered"
+      "       "
+      " │ " {fg=#9b9a97}
+      "61 ERCOT nodes"
+      "                       "
+      " │ " {fg=#9b9a97}
+[130] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Success rate"
+      "        "
+      " │ " {fg=#9b9a97}
+      "100% (0 failures)"
+      "                    "
+      " │ " {fg=#9b9a97}
+[131] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Deployment"
+      "          "
+      " │ " {fg=#9b9a97}
+      "erc_dart_prf_dz_da2p1_rt4" {code}
+      "            "
+      " │ " {fg=#9b9a97}
+[132] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Metaflow run"
+      "        "
+      " │ " {fg=#9b9a97}
+      "View in Metaflow UI" {href=https://metaflow.eqdev01.eeek.io/InfrS/argo-fcstercdartprfdzda2p1rt4v12p.prod.dev.infrs-7dzvs}
+      "                  "
+      " │ " {fg=#9b9a97}
+[133] indent=6 block=36cdbe27
+      "└──────────────────────┴───────────────────────────────────────┘" {fg=#9b9a97}
+[134] indent=6 block=36cdbe27
+      "The model covers both DA LMP (v2.1) and RT LMP (v4.0) for 61 ERCOT"
+[135] indent=6 block=36cdbe27
+      "nodes using PROF-Dayzer with Featurestore features."
+[136] indent=6 block=36cdbe27
+      "──────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+[137] indent=6 block=36cdbe27 H3
+      "What I can't provide" {b}
+[138] indent=6 block=36cdbe27
+      "The three-way hourly comparison you're asking for — "
+      "EQ DAYZER vs. " {b}
+[139] indent=6 block=36cdbe27
+      "ERCOT published forecast vs. external vendor" {b}
+      " — isn't available in "
+[140] indent=6 block=36cdbe27
+      "the agentic context for 2026-05-15. Specifically:"
+[141] indent=6 block=36cdbe27
+      "• "
+      "Hourly forecast values" {b}
+      " from the DAYZER run are not surfaced in "
+[142] indent=6 block=36cdbe27
+      "  "
+      "the context layer (the run metadata confirms it completed, but "
+[143] indent=6 block=36cdbe27
+      "  "
+      "the output price curves aren't stored here)."
+[144] indent=6 block=36cdbe27
+      "• "
+      "ERCOT's published DA LMP forecast" {b}
+      " (e.g., from the ERCOT DAM or "
+[145] indent=6 block=36cdbe27
+      "  "
+      "their public forecast products) doesn't have a corresponding "
+[146] indent=6 block=36cdbe27
+      "  "
+      "EQRN in the context."
+[147] indent=6 block=36cdbe27
+      "• "
+      "External vendor forecasts" {b}
+      " — no vendor forecast EQRNs (e.g., Wood"
+[148] indent=6 block=36cdbe27
+      "  "
+      "Mackenzie, Ascend, or similar) are registered in the context for"
+[149] indent=6 block=36cdbe27
+      "  "
+      "this date."
+[150] indent=6 block=36cdbe27
+      "To do this comparison, you'd need to pull the DAYZER output "
+[151] indent=6 block=36cdbe27
+      "directly from S3 (the deployment writes to the standard forecast "
+[152] indent=6 block=36cdbe27
+      "bucket), layer in ERCOT's published DA clearing prices or their "
+[153] indent=6 block=36cdbe27
+      "pre-market forecast, and add the vendor feed. If you can point me "
+[154] indent=6 block=36cdbe27
+      "to where the vendor data lives or share the hub you want to focus "
+[155] indent=6 block=36cdbe27
+      "on (HB_NORTH, HB_WEST, HB_SOUTH, HB_HOUSTON), I can help structure"
+[156] indent=6 block=36cdbe27
+      "the analysis once the data is accessible."
+[157] indent=2 block=36bdbe27
+      "Trading"
+[158] indent=4 block=36bdbe27
+      "┌─────────┬────┬────────────┬────────┬───────────┬──────┐" {fg=#9b9a97}
+[159] indent=4 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Domain" {b}
+      " "
+      " │ " {fg=#9b9a97}
+      "n" {b}
+      " "
+      " │ " {fg=#9b9a97}
+      "Reject (1)" {b}
+      " │ " {fg=#9b9a97}
+      "Ok (2)" {b}
+      " │ " {fg=#9b9a97}
+      "Great (3)" {b}
+      " │ " {fg=#9b9a97}
+      "Avg" {b}
+      " "
+      " │ " {fg=#9b9a97}
+[160] indent=4 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Trading"
+      " │ " {fg=#9b9a97}
+      "25"
+      " │ " {fg=#9b9a97}
+      "36%"
+      "       "
+      " │ " {fg=#9b9a97}
+      "46%"
+      "   "
+      " │ " {fg=#9b9a97}
+      "16%"
+      "      "
+      " │ " {fg=#9b9a97}
+      "1.79"
+      " │ " {fg=#9b9a97}
+[161] indent=4 block=36bdbe27
+      "└─────────┴────┴────────────┴────────┴───────────┴──────┘" {fg=#9b9a97}
+[162] indent=4 block=36bdbe27
+      "What went well" {b}
+[163] indent=4 block=36bdbe27
+      "▪ "
+      "The agent has the domain knowledge to deliver causal chain answers"
+[164] indent=6 block=36bdbe27
+      "• "
+      "\"Wind + solar oversupply → exceeds local load → transmission " {i}
+[165] indent=6 block=36bdbe27
+      "  "
+      "constraints prevent export → DA prices go negative to suppress " {i}
+[166] indent=6 block=36bdbe27
+      "  "
+      "generation.”" {i}
+[167] indent=4 block=36bdbe27
+      "What needs fixing" {b}
+[168] indent=4 block=36bdbe27
+      "▪ "
+      "Lean more into analysis, rather than description"
+[169] indent=6 block=36bdbe27
+      "• "
+      "\"The answer describes what happened, not what was at risk\"" {i}
+      " "
+[170] indent=4 block=36bdbe27
+      "Examples" {b}
+[171] indent=4 block=36bdbe27
+      "▾ "
+      "Good"
+[172] indent=6 block=36bdbe27
+      "Question:" {b}
+      " "
+[173] indent=6 block=36bdbe27
+      "\"For ERCOT operating day 2026-05-15, why are LMPs forecast so low " {i}
+[174] indent=6 block=36bdbe27
+      "in DA at HB_WEST?\"" {i}
+[175] indent=6 block=36bdbe27
+      "Response: " {b}
+[176] indent=6 block=36bdbe27
+      "“The short answer: a classic West Texas renewable oversupply " {i}
+[177] indent=6 block=36bdbe27
+      "event. Strong southerly winds combined with robust solar " {i}
+[178] indent=6 block=36bdbe27
+      "irradiance during daylight hours pushed generation well above " {i}
+[179] indent=6 block=36bdbe27
+      "local load, creating significant negative-price hours in the DA " {i}
+[180] indent=6 block=36bdbe27
+      "market.\n[Followed by a DA vs. RT price table covering HE9–HE18 " {i}
+[181] indent=6 block=36bdbe27
+      "across HB_WEST, HB_NORTH, and HB_HOUSTON, then three drivers: " {i}
+[182] indent=6 block=36bdbe27
+      "wind, solar, transmission congestion]" {i}
+[183] indent=6 block=36cdbe27
+      "\nHB_WEST was negative or near-zero for 10 consecutive hours " {i}
+[184] indent=6 block=36cdbe27
+      "(HE9–HE18 CDT), while HB_NORTH and HB_HOUSTON were clearing " {i}
+[185] indent=6 block=36cdbe27
+      "$14–$38/MWh during the same window. That's a massive basis spread " {i}
+[186] indent=6 block=36cdbe27
+      "driven by local congestion.”" {i}
+[187] indent=4 block=36bdbe27
+      "▾ "
+      "Bad"
+[188] indent=6 block=36bdbe27
+      "Question:" {b}
+      " "
+[189] indent=6 block=36bdbe27
+      "\"For ERCOT operating day 2026-05-15, which Load Zone is forecasted" {i}
+[190] indent=6 block=36bdbe27
+      "to have the highest peak load, and which hours?\"" {i}
+[191] indent=6 block=36bdbe27
+      "Response:" {b}
+[192] indent=6 block=36bdbe27
+      "“The load profiles are charted above. NORTH_ERCOT's dominance is " {i}
+[193] indent=6 block=36bdbe27
+      "clear throughout the day, with the gap widening significantly from" {i}
+[194] indent=6 block=36bdbe27
+      "HE14 onward into the evening peak. Let me know if you want to " {i}
+[195] indent=6 block=36bdbe27
+      "cross-reference with RT actuals or DA prices for that zone.”" {i}
+[196] indent=6 block=36cdbe27
+      "Reviewer Comment:" {b}
+[197] indent=6 block=36cdbe27
+      "“No chart outputted. The answer never states which zone has the " {i}
+[198] indent=6 block=36cdbe27
+      "highest peak load or which hours. \"NORTH_ERCOT's dominance is " {i}
+[199] indent=6 block=36cdbe27
+      "clear throughout the day\" implies it's the answer, but the " {i}
+[200] indent=6 block=36cdbe27
+      "question asked for a specific zone and specific hours. neither is " {i}
+[201] indent=6 block=36cdbe27
+      "stated explicitly. A reader who needs this for a DA bid can't act " {i}
+[202] indent=6 block=36cdbe27
+      "on \"dominance is clear.””" {i}
+[203] indent=2 block=36bdbe27
+      "Analytics"
+[204] indent=4 block=36bdbe27
+      "┌───────────┬────┬────────────┬────────┬───────────┬──────┐" {fg=#9b9a97}
+[205] indent=4 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Domain" {b}
+      "   "
+      " │ " {fg=#9b9a97}
+      "n" {b}
+      " "
+      " │ " {fg=#9b9a97}
+      "Reject (1)" {b}
+      " │ " {fg=#9b9a97}
+      "Ok (2)" {b}
+      " │ " {fg=#9b9a97}
+      "Great (3)" {b}
+      " │ " {fg=#9b9a97}
+      "Avg" {b}
+      " "
+      " │ " {fg=#9b9a97}
+[206] indent=4 block=36bdbe27
+      "│ " {fg=#9b9a97}
+      "Analytics"
+      " │ " {fg=#9b9a97}
+      "17"
+      " │ " {fg=#9b9a97}
+      "35%"
+      "       "
+      " │ " {fg=#9b9a97}
+      "45%"
+      "   "
+      " │ " {fg=#9b9a97}
+      "29%"
+      "      "
+      " │ " {fg=#9b9a97}
+      "1.94"
+      " │ " {fg=#9b9a97}
+[207] indent=4 block=36bdbe27
+      "└───────────┴────┴────────────┴────────┴───────────┴──────┘" {fg=#9b9a97}
+[208] indent=4 block=36bdbe27
+      "What went well" {b}
+[209] indent=4 block=36bdbe27
+      "▪ "
+      "Performed well in broad summarization questions, and well-scoped "
+[210] indent=4 block=36bdbe27
+      "  "
+      "objective questions"
+[211] indent=4 block=36bdbe27
+      "What needs fixing" {b}
+[212] indent=4 block=36bdbe27
+      "▪ "
+      "Wrong DART sign convention - giving RT - DA"
+[213] indent=4 block=36bdbe27
+      "▪ "
+      "Wrong metrics comparisons - comparing DA forecasts with RT actuals"
+[214] indent=4 block=36bdbe27
+      "▪ "
+      "Data access - when asked about the existing like-days, the agent "
+[215] indent=4 block=36bdbe27
+      "  "
+      "claimed it couldn’t compute"
+[216] indent=4 block=36bdbe27
+      "Examples" {b}
+[217] indent=4 block=36bdbe27
+      "▾ "
+      "Good"
+[218] indent=6 block=36bdbe27
+      "Question:" {b}
+[219] indent=6 block=36cdbe27
+      "\"How did ERCOT real-time prices settle relative to DA forecasts by" {i}
+[220] indent=6 block=36cdbe27
+      "hub on 2026-05-15?”" {i}
+[221] indent=6 block=36cdbe27
+      "Response:" {b}
+[222] indent=6 block=36cdbe27
+      "Here's the DA vs. RT settlement picture for May 15." {i}
+[223] indent=6 block=36cdbe27
+      "Key themes:" {b i}
+[224] indent=6 block=36cdbe27
+      "West/Panhandle — RT ran well above DA overnight, then flipped" {b i}
+[225] indent=6 block=36cdbe27
+      "\nHB_WEST and HB_PAN were the most notable deviations. RT beat DA by" {i}
+[226] indent=6 block=36cdbe27
+      "$17–19/MWh in the overnight hours (HE1–HE8), likely reflecting " {i}
+[227] indent=6 block=36cdbe27
+      "lower-than-forecast wind output when DA priced in strong " {i}
+[228] indent=6 block=36cdbe27
+      "generation. Both hubs then flipped negative in the evening " {i}
+[229] indent=6 block=36cdbe27
+      "(HE19–HE20) before spiking again at HE22–HE24." {i}
+[230] indent=6 block=36cdbe27
+      "South — persistent RT discount through the afternoon" {b i}
+      "\nHB_SOUTH was " {i}
+[231] indent=6 block=36cdbe27
+      "the weakest performer relative to DA. RT ran $10–15/MWh below DA " {i}
+[232] indent=6 block=36cdbe27
+      "from HE10 through HE16 — solar likely overperformed DA " {i}
+[233] indent=6 block=36cdbe27
+      "expectations, suppressing real-time prices. The daily average gap " {i}
+[234] indent=6 block=36cdbe27
+      "was -$5.48/MWh, the largest negative DART of any hub." {i}
+[235] indent=6 block=36cdbe27
+      "Houston — RT outperformed DA in the afternoon peak" {b i}
+      "\nHB_HOUSTON was " {i}
+[236] indent=6 block=36cdbe27
+      "the only load-zone hub to finish the day with a positive DART " {i}
+[237] indent=6 block=36cdbe27
+      "(+$0.93/MWh). The afternoon ramp (HE15–HE18) saw RT exceed DA by " {i}
+[238] indent=6 block=36cdbe27
+      "up to $14.52/MWh, pointing to tighter supply conditions in the " {i}
+[239] indent=6 block=36cdbe27
+      "Houston pocket than the DA anticipated." {i}
+[240] indent=6 block=36cdbe27
+      "North — roughly flat on the day" {b i}
+      "\nHB_NORTH tracked DA closely, with a" {i}
+[241] indent=6 block=36cdbe27
+      "modest -$0.87/MWh daily average. The afternoon hours showed mild " {i}
+[242] indent=6 block=36cdbe27
+      "RT premiums, but midday solar suppression offset those gains." {i}
+[243] indent=6 block=36cdbe27
+      "──────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+[244] indent=6 block=36cdbe27
+      "Want me to break any of these hubs down to the node level, or pull" {i}
+[245] indent=6 block=36cdbe27
+      "the DART spread series directly for a specific path?" {i}
+[246] indent=4 block=36bdbe27
+      "▾ "
+      "Bad"
+[247] indent=6 block=36bdbe27
+      "Question:" {b}
+[248] indent=6 block=36cdbe27
+      "\"For ERCOT operating day 2026-05-15, how did uncertainty " {i}
+[249] indent=6 block=36cdbe27
+      "penalization change DA bid decisions at HB_NORTH?”" {i}
+[250] indent=6 block=36cdbe27
+      "Response:" {b}
+[251] indent=6 block=36cdbe27
+      "Key observations:" {i}
+[252] indent=6 block=36cdbe27
+      "┌───────┬─────────────┬───────┬──────────────────────────────────┐" {fg=#9b9a97}
+[253] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Perio" {b}
+      " │ " {fg=#9b9a97}
+      "DA-RT " {b}
+      "     "
+      " │ " {fg=#9b9a97}
+      "Direc" {b}
+      " │ " {fg=#9b9a97}
+      "Signal" {b}
+      "                          "
+      " │ " {fg=#9b9a97}
+[254] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "d" {b}
+      "    "
+      " │ " {fg=#9b9a97}
+      "Spread " {b}
+      "    "
+      " │ " {fg=#9b9a97}
+      "tion" {b}
+      " "
+      " │ " {fg=#9b9a97}
+      "                                "
+      " │ " {fg=#9b9a97}
+[255] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+      "(DART)" {b}
+      "     "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+      "                                "
+      " │ " {fg=#9b9a97}
+[256] indent=6 block=36cdbe27
+      "├───────┼─────────────┼───────┼──────────────────────────────────┤" {fg=#9b9a97}
+[257] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "HE9–H"
+      " │ " {fg=#9b9a97}
+      "+$4.5 to "
+      "  "
+      " │ " {fg=#9b9a97}
+      "DA > "
+      " │ " {fg=#9b9a97}
+      "DA overbid midday — solar "
+      "      "
+      " │ " {fg=#9b9a97}
+[258] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "E13"
+      "  "
+      " │ " {fg=#9b9a97}
+      "+$8.2"
+      "      "
+      " │ " {fg=#9b9a97}
+      "RT"
+      "   "
+      " │ " {fg=#9b9a97}
+      "suppressed RT below DA"
+      "          "
+      " │ " {fg=#9b9a97}
+[259] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "HE15–"
+      " │ " {fg=#9b9a97}
+      "-$1.3 to "
+      "  "
+      " │ " {fg=#9b9a97}
+      "RT > "
+      " │ " {fg=#9b9a97}
+      "RT ran above DA into evening "
+      "   "
+      " │ " {fg=#9b9a97}
+[260] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "HE17"
+      " "
+      " │ " {fg=#9b9a97}
+      "-$8.7"
+      "      "
+      " │ " {fg=#9b9a97}
+      "DA"
+      "   "
+      " │ " {fg=#9b9a97}
+      "ramp"
+      "                            "
+      " │ " {fg=#9b9a97}
+[261] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "HE18–"
+      " │ " {fg=#9b9a97}
+      "+$1.7 to "
+      "  "
+      " │ " {fg=#9b9a97}
+      "DA > "
+      " │ " {fg=#9b9a97}
+      "DA again above RT in evening "
+      "   "
+      " │ " {fg=#9b9a97}
+[262] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "HE22"
+      " "
+      " │ " {fg=#9b9a97}
+      "+$5.9"
+      "      "
+      " │ " {fg=#9b9a97}
+      "RT"
+      "   "
+      " │ " {fg=#9b9a97}
+      "peak"
+      "                            "
+      " │ " {fg=#9b9a97}
+[263] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "HE24"
+      " "
+      " │ " {fg=#9b9a97}
+      "-$6.4"
+      "      "
+      " │ " {fg=#9b9a97}
+      "RT > "
+      " │ " {fg=#9b9a97}
+      "RT spiked overnight"
+      "             "
+      " │ " {fg=#9b9a97}
+[264] indent=6 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+      "           "
+      " │ " {fg=#9b9a97}
+      "DA"
+      "   "
+      " │ " {fg=#9b9a97}
+      "                                "
+      " │ " {fg=#9b9a97}
+[265] indent=6 block=36cdbe27
+      "└───────┴─────────────┴───────┴──────────────────────────────────┘" {fg=#9b9a97}
+[266] indent=6 block=36cdbe27
+      "What this tells you about DA bid behavior:" {b i}
+[267] indent=6 block=36cdbe27
+      "• "
+      "The " {i}
+      "midday DA premium (HE9–HE13)" {b i}
+      " — up to $8.21 at HE12 — is " {i}
+[268] indent=6 block=36cdbe27
+      "  "
+      "consistent with bidders pricing in solar uncertainty. DA cleared" {i}
+[269] indent=6 block=36cdbe27
+      "  "
+      "well above where RT settled, suggesting the market priced a risk" {i}
+[270] indent=6 block=36cdbe27
+      "  "
+      "premium for afternoon solar variability that didn't materialize " {i}
+[271] indent=6 block=36cdbe27
+      "  "
+      "as severely in RT." {i}
+[272] indent=6 block=36cdbe27
+      "• "
+      "The " {i}
+      "HE15–HE17 reversal" {b i}
+      " (RT > DA by up to $8.70) points to an " {i}
+[273] indent=6 block=36cdbe27
+      "  "
+      "underestimation of the evening ramp in DA — the opposite effect," {i}
+[274] indent=6 block=36cdbe27
+      "  "
+      "where RT tightened faster than DA anticipated." {i}
+[275] indent=6 block=36cdbe27
+      "• "
+      "DAM volumes" {b i}
+      " show buy-side demand peaking in HE17–HE22 " {i}
+[276] indent=6 block=36cdbe27
+      "  "
+      "(~17,500–18,300 MWh) with sell-side heaviest in HE9–HE13 " {i}
+[277] indent=6 block=36cdbe27
+      "  "
+      "(~5,000–5,300 MWh), consistent with participants locking in DA " {i}
+[278] indent=6 block=36cdbe27
+      "  "
+      "sales during the solar window." {i}
+[279] indent=6 block=36cdbe27
+      "──────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+[280] indent=6 block=36cdbe27
+      "If you're working with a specific model or framework that uses " {i}
+[281] indent=6 block=36cdbe27
+      "\"uncertainty penalization\" as a defined term — e.g., a stochastic " {i}
+[282] indent=6 block=36cdbe27
+      "bidding model or a specific EQ methodology — let me know and I can" {i}
+[283] indent=6 block=36cdbe27
+      "pull the relevant context. I can also break this down by " {i}
+[284] indent=6 block=36cdbe27
+      "node-level prices within the North zone if the hub view isn't " {i}
+[285] indent=6 block=36cdbe27
+      "granular enough." {i}
+[286] indent=6 block=36cdbe27
+      "Reviewer Comment:" {b}
+[287] indent=6 block=36cdbe27
+      "This response erodes my confidence in the chatbot. Question 2 was " {i}
+[288] indent=6 block=36cdbe27
+      "nearly the same; but generated this response:\nNo strategy run data " {i}
+[289] indent=6 block=36cdbe27
+      "found for ERCOT operating day 2026-05-15 at HB_NORTH." {i}
+[290] indent=6 block=36cdbe27
+      "I see how this response (likely) doesn't rely on bid data at all, " {i}
+[291] indent=6 block=36cdbe27
+      "and just uses DART trends to speak at a high level about expected " {i}
+[292] indent=6 block=36cdbe27
+      "bidding behavior. But that doesn't answer the question of \"how " {i}
+[293] indent=6 block=36cdbe27
+      "did\", it answers the question \"how could\"." {i}
+[294] indent=6 block=36cdbe27
+      "\nAdditionally, it's unclear if the data referenced in the response " {i}
+[295] indent=6 block=36cdbe27
+      "is forecast or actuals." {i}
+[296] indent=6 block=36cdbe27
+      "\nIf actuals: this response is not helpful, as it doesn't include " {i}
+[297] indent=6 block=36cdbe27
+      "any aspect of uncertainty." {i}
+[298] indent=6 block=36cdbe27
+      "\nIf forecasts: a point forecast is always an estimate, but it " {i}
+[299] indent=6 block=36cdbe27
+      "doesn't capture uncertainty. What is the agent using to identify " {i}
+[300] indent=6 block=36cdbe27
+      "uncertainty?" {i}
+[301] indent=0 block=36bdbe27
+      "[image]" {i fg=#9b9a97}
+[302] indent=0 block=36cdbe27
+      "┌───────────┬───────────────────────────────┬──────────────────┬───────┐" {fg=#9b9a97}
+[303] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Failure " {b}
+      " "
+      " │ " {fg=#9b9a97}
+      "Desc." {b}
+      "                        "
+      " │ " {fg=#9b9a97}
+      "Fix" {b}
+      "             "
+      " │ " {fg=#9b9a97}
+      "Timef" {b}
+      " │ " {fg=#9b9a97}
+[304] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Theme" {b}
+      "    "
+      " │ " {fg=#9b9a97}
+      "                             "
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "rame" {b}
+      " "
+      " │ " {fg=#9b9a97}
+[305] indent=0 block=36cdbe27
+      "├───────────┼───────────────────────────────┼──────────────────┼───────┤" {fg=#9b9a97}
+[306] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Data "
+      "    "
+      " │ " {fg=#9b9a97}
+      "Some questions require prod "
+      " "
+      " │ " {fg=#9b9a97}
+      "Allow agents in "
+      " │ " {fg=#9b9a97}
+      "Now"
+      "  "
+      " │ " {fg=#9b9a97}
+[307] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "access "
+      "  "
+      " │ " {fg=#9b9a97}
+      "data access. Agent tested "
+      "   "
+      " │ " {fg=#9b9a97}
+      "all envs to read"
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[308] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "gaps"
+      "     "
+      " │ " {fg=#9b9a97}
+      "only had dev data access"
+      "     "
+      " │ " {fg=#9b9a97}
+      "prod data"
+      "       "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[309] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Verbose "
+      " "
+      " │ " {fg=#9b9a97}
+      "Buried lede, long answers for"
+      " │ " {fg=#9b9a97}
+      "Update system "
+      "  "
+      " │ " {fg=#9b9a97}
+      "Now"
+      "  "
+      " │ " {fg=#9b9a97}
+[310] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "answers"
+      "  "
+      " │ " {fg=#9b9a97}
+      "straightforward factual "
+      "     "
+      " │ " {fg=#9b9a97}
+      "prompt"
+      "          "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[311] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "         "
+      " │ " {fg=#9b9a97}
+      "questions. Long responses for"
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[312] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "         "
+      " │ " {fg=#9b9a97}
+      "“I can’t answer that”"
+      "        "
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[313] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Question "
+      " │ " {fg=#9b9a97}
+      "Still references "
+      "            "
+      " │ " {fg=#9b9a97}
+      "Route all "
+      "      "
+      " │ " {fg=#9b9a97}
+      "Now"
+      "  "
+      " │ " {fg=#9b9a97}
+[314] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "data set "
+      " │ " {fg=#9b9a97}
+      "ExplainabilityAgent" {code}
+      ". "
+      "        "
+      " │ " {fg=#9b9a97}
+      "questions to "
+      "   "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[315] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "errors"
+      "   "
+      " │ " {fg=#9b9a97}
+      "References data in other "
+      "    "
+      " │ " {fg=#9b9a97}
+      "EQTradingAssista" {code}
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[316] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "         "
+      " │ " {fg=#9b9a97}
+      "environments. Irrelevant "
+      "    "
+      " │ " {fg=#9b9a97}
+      "nt" {code}
+      "              "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[317] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "         "
+      " │ " {fg=#9b9a97}
+      "questions. "
+      "                  "
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[318] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Missing "
+      " "
+      " │ " {fg=#9b9a97}
+      "Missing the procedural "
+      "      "
+      " │ " {fg=#9b9a97}
+      "Build skills to "
+      " │ " {fg=#9b9a97}
+      "Next"
+      " "
+      " │ " {fg=#9b9a97}
+[319] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "ability "
+      " "
+      " │ " {fg=#9b9a97}
+      "knowledge or tools required "
+      " "
+      " │ " {fg=#9b9a97}
+      "close gap"
+      "       "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[320] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "to do "
+      "   "
+      " │ " {fg=#9b9a97}
+      "to perform work that SMEs do "
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[321] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "multi-ste"
+      " │ " {fg=#9b9a97}
+      "with ad-hoc scripts or "
+      "      "
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[322] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "p "
+      "       "
+      " │ " {fg=#9b9a97}
+      "Cursor/Claude"
+      "                "
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[323] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "analysis"
+      " "
+      " │ " {fg=#9b9a97}
+      "                             "
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[324] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Vector "
+      "  "
+      " │ " {fg=#9b9a97}
+      "The agent tested did not have"
+      " │ " {fg=#9b9a97}
+      "Deploy dagster "
+      " "
+      " │ " {fg=#9b9a97}
+      "Next"
+      " "
+      " │ " {fg=#9b9a97}
+[325] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "store "
+      "   "
+      " │ " {fg=#9b9a97}
+      "access to the DBR vector "
+      "    "
+      " │ " {fg=#9b9a97}
+      "and DBR vector "
+      " "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[326] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "access"
+      "   "
+      " │ " {fg=#9b9a97}
+      "store, which contains "
+      "       "
+      " │ " {fg=#9b9a97}
+      "store"
+      "           "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[327] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "         "
+      " │ " {fg=#9b9a97}
+      "substantial amount of "
+      "       "
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[328] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "         "
+      " │ " {fg=#9b9a97}
+      "forecasting model information"
+      " │ " {fg=#9b9a97}
+      "                "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[329] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "Vector "
+      "  "
+      " │ " {fg=#9b9a97}
+      "Context layer has not been "
+      "  "
+      " │ " {fg=#9b9a97}
+      "Inject more "
+      "    "
+      " │ " {fg=#9b9a97}
+      "Next,"
+      " │ " {fg=#9b9a97}
+[330] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "store "
+      "   "
+      " │ " {fg=#9b9a97}
+      "invested in due to lack of "
+      "  "
+      " │ " {fg=#9b9a97}
+      "relevant "
+      "       "
+      " │ " {fg=#9b9a97}
+      "on-go"
+      " │ " {fg=#9b9a97}
+[331] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "investmen"
+      " │ " {fg=#9b9a97}
+      "prioritization, direction, or"
+      " │ " {fg=#9b9a97}
+      "information into"
+      " │ " {fg=#9b9a97}
+      "ing"
+      "  "
+      " │ " {fg=#9b9a97}
+[332] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "t"
+      "        "
+      " │ " {fg=#9b9a97}
+      "usage"
+      "                        "
+      " │ " {fg=#9b9a97}
+      "context layer to"
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[333] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "         "
+      " │ " {fg=#9b9a97}
+      "                             "
+      " │ " {fg=#9b9a97}
+      "better serve "
+      "   "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[334] indent=0 block=36cdbe27
+      "│ " {fg=#9b9a97}
+      "         "
+      " │ " {fg=#9b9a97}
+      "                             "
+      " │ " {fg=#9b9a97}
+      "users"
+      "           "
+      " │ " {fg=#9b9a97}
+      "     "
+      " │ " {fg=#9b9a97}
+[335] indent=0 block=36cdbe27
+      "└───────────┴───────────────────────────────┴──────────────────┴───────┘" {fg=#9b9a97}
+[336] indent=0 block=36ddbe27
+      "[image]" {i fg=#9b9a97}
+[337] indent=0 block=36bdbe27
+      "🗂 "
+      "MC Beta EQ AI SME QA - Sheet1.csv" {u fg=#337ea9}

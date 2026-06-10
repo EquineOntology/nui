@@ -1,0 +1,4 @@
+# Go build artifacts. The bash `nui` front-end is tracked; the compiled Go
+# binary (built as `nui-go` so `go build` does not clobber the bash `nui`) is not.
+/nui-go
+/nui-go.exe
