@@ -53,9 +53,12 @@ func TestLayoutWalk(t *testing.T) {
 	r := fakeRenderer{}
 	got := Layout(d, 80, r, LayoutOpts{})
 
-	// title line + 3 top blocks + 1 nested = 5 lines (title renders as heading_1).
-	if len(got.Lines) != 5 {
-		t.Fatalf("expected 5 lines, got %d", len(got.Lines))
+	// Content lines: title + h2 + p1 + tog + nested = 5. Plus blank-line spacing:
+	// one after the title, and one between each adjacent non-list sibling pair
+	// (h2|p1 and p1|tog) = 3 blanks. The toggle→nested parent/child pair is tight.
+	// Total 8.
+	if len(got.Lines) != 8 {
+		t.Fatalf("expected 8 lines (5 content + 3 spacing blanks), got %d", len(got.Lines))
 	}
 	// nested block is one depth deeper than its toggle parent.
 	var nestedIdx = -1

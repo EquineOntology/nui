@@ -188,3 +188,56 @@ func TestRenderBlockNilSafe(t *testing.T) {
 		t.Errorf("zero width must yield nil, got %v", got)
 	}
 }
+
+// TestHeading4Renders guards the fix for headings deeper than the documented
+// heading_3: real pages carry heading_4 (they were degrading to "unsupported").
+// It must render as a level-4 heading (bold, dim), not the unsupported placeholder.
+func TestHeading4Renders(t *testing.T) {
+	r := newRenderer()
+	b := &doc.Block{ID: "h", Type: doc.BlockHeading4, HeadingLvl: 4, RichText: []doc.RichText{{Text: "Deep heading"}}}
+	lines := r.RenderBlock(b, 72, 0)
+	if len(lines) == 0 {
+		t.Fatal("heading_4 produced no lines")
+	}
+	if !lines[0].IsHeading || lines[0].HeadingLevel != 4 {
+		t.Fatalf("heading_4 not marked as a level-4 heading: %+v", lines[0])
+	}
+	text := lines[0].Text()
+	if !strings.Contains(text, "Deep heading") {
+		t.Fatalf("heading_4 text missing, got %q", text)
+	}
+	if strings.Contains(strings.ToLower(text), "unsupported") {
+		t.Fatalf("heading_4 degraded to unsupported: %q", text)
+	}
+}
+
+// TestNumberedListSequences guards sequential numbering: a contiguous run of
+// numbered items must render 1., 2., 3. (Layout assigns Ordinal from sibling
+// order), and a non-numbered block must reset the run.
+func TestNumberedListSequences(t *testing.T) {
+	r := render.NewRenderer(render.DefaultTheme(), doc.LayoutOpts{})
+	d := &doc.Document{
+		ID: "p",
+		Blocks: []doc.Block{
+			{ID: "n1", Type: doc.BlockNumbered, RichText: []doc.RichText{{Text: "first"}}},
+			{ID: "n2", Type: doc.BlockNumbered, RichText: []doc.RichText{{Text: "second"}}},
+			{ID: "n3", Type: doc.BlockNumbered, RichText: []doc.RichText{{Text: "third"}}},
+			{ID: "p1", Type: doc.BlockParagraph, RichText: []doc.RichText{{Text: "break"}}},
+			{ID: "n4", Type: doc.BlockNumbered, RichText: []doc.RichText{{Text: "reset"}}},
+		},
+	}
+	got := doc.Layout(d, 72, r, doc.LayoutOpts{})
+	var markers []string
+	for _, ln := range got.Lines {
+		t := ln.Text()
+		for _, want := range []string{"first", "second", "third", "reset"} {
+			if strings.Contains(t, want) {
+				markers = append(markers, strings.TrimSpace(strings.SplitN(t, " ", 2)[0]))
+			}
+		}
+	}
+	want := []string{"1.", "2.", "3.", "1."} // run of three, then reset after the paragraph
+	if strings.Join(markers, ",") != strings.Join(want, ",") {
+		t.Fatalf("numbered markers = %v, want %v", markers, want)
+	}
+}

@@ -36,8 +36,14 @@ type Block struct {
 	Icon        *Icon      // callout icon
 	Caption     []RichText // image / code / bookmark caption
 	URL         string     // bookmark / link_preview / embed / external image
-	HeadingLvl  int        // heading_1/2/3 -> 1/2/3
+	HeadingLvl  int        // heading_1..6 -> 1..6
 	Collapsible bool       // toggle, toggleable heading
+
+	// Ordinal is the 1-based position within a contiguous numbered-list run. It is
+	// a layout hint set by Layout's walk (which sees sibling order), NOT decoded
+	// from the API — the per-block renderer cannot count siblings on its own. 0
+	// when unset / not a numbered item.
+	Ordinal int
 
 	// table:
 	TableWidth      int
@@ -59,10 +65,15 @@ type Block struct {
 type BlockType string
 
 const (
-	BlockParagraph     BlockType = "paragraph"
-	BlockHeading1      BlockType = "heading_1"
-	BlockHeading2      BlockType = "heading_2"
-	BlockHeading3      BlockType = "heading_3"
+	BlockParagraph BlockType = "paragraph"
+	BlockHeading1  BlockType = "heading_1"
+	BlockHeading2  BlockType = "heading_2"
+	BlockHeading3  BlockType = "heading_3"
+	// Notion's documented API tops out at heading_3, but real pages carry
+	// heading_4 (and occasionally deeper) — they were degrading to "unsupported".
+	BlockHeading4      BlockType = "heading_4"
+	BlockHeading5      BlockType = "heading_5"
+	BlockHeading6      BlockType = "heading_6"
 	BlockBulleted      BlockType = "bulleted_list_item"
 	BlockNumbered      BlockType = "numbered_list_item"
 	BlockToDo          BlockType = "to_do"
@@ -98,6 +109,9 @@ var knownTypes = map[string]BlockType{
 	"heading_1":          BlockHeading1,
 	"heading_2":          BlockHeading2,
 	"heading_3":          BlockHeading3,
+	"heading_4":          BlockHeading4,
+	"heading_5":          BlockHeading5,
+	"heading_6":          BlockHeading6,
 	"bulleted_list_item": BlockBulleted,
 	"numbered_list_item": BlockNumbered,
 	"to_do":              BlockToDo,
@@ -237,7 +251,8 @@ func buildBlock(rb RawBlock) Block {
 			b.Collapsible = true
 		}
 
-	case BlockHeading1, BlockHeading2, BlockHeading3:
+	case BlockHeading1, BlockHeading2, BlockHeading3,
+		BlockHeading4, BlockHeading5, BlockHeading6:
 		b.RichText = decodeRichText(payload, "rich_text")
 		b.Color = decodeColor(payload)
 		b.HeadingLvl = headingLevel(bt)
@@ -311,6 +326,12 @@ func headingLevel(bt BlockType) int {
 		return 2
 	case BlockHeading3:
 		return 3
+	case BlockHeading4:
+		return 4
+	case BlockHeading5:
+		return 5
+	case BlockHeading6:
+		return 6
 	default:
 		return 0
 	}

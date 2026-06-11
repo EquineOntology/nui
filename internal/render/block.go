@@ -1,6 +1,7 @@
 package render
 
 import (
+	"strconv"
 	"strings"
 
 	"github.com/EQuineOntology/nui/internal/doc"
@@ -41,12 +42,17 @@ func (r *Renderer) RenderBlock(b *doc.Block, width, depth int) []doc.Line {
 	switch b.Type {
 	case doc.BlockParagraph:
 		return r.renderText(b, width, indent, nil)
-	case doc.BlockHeading1, doc.BlockHeading2, doc.BlockHeading3:
+	case doc.BlockHeading1, doc.BlockHeading2, doc.BlockHeading3,
+		doc.BlockHeading4, doc.BlockHeading5, doc.BlockHeading6:
 		return r.renderHeading(b, width, indent)
 	case doc.BlockBulleted:
 		return r.renderListItem(b, width, indent, bulletMarker(depth))
 	case doc.BlockNumbered:
-		return r.renderListItem(b, width, indent, "1.")
+		n := b.Ordinal
+		if n < 1 {
+			n = 1
+		}
+		return r.renderListItem(b, width, indent, strconv.Itoa(n)+".")
 	case doc.BlockToDo:
 		return r.renderTodo(b, width, indent)
 	case doc.BlockToggle:
@@ -133,10 +139,16 @@ func (r *Renderer) renderHeading(b *doc.Block, width, indent int) []doc.Line {
 		prefix = append(prefix, doc.Segment{Text: b.Icon.Emoji + " "})
 	}
 
-	// Headings are bold; the style is applied per-segment so wrapping is clean.
+	// Per-level heading style: bold throughout, plus an accent colour that gives
+	// terminal headings the hierarchy that font size carries on the web (H1/H2
+	// blue, H3 default, H4+ dim gray). An explicit inline colour on a span wins.
+	headColor := r.headingColor(level)
 	segs := RichText(b.RichText, r.Theme)
 	for i := range segs {
 		segs[i].Style.Bold = true
+		if headColor != "" && segs[i].Style.Fg == "" {
+			segs[i].Style.Fg = headColor
+		}
 	}
 
 	prefixWidth := segsWidth(prefix)
@@ -168,12 +180,39 @@ func (r *Renderer) renderHeading(b *doc.Block, width, indent int) []doc.Line {
 			Indent: indent, BlockID: b.ID, IsHeading: true, HeadingLevel: level,
 		})
 	}
+	// Full-width rule beneath H1 only: the terminal stand-in for a larger font and
+	// a section divider. H2 differentiates by bold+blue alone, so the hierarchy
+	// reads H1 (ruled) > H2 (blue) > H3 (bold) > H4+ (dim). Anchored to the
+	// heading's block id so it scrolls with it.
+	if level == 1 && len(wrapped) > 0 {
+		if ruleW := width - indent; ruleW > 0 {
+			lines = append(lines, doc.Line{
+				Segments: []doc.Segment{{Text: strings.Repeat("─", ruleW), Style: doc.Style{Fg: headColor}}},
+				Indent:   indent,
+				BlockID:  b.ID,
+			})
+		}
+	}
 	return lines
 }
 
-// renderListItem renders a bulleted/numbered item with its marker. Numbered items
-// use a static "1." marker for now (true sequence numbering needs sibling context
-// the per-block renderer does not have; that is a layout-walk enhancement, noted).
+// headingColor returns the accent foreground for a heading level, or "" for the
+// terminal default. H1/H2 take the blue accent; H3 stays default (bold only);
+// H4+ dim to gray so deep headings read as subordinate.
+func (r *Renderer) headingColor(level int) string {
+	switch {
+	case level <= 2:
+		return r.Theme.Foreground("blue")
+	case level >= 4:
+		return r.Theme.Foreground("gray")
+	default:
+		return ""
+	}
+}
+
+// renderListItem renders a bulleted/numbered item with its marker. The numbered
+// marker reflects the item's position (b.Ordinal), which Layout's walk assigns
+// from sibling order (the per-block renderer cannot count siblings itself).
 func (r *Renderer) renderListItem(b *doc.Block, width, indent int, marker string) []doc.Line {
 	prefix := []doc.Segment{{Text: marker + " "}}
 	return r.renderText(b, width, indent, prefix)
@@ -694,6 +733,12 @@ func headingLevelFromType(t doc.BlockType) int {
 		return 2
 	case doc.BlockHeading3:
 		return 3
+	case doc.BlockHeading4:
+		return 4
+	case doc.BlockHeading5:
+		return 5
+	case doc.BlockHeading6:
+		return 6
 	default:
 		return 0
 	}

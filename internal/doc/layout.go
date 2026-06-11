@@ -111,12 +111,14 @@ func Layout(d *Document, width int, r BlockRenderer, opts LayoutOpts) *Rendered 
 			RichText:   plainTitle(d.Title),
 		}
 		appendBlockLines(out, r.RenderBlock(titleBlock, width, 0))
+		out.Lines = append(out.Lines, Line{}) // breathing room under the title
 	}
 
 	// Page properties render as a labeled block at the top (SPEC §11 T1).
 	if opts.ShowProps && len(d.Props) > 0 {
 		propsBlock := propsToBlock(d.ID, d.Props)
 		appendBlockLines(out, r.RenderBlock(propsBlock, width, 0))
+		out.Lines = append(out.Lines, Line{}) // separate props from the body
 	}
 
 	layoutBlocks(out, d.Blocks, width, 0, r, opts)
@@ -129,8 +131,24 @@ func Layout(d *Document, width int, r BlockRenderer, opts LayoutOpts) *Rendered 
 // deeper. The renderer decides per-type indentation; Layout owns the recursion so
 // the Outline/Anchors stay correct across the whole tree.
 func layoutBlocks(out *Rendered, blocks []Block, width, depth int, r BlockRenderer, opts LayoutOpts) {
+	ordinal := 0 // running count within a contiguous numbered-list run at this depth
 	for i := range blocks {
 		b := &blocks[i]
+		// Breathing room between sibling blocks: one blank line, except between
+		// consecutive items of the same list (which should stay visually tight).
+		if i > 0 {
+			for g := 0; g < blockGap(&blocks[i-1], b); g++ {
+				out.Lines = append(out.Lines, Line{})
+			}
+		}
+		// Sequential numbering: a numbered item's Ordinal is its position in the
+		// current run; any other block type breaks the run and resets the count.
+		if b.Type == BlockNumbered {
+			ordinal++
+			b.Ordinal = ordinal
+		} else {
+			ordinal = 0
+		}
 		lines := r.RenderBlock(b, width, depth)
 		appendBlockLines(out, lines)
 
@@ -143,6 +161,26 @@ func layoutBlocks(out *Rendered, blocks []Block, width, depth int, r BlockRender
 			layoutBlocks(out, b.Children, width, depth+1, r, opts)
 		}
 	}
+}
+
+// blockGap reports how many blank lines to insert between two adjacent sibling
+// blocks. Consecutive items of the same list type stay tight (0); every other
+// pair gets one blank line so paragraphs, headings, callouts, and lists are
+// visually separated rather than running together.
+func blockGap(prev, next *Block) int {
+	if prev == nil || next == nil {
+		return 0
+	}
+	if isListItem(prev.Type) && prev.Type == next.Type {
+		return 0
+	}
+	return 1
+}
+
+// isListItem reports whether a block is one of the list-item types, which group
+// tightly with their same-type neighbours.
+func isListItem(t BlockType) bool {
+	return t == BlockBulleted || t == BlockNumbered || t == BlockToDo
 }
 
 // appendBlockLines appends a renderer's lines to the Rendered output, updating the
