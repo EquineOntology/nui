@@ -241,3 +241,38 @@ func TestNumberedListSequences(t *testing.T) {
 		t.Fatalf("numbered markers = %v, want %v", markers, want)
 	}
 }
+
+// TestHeadingUnderlineByLevel guards the per-level underline characters: H1 "=",
+// H2 "~", H3 "-", and no underline for H4+.
+func TestHeadingUnderlineByLevel(t *testing.T) {
+	r := newRenderer()
+	cases := []struct {
+		typ  doc.BlockType
+		lvl  int
+		char string // "" = expect no underline rule
+	}{
+		{doc.BlockHeading1, 1, "="},
+		{doc.BlockHeading2, 2, "~"},
+		{doc.BlockHeading3, 3, "-"},
+		{doc.BlockHeading4, 4, ""},
+	}
+	for _, c := range cases {
+		b := &doc.Block{ID: "h", Type: c.typ, HeadingLvl: c.lvl, RichText: []doc.RichText{{Text: "Heading"}}}
+		lines := r.RenderBlock(b, 40, 0)
+		rule := ""
+		for _, ln := range lines {
+			if !ln.IsHeading && strings.TrimSpace(ln.Text()) != "" {
+				rule = strings.TrimSpace(ln.Text())
+			}
+		}
+		if c.char == "" {
+			if rule != "" {
+				t.Errorf("level %d: expected no underline, got %q", c.lvl, rule)
+			}
+			continue
+		}
+		if !strings.HasPrefix(rule, c.char) {
+			t.Errorf("level %d: underline = %q, want it to start with %q", c.lvl, rule, c.char)
+		}
+	}
+}

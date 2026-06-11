@@ -113,11 +113,11 @@ func (r *readerModel) bodyHeight() int {
 }
 
 // stickyReserve is the FIXED number of rows held for the pinned region: the most
-// rows the chain can ever render — one per ancestor heading (capped at
-// maxStickyRows), plus one for each H1's underline rule, since the pinned heading
-// carries the same decoration it has in the body and H1 is the only level that
-// renders a rule (see render.renderHeading). Fixed for the document so the body
-// never shifts as the chain pins/unpins while scrolling.
+// rows the chain can ever render — for each ancestor heading (capped at
+// maxStickyRows), its text line plus its underline rule line if it has one. It
+// counts the actual rendered rows (via stickyHeadingRows) rather than assuming
+// which levels carry a rule, so it stays correct whatever render decides. Fixed
+// for the document so the body never shifts as the chain pins/unpins.
 func (r *readerModel) stickyReserve() int {
 	if r.rendered == nil {
 		return 0
@@ -133,17 +133,35 @@ func (r *readerModel) stickyReserve() int {
 		if len(c) > maxStickyRows {
 			c = c[len(c)-maxStickyRows:]
 		}
-		rows := len(c)
+		rows := 0
 		for _, hh := range c {
-			if hh.Level == 1 {
-				rows++ // an H1 also renders its underline rule row
-			}
+			rows += stickyHeadingRows(r.rendered.Lines, hh.LineIdx)
 		}
 		if rows > max {
 			max = rows
 		}
 	}
 	return max
+}
+
+// stickyHeadingRows is how many sticky rows a pinned heading occupies: its text
+// line, plus its underline rule line if one follows (the first non-heading line
+// sharing the heading's block id). This is the single source of truth both
+// stickyReserve and stickyLines use, so reserve and render never disagree.
+func stickyHeadingRows(lines []doc.Line, lineIdx int) int {
+	if lineIdx < 0 || lineIdx >= len(lines) {
+		return 0
+	}
+	rows := 1
+	if bid := lines[lineIdx].BlockID; bid != "" {
+		for j := lineIdx + 1; j < len(lines) && lines[j].BlockID == bid; j++ {
+			if !lines[j].IsHeading {
+				rows++
+				break
+			}
+		}
+	}
+	return rows
 }
 
 // maxOffset is the largest valid scroll offset (so the last screen of content

@@ -1,18 +1,18 @@
-lines=693 outline=8 anchors=215
+lines=700 outline=8 anchors=215
 === OUTLINE ===
   L0 h1 "Agent Platform Standups + Sprint Prep"
   L6 h3 "Action Items"
-  L26 h3 "Josh's Updates"
-  L47 h3 "DataFrame Snapshots Discussion"
-  L61 h3 "Jenna's Updates"
-  L70 h3 "Cycle 9 Priorities"
-  L97 h3 "Tool and Platform Decisions"
-  L124 h3 "Strategic Discussions"
+  L27 h3 "Josh's Updates"
+  L49 h3 "DataFrame Snapshots Discussion"
+  L64 h3 "Jenna's Updates"
+  L74 h3 "Cycle 9 Priorities"
+  L102 h3 "Tool and Platform Decisions"
+  L130 h3 "Strategic Discussions"
 === LINES ===
 [000] indent=0 block=343dbe27 H1
       "Agent Platform Standups + Sprint Prep" {b fg=#337ea9}
 [001] indent=0 block=343dbe27
-      "────────────────────────────────────────────────────────────────────────" {fg=#337ea9}
+      "========================================================================" {fg=#337ea9}
 [002] indent=0 block=-
 [003] indent=0 block=348dbe27
       "▾ "
@@ -22,1397 +22,1411 @@ lines=693 outline=8 anchors=215
 [005] indent=4 block=34cdbe27
 [006] indent=10 block=34cdbe27 H3
       "Action Items" {b}
-[007] indent=0 block=-
-[008] indent=12 block=34cdbe27
+[007] indent=10 block=34cdbe27
+      "--------------------------------------------------------------"
+[008] indent=0 block=-
+[009] indent=12 block=34cdbe27
       "[ ] "
       "Josh to set up regular evals running twice a week "
-[009] indent=12 block=34cdbe27
+[010] indent=12 block=34cdbe27
       "    "
       "against dev/main "
-[010] indent=12 block=34cdbe27
+[011] indent=12 block=34cdbe27
       "[ ] "
       "Josh to work on measuring quality of hallucination "
-[011] indent=12 block=34cdbe27
+[012] indent=12 block=34cdbe27
       "    "
       "metric using F1 score "
-[012] indent=12 block=34cdbe27
+[013] indent=12 block=34cdbe27
       "[ ] "
       "Team to wait for Joel's RFC implementation for DataFrame"
-[013] indent=12 block=34cdbe27
+[014] indent=12 block=34cdbe27
       "    "
       "snapshots in EQ Warehouse "
-[014] indent=12 block=34cdbe27
+[015] indent=12 block=34cdbe27
       "[ ] "
       "Josh to continue work on expanding chat protocol to "
-[015] indent=12 block=34cdbe27
+[016] indent=12 block=34cdbe27
       "    "
       "support clarification and user approval "
-[016] indent=12 block=34cdbe27
-      "[ ] "
-      "Adam to slack Greg's requirements and tenants to Jenna  "
 [017] indent=12 block=34cdbe27
       "[ ] "
-      "Team to check with Ryan about how they are using "
+      "Adam to slack Greg's requirements and tenants to Jenna  "
 [018] indent=12 block=34cdbe27
+      "[ ] "
+      "Team to check with Ryan about how they are using "
+[019] indent=12 block=34cdbe27
       "    "
       "LangSmith before deprecating  "
-[019] indent=12 block=34cdbe27
+[020] indent=12 block=34cdbe27
       "[ ] "
       "Cian to put together a document defining what's needed "
-[020] indent=12 block=34cdbe27
+[021] indent=12 block=34cdbe27
       "    "
       "to support chat in MVP  "
-[021] indent=12 block=34cdbe27
+[022] indent=12 block=34cdbe27
       "[ ] "
       "Adam to write a doc about agent ownership and bring it "
-[022] indent=12 block=34cdbe27
+[023] indent=12 block=34cdbe27
       "    "
       "to Josh and Lauren  "
-[023] indent=12 block=34cdbe27
+[024] indent=12 block=34cdbe27
       "[ ] "
       "Team to work on increasing chat usage through MCP server"
-[024] indent=12 block=34cdbe27
+[025] indent=12 block=34cdbe27
       "    "
       "and more context layer insertions  "
-[025] indent=0 block=-
-[026] indent=10 block=34cdbe27 H3
+[026] indent=0 block=-
+[027] indent=10 block=34cdbe27 H3
       "Josh's Updates" {b}
-[027] indent=0 block=-
-[028] indent=12 block=34cdbe27
-      "• "
-      "Initial OPEC setup is nearly complete with a couple of PRs"
-[029] indent=12 block=34cdbe27
-      "  "
-      "still outstanding "
+[028] indent=10 block=34cdbe27
+      "--------------------------------------------------------------"
+[029] indent=0 block=-
 [030] indent=12 block=34cdbe27
       "• "
-      "Hallucination metric is currently showing around 45%, "
+      "Initial OPEC setup is nearly complete with a couple of PRs"
 [031] indent=12 block=34cdbe27
       "  "
-      "which is inverse to the Brain Trust faithfulness score "
+      "still outstanding "
 [032] indent=12 block=34cdbe27
-      "  "
-      "that was around 60% "
-[033] indent=12 block=34cdbe27
       "• "
-      "Next steps include setting up regular measurements (twice "
+      "Hallucination metric is currently showing around 45%, "
+[033] indent=12 block=34cdbe27
+      "  "
+      "which is inverse to the Brain Trust faithfulness score "
 [034] indent=12 block=34cdbe27
       "  "
-      "weekly) against dev/main "
+      "that was around 60% "
 [035] indent=12 block=34cdbe27
       "• "
-      "Plans to work on validating the hallucination score "
+      "Next steps include setting up regular measurements (twice "
 [036] indent=12 block=34cdbe27
       "  "
-      "quality using an F1 score or similar metric "
+      "weekly) against dev/main "
 [037] indent=12 block=34cdbe27
       "• "
-      "Process will involve implementing metrics, validating "
+      "Plans to work on validating the hallucination score "
 [038] indent=12 block=34cdbe27
       "  "
-      "their scores, getting real scores for the system, then "
+      "quality using an F1 score or similar metric "
 [039] indent=12 block=34cdbe27
-      "  "
-      "improving those scores "
-[040] indent=12 block=34cdbe27
       "• "
-      "Work on DataFrame snapshots and analytical agents is "
+      "Process will involve implementing metrics, validating "
+[040] indent=12 block=34cdbe27
+      "  "
+      "their scores, getting real scores for the system, then "
 [041] indent=12 block=34cdbe27
       "  "
-      "currently paused waiting for Joel to implement the RFC for"
+      "improving those scores "
 [042] indent=12 block=34cdbe27
-      "  "
-      "handling snapshots within EQ Warehouse  "
-[043] indent=12 block=34cdbe27
       "• "
-      "Started work on expanding the chat protocol between "
+      "Work on DataFrame snapshots and analytical agents is "
+[043] indent=12 block=34cdbe27
+      "  "
+      "currently paused waiting for Joel to implement the RFC for"
 [044] indent=12 block=34cdbe27
       "  "
-      "front-end and back-end to support asking for clarification"
+      "handling snapshots within EQ Warehouse  "
 [045] indent=12 block=34cdbe27
+      "• "
+      "Started work on expanding the chat protocol between "
+[046] indent=12 block=34cdbe27
+      "  "
+      "front-end and back-end to support asking for clarification"
+[047] indent=12 block=34cdbe27
       "  "
       "or user approval "
-[046] indent=0 block=-
-[047] indent=10 block=34cdbe27 H3
-      "DataFrame Snapshots Discussion" {b}
 [048] indent=0 block=-
-[049] indent=12 block=34cdbe27
+[049] indent=10 block=34cdbe27 H3
+      "DataFrame Snapshots Discussion" {b}
+[050] indent=10 block=34cdbe27
+      "--------------------------------------------------------------"
+[051] indent=0 block=-
+[052] indent=12 block=34cdbe27
       "• "
       "Joel is proposing that each snapshot creates a Databricks "
-[050] indent=12 block=34cdbe27
+[053] indent=12 block=34cdbe27
       "  "
       "table "
-[051] indent=12 block=34cdbe27
+[054] indent=12 block=34cdbe27
       "• "
       "Not every EQ Warehouse call will be saved - users will "
-[052] indent=12 block=34cdbe27
+[055] indent=12 block=34cdbe27
       "  "
       "need to explicitly request saving queries as tables "
-[053] indent=12 block=34cdbe27
+[056] indent=12 block=34cdbe27
       "• "
       "Users won't see table names or direct links to Databricks "
-[054] indent=12 block=34cdbe27
-      "  "
-[055] indent=12 block=34cdbe27
-      "• "
-      "Citations will be clickable in chat to show data in a "
-[056] indent=12 block=34cdbe27
-      "  "
-      "floating table window within the UI, similar to what Danny"
 [057] indent=12 block=34cdbe27
       "  "
-      "has built  "
 [058] indent=12 block=34cdbe27
       "• "
-      "The data frame appears as a floating table in the UI, not "
+      "Citations will be clickable in chat to show data in a "
 [059] indent=12 block=34cdbe27
       "  "
+      "floating table window within the UI, similar to what Danny"
+[060] indent=12 block=34cdbe27
+      "  "
+      "has built  "
+[061] indent=12 block=34cdbe27
+      "• "
+      "The data frame appears as a floating table in the UI, not "
+[062] indent=12 block=34cdbe27
+      "  "
       "inline with chat "
-[060] indent=0 block=-
-[061] indent=10 block=34cdbe27 H3
+[063] indent=0 block=-
+[064] indent=10 block=34cdbe27 H3
       "Jenna's Updates" {b}
-[062] indent=0 block=-
-[063] indent=12 block=34cdbe27
-      "• "
-      "Working on roadmap documentation and aligning different "
-[064] indent=12 block=34cdbe27
-      "  "
-      "requirements  "
-[065] indent=12 block=34cdbe27
-      "• "
-      "Reviewing Q3 MVP deliverables and agent platform "
-[066] indent=12 block=34cdbe27
-      "  "
-      "requirements  "
+[065] indent=10 block=34cdbe27
+      "--------------------------------------------------------------"
+[066] indent=0 block=-
 [067] indent=12 block=34cdbe27
       "• "
-      "Seeking alignment between Adam's doc requirements and Q3 "
+      "Working on roadmap documentation and aligning different "
 [068] indent=12 block=34cdbe27
       "  "
-      "deliverables  "
-[069] indent=0 block=-
-[070] indent=10 block=34cdbe27 H3
-      "Cycle 9 Priorities" {b}
-[071] indent=0 block=-
+      "requirements  "
+[069] indent=12 block=34cdbe27
+      "• "
+      "Reviewing Q3 MVP deliverables and agent platform "
+[070] indent=12 block=34cdbe27
+      "  "
+      "requirements  "
+[071] indent=12 block=34cdbe27
+      "• "
+      "Seeking alignment between Adam's doc requirements and Q3 "
 [072] indent=12 block=34cdbe27
+      "  "
+      "deliverables  "
+[073] indent=0 block=-
+[074] indent=10 block=34cdbe27 H3
+      "Cycle 9 Priorities" {b}
+[075] indent=10 block=34cdbe27
+      "--------------------------------------------------------------"
+[076] indent=0 block=-
+[077] indent=12 block=34cdbe27
       "Operationalize OPEC:" {b}
       "  "
-[073] indent=0 block=-
-[074] indent=12 block=34cdbe27
-      "• "
-      "Load datasets from git (eq_evals/datasets)"
-[075] indent=12 block=34cdbe27
-      "• "
-      "Run evals on each deploy/day"
-[076] indent=12 block=34cdbe27
-      "• "
-      "Track objective measures (number of traces, duration of "
-[077] indent=12 block=34cdbe27
-      "  "
-      "trace, TTFT, cost)"
-[078] indent=12 block=34cdbe27
-      "• "
-      "Log tool calls and EQRN references"
+[078] indent=0 block=-
 [079] indent=12 block=34cdbe27
       "• "
-      "Understand the process for rolling out new qualitative "
+      "Load datasets from git (eq_evals/datasets)"
 [080] indent=12 block=34cdbe27
-      "  "
-      "metrics (starting with hallucination metric at 45%)  "
+      "• "
+      "Run evals on each deploy/day"
 [081] indent=12 block=34cdbe27
       "• "
-      "Get OPEC set up in production - prove it out first, test "
+      "Track objective measures (number of traces, duration of "
 [082] indent=12 block=34cdbe27
       "  "
-      "it, then extend to other environments"
+      "trace, TTFT, cost)"
 [083] indent=12 block=34cdbe27
       "• "
-      "NOT in scope: Deprecating Brain Trust (only once OPEC is "
+      "Log tool calls and EQRN references"
 [084] indent=12 block=34cdbe27
-      "  "
-      "in every environment), deprecating LangSmith (need to "
+      "• "
+      "Understand the process for rolling out new qualitative "
 [085] indent=12 block=34cdbe27
       "  "
-      "check with Ryan about usage)"
-[086] indent=0 block=-
-[087] indent=12 block=34cdbe27
-      "MCP Server Prototype:" {b}
-      " "
-[088] indent=0 block=-
-[089] indent=12 block=34cdbe27
+      "metrics (starting with hallucination metric at 45%)  "
+[086] indent=12 block=34cdbe27
       "• "
-      "Enable interaction with context layer through Cursor and "
+      "Get OPEC set up in production - prove it out first, test "
+[087] indent=12 block=34cdbe27
+      "  "
+      "it, then extend to other environments"
+[088] indent=12 block=34cdbe27
+      "• "
+      "NOT in scope: Deprecating Brain Trust (only once OPEC is "
+[089] indent=12 block=34cdbe27
+      "  "
+      "in every environment), deprecating LangSmith (need to "
 [090] indent=12 block=34cdbe27
       "  "
-      "Claude"
-[091] indent=12 block=34cdbe27
-      "• "
-      "Support one-off uploading of context to context layer"
+      "check with Ryan about usage)"
+[091] indent=0 block=-
 [092] indent=12 block=34cdbe27
-      "• "
-      "Prioritize loading context docs"
-[093] indent=12 block=34cdbe27
-      "• "
-      "Scan for docs that should be loaded into context"
+      "MCP Server Prototype:" {b}
+      " "
+[093] indent=0 block=-
 [094] indent=12 block=34cdbe27
       "• "
-      "Publish user guide"
+      "Enable interaction with context layer through Cursor and "
 [095] indent=12 block=34cdbe27
+      "  "
+      "Claude"
+[096] indent=12 block=34cdbe27
+      "• "
+      "Support one-off uploading of context to context layer"
+[097] indent=12 block=34cdbe27
+      "• "
+      "Prioritize loading context docs"
+[098] indent=12 block=34cdbe27
+      "• "
+      "Scan for docs that should be loaded into context"
+[099] indent=12 block=34cdbe27
+      "• "
+      "Publish user guide"
+[100] indent=12 block=34cdbe27
       "• "
       "NOT in scope: MCP/Claude insertion into the context layer"
-[096] indent=0 block=-
-[097] indent=10 block=34cdbe27 H3
+[101] indent=0 block=-
+[102] indent=10 block=34cdbe27 H3
       "Tool and Platform Decisions" {b}
-[098] indent=0 block=-
-[099] indent=12 block=34cdbe27
+[103] indent=10 block=34cdbe27
+      "--------------------------------------------------------------"
+[104] indent=0 block=-
+[105] indent=12 block=34cdbe27
       "OPEC Deployment:" {b}
-[100] indent=0 block=-
-[101] indent=12 block=34cdbe27
+[106] indent=0 block=-
+[107] indent=12 block=34cdbe27
       "• "
       "OPEC only needs to be deployed to sandbox and dev "
-[102] indent=12 block=34cdbe27
+[108] indent=12 block=34cdbe27
       "  "
       "environments initially "
-[103] indent=12 block=34cdbe27
+[109] indent=12 block=34cdbe27
       "• "
       "Plan to deprecate Brain Trust once OPEC is in every "
-[104] indent=12 block=34cdbe27
+[110] indent=12 block=34cdbe27
       "  "
       "environment  "
-[105] indent=12 block=34cdbe27
+[111] indent=12 block=34cdbe27
       "• "
       "LangSmith can serve as backup for beta  "
-[106] indent=12 block=34cdbe27
-      "• "
-      "Deployment to additional environments likely in cycle 10 "
-[107] indent=12 block=34cdbe27
-      "  "
-      "or 11 "
-[108] indent=12 block=34cdbe27
-      "• "
-      "Team has 10-15 customer environments total  "
-[109] indent=0 block=-
-[110] indent=12 block=34cdbe27
-      "Feedback Collection:" {b}
-[111] indent=0 block=-
 [112] indent=12 block=34cdbe27
       "• "
-      "Portal chat currently has thumbs up/down feedback that was"
+      "Deployment to additional environments likely in cycle 10 "
 [113] indent=12 block=34cdbe27
       "  "
-      "going to Brain Trust, now redirected to OPEC  "
+      "or 11 "
 [114] indent=12 block=34cdbe27
       "• "
-      "Feedback includes a modal for free-form text input "
-[115] indent=12 block=34cdbe27
+      "Team has 10-15 customer environments total  "
+[115] indent=0 block=-
+[116] indent=12 block=34cdbe27
+      "Feedback Collection:" {b}
+[117] indent=0 block=-
+[118] indent=12 block=34cdbe27
       "• "
-      "Currently minimal usage - mainly testing data "
-[116] indent=0 block=-
-[117] indent=12 block=34cdbe27
-      "LangSmith Usage:" {b}
-[118] indent=0 block=-
+      "Portal chat currently has thumbs up/down feedback that was"
 [119] indent=12 block=34cdbe27
-      "• "
-      "Ryan occasionally uses it for demos (recently provided "
-[120] indent=12 block=34cdbe27
       "  "
-      "Brain Trust trace for NVIDIA demo)  "
+      "going to Brain Trust, now redirected to OPEC  "
+[120] indent=12 block=34cdbe27
+      "• "
+      "Feedback includes a modal for free-form text input "
 [121] indent=12 block=34cdbe27
       "• "
+      "Currently minimal usage - mainly testing data "
+[122] indent=0 block=-
+[123] indent=12 block=34cdbe27
+      "LangSmith Usage:" {b}
+[124] indent=0 block=-
+[125] indent=12 block=34cdbe27
+      "• "
+      "Ryan occasionally uses it for demos (recently provided "
+[126] indent=12 block=34cdbe27
+      "  "
+      "Brain Trust trace for NVIDIA demo)  "
+[127] indent=12 block=34cdbe27
+      "• "
       "Need to check with Ryan about actual usage before "
-[122] indent=12 block=34cdbe27
+[128] indent=12 block=34cdbe27
       "  "
       "deprecating "
-[123] indent=0 block=-
-[124] indent=10 block=34cdbe27 H3
+[129] indent=0 block=-
+[130] indent=10 block=34cdbe27 H3
       "Strategic Discussions" {b}
-[125] indent=0 block=-
-[126] indent=12 block=34cdbe27
-      "Requirements Alignment:" {b}
-[127] indent=0 block=-
-[128] indent=12 block=34cdbe27
-      "• "
-      "Greg Bellingham has outlined requirements and tenants for "
-[129] indent=12 block=34cdbe27
-      "  "
-      "agent platform focusing on being \"external first\"  "
-[130] indent=12 block=34cdbe27
-      "• "
-      "Capabilities should be accessible to external users "
-[131] indent=12 block=34cdbe27
-      "  "
-      "including EQAI tools, ability to add context, and build "
-[132] indent=12 block=34cdbe27
-      "  "
-      "applications "
+[131] indent=10 block=34cdbe27
+      "--------------------------------------------------------------"
+[132] indent=0 block=-
 [133] indent=12 block=34cdbe27
-      "• "
-      "Requirements are based on general building tenants rather "
-[134] indent=12 block=34cdbe27
-      "  "
-      "than specific customer requests "
+      "Requirements Alignment:" {b}
+[134] indent=0 block=-
 [135] indent=12 block=34cdbe27
       "• "
-      "Greg shared requirements via Josh in Slack message from "
+      "Greg Bellingham has outlined requirements and tenants for "
 [136] indent=12 block=34cdbe27
       "  "
-      "April 3rd  "
+      "agent platform focusing on being \"external first\"  "
 [137] indent=12 block=34cdbe27
       "• "
-      "Team has a four-hour session scheduled with Greg on Monday"
+      "Capabilities should be accessible to external users "
 [138] indent=12 block=34cdbe27
       "  "
-[139] indent=0 block=-
+      "including EQAI tools, ability to add context, and build "
+[139] indent=12 block=34cdbe27
+      "  "
+      "applications "
 [140] indent=12 block=34cdbe27
-      "Agent Ownership:" {b}
-[141] indent=0 block=-
+      "• "
+      "Requirements are based on general building tenants rather "
+[141] indent=12 block=34cdbe27
+      "  "
+      "than specific customer requests "
 [142] indent=12 block=34cdbe27
       "• "
-      "Discussion about ownership after unifying Helm's agent "
+      "Greg shared requirements via Josh in Slack message from "
 [143] indent=12 block=34cdbe27
       "  "
-      "with the team's agent  "
+      "April 3rd  "
 [144] indent=12 block=34cdbe27
       "• "
-      "Adam proposing that the agent platform team continues "
+      "Team has a four-hour session scheduled with Greg on Monday"
 [145] indent=12 block=34cdbe27
       "  "
-      "owning it with carved-out subset features  "
-[146] indent=12 block=34cdbe27
-      "• "
-      "Tension between being a platform provider versus owning "
+[146] indent=0 block=-
 [147] indent=12 block=34cdbe27
-      "  "
-      "specific production agents  "
-[148] indent=12 block=34cdbe27
-      "• "
-      "Question about how to handle internal agent building "
+      "Agent Ownership:" {b}
+[148] indent=0 block=-
 [149] indent=12 block=34cdbe27
-      "  "
-      "(Erica, Buttercup, etc.) without requiring everything to "
+      "• "
+      "Discussion about ownership after unifying Helm's agent "
 [150] indent=12 block=34cdbe27
       "  "
-      "go through the agent platform team  "
+      "with the team's agent  "
 [151] indent=12 block=34cdbe27
       "• "
-      "Lower bar for internal agents that won't go to production "
+      "Adam proposing that the agent platform team continues "
 [152] indent=12 block=34cdbe27
       "  "
-      "for customers "
+      "owning it with carved-out subset features  "
 [153] indent=12 block=34cdbe27
       "• "
-      "Danny has expressed interest in helping with the market "
+      "Tension between being a platform provider versus owning "
 [154] indent=12 block=34cdbe27
       "  "
-      "data agent "
-[155] indent=0 block=-
+      "specific production agents  "
+[155] indent=12 block=34cdbe27
+      "• "
+      "Question about how to handle internal agent building "
 [156] indent=12 block=34cdbe27
-      "Chat Usage Goals:" {b}
-[157] indent=0 block=-
+      "  "
+      "(Erica, Buttercup, etc.) without requiring everything to "
+[157] indent=12 block=34cdbe27
+      "  "
+      "go through the agent platform team  "
 [158] indent=12 block=34cdbe27
       "• "
-      "Increasing chat usage is a North Star for "
+      "Lower bar for internal agents that won't go to production "
 [159] indent=12 block=34cdbe27
       "  "
-      "validating/invalidating work, even though it costs more "
+      "for customers "
 [160] indent=12 block=34cdbe27
+      "• "
+      "Danny has expressed interest in helping with the market "
+[161] indent=12 block=34cdbe27
+      "  "
+      "data agent "
+[162] indent=0 block=-
+[163] indent=12 block=34cdbe27
+      "Chat Usage Goals:" {b}
+[164] indent=0 block=-
+[165] indent=12 block=34cdbe27
+      "• "
+      "Increasing chat usage is a North Star for "
+[166] indent=12 block=34cdbe27
+      "  "
+      "validating/invalidating work, even though it costs more "
+[167] indent=12 block=34cdbe27
       "  "
       "money rather than driving revenue "
-[161] indent=12 block=34cdbe27
+[168] indent=12 block=34cdbe27
       "• "
       "Goals include increasing surface area of access through "
-[162] indent=12 block=34cdbe27
+[169] indent=12 block=34cdbe27
       "  "
       "MCP server, using tools, and adding more context "
-[163] indent=0 block=-
-[164] indent=12 block=34cdbe27
+[170] indent=0 block=-
+[171] indent=12 block=34cdbe27
       "MVP Planning:" {b}
-[165] indent=0 block=-
-[166] indent=12 block=34cdbe27
+[172] indent=0 block=-
+[173] indent=12 block=34cdbe27
       "• "
       "Need to define what's required to support chat in MVP "
-[167] indent=12 block=34cdbe27
+[174] indent=12 block=34cdbe27
       "• "
       "Should measure quality before beta and establish metrics "
-[168] indent=12 block=34cdbe27
+[175] indent=12 block=34cdbe27
       "  "
       "to compare against real user behavior "
-[169] indent=12 block=34cdbe27
+[176] indent=12 block=34cdbe27
       "• "
       "Need to establish on-call plan and incident response for "
-[170] indent=12 block=34cdbe27
+[177] indent=12 block=34cdbe27
       "  "
       "chat "
-[171] indent=12 block=34cdbe27
+[178] indent=12 block=34cdbe27
       "• "
       "No SLA required by MVP, but needed by GA "
-[172] indent=0 block=-
-[173] indent=4 block=348dbe27
-[174] indent=6 block=348dbe27
+[179] indent=0 block=-
+[180] indent=4 block=348dbe27
+[181] indent=6 block=348dbe27
       "• "
       "What did we learn from yesterday’s discovery calls?"
-[175] indent=6 block=348dbe27
+[182] indent=6 block=348dbe27
       "• "
       "experimenting with opik dashboards"
-[176] indent=6 block=34cdbe27
+[183] indent=6 block=34cdbe27
       "• "
       "monday greg meeting"
-[177] indent=6 block=34cdbe27
+[184] indent=6 block=34cdbe27
       "• "
       "cycle 9 priorities (tickets to make)"
-[178] indent=8 block=34cdbe27
+[185] indent=8 block=34cdbe27
       "◦ "
       "operationalize opik"
-[179] indent=10 block=34cdbe27
+[186] indent=10 block=34cdbe27
       "▪ "
       "load datasets from git (eq_evals/datasets)"
-[180] indent=10 block=34cdbe27
+[187] indent=10 block=34cdbe27
       "▪ "
       "run evals on each deploy/day"
-[181] indent=10 block=34cdbe27
+[188] indent=10 block=34cdbe27
       "▪ "
       "track objective measures (# of traces, duration of trace, "
-[182] indent=10 block=34cdbe27
+[189] indent=10 block=34cdbe27
       "  "
       "TTFT, $)"
-[183] indent=10 block=34cdbe27
+[190] indent=10 block=34cdbe27
       "▪ "
       "log tool calls and EQRN references"
-[184] indent=12 block=34cdbe27
+[191] indent=12 block=34cdbe27
       "• "
-[185] indent=10 block=34cdbe27
-      "▪ "
-      "understand what the process for rolling out a new "
-[186] indent=10 block=34cdbe27
-      "  "
-      "(qualitative) metric is"
-[187] indent=12 block=34cdbe27
-      "• "
-      "F1 score"
-[188] indent=12 block=34cdbe27
-      "• "
-      "starts with hallucination metric (today is at 45%)"
-[189] indent=10 block=34cdbe27
-      "▪ "
-      "getting it set up in prod - prove it out first, test it, "
-[190] indent=10 block=34cdbe27
-      "  "
-      "extend in other environments"
-[191] indent=10 block=34cdbe27
-      "▪ "
 [192] indent=10 block=34cdbe27
       "▪ "
-      "not in scope"
-[193] indent=12 block=34cdbe27
-      "• "
-      "deprecating braintrust - only can once we have opik in "
-[194] indent=12 block=34cdbe27
+      "understand what the process for rolling out a new "
+[193] indent=10 block=34cdbe27
       "  "
-      "every environment"
+      "(qualitative) metric is"
+[194] indent=12 block=34cdbe27
+      "• "
+      "F1 score"
 [195] indent=12 block=34cdbe27
       "• "
-      "deprecating langsmith"
-[196] indent=14 block=34cdbe27
-      "◦ "
-      "need to cehck with ryan about how he is using it"
-[197] indent=8 block=34cdbe27
-      "◦ "
-      "MCP server prototype - interact with context layer, upload "
-[198] indent=8 block=34cdbe27
+      "starts with hallucination metric (today is at 45%)"
+[196] indent=10 block=34cdbe27
+      "▪ "
+      "getting it set up in prod - prove it out first, test it, "
+[197] indent=10 block=34cdbe27
       "  "
-      "more context, "
+      "extend in other environments"
+[198] indent=10 block=34cdbe27
+      "▪ "
 [199] indent=10 block=34cdbe27
       "▪ "
+      "not in scope"
+[200] indent=12 block=34cdbe27
+      "• "
+      "deprecating braintrust - only can once we have opik in "
+[201] indent=12 block=34cdbe27
+      "  "
+      "every environment"
+[202] indent=12 block=34cdbe27
+      "• "
+      "deprecating langsmith"
+[203] indent=14 block=34cdbe27
+      "◦ "
+      "need to cehck with ryan about how he is using it"
+[204] indent=8 block=34cdbe27
+      "◦ "
+      "MCP server prototype - interact with context layer, upload "
+[205] indent=8 block=34cdbe27
+      "  "
+      "more context, "
+[206] indent=10 block=34cdbe27
+      "▪ "
       "available in cursor and claude"
-[200] indent=10 block=34cdbe27
+[207] indent=10 block=34cdbe27
       "▪ "
       "able to one-off upload context to context layer"
-[201] indent=12 block=34cdbe27
+[208] indent=12 block=34cdbe27
       "• "
       "prioritize the context docs listed in "
       "Forecast Context " {href=https://app.notion.com/p/342dbe275992805dbdeddaec498fe7f0}
-[202] indent=12 block=34cdbe27
+[209] indent=12 block=34cdbe27
       "  "
       "Engineering" {href=https://app.notion.com/p/342dbe275992805dbdeddaec498fe7f0}
       " "
-[203] indent=10 block=34cdbe27
+[210] indent=10 block=34cdbe27
       "▪ "
       "scan for docs that should be loaded into context"
-[204] indent=10 block=34cdbe27
+[211] indent=10 block=34cdbe27
       "▪ "
       "publish user guide"
-[205] indent=10 block=34cdbe27
+[212] indent=10 block=34cdbe27
       "▪ "
       "not in scope"
-[206] indent=12 block=34cdbe27
+[213] indent=12 block=34cdbe27
       "• "
       "mcp / claude insertion into the context layer"
-[207] indent=0 block=-
-[208] indent=4 block=34cdbe27
-[209] indent=6 block=34cdbe27
-      "Next week, we can use this as like a cycle eight review. of sorts,"
-[210] indent=6 block=34cdbe27
-      "even though there's still some days left, and then some cycle nine"
-[211] indent=6 block=34cdbe27
-      "prioritization and planning. Okay, so for stand-up. Any volunteers"
-[212] indent=6 block=34cdbe27
-      "go first."
-[213] indent=0 block=-
-[214] indent=6 block=34cdbe27
-      "I can go, I guess. Yeah. I think I'm pretty much done with the "
-[215] indent=6 block=34cdbe27
-      "initial opic setup. I got a couple of PRs still out, but I think "
+[214] indent=0 block=-
+[215] indent=4 block=34cdbe27
 [216] indent=6 block=34cdbe27
-      "I've taken care of everything we need to do in the first Kind of "
+      "Next week, we can use this as like a cycle eight review. of sorts,"
 [217] indent=6 block=34cdbe27
-      "like the first wave. Um The hallucination race... He's like... It "
+      "even though there's still some days left, and then some cycle nine"
 [218] indent=6 block=34cdbe27
-      "claims to be like 45%, which is... Probably completely wrong, but "
+      "prioritization and planning. Okay, so for stand-up. Any volunteers"
 [219] indent=6 block=34cdbe27
-      "this is also symmetrical to the-so the brain trust evaluator was "
-[220] indent=6 block=34cdbe27
-      "the faithfulness score. That was coming from around 60%. So it's "
+      "go first."
+[220] indent=0 block=-
 [221] indent=6 block=34cdbe27
-      "like, oh, there's our opposite metrics, and they are also the "
+      "I can go, I guess. Yeah. I think I'm pretty much done with the "
 [222] indent=6 block=34cdbe27
-      "inverse measurements."
-[223] indent=0 block=-
+      "initial opic setup. I got a couple of PRs still out, but I think "
+[223] indent=6 block=34cdbe27
+      "I've taken care of everything we need to do in the first Kind of "
 [224] indent=6 block=34cdbe27
-      "So they could be right, I guess. Um... Yeah. So I think what's "
+      "like the first wave. Um The hallucination race... He's like... It "
 [225] indent=6 block=34cdbe27
-      "next on the OPEC front would be to I start getting these running "
+      "claims to be like 45%, which is... Probably completely wrong, but "
 [226] indent=6 block=34cdbe27
-      "regularly. So I'm thinking about setting up a-I don't know, I "
+      "this is also symmetrical to the-so the brain trust evaluator was "
 [227] indent=6 block=34cdbe27
-      "could do-Twice a week. or something measurements against dev or "
+      "the faithfulness score. That was coming from around 60%. So it's "
 [228] indent=6 block=34cdbe27
-      "whatever's in main, I guess. Yeah, so I guess I'm thinking about "
+      "like, oh, there's our opposite metrics, and they are also the "
 [229] indent=6 block=34cdbe27
-      "like dev and main as the same thing, right? That'll get all "
-[230] indent=6 block=34cdbe27
-      "deployed from... main hint to dev."
-[231] indent=0 block=-
+      "inverse measurements."
+[230] indent=0 block=-
+[231] indent=6 block=34cdbe27
+      "So they could be right, I guess. Um... Yeah. So I think what's "
 [232] indent=6 block=34cdbe27
-      "So do that and then probably start working on I guess trying to "
+      "next on the OPEC front would be to I start getting these running "
 [233] indent=6 block=34cdbe27
-      "measure Like... The quality of the hallucination score, like I "
+      "regularly. So I'm thinking about setting up a-I don't know, I "
 [234] indent=6 block=34cdbe27
-      "think maybe like an F1 score or something for hallucination "
+      "could do-Twice a week. or something measurements against dev or "
 [235] indent=6 block=34cdbe27
-      "metric. I suspect what we're going to end up with is every time we"
+      "whatever's in main, I guess. Yeah, so I guess I'm thinking about "
 [236] indent=6 block=34cdbe27
-      "laid up one of these metrics that we're going to have to go and "
+      "like dev and main as the same thing, right? That'll get all "
 [237] indent=6 block=34cdbe27
-      "implement it. we'll have to like validate the score that's "
-[238] indent=6 block=34cdbe27
-      "producing. Then we get the real score for our system and then we "
+      "deployed from... main hint to dev."
+[238] indent=0 block=-
 [239] indent=6 block=34cdbe27
-      "can start improving the score for our system."
-[240] indent=0 block=-
+      "So do that and then probably start working on I guess trying to "
+[240] indent=6 block=34cdbe27
+      "measure Like... The quality of the hallucination score, like I "
 [241] indent=6 block=34cdbe27
-      "So that's kind of what's in my head at the moment for evals. All "
+      "think maybe like an F1 score or something for hallucination "
 [242] indent=6 block=34cdbe27
-      "this stuff that was going on on the... DataFrame snapshots and the"
+      "metric. I suspect what we're going to end up with is every time we"
 [243] indent=6 block=34cdbe27
-      "analytical agents front. Joel has an RFC. for handling snapshots "
+      "laid up one of these metrics that we're going to have to go and "
 [244] indent=6 block=34cdbe27
-      "within EQ Warehouse. It looks good. So now we just have to get "
+      "implement it. we'll have to like validate the score that's "
 [245] indent=6 block=34cdbe27
-      "them to actually go build it. But that's kind of like paused all "
+      "producing. Then we get the real score for our system and then we "
 [246] indent=6 block=34cdbe27
-      "the rest of the work on that front. Um, And then the other thing "
-[247] indent=6 block=34cdbe27
-      "I've been kind of working on is starting to think about expanding "
+      "can start improving the score for our system."
+[247] indent=0 block=-
 [248] indent=6 block=34cdbe27
-      "the the kind of chat protocol, like the connection between front "
+      "So that's kind of what's in my head at the moment for evals. All "
 [249] indent=6 block=34cdbe27
-      "and back end to be able to support, you know, asking for "
+      "this stuff that was going on on the... DataFrame snapshots and the"
 [250] indent=6 block=34cdbe27
-      "clarification or asking user approval."
-[251] indent=0 block=-
+      "analytical agents front. Joel has an RFC. for handling snapshots "
+[251] indent=6 block=34cdbe27
+      "within EQ Warehouse. It looks good. So now we just have to get "
 [252] indent=6 block=34cdbe27
-      "So. So yeah, I started working on that. Thank you. You know, I had"
+      "them to actually go build it. But that's kind of like paused all "
 [253] indent=6 block=34cdbe27
-      "a question about the snapshot store thing. So, um, I haven't been "
+      "the rest of the work on that front. Um, And then the other thing "
 [254] indent=6 block=34cdbe27
-      "following it closely, but... Each snapshot creates a Databricks "
+      "I've been kind of working on is starting to think about expanding "
 [255] indent=6 block=34cdbe27
-      "table. That is what Joel is proposing."
-[256] indent=0 block=-
+      "the the kind of chat protocol, like the connection between front "
+[256] indent=6 block=34cdbe27
+      "and back end to be able to support, you know, asking for "
 [257] indent=6 block=34cdbe27
-      "So what's the user experience like when user asks like a question "
-[258] indent=6 block=34cdbe27
-      "that like ends of what agent showing like a data frame user gets "
+      "clarification or asking user approval."
+[258] indent=0 block=-
 [259] indent=6 block=34cdbe27
-      "like a link to go to a Databricks table and like gets to yeah like"
+      "So. So yeah, I started working on that. Thank you. You know, I had"
 [260] indent=6 block=34cdbe27
-      "what's the umLike,..."
-[261] indent=0 block=-
+      "a question about the snapshot store thing. So, um, I haven't been "
+[261] indent=6 block=34cdbe27
+      "following it closely, but... Each snapshot creates a Databricks "
 [262] indent=6 block=34cdbe27
-      "The idea is that we'll be able, like not every EQ Warehouse call "
-[263] indent=6 block=34cdbe27
-      "is going to get saved. You have to actually ask her to like, you "
+      "table. That is what Joel is proposing."
+[263] indent=0 block=-
 [264] indent=6 block=34cdbe27
-      "know, Run this query and save it as a table. And then you get back"
+      "So what's the user experience like when user asks like a question "
 [265] indent=6 block=34cdbe27
-      "the identifier of the table. And then you can go and you can use "
+      "that like ends of what agent showing like a data frame user gets "
 [266] indent=6 block=34cdbe27
-      "that in a new query and you can iterate and iterate and each one "
+      "like a link to go to a Databricks table and like gets to yeah like"
 [267] indent=6 block=34cdbe27
-      "can be saved as a separate table. We have these identifiers and we"
-[268] indent=6 block=34cdbe27
-      "can returnThat's like tool details, like that kind of citation "
+      "what's the umLike,..."
+[268] indent=0 block=-
 [269] indent=6 block=34cdbe27
-      "back to the client. We're not going to show that table name to the"
+      "The idea is that we'll be able, like not every EQ Warehouse call "
 [270] indent=6 block=34cdbe27
-      "user. We're not going to show them a link."
-[271] indent=0 block=-
+      "is going to get saved. You have to actually ask her to like, you "
+[271] indent=6 block=34cdbe27
+      "know, Run this query and save it as a table. And then you get back"
 [272] indent=6 block=34cdbe27
-      "You know, like the way Danny has it in, you know, I I still think "
+      "the identifier of the table. And then you can go and you can use "
 [273] indent=6 block=34cdbe27
-      "of it as Helm because it's the demo that he's built. But what "
+      "that in a new query and you can iterate and iterate and each one "
 [274] indent=6 block=34cdbe27
-      "Danny has been building, the citations, you can click on the tool "
+      "can be saved as a separate table. We have these identifiers and we"
 [275] indent=6 block=34cdbe27
-      "and statement in chat and then it'll pop up in a window. So like "
+      "can returnThat's like tool details, like that kind of citation "
 [276] indent=6 block=34cdbe27
-      "the user isn't going to link to the, the, the table and "
+      "back to the client. We're not going to show that table name to the"
 [277] indent=6 block=34cdbe27
-      "Databricks, they're getting a link which then Portal can used to "
-[278] indent=6 block=34cdbe27
-      "return the data frame. Does that make sense?"
-[279] indent=0 block=-
+      "user. We're not going to show them a link."
+[278] indent=0 block=-
+[279] indent=6 block=34cdbe27
+      "You know, like the way Danny has it in, you know, I I still think "
 [280] indent=6 block=34cdbe27
-      "Yeah."
-[281] indent=0 block=-
+      "of it as Helm because it's the demo that he's built. But what "
+[281] indent=6 block=34cdbe27
+      "Danny has been building, the citations, you can click on the tool "
 [282] indent=6 block=34cdbe27
-      "Okay. So what format is the data frame? Like user gets a CSV down,"
+      "and statement in chat and then it'll pop up in a window. So like "
 [283] indent=6 block=34cdbe27
-      "like a file they can download or it's streamed?"
-[284] indent=0 block=-
+      "the user isn't going to link to the, the, the table and "
+[284] indent=6 block=34cdbe27
+      "Databricks, they're getting a link which then Portal can used to "
 [285] indent=6 block=34cdbe27
-      "Window. Not the window. Like it opens a kind of a floating table, "
-[286] indent=6 block=34cdbe27
-      "I guess. Hmm. in line in the chat. Um... Fuck. I wish that the... "
+      "return the data frame. Does that make sense?"
+[286] indent=0 block=-
 [287] indent=6 block=34cdbe27
-      "No, not in line with the chat. It's... its own unique little helm "
-[288] indent=6 block=34cdbe27
-      "ui um Is that accessible from dev at all? I don't have any "
+      "Yeah."
+[288] indent=0 block=-
 [289] indent=6 block=34cdbe27
-      "screenshots of it. It's something that we just have to go and look"
+      "Okay. So what format is the data frame? Like user gets a CSV down,"
 [290] indent=6 block=34cdbe27
-      "at in the... in portal, but I don't know if it's something we can "
-[291] indent=6 block=34cdbe27
-      "get to."
-[292] indent=0 block=-
+      "like a file they can download or it's streamed?"
+[291] indent=0 block=-
+[292] indent=6 block=34cdbe27
+      "Window. Not the window. Like it opens a kind of a floating table, "
 [293] indent=6 block=34cdbe27
-      "Okay, so user gets like to..."
-[294] indent=0 block=-
+      "I guess. Hmm. in line in the chat. Um... Fuck. I wish that the... "
+[294] indent=6 block=34cdbe27
+      "No, not in line with the chat. It's... its own unique little helm "
 [295] indent=6 block=34cdbe27
-      "Hmm."
-[296] indent=0 block=-
+      "ui um Is that accessible from dev at all? I don't have any "
+[296] indent=6 block=34cdbe27
+      "screenshots of it. It's something that we just have to go and look"
 [297] indent=6 block=34cdbe27
-      "After that, could you just restate what the blocker there is "
+      "at in the... in portal, but I don't know if it's something we can "
 [298] indent=6 block=34cdbe27
-      "again? Just Jules' work. Okay. Did you give any estimate on when "
-[299] indent=6 block=34cdbe27
-      "you might be able to?"
-[300] indent=0 block=-
-[301] indent=6 block=34cdbe27
-      "I have a question going back to Opec and the evaluations too. So "
+      "get to."
+[299] indent=0 block=-
+[300] indent=6 block=34cdbe27
+      "Okay, so user gets like to..."
+[301] indent=0 block=-
 [302] indent=6 block=34cdbe27
-      "if we don't need OPEC and ROG, just say Box and Dev, We don't need"
-[303] indent=6 block=34cdbe27
-      "OPEC in any other environments, just sandbox and dev."
-[304] indent=0 block=-
+      "Hmm."
+[303] indent=0 block=-
+[304] indent=6 block=34cdbe27
+      "After that, could you just restate what the blocker there is "
 [305] indent=6 block=34cdbe27
-      "I see. Wait, we have 10 or 15 environments? For all the customer "
+      "again? Just Jules' work. Okay. Did you give any estimate on when "
 [306] indent=6 block=34cdbe27
-      "environments, is that... Okay. Right."
+      "you might be able to?"
 [307] indent=0 block=-
 [308] indent=6 block=34cdbe27
-      "Is that... Could you educate me a little bit? Is that abnormal or "
+      "I have a question going back to Opec and the evaluations too. So "
 [309] indent=6 block=34cdbe27
-      "is this... A lot of times how it works, customer accounts have, I "
+      "if we don't need OPEC and ROG, just say Box and Dev, We don't need"
 [310] indent=6 block=34cdbe27
-      "mean, two dozen environments soon."
+      "OPEC in any other environments, just sandbox and dev."
 [311] indent=0 block=-
 [312] indent=6 block=34cdbe27
-      "Okay. Thank you. Mm-hmm."
-[313] indent=0 block=-
-[314] indent=6 block=34cdbe27
-      "Fascinating. Thank you. Seems hard to operate in. Other question "
+      "I see. Wait, we have 10 or 15 environments? For all the customer "
+[313] indent=6 block=34cdbe27
+      "environments, is that... Okay. Right."
+[314] indent=0 block=-
 [315] indent=6 block=34cdbe27
-      "was, what's an F-long square?"
-[316] indent=0 block=-
+      "Is that... Could you educate me a little bit? Is that abnormal or "
+[316] indent=6 block=34cdbe27
+      "is this... A lot of times how it works, customer accounts have, I "
 [317] indent=6 block=34cdbe27
-      "Easy. you Yeah. Yeah. I know what an F1 score is. I just want to "
-[318] indent=6 block=34cdbe27
-      "make sure. Yeah."
-[319] indent=0 block=-
-[320] indent=6 block=34cdbe27
-      "I see."
-[321] indent=0 block=-
+      "mean, two dozen environments soon."
+[318] indent=0 block=-
+[319] indent=6 block=34cdbe27
+      "Okay. Thank you. Mm-hmm."
+[320] indent=0 block=-
+[321] indent=6 block=34cdbe27
+      "Fascinating. Thank you. Seems hard to operate in. Other question "
 [322] indent=6 block=34cdbe27
-      "Yeah, sounds like you. Cortina ratio of metrics of balancing risk "
-[323] indent=6 block=34cdbe27
-      "and return bouncing on. Precision will be caught a little bit. "
+      "was, what's an F-long square?"
+[323] indent=0 block=-
 [324] indent=6 block=34cdbe27
-      "And..."
-[325] indent=0 block=-
-[326] indent=6 block=34cdbe27
-      "So would this be like a gating factor that we use for any "
+      "Easy. you Yeah. Yeah. I know what an F1 score is. I just want to "
+[325] indent=6 block=34cdbe27
+      "make sure. Yeah."
+[326] indent=0 block=-
 [327] indent=6 block=34cdbe27
-      "qualitative metric that we want to use?"
+      "I see."
 [328] indent=0 block=-
 [329] indent=6 block=34cdbe27
-      "Mm-hmm."
-[330] indent=0 block=-
+      "Yeah, sounds like you. Cortina ratio of metrics of balancing risk "
+[330] indent=6 block=34cdbe27
+      "and return bouncing on. Precision will be caught a little bit. "
 [331] indent=6 block=34cdbe27
-      "Yeah, okay. So how do we know when this model or this prompt or "
-[332] indent=6 block=34cdbe27
-      "something's ready to release to production. Well, it has to pass a"
+      "And..."
+[332] indent=0 block=-
 [333] indent=6 block=34cdbe27
-      "certain standard for our qualitative metrics of hallucination "
+      "So would this be like a gating factor that we use for any "
 [334] indent=6 block=34cdbe27
-      "accuracy, How do we come up with those metrics? Well, then we "
-[335] indent=6 block=34cdbe27
-      "think about what's important, but then also they have to pass a "
+      "qualitative metric that we want to use?"
+[335] indent=0 block=-
 [336] indent=6 block=34cdbe27
-      "certain bar of the precision and recall. I guess like the process "
-[337] indent=6 block=34cdbe27
-      "there is becoming more clear of how do we promote? Well, there's "
+      "Mm-hmm."
+[337] indent=0 block=-
 [338] indent=6 block=34cdbe27
-      "qualitative metrics and of course like quantitative metrics."
-[339] indent=0 block=-
+      "Yeah, okay. So how do we know when this model or this prompt or "
+[339] indent=6 block=34cdbe27
+      "something's ready to release to production. Well, it has to pass a"
 [340] indent=6 block=34cdbe27
-      "How do we have qualitative metrics? Well, it's based on what "
+      "certain standard for our qualitative metrics of hallucination "
 [341] indent=6 block=34cdbe27
-      "matters and based on their like about validity. Um, Nothing else "
+      "accuracy, How do we come up with those metrics? Well, then we "
 [342] indent=6 block=34cdbe27
-      "to say there. Okay, that makes sense. And then on that, did you "
+      "think about what's important, but then also they have to pass a "
 [343] indent=6 block=34cdbe27
-      "say that you would be calculating that F1 score, considering that "
+      "certain bar of the precision and recall. I guess like the process "
 [344] indent=6 block=34cdbe27
-      "thing about looking at the hallucination metric?"
-[345] indent=0 block=-
-[346] indent=6 block=34cdbe27
-      "I'd love to be a part of that too whenever I'm back after next "
+      "there is becoming more clear of how do we promote? Well, there's "
+[345] indent=6 block=34cdbe27
+      "qualitative metrics and of course like quantitative metrics."
+[346] indent=0 block=-
 [347] indent=6 block=34cdbe27
-      "week just to Um, That's a big part of Cycle9 priorities just "
+      "How do we have qualitative metrics? Well, it's based on what "
 [348] indent=6 block=34cdbe27
-      "generally, and we'll get into that in a second, but generally "
+      "matters and based on their like about validity. Um, Nothing else "
 [349] indent=6 block=34cdbe27
-      "operationalized OPIC with the loading datasets, running these "
+      "to say there. Okay, that makes sense. And then on that, did you "
 [350] indent=6 block=34cdbe27
-      "kinds of tests, creating new metrics, running these metrics. The "
+      "say that you would be calculating that F1 score, considering that "
 [351] indent=6 block=34cdbe27
-      "objective and subjective, like the quantitative and qualitative "
-[352] indent=6 block=34cdbe27
-      "ones."
-[353] indent=0 block=-
+      "thing about looking at the hallucination metric?"
+[352] indent=0 block=-
+[353] indent=6 block=34cdbe27
+      "I'd love to be a part of that too whenever I'm back after next "
 [354] indent=6 block=34cdbe27
-      "Bless you. Yeah."
-[355] indent=0 block=-
+      "week just to Um, That's a big part of Cycle9 priorities just "
+[355] indent=6 block=34cdbe27
+      "generally, and we'll get into that in a second, but generally "
 [356] indent=6 block=34cdbe27
-      "Yeah, cool. No, we don't know. Like, the goal doesn't need to be a"
+      "operationalized OPIC with the loading datasets, running these "
 [357] indent=6 block=34cdbe27
-      "we have six new qualitative metrics by the end of the... It's "
+      "kinds of tests, creating new metrics, running these metrics. The "
 [358] indent=6 block=34cdbe27
-      "like..."
-[359] indent=0 block=-
-[360] indent=6 block=34cdbe27
-      "Cool. This is cool. I like to take myself through a pass of that "
+      "objective and subjective, like the quantitative and qualitative "
+[359] indent=6 block=34cdbe27
+      "ones."
+[360] indent=0 block=-
 [361] indent=6 block=34cdbe27
-      "too. I'm never back. It sounds interesting. So... So I'm right "
-[362] indent=6 block=34cdbe27
-      "there, blocked on the DataFrame side, not blocked on anything Opix"
+      "Bless you. Yeah."
+[362] indent=0 block=-
 [363] indent=6 block=34cdbe27
-      "side. Opix pretty much set up just figuring out processes, doing "
+      "Yeah, cool. No, we don't know. Like, the goal doesn't need to be a"
 [364] indent=6 block=34cdbe27
-      "some validation. more instrumentation to do. And stop."
-[365] indent=0 block=-
-[366] indent=6 block=34cdbe27
-      "Cool. Thanks. Jenna."
-[367] indent=0 block=-
+      "we have six new qualitative metrics by the end of the... It's "
+[365] indent=6 block=34cdbe27
+      "like..."
+[366] indent=0 block=-
+[367] indent=6 block=34cdbe27
+      "Cool. This is cool. I like to take myself through a pass of that "
 [368] indent=6 block=34cdbe27
-      "Thanks for being patient and providing input on the roadmap docs. "
+      "too. I'm never back. It sounds interesting. So... So I'm right "
 [369] indent=6 block=34cdbe27
-      "I feel like I'm kind of tumbling rocks around in my head and "
+      "there, blocked on the DataFrame side, not blocked on anything Opix"
 [370] indent=6 block=34cdbe27
-      "think. and thinking about this stuff in a couple of different "
+      "side. Opix pretty much set up just figuring out processes, doing "
 [371] indent=6 block=34cdbe27
-      "ways. And, um, Thanks."
+      "some validation. more instrumentation to do. And stop."
 [372] indent=0 block=-
 [373] indent=6 block=34cdbe27
-      "Annette. MBP is Q3. Pretty sure that's what it is. I think so too."
-[374] indent=6 block=34cdbe27
-      "Yeah, so then I was looking at those."
-[375] indent=0 block=-
+      "Cool. Thanks. Jenna."
+[374] indent=0 block=-
+[375] indent=6 block=34cdbe27
+      "Thanks for being patient and providing input on the roadmap docs. "
 [376] indent=6 block=34cdbe27
-      "And he like kind of laid out, like, these are the platform stuff, "
+      "I feel like I'm kind of tumbling rocks around in my head and "
 [377] indent=6 block=34cdbe27
-      "like, or like this, this is the agent to platform deliverables. So"
+      "think. and thinking about this stuff in a couple of different "
 [378] indent=6 block=34cdbe27
-      "then like, I was looking at, okay, like... That's what they're "
-[379] indent=6 block=34cdbe27
-      "asking for us to do. I was just thinking, Drew, like if they're "
+      "ways. And, um, Thanks."
+[379] indent=0 block=-
 [380] indent=6 block=34cdbe27
-      "asking four dose things by end of June or July. Like what should I"
+      "Annette. MBP is Q3. Pretty sure that's what it is. I think so too."
 [381] indent=6 block=34cdbe27
-      "be doing now? And, um, Yeah, and also the... But then there's some"
-[382] indent=6 block=34cdbe27
-      "stuff that you laid out in your doc, Adam, that wasn't part of any"
+      "Yeah, so then I was looking at those."
+[382] indent=0 block=-
 [383] indent=6 block=34cdbe27
-      "of the Q3 stuff, so I was just curious."
-[384] indent=0 block=-
+      "And he like kind of laid out, like, these are the platform stuff, "
+[384] indent=6 block=34cdbe27
+      "like, or like this, this is the agent to platform deliverables. So"
 [385] indent=6 block=34cdbe27
-      "Yeah. how to align those things. Yeah, I can go ahead and answer "
+      "then like, I was looking at, okay, like... That's what they're "
 [386] indent=6 block=34cdbe27
-      "that."
-[387] indent=0 block=-
+      "asking for us to do. I was just thinking, Drew, like if they're "
+[387] indent=6 block=34cdbe27
+      "asking four dose things by end of June or July. Like what should I"
 [388] indent=6 block=34cdbe27
-      "So it comes from a couple of different angles. It comes some from "
+      "be doing now? And, um, Yeah, and also the... But then there's some"
 [389] indent=6 block=34cdbe27
-      "Helm, obviously, but that's just one of those applications and use"
+      "stuff that you laid out in your doc, Adam, that wasn't part of any"
 [390] indent=6 block=34cdbe27
-      "cases that we have. Some other ones are Um, a general program or "
-[391] indent=6 block=34cdbe27
-      "technical alignment that Greg wants us to have and capabilities to"
+      "of the Q3 stuff, so I was just curious."
+[391] indent=0 block=-
 [392] indent=6 block=34cdbe27
-      "build towards. So Greg, Some other ones are Um, a general program "
+      "Yeah. how to align those things. Yeah, I can go ahead and answer "
 [393] indent=6 block=34cdbe27
-      "or technical alignment that Greg wants us to have and capabilities"
-[394] indent=6 block=34cdbe27
-      "to build towards. So Greg put out, Greg Bellingham put out some of"
+      "that."
+[394] indent=0 block=-
 [395] indent=6 block=34cdbe27
-      "those requirements and tenants that he wants the agent platform to"
+      "So it comes from a couple of different angles. It comes some from "
 [396] indent=6 block=34cdbe27
-      "build into and build with in mind. He's very focused on it being "
+      "Helm, obviously, but that's just one of those applications and use"
 [397] indent=6 block=34cdbe27
-      "external first, I think is the phrase, like externally facing "
+      "cases that we have. Some other ones are Um, a general program or "
 [398] indent=6 block=34cdbe27
-      "first."
-[399] indent=0 block=-
+      "technical alignment that Greg wants us to have and capabilities to"
+[399] indent=6 block=34cdbe27
+      "build towards. So Greg, Some other ones are Um, a general program "
 [400] indent=6 block=34cdbe27
-      "And so any capabilities that we have should be, accessible and "
+      "or technical alignment that Greg wants us to have and capabilities"
 [401] indent=6 block=34cdbe27
-      "available to external users. The ability to use EQAI, of course, "
+      "to build towards. So Greg put out, Greg Bellingham put out some of"
 [402] indent=6 block=34cdbe27
-      "and any of its tools to external users, ability to add contacts, "
+      "those requirements and tenants that he wants the agent platform to"
 [403] indent=6 block=34cdbe27
-      "ability to build applications, things like that. So I put in some "
+      "build into and build with in mind. He's very focused on it being "
 [404] indent=6 block=34cdbe27
-      "of those requirements. I think those are... Not. And There's "
+      "external first, I think is the phrase, like externally facing "
 [405] indent=6 block=34cdbe27
-      "nothing that I've read or heard that indicates to me that that's "
-[406] indent=6 block=34cdbe27
-      "based on customer requests and more based on general billing "
+      "first."
+[406] indent=0 block=-
 [407] indent=6 block=34cdbe27
-      "tenants and patterns that he wants to hold."
-[408] indent=0 block=-
+      "And so any capabilities that we have should be, accessible and "
+[408] indent=6 block=34cdbe27
+      "available to external users. The ability to use EQAI, of course, "
 [409] indent=6 block=34cdbe27
-      "Uh,It."
-[410] indent=0 block=-
+      "and any of its tools to external users, ability to add contacts, "
+[410] indent=6 block=34cdbe27
+      "ability to build applications, things like that. So I put in some "
 [411] indent=6 block=34cdbe27
-      "Did he put those down anywhere or is it just..."
-[412] indent=0 block=-
+      "of those requirements. I think those are... Not. And There's "
+[412] indent=6 block=34cdbe27
+      "nothing that I've read or heard that indicates to me that that's "
 [413] indent=6 block=34cdbe27
-      "He put them down in either a dock that... I lost or lost access "
+      "based on customer requests and more based on general billing "
 [414] indent=6 block=34cdbe27
-      "to, or one that I never had access to. I'm kind of forgetting, but"
-[415] indent=6 block=34cdbe27
-      "I got them. Where I pick up, where I reference those requirements "
+      "tenants and patterns that he wants to hold."
+[415] indent=0 block=-
 [416] indent=6 block=34cdbe27
-      "is Josh was telling me about them and then slashed them to me And "
-[417] indent=6 block=34cdbe27
-      "then I have a saved Slack message from Josh of Greg's requirements"
+      "Uh,It."
+[417] indent=0 block=-
 [418] indent=6 block=34cdbe27
-      "and tenants. Okay, so there's no way I can get access to that."
+      "Did he put those down anywhere or is it just..."
 [419] indent=0 block=-
 [420] indent=6 block=34cdbe27
-      "Okay, so there's no way I can get access to that."
-[421] indent=0 block=-
+      "He put them down in either a dock that... I lost or lost access "
+[421] indent=6 block=34cdbe27
+      "to, or one that I never had access to. I'm kind of forgetting, but"
 [422] indent=6 block=34cdbe27
-      "No, there is. I'll just Slack it to you and then we'll have it. "
+      "I got them. Where I pick up, where I reference those requirements "
 [423] indent=6 block=34cdbe27
-      "It's easy. That's how these things operate really well. Here we "
+      "is Josh was telling me about them and then slashed them to me And "
 [424] indent=6 block=34cdbe27
-      "go. Message from Josh Berminger. On April 3rd. you Because I've "
+      "then I have a saved Slack message from Josh of Greg's requirements"
 [425] indent=6 block=34cdbe27
-      "also searched this and I'm like, did I lose access to this doc or "
-[426] indent=6 block=34cdbe27
-      "did I never have it? Come on, you guys. Um."
-[427] indent=0 block=-
-[428] indent=6 block=34cdbe27
-      "Okay."
-[429] indent=0 block=-
+      "and tenants. Okay, so there's no way I can get access to that."
+[426] indent=0 block=-
+[427] indent=6 block=34cdbe27
+      "Okay, so there's no way I can get access to that."
+[428] indent=0 block=-
+[429] indent=6 block=34cdbe27
+      "No, there is. I'll just Slack it to you and then we'll have it. "
 [430] indent=6 block=34cdbe27
-      "These also I think would be good. I just got off the phone with "
+      "It's easy. That's how these things operate really well. Here we "
 [431] indent=6 block=34cdbe27
-      "Greg. this morning doing a little bit of the, well, here's the "
+      "go. Message from Josh Berminger. On April 3rd. you Because I've "
 [432] indent=6 block=34cdbe27
-      "cycle eight review and here's what we're planning on prioritizing "
+      "also searched this and I'm like, did I lose access to this doc or "
 [433] indent=6 block=34cdbe27
-      "in cycle nine. And he mentioned you guys have like a beefy session"
-[434] indent=6 block=34cdbe27
-      "on Monday together going through. You guys have like a four hour "
+      "did I never have it? Come on, you guys. Um."
+[434] indent=0 block=-
 [435] indent=6 block=34cdbe27
-      "session together, you three, to go over?"
+      "Okay."
 [436] indent=0 block=-
 [437] indent=6 block=34cdbe27
-      "Wait, let me check it."
-[438] indent=0 block=-
+      "These also I think would be good. I just got off the phone with "
+[438] indent=6 block=34cdbe27
+      "Greg. this morning doing a little bit of the, well, here's the "
 [439] indent=6 block=34cdbe27
-      "I think both are interesting and useful. I don't know if that "
+      "cycle eight review and here's what we're planning on prioritizing "
 [440] indent=6 block=34cdbe27
-      "would be something that we could do through or within OPIC and "
+      "in cycle nine. And he mentioned you guys have like a beefy session"
 [441] indent=6 block=34cdbe27
-      "then... have those two use cases a little closer together. It's "
+      "on Monday together going through. You guys have like a four hour "
 [442] indent=6 block=34cdbe27
-      "probably not an epic thing."
+      "session together, you three, to go over?"
 [443] indent=0 block=-
 [444] indent=6 block=34cdbe27
-      "Um, Just random thought, I guess. I wonder if there's a... Like, "
-[445] indent=6 block=34cdbe27
-      "adding a tool to the same MCP server to report So like we could..."
+      "Wait, let me check it."
+[445] indent=0 block=-
 [446] indent=6 block=34cdbe27
-      "I think it might be possible. You might have to add a skill to go "
+      "I think both are interesting and useful. I don't know if that "
 [447] indent=6 block=34cdbe27
-      "with the MCP server or something, but like basically telling the "
+      "would be something that we could do through or within OPIC and "
 [448] indent=6 block=34cdbe27
-      "agents that when you do When you use this tool, you should give "
+      "then... have those two use cases a little closer together. It's "
 [449] indent=6 block=34cdbe27
-      "feedback or something or like allowing people to or encouraging "
-[450] indent=6 block=34cdbe27
-      "people to like tell the agent to give feedback on the the "
+      "probably not an epic thing."
+[450] indent=0 block=-
 [451] indent=6 block=34cdbe27
-      "context-layer interactions, something like that. Does that make "
+      "Um, Just random thought, I guess. I wonder if there's a... Like, "
 [452] indent=6 block=34cdbe27
-      "sense?"
-[453] indent=0 block=-
+      "adding a tool to the same MCP server to report So like we could..."
+[453] indent=6 block=34cdbe27
+      "I think it might be possible. You might have to add a skill to go "
 [454] indent=6 block=34cdbe27
-      "What kind of feedback?"
-[455] indent=0 block=-
+      "with the MCP server or something, but like basically telling the "
+[455] indent=6 block=34cdbe27
+      "agents that when you do When you use this tool, you should give "
 [456] indent=6 block=34cdbe27
-      "I don't know. We'll have to get back to you, Juan."
-[457] indent=0 block=-
+      "feedback or something or like allowing people to or encouraging "
+[457] indent=6 block=34cdbe27
+      "people to like tell the agent to give feedback on the the "
 [458] indent=6 block=34cdbe27
-      "I don't think I knew that I wanted feedback. So just now. Thank "
+      "context-layer interactions, something like that. Does that make "
 [459] indent=6 block=34cdbe27
-      "you. Um."
+      "sense?"
 [460] indent=0 block=-
 [461] indent=6 block=34cdbe27
-      "I'm sure we could do like a slash."
+      "What kind of feedback?"
 [462] indent=0 block=-
 [463] indent=6 block=34cdbe27
-      "context layer thumbs up or something or Oh, there's general user "
-[464] indent=6 block=34cdbe27
-      "feedback I'm interested in. Yeah, how does this answer thumbs up, "
+      "I don't know. We'll have to get back to you, Juan."
+[464] indent=0 block=-
 [465] indent=6 block=34cdbe27
-      "thumbs down, like optional free text?"
-[466] indent=0 block=-
-[467] indent=6 block=34cdbe27
-      "But I think that's familiar."
-[468] indent=0 block=-
-[469] indent=6 block=34cdbe27
-      "We have that in the portal chat, right? The thumbs up and down "
+      "I don't think I knew that I wanted feedback. So just now. Thank "
+[466] indent=6 block=34cdbe27
+      "you. Um."
+[467] indent=0 block=-
+[468] indent=6 block=34cdbe27
+      "I'm sure we could do like a slash."
+[469] indent=0 block=-
 [470] indent=6 block=34cdbe27
-      "button. Where does that go to? OPEC?"
-[471] indent=0 block=-
+      "context layer thumbs up or something or Oh, there's general user "
+[471] indent=6 block=34cdbe27
+      "feedback I'm interested in. Yeah, how does this answer thumbs up, "
 [472] indent=6 block=34cdbe27
-      "I haveKearney's going to Brain Trust. I have my PRs, that's why I "
-[473] indent=6 block=34cdbe27
-      "redirected to OPIC."
-[474] indent=0 block=-
-[475] indent=6 block=34cdbe27
-      "Oh, okay, okay, cool. And then that's like, Thumbs up and down "
+      "thumbs down, like optional free text?"
+[473] indent=0 block=-
+[474] indent=6 block=34cdbe27
+      "But I think that's familiar."
+[475] indent=0 block=-
 [476] indent=6 block=34cdbe27
-      "button lets you. put in free form feedback or it's just thumbs up "
+      "We have that in the portal chat, right? The thumbs up and down "
 [477] indent=6 block=34cdbe27
-      "and down?"
+      "button. Where does that go to? OPEC?"
 [478] indent=0 block=-
 [479] indent=6 block=34cdbe27
-      "It pops a modal dialogue instead. Let's type in whatever we want."
-[480] indent=0 block=-
-[481] indent=6 block=34cdbe27
-      "Okay. I haven't used it yet. Okay."
-[482] indent=0 block=-
+      "I haveKearney's going to Brain Trust. I have my PRs, that's why I "
+[480] indent=6 block=34cdbe27
+      "redirected to OPIC."
+[481] indent=0 block=-
+[482] indent=6 block=34cdbe27
+      "Oh, okay, okay, cool. And then that's like, Thumbs up and down "
 [483] indent=6 block=34cdbe27
-      "Nobody does. The feedback that we've collected is me testing to "
+      "button lets you. put in free form feedback or it's just thumbs up "
 [484] indent=6 block=34cdbe27
-      "make sure that the..."
+      "and down?"
 [485] indent=0 block=-
 [486] indent=6 block=34cdbe27
-      "Testing, testing. Um That brings up another good question. Would "
-[487] indent=6 block=34cdbe27
-      "it be a goal for Sprint9 to deprecate brain trust? I don't think "
+      "It pops a modal dialogue instead. Let's type in whatever we want."
+[487] indent=0 block=-
 [488] indent=6 block=34cdbe27
-      "so."
+      "Okay. I haven't used it yet. Okay."
 [489] indent=0 block=-
 [490] indent=6 block=34cdbe27
-      "I just feel like, um... Yes, the path to deprecating brain trust "
+      "Nobody does. The feedback that we've collected is me testing to "
 [491] indent=6 block=34cdbe27
-      "is like we get opaque in every environment. And we make sure that "
-[492] indent=6 block=34cdbe27
-      "there isn't All right. Well, okay. One. option we have is that we "
+      "make sure that the..."
+[492] indent=0 block=-
 [493] indent=6 block=34cdbe27
-      "could ship the beta with both OPEC and brain trust capabilities so"
+      "Testing, testing. Um That brings up another good question. Would "
 [494] indent=6 block=34cdbe27
-      "that if anything goes wrong with OPEC, that we have brain trust or"
+      "it be a goal for Sprint9 to deprecate brain trust? I don't think "
 [495] indent=6 block=34cdbe27
-      "LankSmith as our backup. I guess we could shut down Braintrust and"
-[496] indent=6 block=34cdbe27
-      "let Langsmith be our backup for a little while."
-[497] indent=0 block=-
+      "so."
+[496] indent=0 block=-
+[497] indent=6 block=34cdbe27
+      "I just feel like, um... Yes, the path to deprecating brain trust "
 [498] indent=6 block=34cdbe27
-      "Excellent. Basically, I'm just saying that it might be nice to "
+      "is like we get opaque in every environment. And we make sure that "
 [499] indent=6 block=34cdbe27
-      "make sure that for beta we have a second channel. Makes sense."
-[500] indent=0 block=-
+      "there isn't All right. Well, okay. One. option we have is that we "
+[500] indent=6 block=34cdbe27
+      "could ship the beta with both OPEC and brain trust capabilities so"
 [501] indent=6 block=34cdbe27
-      "I'll let you guys make that call, but it seems like Lang Smith "
+      "that if anything goes wrong with OPEC, that we have brain trust or"
 [502] indent=6 block=34cdbe27
-      "makes sense. Are we also still kind of chained to it? Didn't you "
+      "LankSmith as our backup. I guess we could shut down Braintrust and"
 [503] indent=6 block=34cdbe27
-      "guys or someone say Ryan still occasionally pulls it up in demos? "
-[504] indent=6 block=34cdbe27
-      "Is that why we still have that hanging on?"
-[505] indent=0 block=-
+      "let Langsmith be our backup for a little while."
+[504] indent=0 block=-
+[505] indent=6 block=34cdbe27
+      "Excellent. Basically, I'm just saying that it might be nice to "
 [506] indent=6 block=34cdbe27
-      "Yeah, and I gave... him a brain trust trace Because he was doing "
-[507] indent=6 block=34cdbe27
-      "some demo to NVIDIA and we couldn't find a good... a good trace in"
+      "make sure that for beta we have a second channel. Makes sense."
+[507] indent=0 block=-
 [508] indent=6 block=34cdbe27
-      "Langsmith, but we had some pretty fancy looking traces in "
+      "I'll let you guys make that call, but it seems like Lang Smith "
 [509] indent=6 block=34cdbe27
-      "Braintrust, so I just gave him a link to that. Um, So yeah, maybe "
+      "makes sense. Are we also still kind of chained to it? Didn't you "
 [510] indent=6 block=34cdbe27
-      "we should ask him about what he's actually using."
-[511] indent=0 block=-
-[512] indent=6 block=34cdbe27
-      "Yeah, I will. And, um, Try to get him on Opik. Make some fancy "
+      "guys or someone say Ryan still occasionally pulls it up in demos? "
+[511] indent=6 block=34cdbe27
+      "Is that why we still have that hanging on?"
+[512] indent=0 block=-
 [513] indent=6 block=34cdbe27
-      "stuff."
-[514] indent=0 block=-
+      "Yeah, and I gave... him a brain trust trace Because he was doing "
+[514] indent=6 block=34cdbe27
+      "some demo to NVIDIA and we couldn't find a good... a good trace in"
 [515] indent=6 block=34cdbe27
-      "you Okay Yeah, so I guess just on the brain trust deprecation, I "
+      "Langsmith, but we had some pretty fancy looking traces in "
 [516] indent=6 block=34cdbe27
-      "guess we could make the plan that we can deprecate brain trust "
+      "Braintrust, so I just gave him a link to that. Um, So yeah, maybe "
 [517] indent=6 block=34cdbe27
-      "once we have OPEC in every environment. And then we can maybe let "
-[518] indent=6 block=34cdbe27
-      "LangSmith be our backup for beta. Sure."
-[519] indent=0 block=-
+      "we should ask him about what he's actually using."
+[518] indent=0 block=-
+[519] indent=6 block=34cdbe27
+      "Yeah, I will. And, um, Try to get him on Opik. Make some fancy "
 [520] indent=6 block=34cdbe27
-      "Um, Do you think it'd be within cycle nine to... How long do you "
-[521] indent=6 block=34cdbe27
-      "think we have to be running with OPEC to then have confidence to "
+      "stuff."
+[521] indent=0 block=-
 [522] indent=6 block=34cdbe27
-      "deploy it to more environments."
-[523] indent=0 block=-
+      "you Okay Yeah, so I guess just on the brain trust deprecation, I "
+[523] indent=6 block=34cdbe27
+      "guess we could make the plan that we can deprecate brain trust "
 [524] indent=6 block=34cdbe27
-      "Um. It's like just, you know, when you feel it, that's that's "
+      "once we have OPEC in every environment. And then we can maybe let "
 [525] indent=6 block=34cdbe27
-      "fine, too."
+      "LangSmith be our backup for beta. Sure."
 [526] indent=0 block=-
 [527] indent=6 block=34cdbe27
-      "I mean, I really don't want to operate that way, but I don't have "
+      "Um, Do you think it'd be within cycle nine to... How long do you "
 [528] indent=6 block=34cdbe27
-      "a good metric right now. And the thing that... I'd love to get "
+      "think we have to be running with OPEC to then have confidence to "
 [529] indent=6 block=34cdbe27
-      "more usage on chat in general, just to like, Yeah. Yeah. Um... "
-[530] indent=6 block=34cdbe27
-      "Yeah, let me think about it. Maybe like cycle 10 or 11, maybe you "
+      "deploy it to more environments."
+[530] indent=0 block=-
 [531] indent=6 block=34cdbe27
-      "could."
-[532] indent=0 block=-
-[533] indent=6 block=34cdbe27
-      "Yeah, I feel like that's a good North Star for us too in this next"
+      "Um. It's like just, you know, when you feel it, that's that's "
+[532] indent=6 block=34cdbe27
+      "fine, too."
+[533] indent=0 block=-
 [534] indent=6 block=34cdbe27
-      "month is just like getting more chat usage. Not because it drives "
+      "I mean, I really don't want to operate that way, but I don't have "
 [535] indent=6 block=34cdbe27
-      "revenue, it actually just costs us more money, but like it helps "
+      "a good metric right now. And the thing that... I'd love to get "
 [536] indent=6 block=34cdbe27
-      "us validate or invalidate anything else that we're doing. And so, "
+      "more usage on chat in general, just to like, Yeah. Yeah. Um... "
 [537] indent=6 block=34cdbe27
-      "yeah. Just going back to repeat what I was saying, increasing that"
+      "Yeah, let me think about it. Maybe like cycle 10 or 11, maybe you "
 [538] indent=6 block=34cdbe27
-      "surface area of access, MCP server available through cursor and "
-[539] indent=6 block=34cdbe27
-      "quad, using tools, adding more context."
-[540] indent=0 block=-
+      "could."
+[539] indent=0 block=-
+[540] indent=6 block=34cdbe27
+      "Yeah, I feel like that's a good North Star for us too in this next"
 [541] indent=6 block=34cdbe27
-      "Anything else that we think of to increase chat usage? Let's do "
+      "month is just like getting more chat usage. Not because it drives "
 [542] indent=6 block=34cdbe27
-      "it."
-[543] indent=0 block=-
+      "revenue, it actually just costs us more money, but like it helps "
+[543] indent=6 block=34cdbe27
+      "us validate or invalidate anything else that we're doing. And so, "
 [544] indent=6 block=34cdbe27
-      "In a bit of a roundabout way, I think we covered everything I "
+      "yeah. Just going back to repeat what I was saying, increasing that"
 [545] indent=6 block=34cdbe27
-      "wanted to cover of standard updates and goals for Cycle 9 starting"
+      "surface area of access, MCP server available through cursor and "
 [546] indent=6 block=34cdbe27
-      "next Thursday, those being operationalizing OPEC and increasing "
-[547] indent=6 block=34cdbe27
-      "usage through the MCP server and more insertions to the context "
+      "quad, using tools, adding more context."
+[547] indent=0 block=-
 [548] indent=6 block=34cdbe27
-      "layer. Any other questions or anything else we should discuss?"
-[549] indent=0 block=-
-[550] indent=6 block=34cdbe27
-      "I'm going to... try and put together like a a starting document, "
+      "Anything else that we think of to increase chat usage? Let's do "
+[549] indent=6 block=34cdbe27
+      "it."
+[550] indent=0 block=-
 [551] indent=6 block=34cdbe27
-      "Not supposed to be final or comprehensive, but on the... what we "
+      "In a bit of a roundabout way, I think we covered everything I "
 [552] indent=6 block=34cdbe27
-      "need to do to be confident in our ability to support chat in MVP. "
+      "wanted to cover of standard updates and goals for Cycle 9 starting"
 [553] indent=6 block=34cdbe27
-      "Because I think we haven't of the several agentic platform "
+      "next Thursday, those being operationalizing OPEC and increasing "
 [554] indent=6 block=34cdbe27
-      "priorities and capabilities, roadmaps that we have, they're all "
+      "usage through the MCP server and more insertions to the context "
 [555] indent=6 block=34cdbe27
-      "fairly kind of Chat should work well is basically what they're "
-[556] indent=6 block=34cdbe27
-      "kind of saying. We haven't redefined what it means to kind of get "
+      "layer. Any other questions or anything else we should discuss?"
+[556] indent=0 block=-
 [557] indent=6 block=34cdbe27
-      "there."
-[558] indent=0 block=-
+      "I'm going to... try and put together like a a starting document, "
+[558] indent=6 block=34cdbe27
+      "Not supposed to be final or comprehensive, but on the... what we "
 [559] indent=6 block=34cdbe27
-      "I guess, okay, so like, for that, like, I was looking at the "
+      "need to do to be confident in our ability to support chat in MVP. "
 [560] indent=6 block=34cdbe27
-      "bullet points that Kevin put under Agent Agilent platform "
+      "Because I think we haven't of the several agentic platform "
 [561] indent=6 block=34cdbe27
-      "deliverables. Um, And it had covered like evals latency Quality "
+      "priorities and capabilities, roadmaps that we have, they're all "
 [562] indent=6 block=34cdbe27
-      "stuff. So like. Are you thinking about stuff beyond that?"
-[563] indent=0 block=-
+      "fairly kind of Chat should work well is basically what they're "
+[563] indent=6 block=34cdbe27
+      "kind of saying. We haven't redefined what it means to kind of get "
 [564] indent=6 block=34cdbe27
-      "Well, that's basically Kevin paraphrasing what I've said to him, I"
-[565] indent=6 block=34cdbe27
-      "think."
-[566] indent=0 block=-
+      "there."
+[565] indent=0 block=-
+[566] indent=6 block=34cdbe27
+      "I guess, okay, so like, for that, like, I was looking at the "
 [567] indent=6 block=34cdbe27
-      "Okay, so you're saying you just want to write it out in more "
+      "bullet points that Kevin put under Agent Agilent platform "
 [568] indent=6 block=34cdbe27
-      "detail."
-[569] indent=0 block=-
-[570] indent=6 block=34cdbe27
-      "Yeah, and I think there's a certain amount of... Um, We don't need"
+      "deliverables. Um, And it had covered like evals latency Quality "
+[569] indent=6 block=34cdbe27
+      "stuff. So like. Are you thinking about stuff beyond that?"
+[570] indent=0 block=-
 [571] indent=6 block=34cdbe27
-      "everything by beta, but we should have a kind of a... be "
+      "Well, that's basically Kevin paraphrasing what I've said to him, I"
 [572] indent=6 block=34cdbe27
-      "thoughtful about what would be actually useful for us to have at "
-[573] indent=6 block=34cdbe27
-      "beta. So I would like us to measure quality before beta and have a"
+      "think."
+[573] indent=0 block=-
 [574] indent=6 block=34cdbe27
-      "theory about what the metrics are going to be and then see what it"
+      "Okay, so you're saying you just want to write it out in more "
 [575] indent=6 block=34cdbe27
-      "actually is when a real user hits it and just see how different "
-[576] indent=6 block=34cdbe27
-      "those are. Um..."
-[577] indent=0 block=-
+      "detail."
+[576] indent=0 block=-
+[577] indent=6 block=34cdbe27
+      "Yeah, and I think there's a certain amount of... Um, We don't need"
 [578] indent=6 block=34cdbe27
-      "Yeah, that sort of thing. And like... Again, because I think it's "
+      "everything by beta, but we should have a kind of a... be "
 [579] indent=6 block=34cdbe27
-      "just Kevin paraphrasing what we've said to him. It's really just "
+      "thoughtful about what would be actually useful for us to have at "
 [580] indent=6 block=34cdbe27
-      "for us to define what's useful for us."
-[581] indent=0 block=-
+      "beta. So I would like us to measure quality before beta and have a"
+[581] indent=6 block=34cdbe27
+      "theory about what the metrics are going to be and then see what it"
 [582] indent=6 block=34cdbe27
-      "I see. OK. Okay. 'Cause I know we were gonna like do that and I "
+      "actually is when a real user hits it and just see how different "
 [583] indent=6 block=34cdbe27
-      "saw these bullet points and I was like, that's pretty reasonable. "
-[584] indent=6 block=34cdbe27
-      "And I think we could create tickets out of, Peace. But..."
-[585] indent=0 block=-
+      "those are. Um..."
+[584] indent=0 block=-
+[585] indent=6 block=34cdbe27
+      "Yeah, that sort of thing. And like... Again, because I think it's "
 [586] indent=6 block=34cdbe27
-      "um There's some stuff like that's just a little bit more like "
+      "just Kevin paraphrasing what we've said to him. It's really just "
 [587] indent=6 block=34cdbe27
-      "concrete and specific like By the time we get to MVP, we should "
-[588] indent=6 block=34cdbe27
-      "have a pretty established-or we should have a plan for our "
+      "for us to define what's useful for us."
+[588] indent=0 block=-
 [589] indent=6 block=34cdbe27
-      "on-call. That looked like what wouldn't What doesn't incidents "
+      "I see. OK. Okay. 'Cause I know we were gonna like do that and I "
 [590] indent=6 block=34cdbe27
-      "look like for chess you know and um yeah yeah because he did put "
+      "saw these bullet points and I was like, that's pretty reasonable. "
 [591] indent=6 block=34cdbe27
-      "stuff like um Oh."
+      "And I think we could create tickets out of, Peace. But..."
 [592] indent=0 block=-
 [593] indent=6 block=34cdbe27
-      "I guess it says there's no SLA. by MVP, but by GA. Okay. But I see"
+      "um There's some stuff like that's just a little bit more like "
 [594] indent=6 block=34cdbe27
-      "your point. Yeah. Yeah."
-[595] indent=0 block=-
+      "concrete and specific like By the time we get to MVP, we should "
+[595] indent=6 block=34cdbe27
+      "have a pretty established-or we should have a plan for our "
 [596] indent=6 block=34cdbe27
-      "Like I said, just gonna make it like a starting point that we can "
+      "on-call. That looked like what wouldn't What doesn't incidents "
 [597] indent=6 block=34cdbe27
-      "all kind of like, Right in tune. Ball rolling. Okay."
-[598] indent=0 block=-
-[599] indent=6 block=34cdbe27
-      "That'd be great. Thanks, Kian."
-[600] indent=0 block=-
+      "look like for chess you know and um yeah yeah because he did put "
+[598] indent=6 block=34cdbe27
+      "stuff like um Oh."
+[599] indent=0 block=-
+[600] indent=6 block=34cdbe27
+      "I guess it says there's no SLA. by MVP, but by GA. Okay. But I see"
 [601] indent=6 block=34cdbe27
-      "Once we unify the chat agents, like you know how Ham has their own"
-[602] indent=6 block=34cdbe27
-      "side of the agent and then we have our side and then I'm like "
+      "your point. Yeah. Yeah."
+[602] indent=0 block=-
 [603] indent=6 block=34cdbe27
-      "improving on the one our side and stuff to Unify like once you "
+      "Like I said, just gonna make it like a starting point that we can "
 [604] indent=6 block=34cdbe27
-      "Unify do you think like is there an ownership thing where do we "
-[605] indent=6 block=34cdbe27
-      "still continue owning it or do they own it? Like what's our model "
+      "all kind of like, Right in tune. Ball rolling. Okay."
+[605] indent=0 block=-
 [606] indent=6 block=34cdbe27
-      "here? Like do... the EQ Trading Assistant Agent, like, Or do all "
-[607] indent=6 block=34cdbe27
-      "agents, do all the other teams build agents and we go into support"
+      "That'd be great. Thanks, Kian."
+[607] indent=0 block=-
 [608] indent=6 block=34cdbe27
-      "mode?"
-[609] indent=0 block=-
+      "Once we unify the chat agents, like you know how Ham has their own"
+[609] indent=6 block=34cdbe27
+      "side of the agent and then we have our side and then I'm like "
 [610] indent=6 block=34cdbe27
-      "Or for this specific agent, we continue owning it?"
-[611] indent=0 block=-
+      "improving on the one our side and stuff to Unify like once you "
+[611] indent=6 block=34cdbe27
+      "Unify do you think like is there an ownership thing where do we "
 [612] indent=6 block=34cdbe27
-      "What do you think?"
-[613] indent=0 block=-
+      "still continue owning it or do they own it? Like what's our model "
+[613] indent=6 block=34cdbe27
+      "here? Like do... the EQ Trading Assistant Agent, like, Or do all "
 [614] indent=6 block=34cdbe27
-      "I don't know if that's to both of us or one of us or the other, "
+      "agents, do all the other teams build agents and we go into support"
 [615] indent=6 block=34cdbe27
-      "but... I was talking about the same thing with Josh. Mm-hmm. And "
-[616] indent=6 block=34cdbe27
-      "he asked me to write up a doc about it and bring it back to him "
+      "mode?"
+[616] indent=0 block=-
 [617] indent=6 block=34cdbe27
-      "and Lauren. And so there's another doc coming."
+      "Or for this specific agent, we continue owning it?"
 [618] indent=0 block=-
 [619] indent=6 block=34cdbe27
-      "Yeah."
+      "What do you think?"
 [620] indent=0 block=-
 [621] indent=6 block=34cdbe27
-      "Get excited for that one. I'm going to propose though that we own "
+      "I don't know if that's to both of us or one of us or the other, "
 [622] indent=6 block=34cdbe27
-      "it and I want to have it like there's different carve outs of this"
+      "but... I was talking about the same thing with Josh. Mm-hmm. And "
 [623] indent=6 block=34cdbe27
-      "kind of master app that we have of mission control that we have. "
+      "he asked me to write up a doc about it and bring it back to him "
 [624] indent=6 block=34cdbe27
-      "we're going to have to just be better, I think, as a company, as a"
-[625] indent=6 block=34cdbe27
-      "product team specifically about the subset product ownership of "
+      "and Lauren. And so there's another doc coming."
+[625] indent=0 block=-
 [626] indent=6 block=34cdbe27
-      "different features or components that show up in the whole product"
-[627] indent=6 block=34cdbe27
-      "are owned by different teams because I think we've tried for a "
+      "Yeah."
+[627] indent=0 block=-
 [628] indent=6 block=34cdbe27
-      "long time of like, oh, we are a platform, our team's like the "
+      "Get excited for that one. I'm going to propose though that we own "
 [629] indent=6 block=34cdbe27
-      "agent platform, but like this kind of platform, we build the "
+      "it and I want to have it like there's different carve outs of this"
 [630] indent=6 block=34cdbe27
-      "building blocks, but then someone else uses them and talks to the "
+      "kind of master app that we have of mission control that we have. "
 [631] indent=6 block=34cdbe27
-      "customer."
-[632] indent=0 block=-
+      "we're going to have to just be better, I think, as a company, as a"
+[632] indent=6 block=34cdbe27
+      "product team specifically about the subset product ownership of "
 [633] indent=6 block=34cdbe27
-      "We don't really talk to the customer. It just always has felt so "
+      "different features or components that show up in the whole product"
 [634] indent=6 block=34cdbe27
-      "disconnected to me as like a PM and like as a team and just kind "
+      "are owned by different teams because I think we've tried for a "
 [635] indent=6 block=34cdbe27
-      "of hard to operate. And so, um, yeah. So Thank you. Kevin or "
+      "long time of like, oh, we are a platform, our team's like the "
 [636] indent=6 block=34cdbe27
-      "Lauren owns like this page of mission control in which there is an"
+      "agent platform, but like this kind of platform, we build the "
 [637] indent=6 block=34cdbe27
-      "AI chat and they take a market context summary or something. And "
+      "building blocks, but then someone else uses them and talks to the "
 [638] indent=6 block=34cdbe27
-      "then we own those subset features of it. If they find that the "
-[639] indent=6 block=34cdbe27
-      "users of this mission control V2 or whatever don't want that, then"
+      "customer."
+[639] indent=0 block=-
 [640] indent=6 block=34cdbe27
-      "they let us know."
-[641] indent=0 block=-
+      "We don't really talk to the customer. It just always has felt so "
+[641] indent=6 block=34cdbe27
+      "disconnected to me as like a PM and like as a team and just kind "
 [642] indent=6 block=34cdbe27
-      "We like rescind those features and instead they show up in the map"
+      "of hard to operate. And so, um, yeah. So Thank you. Kevin or "
 [643] indent=6 block=34cdbe27
-      "or somewhere else. Yeah. Okay. We're against. And the more "
+      "Lauren owns like this page of mission control in which there is an"
 [644] indent=6 block=34cdbe27
-      "confusing that we are, more of a platform provider of guidelines "
+      "AI chat and they take a market context summary or something. And "
 [645] indent=6 block=34cdbe27
-      "and maybe components is when we talk about internal agent "
+      "then we own those subset features of it. If they find that the "
 [646] indent=6 block=34cdbe27
-      "building. At some point, it seems unsustainable. And he and I were"
+      "users of this mission control V2 or whatever don't want that, then"
 [647] indent=6 block=34cdbe27
-      "talking about this a little bit yesterday and I was talking with "
-[648] indent=6 block=34cdbe27
-      "Sean about it this morning where I think there is a lot of "
+      "they let us know."
+[648] indent=0 block=-
 [649] indent=6 block=34cdbe27
-      "grassroots building and to then say that Any agent has to go "
+      "We like rescind those features and instead they show up in the map"
 [650] indent=6 block=34cdbe27
-      "through, it has to be built by us three. No one else?"
-[651] indent=0 block=-
+      "or somewhere else. Yeah. Okay. We're against. And the more "
+[651] indent=6 block=34cdbe27
+      "confusing that we are, more of a platform provider of guidelines "
 [652] indent=6 block=34cdbe27
-      "feels just counterproductive and feels like setting ourselves up "
+      "and maybe components is when we talk about internal agent "
 [653] indent=6 block=34cdbe27
-      "for failure. And so then what do we do in terms of guidance or "
+      "building. At some point, it seems unsustainable. And he and I were"
 [654] indent=6 block=34cdbe27
-      "requirements or gating or building blocks or anything, to help "
+      "talking about this a little bit yesterday and I was talking with "
 [655] indent=6 block=34cdbe27
-      "people or to prevent people or to guide people in building Erica "
+      "Sean about it this morning where I think there is a lot of "
 [656] indent=6 block=34cdbe27
-      "or Buttercup or whatever these other internal agents that are "
+      "grassroots building and to then say that Any agent has to go "
 [657] indent=6 block=34cdbe27
-      "propping up are."
+      "through, it has to be built by us three. No one else?"
 [658] indent=0 block=-
 [659] indent=6 block=34cdbe27
-      "Yeah, we should be like having helping them. build it the right "
+      "feels just counterproductive and feels like setting ourselves up "
 [660] indent=6 block=34cdbe27
-      "way but not stop in the building at all."
-[661] indent=0 block=-
+      "for failure. And so then what do we do in terms of guidance or "
+[661] indent=6 block=34cdbe27
+      "requirements or gating or building blocks or anything, to help "
 [662] indent=6 block=34cdbe27
-      "Yeah, I feel like the bar is lower if those agents weren't going "
+      "people or to prevent people or to guide people in building Erica "
 [663] indent=6 block=34cdbe27
-      "to get into production for customs. That's my thought. Yeah."
-[664] indent=0 block=-
-[665] indent=6 block=34cdbe27
-      "I guess I'm totally okay owning the market data agent or "
+      "or Buttercup or whatever these other internal agents that are "
+[664] indent=6 block=34cdbe27
+      "propping up are."
+[665] indent=0 block=-
 [666] indent=6 block=34cdbe27
-      "continuing supporting it or whatever. But yeah, it just seemed "
+      "Yeah, we should be like having helping them. build it the right "
 [667] indent=6 block=34cdbe27
-      "to... maybe be a little go against like the vision that Greg "
-[668] indent=6 block=34cdbe27
-      "together where it's like every team has their own agents and we "
+      "way but not stop in the building at all."
+[668] indent=0 block=-
 [669] indent=6 block=34cdbe27
-      "only orchestrate between them. I feel like that was the read I "
+      "Yeah, I feel like the bar is lower if those agents weren't going "
 [670] indent=6 block=34cdbe27
-      "had. And I was like, well, I don't know if you want to do that. "
-[671] indent=6 block=34cdbe27
-      "But yeah. Okay. I mean, I, I agree with you. I'm happy owning like"
+      "to get into production for customs. That's my thought. Yeah."
+[671] indent=0 block=-
 [672] indent=6 block=34cdbe27
-      "one production agent we have for some time being. And Danny also "
+      "I guess I'm totally okay owning the market data agent or "
 [673] indent=6 block=34cdbe27
-      "asked me that he would like, like, like to help."
-[674] indent=0 block=-
+      "continuing supporting it or whatever. But yeah, it just seemed "
+[674] indent=6 block=34cdbe27
+      "to... maybe be a little go against like the vision that Greg "
 [675] indent=6 block=34cdbe27
-      "So, yeah, I think so. And it might change over time. I think this "
+      "together where it's like every team has their own agents and we "
 [676] indent=6 block=34cdbe27
-      "is a little bit new because... of just what we're coming out of, "
+      "only orchestrate between them. I feel like that was the read I "
 [677] indent=6 block=34cdbe27
-      "of the helm and how it Yeah. Do you kind of feel like it was that "
+      "had. And I was like, well, I don't know if you want to do that. "
 [678] indent=6 block=34cdbe27
-      "Helm was owning it? And, um, That's my take. I'll put up a doc and"
+      "But yeah. Okay. I mean, I, I agree with you. I'm happy owning like"
 [679] indent=6 block=34cdbe27
-      "we'll see what you all say. Check."
-[680] indent=0 block=-
-[681] indent=6 block=34cdbe27
-      "Another dog."
-[682] indent=0 block=-
+      "one production agent we have for some time being. And Danny also "
+[680] indent=6 block=34cdbe27
+      "asked me that he would like, like, like to help."
+[681] indent=0 block=-
+[682] indent=6 block=34cdbe27
+      "So, yeah, I think so. And it might change over time. I think this "
 [683] indent=6 block=34cdbe27
-      "That's a masterful, like, I don't have an answer, so go away and "
+      "is a little bit new because... of just what we're coming out of, "
 [684] indent=6 block=34cdbe27
-      "think about it."
-[685] indent=0 block=-
+      "of the helm and how it Yeah. Do you kind of feel like it was that "
+[685] indent=6 block=34cdbe27
+      "Helm was owning it? And, um, That's my take. I'll put up a doc and"
 [686] indent=6 block=34cdbe27
-      "-And then this talk would be a bunch of words to say."
+      "we'll see what you all say. Check."
 [687] indent=0 block=-
 [688] indent=6 block=34cdbe27
-      "I'm also not really sure. I don't know."
+      "Another dog."
 [689] indent=0 block=-
 [690] indent=6 block=34cdbe27
-      "Look at these other dogs. Yeah. Yeah. Roadmap v6 underscore latest"
+      "That's a masterful, like, I don't have an answer, so go away and "
 [691] indent=6 block=34cdbe27
+      "think about it."
+[692] indent=0 block=-
+[693] indent=6 block=34cdbe27
+      "-And then this talk would be a bunch of words to say."
+[694] indent=0 block=-
+[695] indent=6 block=34cdbe27
+      "I'm also not really sure. I don't know."
+[696] indent=0 block=-
+[697] indent=6 block=34cdbe27
+      "Look at these other dogs. Yeah. Yeah. Roadmap v6 underscore latest"
+[698] indent=6 block=34cdbe27
       "underscore updated. underscore use this one. All right. Good "
-[692] indent=6 block=34cdbe27
+[699] indent=6 block=34cdbe27
       "stuff. Thanks. I'll talk to you guys later today. Thank you."

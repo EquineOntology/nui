@@ -180,20 +180,35 @@ func (r *Renderer) renderHeading(b *doc.Block, width, indent int) []doc.Line {
 			Indent: indent, BlockID: b.ID, IsHeading: true, HeadingLevel: level,
 		})
 	}
-	// Full-width rule beneath H1 only: the terminal stand-in for a larger font and
-	// a section divider. H2 differentiates by bold+blue alone, so the hierarchy
-	// reads H1 (ruled) > H2 (blue) > H3 (bold) > H4+ (dim). Anchored to the
-	// heading's block id so it scrolls with it.
-	if level == 1 && len(wrapped) > 0 {
+	// Per-level underline rule (the terminal stand-in for font size): H1 "=", H2
+	// "~", H3 "-", H4+ none. Distinct glyphs give each level its own weight, so the
+	// hierarchy reads even where color is subtle. Anchored to the heading's block
+	// id so it scrolls (and pins) with the heading.
+	if ch := headingRuleChar(level); ch != "" && len(wrapped) > 0 {
 		if ruleW := width - indent; ruleW > 0 {
 			lines = append(lines, doc.Line{
-				Segments: []doc.Segment{{Text: strings.Repeat("─", ruleW), Style: doc.Style{Fg: headColor}}},
+				Segments: []doc.Segment{{Text: strings.Repeat(ch, ruleW), Style: doc.Style{Fg: headColor}}},
 				Indent:   indent,
 				BlockID:  b.ID,
 			})
 		}
 	}
 	return lines
+}
+
+// headingRuleChar is the underline character for a heading level: H1 "=", H2 "~",
+// H3 "-", and none (no underline) for H4 and deeper.
+func headingRuleChar(level int) string {
+	switch level {
+	case 1:
+		return "="
+	case 2:
+		return "~"
+	case 3:
+		return "-"
+	default:
+		return ""
+	}
 }
 
 // headingColor returns the accent foreground for a heading level, or "" for the
