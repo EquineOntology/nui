@@ -14,12 +14,20 @@ package tui
 
 import (
 	"context"
+	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
 
 	"github.com/EQuineOntology/nui/internal/doc"
 	"github.com/EQuineOntology/nui/internal/notion"
 )
+
+// layoutOpts builds the layout options shared by the reader and preview: page
+// properties shown, and progressive heading-depth indentation on unless
+// NUI_NEST=0 (the same knob the bash nui used).
+func layoutOpts() doc.LayoutOpts {
+	return doc.LayoutOpts{ShowProps: true, Nest: os.Getenv("NUI_NEST") != "0"}
+}
 
 // mode is the top-level screen the app shows. overlay (G3) is intentionally a
 // separate axis so the reader/list keep working while an overlay is layered on.

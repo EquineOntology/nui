@@ -133,3 +133,47 @@ func TestLayoutProps(t *testing.T) {
 		}
 	}
 }
+
+// TestLayoutHeadingNesting asserts progressive heading-depth indentation (Nest):
+// a heading sits one step shallower than the body it introduces, deeper headings
+// cascade further, and a shallower heading dedents. Indent is in columns.
+func TestLayoutHeadingNesting(t *testing.T) {
+	d := &Document{
+		ID: "p",
+		Blocks: []Block{
+			{ID: "h1", Type: BlockHeading1, HeadingLvl: 1, RichText: []RichText{{Text: "H1"}}},
+			{ID: "p1", Type: BlockParagraph, RichText: []RichText{{Text: "under h1"}}},
+			{ID: "h2", Type: BlockHeading2, HeadingLvl: 2, RichText: []RichText{{Text: "H2"}}},
+			{ID: "p2", Type: BlockParagraph, RichText: []RichText{{Text: "under h2"}}},
+			{ID: "h1b", Type: BlockHeading1, HeadingLvl: 1, RichText: []RichText{{Text: "H1 again"}}},
+			{ID: "p3", Type: BlockParagraph, RichText: []RichText{{Text: "back under h1"}}},
+		},
+	}
+	got := Layout(d, 80, fakeRenderer{}, LayoutOpts{Nest: true})
+
+	indentOf := func(id string) int {
+		for _, ln := range got.Lines {
+			if ln.BlockID == id {
+				return ln.Indent
+			}
+		}
+		t.Fatalf("block %s not laid out", id)
+		return -1
+	}
+	// step = 2 cols/level. H1 heading at 0, its body at 2; H2 heading at 2, body at
+	// 4; the second H1 dedents back to 0 / body 2.
+	checks := map[string]int{"h1": 0, "p1": 2, "h2": 2, "p2": 4, "h1b": 0, "p3": 2}
+	for id, want := range checks {
+		if got := indentOf(id); got != want {
+			t.Errorf("indent(%s) = %d, want %d", id, got, want)
+		}
+	}
+
+	// With Nest off, all top-level blocks sit at indent 0.
+	flat := Layout(d, 80, fakeRenderer{}, LayoutOpts{})
+	for _, ln := range flat.Lines {
+		if ln.Indent != 0 {
+			t.Fatalf("Nest off should leave top-level indent 0, got %d for %q", ln.Indent, ln.BlockID)
+		}
+	}
+}

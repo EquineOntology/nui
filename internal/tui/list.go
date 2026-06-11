@@ -325,8 +325,9 @@ func (m Model) layoutPreview(d *doc.Document) *doc.Rendered {
 	if w <= 0 || d == nil {
 		return nil
 	}
-	r := render.NewRenderer(m.list.theme, doc.LayoutOpts{ShowProps: true})
-	return doc.Layout(d, w, r, doc.LayoutOpts{ShowProps: true})
+	opts := layoutOpts()
+	r := render.NewRenderer(m.list.theme, opts)
+	return doc.Layout(d, w, r, opts)
 }
 
 // databasePlaceholder builds a tiny one-line Rendered noting that database view

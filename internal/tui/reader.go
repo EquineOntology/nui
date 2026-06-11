@@ -84,8 +84,9 @@ func (r *readerModel) relayout() {
 	if r.doc == nil || r.width <= 0 {
 		return
 	}
-	rd := render.NewRenderer(r.theme, doc.LayoutOpts{ShowProps: true})
-	r.rendered = doc.Layout(r.doc, r.bodyWidth(), rd, doc.LayoutOpts{ShowProps: true})
+	opts := layoutOpts()
+	rd := render.NewRenderer(r.theme, opts)
+	r.rendered = doc.Layout(r.doc, r.bodyWidth(), rd, opts)
 	r.clampOffset()
 }
 

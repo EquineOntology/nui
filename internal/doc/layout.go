@@ -121,17 +121,70 @@ func Layout(d *Document, width int, r BlockRenderer, opts LayoutOpts) *Rendered 
 		out.Lines = append(out.Lines, Line{}) // separate props from the body
 	}
 
-	layoutBlocks(out, d.Blocks, width, 0, r, opts)
+	layoutBlocks(out, d.Blocks, width, 0, 0, r, opts)
 	return out
 }
 
-// layoutBlocks lays out a slice of blocks at a given nesting depth. Container
-// blocks (toggle, callout, list items with children, columns) are rendered by the
-// BlockRenderer for their own line(s); their children are then laid out one depth
-// deeper. The renderer decides per-type indentation; Layout owns the recursion so
-// the Outline/Anchors stay correct across the whole tree.
-func layoutBlocks(out *Rendered, blocks []Block, width, depth int, r BlockRenderer, opts LayoutOpts) {
-	ordinal := 0 // running count within a contiguous numbered-list run at this depth
+const (
+	// headingIndentStep is the columns of indent added per heading level when Nest
+	// is on, and maxHeadingIndent caps the cascade so deep nesting stays readable
+	// on a narrow terminal. These mirror the bash _indent_by_heading INDENT/RESERVE.
+	headingIndentStep = 2
+	maxHeadingIndent  = 8
+)
+
+// capIndent clamps a heading-derived indent to [0, maxHeadingIndent].
+func capIndent(c int) int {
+	switch {
+	case c < 0:
+		return 0
+	case c > maxHeadingIndent:
+		return maxHeadingIndent
+	default:
+		return c
+	}
+}
+
+// indentedWidth reduces the wrap width by the indent columns, keeping a sane
+// minimum so deeply-indented content on a narrow terminal still wraps rather
+// than collapsing to nothing.
+func indentedWidth(width, cols int) int {
+	if w := width - cols; w >= 8 {
+		return w
+	}
+	return 8
+}
+
+// shiftIndent moves every line right by cols columns (the heading-section indent
+// is applied here, after the renderer has wrapped to the reduced width, so the
+// renderer's own structural indent / bullet-depth logic is untouched).
+func shiftIndent(lines []Line, cols int) {
+	if cols <= 0 {
+		return
+	}
+	for i := range lines {
+		lines[i].Indent += cols
+	}
+}
+
+// isHeading reports whether a block is any heading level.
+func isHeading(b *Block) bool {
+	switch b.Type {
+	case BlockHeading1, BlockHeading2, BlockHeading3,
+		BlockHeading4, BlockHeading5, BlockHeading6:
+		return true
+	}
+	return false
+}
+
+// layoutBlocks walks a sibling sequence. depth is the structural (block-tree)
+// nesting level — it drives the renderer's own indent and bullet-glyph cycling.
+// baseCols is the heading-section indent (in columns) inherited from the
+// enclosing context. Within this sequence, sectionCols tracks the indent
+// contributed by the most recent heading, producing the progressive cascade.
+func layoutBlocks(out *Rendered, blocks []Block, width, depth, baseCols int, r BlockRenderer, opts LayoutOpts) {
+	ordinal := 0     // running count within a contiguous numbered-list run
+	sectionCols := 0 // body indent (cols) from the most recent heading in this run
 	for i := range blocks {
 		b := &blocks[i]
 		// Breathing room between sibling blocks: one blank line, except between
@@ -149,8 +202,32 @@ func layoutBlocks(out *Rendered, blocks []Block, width, depth int, r BlockRender
 		} else {
 			ordinal = 0
 		}
-		lines := r.RenderBlock(b, width, depth)
+
+		// Progressive heading-depth indentation (Nest, mirroring the bash
+		// _indent_by_heading): a level-N heading sits at (N-1) steps and its body
+		// indents to N steps (capped), so the document structure reads as a cascade.
+		// The heading line itself is shallower than the body it introduces. The
+		// indent is applied by shifting the rendered lines, leaving the renderer's
+		// structural depth / bullet logic untouched.
+		lvl := 0
+		if isHeading(b) {
+			if lvl = b.HeadingLvl; lvl == 0 {
+				lvl = headingLevel(b.Type)
+			}
+		}
+		extraCols := sectionCols
+		if opts.Nest && lvl > 0 {
+			extraCols = capIndent((lvl - 1) * headingIndentStep)
+		}
+		totalCols := baseCols + extraCols
+
+		lines := r.RenderBlock(b, indentedWidth(width, totalCols), depth)
+		shiftIndent(lines, totalCols)
 		appendBlockLines(out, lines)
+
+		if opts.Nest && lvl > 0 {
+			sectionCols = capIndent(lvl * headingIndentStep)
+		}
 
 		// Recurse into children. table_row cells are rendered inline by the table
 		// renderer, so a table's rows are NOT walked as independent blocks here.
@@ -158,7 +235,8 @@ func layoutBlocks(out *Rendered, blocks []Block, width, depth int, r BlockRender
 			continue
 		}
 		if len(b.Children) > 0 {
-			layoutBlocks(out, b.Children, width, depth+1, r, opts)
+			// Children inherit the current section indent and add a structural level.
+			layoutBlocks(out, b.Children, width, depth+1, baseCols+sectionCols, r, opts)
 		}
 	}
 }

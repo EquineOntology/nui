@@ -56,7 +56,8 @@ func loadFixture(t *testing.T, name string) cachedPage {
 // changed.
 func TestLayoutGolden(t *testing.T) {
 	theme := render.DefaultTheme()
-	opts := doc.LayoutOpts{ShowProps: true}
+	// Nest on so the golden also covers progressive heading-depth indentation.
+	opts := doc.LayoutOpts{ShowProps: true, Nest: true}
 	r := render.NewRenderer(theme, opts)
 
 	for _, name := range layoutFixtures {
