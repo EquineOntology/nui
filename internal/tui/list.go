@@ -58,6 +58,12 @@ type listModel struct {
 	previewDebounceGen int
 
 	theme *render.Theme
+
+	// lopts/headings are the layout options + per-level heading styles pushed in
+	// from the Model's settings (Model.applySettings). layoutPreview reads them so
+	// the preview matches the reader.
+	lopts    doc.LayoutOpts
+	headings []render.HeadingStyle
 }
 
 // newListModel builds the list sub-model with the search box focused and the
@@ -325,9 +331,8 @@ func (m Model) layoutPreview(d *doc.Document) *doc.Rendered {
 	if w <= 0 || d == nil {
 		return nil
 	}
-	opts := layoutOpts()
-	r := render.NewRenderer(m.list.theme, opts)
-	return doc.Layout(d, w, r, opts)
+	r := render.NewRenderer(m.list.theme, m.list.lopts, m.list.headings)
+	return doc.Layout(d, w, r, m.list.lopts)
 }
 
 // databasePlaceholder builds a tiny one-line Rendered noting that database view

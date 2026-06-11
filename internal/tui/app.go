@@ -14,22 +14,13 @@ package tui
 
 import (
 	"context"
-	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
 
+	"github.com/EQuineOntology/nui/internal/config"
 	"github.com/EQuineOntology/nui/internal/doc"
 	"github.com/EQuineOntology/nui/internal/notion"
 )
-
-// layoutOpts builds the layout options shared by the reader and preview: page
-// properties shown. Progressive heading-depth indentation (Nest) is OFF by
-// default — headings are set off by their per-level underline rule instead, so
-// the body stays flush-left; set NUI_NEST=1 to bring the indentation cascade
-// back for comparison.
-func layoutOpts() doc.LayoutOpts {
-	return doc.LayoutOpts{ShowProps: true, Nest: os.Getenv("NUI_NEST") == "1"}
-}
 
 // mode is the top-level screen the app shows. overlay (G3) is intentionally a
 // separate axis so the reader/list keep working while an overlay is layered on.
@@ -47,6 +38,7 @@ type overlay int
 
 const (
 	overlayNone overlay = iota
+	overlaySettings
 )
 
 // DataSource is the seam between the TUI and the network/disk world. The
@@ -80,6 +72,11 @@ type Model struct {
 	// survives the value-copies of Update (see fetch.go).
 	fetch *fetchControl
 
+	// settings is the persisted, user-editable presentation (indent + per-level
+	// heading color/underline); settingsCursor is the row selected in the popup.
+	settings       config.Settings
+	settingsCursor int
+
 	list   listModel
 	reader readerModel
 
@@ -101,6 +98,7 @@ func New(src DataSource, seedQuery, startReadID string) Model {
 		mode:        modeList,
 		ovl:         overlayNone,
 		fetch:       newFetchControl(),
+		settings:    config.Load(),
 		startReadID: startReadID,
 		list:        newListModel(),
 		reader:      newReaderModel(),
@@ -112,7 +110,25 @@ func New(src DataSource, seedQuery, startReadID string) Model {
 		m.mode = modeReader
 		m.reader.begin(startReadID, "", constructURL(startReadID))
 	}
+	// Push the loaded settings into the sub-models (layout opts + heading styles).
+	// Re-layout is a no-op until the first WindowSizeMsg sets a width.
+	m.applySettings()
 	return m
+}
+
+// applySettings propagates the current settings into the reader and list (layout
+// options + per-level heading styles) and re-lays-out their current content so a
+// change in the popup is reflected immediately.
+func (m *Model) applySettings() {
+	lopts := doc.LayoutOpts{ShowProps: true, Nest: m.settings.Indent}
+	m.reader.lopts = lopts
+	m.reader.headings = m.settings.Headings
+	m.list.lopts = lopts
+	m.list.headings = m.settings.Headings
+	m.reader.relayout()
+	if m.list.previewDoc != nil {
+		m.list.preview = m.layoutPreview(m.list.previewDoc)
+	}
 }
 
 // Init kicks off the first command: either a direct read (`nui read <id>`) or
@@ -144,6 +160,10 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		if msg.String() == "ctrl+c" {
 			m.quitting = true
 			return m, tea.Quit
+		}
+		// The settings overlay captures all other keys while open.
+		if m.ovl == overlaySettings {
+			return m.updateSettings(msg)
 		}
 	}
 
@@ -181,6 +201,9 @@ func (m Model) View() string {
 	}
 	if m.width <= 0 || m.height <= 0 {
 		return ""
+	}
+	if m.ovl == overlaySettings {
+		return m.settingsView()
 	}
 	switch m.mode {
 	case modeReader:

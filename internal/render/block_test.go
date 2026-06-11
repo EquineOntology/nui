@@ -11,7 +11,7 @@ import (
 
 // newRenderer builds a Renderer for the block-level unit tests.
 func newRenderer() *render.Renderer {
-	return render.NewRenderer(render.DefaultTheme(), doc.LayoutOpts{})
+	return render.NewRenderer(render.DefaultTheme(), doc.LayoutOpts{}, nil)
 }
 
 // lineWidth returns the visible display width of a laid-out line (indent + all
@@ -215,7 +215,7 @@ func TestHeading4Renders(t *testing.T) {
 // numbered items must render 1., 2., 3. (Layout assigns Ordinal from sibling
 // order), and a non-numbered block must reset the run.
 func TestNumberedListSequences(t *testing.T) {
-	r := render.NewRenderer(render.DefaultTheme(), doc.LayoutOpts{})
+	r := render.NewRenderer(render.DefaultTheme(), doc.LayoutOpts{}, nil)
 	d := &doc.Document{
 		ID: "p",
 		Blocks: []doc.Block{

@@ -89,9 +89,9 @@ lines=491 outline=12 anchors=141
       "──────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
 [033] indent=0 block=-
 [034] indent=2 block=36bdbe27 H2
-      "The Process" {b fg=#337ea9}
+      "The Process" {b fg=#448361}
 [035] indent=2 block=36bdbe27
-      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#448361}
 [036] indent=0 block=-
 [037] indent=4 block=36bdbe27
       "• "
@@ -113,9 +113,9 @@ lines=491 outline=12 anchors=141
       "[image]" {i fg=#9b9a97}
 [045] indent=0 block=-
 [046] indent=4 block=36bdbe27 H3
-      "Executive Summary" {b}
+      "Executive Summary" {b fg=#d9730d}
 [047] indent=4 block=36bdbe27
-      "--------------------------------------------------------------------"
+      "--------------------------------------------------------------------" {fg=#d9730d}
 [048] indent=0 block=-
 [049] indent=6 block=36bdbe27
       "[image]" {i fg=#9b9a97}
@@ -270,11 +270,11 @@ lines=491 outline=12 anchors=141
       "└────────────┴────┴───────────┴───────┴──────────┴───────────────┘" {fg=#9b9a97}
 [062] indent=0 block=-
 [063] indent=2 block=36ddbe27 H2
-      "Forecasting domain underperformance is not representative of MC Beta " {b fg=#337ea9}
+      "Forecasting domain underperformance is not representative of MC Beta " {b fg=#448361}
 [064] indent=2 block=36ddbe27 H2
-      "performance" {b fg=#337ea9}
+      "performance" {b fg=#448361}
 [065] indent=2 block=36ddbe27
-      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#448361}
 [066] indent=0 block=-
 [067] indent=4 block=36ddbe27
       "1. "
@@ -347,9 +347,9 @@ lines=491 outline=12 anchors=141
       "identify the most promising version by validation MAE.”"
 [096] indent=0 block=-
 [097] indent=4 block=36ddbe27 H3
-      "Solutions" {b}
+      "Solutions" {b fg=#d9730d}
 [098] indent=4 block=36ddbe27
-      "--------------------------------------------------------------------"
+      "--------------------------------------------------------------------" {fg=#d9730d}
 [099] indent=0 block=-
 [100] indent=6 block=36bdbe27
       "[image]" {i fg=#9b9a97}
@@ -655,16 +655,16 @@ lines=491 outline=12 anchors=141
       "────────────────────────────────────────────────────────────" {fg=#9b9a97}
 [179] indent=0 block=-
 [180] indent=14 block=36cdbe27 H2
-      "ERCOT DART PROF UNIVARIATE DAYZER — 2026-05-15 Forecast " {b fg=#337ea9}
+      "ERCOT DART PROF UNIVARIATE DAYZER — 2026-05-15 Forecast " {b fg=#448361}
 [181] indent=14 block=36cdbe27 H2
-      "Comparison" {b fg=#337ea9}
+      "Comparison" {b fg=#448361}
 [182] indent=14 block=36cdbe27
-      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#448361}
 [183] indent=0 block=-
 [184] indent=16 block=36cdbe27 H3
-      "What's available in the agentic context" {b}
+      "What's available in the agentic context" {b fg=#d9730d}
 [185] indent=16 block=36cdbe27
-      "--------------------------------------------------------"
+      "--------------------------------------------------------" {fg=#d9730d}
 [186] indent=0 block=-
 [187] indent=18 block=36cdbe27
       "EQ DAYZER inference run — confirmed and healthy" {b}
@@ -785,9 +785,9 @@ lines=491 outline=12 anchors=141
       "──────────────────────────────────────────────────────" {fg=#9b9a97}
 [213] indent=0 block=-
 [214] indent=16 block=36cdbe27 H3
-      "What I can't provide" {b}
+      "What I can't provide" {b fg=#d9730d}
 [215] indent=16 block=36cdbe27
-      "--------------------------------------------------------"
+      "--------------------------------------------------------" {fg=#d9730d}
 [216] indent=0 block=-
 [217] indent=18 block=36cdbe27
       "The three-way hourly comparison you're asking for — "

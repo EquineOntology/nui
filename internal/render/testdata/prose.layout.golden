@@ -18,9 +18,9 @@ lines=344 outline=10 anchors=91
       "========================================================================" {fg=#337ea9}
 [002] indent=0 block=-
 [003] indent=2 block=335dbe27 H2
-      "Why We're Building This" {b fg=#337ea9}
+      "Why We're Building This" {b fg=#448361}
 [004] indent=2 block=335dbe27
-      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#448361}
 [005] indent=0 block=-
 [006] indent=4 block=335dbe27
       "Through our design sprints, customer research, and direct work with "
@@ -123,14 +123,14 @@ lines=344 outline=10 anchors=91
 [058] indent=4 block=335dbe27
 [059] indent=0 block=-
 [060] indent=2 block=335dbe27 H2
-      "The Beta Build (Launch Target TBD pending scoping)" {b fg=#337ea9}
+      "The Beta Build (Launch Target TBD pending scoping)" {b fg=#448361}
 [061] indent=2 block=335dbe27
-      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#448361}
 [062] indent=0 block=-
 [063] indent=4 block=335dbe27 H3
-      "Individual Trader Beta - Q2 Target (Marketed as “The Helm”)" {b}
+      "Individual Trader Beta - Q2 Target (Marketed as “The Helm”)" {b fg=#d9730d}
 [064] indent=4 block=335dbe27
-      "--------------------------------------------------------------------"
+      "--------------------------------------------------------------------" {fg=#d9730d}
 [065] indent=0 block=-
 [066] indent=6 block=335dbe27
       "What it is:" {b}
@@ -263,9 +263,9 @@ lines=344 outline=10 anchors=91
       "Controlled rollout, not public."
 [118] indent=0 block=-
 [119] indent=4 block=335dbe27 H3
-      "6-Month Vision (End of Q3 MVP)" {b}
+      "6-Month Vision (End of Q3 MVP)" {b fg=#d9730d}
 [120] indent=4 block=335dbe27
-      "--------------------------------------------------------------------"
+      "--------------------------------------------------------------------" {fg=#d9730d}
 [121] indent=0 block=-
 [122] indent=6 block=335dbe27
       "Q3 MVP (OKR2.2 Target: October)"
@@ -318,14 +318,14 @@ lines=344 outline=10 anchors=91
       "──────────────────────────────────────────────────────────────────" {fg=#9b9a97}
 [144] indent=0 block=-
 [145] indent=2 block=335dbe27 H2
-      "Application Suite 2-Year Vision (2026 – 2028)" {b fg=#337ea9}
+      "Application Suite 2-Year Vision (2026 – 2028)" {b fg=#448361}
 [146] indent=2 block=335dbe27
-      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#448361}
 [147] indent=0 block=-
 [148] indent=4 block=335dbe27 H3
-      "One Product That Grows With You" {b}
+      "One Product That Grows With You" {b fg=#d9730d}
 [149] indent=4 block=335dbe27
-      "--------------------------------------------------------------------"
+      "--------------------------------------------------------------------" {fg=#d9730d}
 [150] indent=0 block=-
 [151] indent=6 block=335dbe27
       "This is one application suite. It starts as an individual trader's"
@@ -647,9 +647,9 @@ lines=344 outline=10 anchors=91
       "workflows on this platform, not waiting for a vendor roadmap"
 [295] indent=0 block=-
 [296] indent=4 block=335dbe27 H3
-      "What This Requires From the Platform" {b}
+      "What This Requires From the Platform" {b fg=#d9730d}
 [297] indent=4 block=335dbe27
-      "--------------------------------------------------------------------"
+      "--------------------------------------------------------------------" {fg=#d9730d}
 [298] indent=0 block=-
 [299] indent=6 block=335dbe27
       "The doors describe what customers experience. Underneath, the "
@@ -685,9 +685,9 @@ lines=344 outline=10 anchors=91
       "──────────────────────────────────────────────────────────────────" {fg=#9b9a97}
 [316] indent=0 block=-
 [317] indent=2 block=335dbe27 H2
-      "How This Connects to Science & Algorithms + Trading Teams" {b fg=#337ea9}
+      "How This Connects to Science & Algorithms + Trading Teams" {b fg=#448361}
 [318] indent=2 block=335dbe27
-      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#448361}
 [319] indent=0 block=-
 [320] indent=4 block=335dbe27
       "Beta (now – June):" {b}
@@ -723,9 +723,9 @@ lines=344 outline=10 anchors=91
       "────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
 [336] indent=0 block=-
 [337] indent=2 block=335dbe27 H2
-      "Open Questions" {b fg=#337ea9}
+      "Open Questions" {b fg=#448361}
 [338] indent=2 block=335dbe27
-      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#448361}
 [339] indent=0 block=-
 [340] indent=4 block=335dbe27
       "1. "

@@ -58,7 +58,7 @@ func TestLayoutGolden(t *testing.T) {
 	theme := render.DefaultTheme()
 	// Nest on so the golden also covers progressive heading-depth indentation.
 	opts := doc.LayoutOpts{ShowProps: true, Nest: true}
-	r := render.NewRenderer(theme, opts)
+	r := render.NewRenderer(theme, opts, nil)
 
 	for _, name := range layoutFixtures {
 		t.Run(name, func(t *testing.T) {

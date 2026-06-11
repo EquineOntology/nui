@@ -14,16 +14,43 @@ import (
 // structured Lines/Segments only — no ANSI, no lipgloss .Render() (the paint
 // rule, SPEC §6).
 type Renderer struct {
-	Theme *Theme
-	Nest  bool // mirror doc.LayoutOpts.Nest: indent body under heading depth
+	Theme    *Theme
+	Nest     bool           // mirror doc.LayoutOpts.Nest: indent body under heading depth
+	headings []HeadingStyle // per-level heading look (index 0 = H1); see HeadingStyle
 }
 
-// NewRenderer builds a Renderer with the default theme when none is supplied.
-func NewRenderer(theme *Theme, opts doc.LayoutOpts) *Renderer {
+// HeadingStyle is the per-level heading presentation the user can configure: a
+// Notion color name (""/"default" = terminal default) and an underline character
+// ("" = no rule). DefaultHeadingStyles seeds it; the settings popup edits it.
+type HeadingStyle struct {
+	Color     string
+	Underline string
+}
+
+// DefaultHeadingStyles is the built-in per-level heading look (index 0 = H1): a
+// distinct color per level, with =/~/- underlines for the top three and none
+// below. It is the seed the config layer persists and the settings popup edits.
+func DefaultHeadingStyles() []HeadingStyle {
+	return []HeadingStyle{
+		{Color: "blue", Underline: "="},   // H1
+		{Color: "green", Underline: "~"},  // H2
+		{Color: "orange", Underline: "-"}, // H3
+		{Color: "purple", Underline: ""},  // H4
+		{Color: "pink", Underline: ""},    // H5
+		{Color: "gray", Underline: ""},    // H6
+	}
+}
+
+// NewRenderer builds a Renderer with the default theme/heading styles when none
+// are supplied (nil headings → DefaultHeadingStyles).
+func NewRenderer(theme *Theme, opts doc.LayoutOpts, headings []HeadingStyle) *Renderer {
 	if theme == nil {
 		theme = DefaultTheme()
 	}
-	return &Renderer{Theme: theme, Nest: opts.Nest}
+	if len(headings) == 0 {
+		headings = DefaultHeadingStyles()
+	}
+	return &Renderer{Theme: theme, Nest: opts.Nest, headings: headings}
 }
 
 // indentStep is the column width of one nesting level for list/child indentation.
@@ -139,9 +166,9 @@ func (r *Renderer) renderHeading(b *doc.Block, width, indent int) []doc.Line {
 		prefix = append(prefix, doc.Segment{Text: b.Icon.Emoji + " "})
 	}
 
-	// Per-level heading style: bold throughout, plus an accent colour that gives
-	// terminal headings the hierarchy that font size carries on the web (H1/H2
-	// blue, H3 default, H4+ dim gray). An explicit inline colour on a span wins.
+	// Per-level heading style: bold throughout, plus the configured per-level
+	// accent color (settings popup; defaults give each level a distinct color).
+	// An explicit inline color on a span wins.
 	headColor := r.headingColor(level)
 	segs := RichText(b.RichText, r.Theme)
 	for i := range segs {
@@ -184,7 +211,7 @@ func (r *Renderer) renderHeading(b *doc.Block, width, indent int) []doc.Line {
 	// "~", H3 "-", H4+ none. Distinct glyphs give each level its own weight, so the
 	// hierarchy reads even where color is subtle. Anchored to the heading's block
 	// id so it scrolls (and pins) with the heading.
-	if ch := headingRuleChar(level); ch != "" && len(wrapped) > 0 {
+	if ch := r.headingRuleChar(level); ch != "" && len(wrapped) > 0 {
 		if ruleW := width - indent; ruleW > 0 {
 			lines = append(lines, doc.Line{
 				Segments: []doc.Segment{{Text: strings.Repeat(ch, ruleW), Style: doc.Style{Fg: headColor}}},
@@ -196,33 +223,33 @@ func (r *Renderer) renderHeading(b *doc.Block, width, indent int) []doc.Line {
 	return lines
 }
 
-// headingRuleChar is the underline character for a heading level: H1 "=", H2 "~",
-// H3 "-", and none (no underline) for H4 and deeper.
-func headingRuleChar(level int) string {
-	switch level {
-	case 1:
-		return "="
-	case 2:
-		return "~"
-	case 3:
-		return "-"
+// headingStyle returns the configured style for a 1-based heading level, falling
+// back to the deepest configured level for anything beyond the list (and a zero
+// style if none configured).
+func (r *Renderer) headingStyle(level int) HeadingStyle {
+	i := level - 1
+	switch {
+	case len(r.headings) == 0:
+		return HeadingStyle{}
+	case i < 0:
+		return r.headings[0]
+	case i >= len(r.headings):
+		return r.headings[len(r.headings)-1]
 	default:
-		return ""
+		return r.headings[i]
 	}
 }
 
-// headingColor returns the accent foreground for a heading level, or "" for the
-// terminal default. H1/H2 take the blue accent; H3 stays default (bold only);
-// H4+ dim to gray so deep headings read as subordinate.
+// headingRuleChar is the configured underline character for a heading level, or
+// "" for no underline rule.
+func (r *Renderer) headingRuleChar(level int) string {
+	return r.headingStyle(level).Underline
+}
+
+// headingColor resolves the configured Notion color name for a heading level to a
+// foreground hex, or "" for the terminal default.
 func (r *Renderer) headingColor(level int) string {
-	switch {
-	case level <= 2:
-		return r.Theme.Foreground("blue")
-	case level >= 4:
-		return r.Theme.Foreground("gray")
-	default:
-		return ""
-	}
+	return r.Theme.Foreground(r.headingStyle(level).Color)
 }
 
 // renderListItem renders a bulleted/numbered item with its marker. The numbered

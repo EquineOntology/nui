@@ -41,6 +41,11 @@ type readerModel struct {
 
 	theme *render.Theme
 
+	// lopts/headings are the layout options + per-level heading styles pushed in
+	// from the Model's settings (Model.applySettings). relayout reads them.
+	lopts    doc.LayoutOpts
+	headings []render.HeadingStyle
+
 	// docGen discards a stale docResultMsg if the user navigated away and back.
 	docGen int
 }
@@ -84,9 +89,8 @@ func (r *readerModel) relayout() {
 	if r.doc == nil || r.width <= 0 {
 		return
 	}
-	opts := layoutOpts()
-	rd := render.NewRenderer(r.theme, opts)
-	r.rendered = doc.Layout(r.doc, r.bodyWidth(), rd, opts)
+	rd := render.NewRenderer(r.theme, r.lopts, r.headings)
+	r.rendered = doc.Layout(r.doc, r.bodyWidth(), rd, r.lopts)
 	r.clampOffset()
 }
 
@@ -253,6 +257,12 @@ func (m Model) readerKey(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 		m.quitting = true
 		return m, tea.Quit
 
+	case "s":
+		// Open the settings popup (heading styles + indent).
+		m.ovl = overlaySettings
+		m.settingsCursor = 0
+		return m, nil
+
 	case "up", "k":
 		m.reader.scroll(-1)
 	case "down", "j":
@@ -410,7 +420,7 @@ func (r readerModel) statusView() string {
 		return statusStyle.Render(truncate(r.status, r.width))
 	}
 	left := r.titleOrID()
-	right := r.scrollPercent() + "  esc back · ctrl-o browser · ctrl-y copy"
+	right := r.scrollPercent() + "  esc back · s settings · ctrl-o browser · ctrl-y copy"
 	gap := r.width - visibleWidth(left) - visibleWidth(right)
 	if gap < 1 {
 		gap = 1

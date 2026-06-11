@@ -21,9 +21,9 @@ lines=700 outline=8 anchors=215
       "[unsupported block]" {i fg=#9b9a97}
 [005] indent=4 block=34cdbe27
 [006] indent=10 block=34cdbe27 H3
-      "Action Items" {b}
+      "Action Items" {b fg=#d9730d}
 [007] indent=10 block=34cdbe27
-      "--------------------------------------------------------------"
+      "--------------------------------------------------------------" {fg=#d9730d}
 [008] indent=0 block=-
 [009] indent=12 block=34cdbe27
       "[ ] "
@@ -78,9 +78,9 @@ lines=700 outline=8 anchors=215
       "and more context layer insertions  "
 [026] indent=0 block=-
 [027] indent=10 block=34cdbe27 H3
-      "Josh's Updates" {b}
+      "Josh's Updates" {b fg=#d9730d}
 [028] indent=10 block=34cdbe27
-      "--------------------------------------------------------------"
+      "--------------------------------------------------------------" {fg=#d9730d}
 [029] indent=0 block=-
 [030] indent=12 block=34cdbe27
       "• "
@@ -138,9 +138,9 @@ lines=700 outline=8 anchors=215
       "or user approval "
 [048] indent=0 block=-
 [049] indent=10 block=34cdbe27 H3
-      "DataFrame Snapshots Discussion" {b}
+      "DataFrame Snapshots Discussion" {b fg=#d9730d}
 [050] indent=10 block=34cdbe27
-      "--------------------------------------------------------------"
+      "--------------------------------------------------------------" {fg=#d9730d}
 [051] indent=0 block=-
 [052] indent=12 block=34cdbe27
       "• "
@@ -176,9 +176,9 @@ lines=700 outline=8 anchors=215
       "inline with chat "
 [063] indent=0 block=-
 [064] indent=10 block=34cdbe27 H3
-      "Jenna's Updates" {b}
+      "Jenna's Updates" {b fg=#d9730d}
 [065] indent=10 block=34cdbe27
-      "--------------------------------------------------------------"
+      "--------------------------------------------------------------" {fg=#d9730d}
 [066] indent=0 block=-
 [067] indent=12 block=34cdbe27
       "• "
@@ -200,9 +200,9 @@ lines=700 outline=8 anchors=215
       "deliverables  "
 [073] indent=0 block=-
 [074] indent=10 block=34cdbe27 H3
-      "Cycle 9 Priorities" {b}
+      "Cycle 9 Priorities" {b fg=#d9730d}
 [075] indent=10 block=34cdbe27
-      "--------------------------------------------------------------"
+      "--------------------------------------------------------------" {fg=#d9730d}
 [076] indent=0 block=-
 [077] indent=12 block=34cdbe27
       "Operationalize OPEC:" {b}
@@ -272,9 +272,9 @@ lines=700 outline=8 anchors=215
       "NOT in scope: MCP/Claude insertion into the context layer"
 [101] indent=0 block=-
 [102] indent=10 block=34cdbe27 H3
-      "Tool and Platform Decisions" {b}
+      "Tool and Platform Decisions" {b fg=#d9730d}
 [103] indent=10 block=34cdbe27
-      "--------------------------------------------------------------"
+      "--------------------------------------------------------------" {fg=#d9730d}
 [104] indent=0 block=-
 [105] indent=12 block=34cdbe27
       "OPEC Deployment:" {b}
@@ -337,9 +337,9 @@ lines=700 outline=8 anchors=215
       "deprecating "
 [129] indent=0 block=-
 [130] indent=10 block=34cdbe27 H3
-      "Strategic Discussions" {b}
+      "Strategic Discussions" {b fg=#d9730d}
 [131] indent=10 block=34cdbe27
-      "--------------------------------------------------------------"
+      "--------------------------------------------------------------" {fg=#d9730d}
 [132] indent=0 block=-
 [133] indent=12 block=34cdbe27
       "Requirements Alignment:" {b}
