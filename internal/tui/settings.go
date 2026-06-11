@@ -137,11 +137,13 @@ func (m Model) settingsView() string {
 func (m Model) settingItemText(it settingItem, theme *render.Theme) string {
 	switch it.kind {
 	case itemIndent:
+		// Top-level item: its label aligns with the "Heading N" group labels;
+		// the Color/Underline rows below are sub-indented under their heading.
 		state := "off"
 		if m.settings.Indent {
 			state = "on"
 		}
-		return fmt.Sprintf("%-22s %s", "Indent body", settingsValueStyle.Render(state))
+		return fmt.Sprintf("%-24s %s", "Progressive indent", settingsValueStyle.Render(state))
 	default:
 		h := render.HeadingStyle{}
 		if i := it.level - 1; i >= 0 && i < len(m.settings.Headings) {
@@ -156,7 +158,9 @@ func (m Model) settingItemText(it settingItem, theme *render.Theme) string {
 			if name == "" {
 				name = "default"
 			}
-			return fmt.Sprintf("%-22s %-9s %s", "Color", name, st.Render("Aa"))
+			// Two-space sub-indent so Color/Underline nest under "Heading N"; the
+			// label width keeps the value column aligned with the indent row.
+			return fmt.Sprintf("  %-22s %-9s %s", "Color", name, st.Render("Aa"))
 		}
 		// underline
 		val := h.Underline
@@ -166,7 +170,7 @@ func (m Model) settingItemText(it settingItem, theme *render.Theme) string {
 		} else {
 			sample = st.Render(strings.Repeat(h.Underline, 6))
 		}
-		return fmt.Sprintf("%-22s %-9s %s", "Underline", val, sample)
+		return fmt.Sprintf("  %-22s %-9s %s", "Underline", val, sample)
 	}
 }
 
