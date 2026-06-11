@@ -11,44 +11,47 @@ import (
 	"github.com/EQuineOntology/nui/internal/render"
 )
 
-// settings.go is the settings popup overlay: a centered panel to toggle indent
-// and pick a per-heading color + underline, with a live sample on each heading
-// row so the effect is visible without leaving the popup. Changes apply to the
-// reader/preview immediately (Model.applySettings) and persist on close.
+// settings.go is the settings popup overlay: a centered panel listing one
+// editable value per row — the indent toggle, then a Color and an Underline row
+// under each heading level. Every row changes the same way (←/→ or space), and
+// enter/esc both save and close. Changes apply to the reader/preview immediately
+// (Model.applySettings) and persist on close.
 
-// settingRowKind distinguishes the indent toggle from a per-heading-level row.
-type settingRowKind int
+// settingItemKind is the kind of editable value a row holds.
+type settingItemKind int
 
 const (
-	rowIndent settingRowKind = iota
-	rowHeading
+	itemIndent settingItemKind = iota
+	itemColor
+	itemUnderline
 )
 
-type settingRow struct {
-	kind  settingRowKind
-	level int // 1-based heading level (rowHeading only)
+// settingItem is one selectable/editable row. level applies to color/underline.
+type settingItem struct {
+	kind  settingItemKind
+	level int // 1-based heading level (color/underline rows)
 }
 
-// settingRows is the fixed row order: the indent toggle, then one row per heading
-// level (color + underline edited on the same row).
-func settingRows() []settingRow {
-	rows := []settingRow{{kind: rowIndent}}
+// settingItems is the fixed order of editable rows: the indent toggle, then a
+// Color and Underline row per heading level. (Group headers shown in the view
+// are not items — the cursor only lands on editable rows.)
+func settingItems() []settingItem {
+	items := []settingItem{{kind: itemIndent}}
 	for lvl := 1; lvl <= config.MaxHeadingLevel; lvl++ {
-		rows = append(rows, settingRow{kind: rowHeading, level: lvl})
+		items = append(items, settingItem{kind: itemColor, level: lvl})
+		items = append(items, settingItem{kind: itemUnderline, level: lvl})
 	}
-	return rows
+	return items
 }
 
-// updateSettings handles input while the settings popup is open: navigation, the
-// per-row edits, and esc/s to save+close. left/right cycle the color (or toggle
-// indent); [ / ] cycle the underline; space toggles indent. Every edit applies
-// live via applySettings so the reader behind reflects it on close.
+// updateSettings handles popup input: ↑/↓ move between rows; ←/→ and space change
+// the selected row's value (every row the same way); enter/esc save and close.
 func (m Model) updateSettings(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
-	rows := settingRows()
-	cur := rows[m.settingsCursor]
+	items := settingItems()
+	it := items[m.settingsCursor]
 	apply := false
 	switch msg.String() {
-	case "esc", "q", "s", "enter":
+	case "esc", "enter", "q", "s":
 		m.ovl = overlayNone
 		_ = config.Save(m.settings) // a failed save must not crash the reader
 		return m, nil
@@ -57,42 +60,15 @@ func (m Model) updateSettings(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 			m.settingsCursor--
 		}
 	case "down", "j", "tab":
-		if m.settingsCursor < len(rows)-1 {
+		if m.settingsCursor < len(items)-1 {
 			m.settingsCursor++
 		}
 	case "left", "h":
-		if cur.kind == rowIndent {
-			m.settings.Indent = false
-		} else {
-			i := cur.level - 1
-			m.settings.Headings[i].Color = config.PrevColor(m.settings.Headings[i].Color)
-		}
+		m.changeSetting(it, -1)
 		apply = true
-	case "right", "l":
-		if cur.kind == rowIndent {
-			m.settings.Indent = true
-		} else {
-			i := cur.level - 1
-			m.settings.Headings[i].Color = config.NextColor(m.settings.Headings[i].Color)
-		}
+	case "right", "l", " ":
+		m.changeSetting(it, +1)
 		apply = true
-	case " ":
-		if cur.kind == rowIndent {
-			m.settings.Indent = !m.settings.Indent
-			apply = true
-		}
-	case "[":
-		if cur.kind == rowHeading {
-			i := cur.level - 1
-			m.settings.Headings[i].Underline = config.PrevUnderline(m.settings.Headings[i].Underline)
-			apply = true
-		}
-	case "]":
-		if cur.kind == rowHeading {
-			i := cur.level - 1
-			m.settings.Headings[i].Underline = config.NextUnderline(m.settings.Headings[i].Underline)
-			apply = true
-		}
 	}
 	if apply {
 		m.applySettings()
@@ -100,70 +76,104 @@ func (m Model) updateSettings(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	return m, nil
 }
 
-// settingsView renders the centered settings popup. Each heading row shows the
-// level, its color name, its underline (or "none"), and a live sample painted in
-// that style, so the choice is visible in place.
+// changeSetting cycles the value of one row by dir (-1 prev, +1 next). The indent
+// toggle flips for either direction.
+func (m *Model) changeSetting(it settingItem, dir int) {
+	switch it.kind {
+	case itemIndent:
+		m.settings.Indent = !m.settings.Indent
+	case itemColor:
+		i := it.level - 1
+		if dir < 0 {
+			m.settings.Headings[i].Color = config.PrevColor(m.settings.Headings[i].Color)
+		} else {
+			m.settings.Headings[i].Color = config.NextColor(m.settings.Headings[i].Color)
+		}
+	case itemUnderline:
+		i := it.level - 1
+		if dir < 0 {
+			m.settings.Headings[i].Underline = config.PrevUnderline(m.settings.Headings[i].Underline)
+		} else {
+			m.settings.Headings[i].Underline = config.NextUnderline(m.settings.Headings[i].Underline)
+		}
+	}
+}
+
+// settingsView renders the centered settings popup: a group header per heading
+// level, then its Color and Underline rows, with the selected row pointed at and
+// a live sample painted in that level's style.
 func (m Model) settingsView() string {
 	theme := render.DefaultTheme()
-	rows := settingRows()
+	items := settingItems()
 
 	var b strings.Builder
 	b.WriteString(settingsTitleStyle.Render("Settings"))
 	b.WriteString("\n\n")
-	for i, row := range rows {
-		pointer := "  "
-		if i == m.settingsCursor {
-			pointer = selStyle.Render("▸ ")
+
+	level := 0
+	for i, it := range items {
+		// A group header introduces each heading level's rows.
+		if it.kind == itemColor && it.level != level {
+			level = it.level
+			b.WriteString("  " + settingsGroupStyle.Render(fmt.Sprintf("Heading %d", it.level)))
+			b.WriteString("\n")
 		}
-		b.WriteString(pointer + m.settingRowText(row, theme))
+		pointer := "   "
+		if i == m.settingsCursor {
+			pointer = selStyle.Render(" ▸ ")
+		}
+		b.WriteString(pointer + m.settingItemText(it, theme))
 		b.WriteString("\n")
 	}
 	b.WriteString("\n")
-	b.WriteString(dimStyle.Render("↑/↓ row · ←/→ color · [ ] underline · space indent · esc save"))
+	b.WriteString(dimStyle.Render("↑/↓ move · ←/→ or space change · enter/esc save"))
 
 	box := settingsBoxStyle.Render(b.String())
 	return lipgloss.Place(m.width, m.height, lipgloss.Center, lipgloss.Center, box)
 }
 
-// settingRowText is one rendered popup row (without the cursor pointer).
-func (m Model) settingRowText(row settingRow, theme *render.Theme) string {
-	switch row.kind {
-	case rowIndent:
+// settingItemText renders one row (without the pointer): a label, the current
+// value, and — for heading rows — a live sample painted in that level's style.
+func (m Model) settingItemText(it settingItem, theme *render.Theme) string {
+	switch it.kind {
+	case itemIndent:
 		state := "off"
 		if m.settings.Indent {
 			state = "on"
 		}
-		return fmt.Sprintf("%-34s %s", "Indent body under headings", selStyle.Render(state))
+		return fmt.Sprintf("%-22s %s", "Indent body", settingsValueStyle.Render(state))
 	default:
-		i := row.level - 1
 		h := render.HeadingStyle{}
-		if i >= 0 && i < len(m.settings.Headings) {
+		if i := it.level - 1; i >= 0 && i < len(m.settings.Headings) {
 			h = m.settings.Headings[i]
 		}
-		color := h.Color
-		if color == "" {
-			color = "default"
-		}
-		underline := h.Underline
-		if underline == "" {
-			underline = "none"
-		}
-		label := fmt.Sprintf("H%d", row.level)
-		// Live sample: the level name + a short underline, painted in this style.
 		st := lipgloss.NewStyle().Bold(true)
 		if fg := theme.Foreground(h.Color); fg != "" {
 			st = st.Foreground(lipgloss.Color(fg))
 		}
-		sample := st.Render("Aa")
-		if h.Underline != "" {
-			sample += " " + st.Render(strings.Repeat(h.Underline, 4))
+		if it.kind == itemColor {
+			name := h.Color
+			if name == "" {
+				name = "default"
+			}
+			return fmt.Sprintf("%-22s %-9s %s", "Color", name, st.Render("Aa"))
 		}
-		return fmt.Sprintf("%-5s color %-8s underline %-5s  %s", label, color, underline, sample)
+		// underline
+		val := h.Underline
+		sample := ""
+		if val == "" {
+			val = "none"
+		} else {
+			sample = st.Render(strings.Repeat(h.Underline, 6))
+		}
+		return fmt.Sprintf("%-22s %-9s %s", "Underline", val, sample)
 	}
 }
 
 var (
 	settingsTitleStyle = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("#337ea9"))
+	settingsGroupStyle = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("#9b9a97"))
+	settingsValueStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("#337ea9"))
 	settingsBoxStyle   = lipgloss.NewStyle().
 				Border(lipgloss.RoundedBorder()).
 				BorderForeground(lipgloss.Color("#9b9a97")).

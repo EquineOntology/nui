@@ -33,7 +33,7 @@ func TestSettingsOverlayTogglesAndCycles(t *testing.T) {
 		t.Fatal("space should toggle indent")
 	}
 
-	// Move to the H1 row and cycle its color (right) and underline (]).
+	// Row 1 is "H1 Color": right cycles it.
 	mm, _ = m.Update(tea.KeyMsg{Type: tea.KeyDown})
 	m = mm.(Model)
 	colorBefore := m.settings.Headings[0].Color
@@ -42,11 +42,14 @@ func TestSettingsOverlayTogglesAndCycles(t *testing.T) {
 	if m.settings.Headings[0].Color == colorBefore {
 		t.Fatalf("right should cycle H1 color, stayed %q", colorBefore)
 	}
+	// Row 2 is "H1 Underline": space cycles it (same control as every other row).
+	mm, _ = m.Update(tea.KeyMsg{Type: tea.KeyDown})
+	m = mm.(Model)
 	underlineBefore := m.settings.Headings[0].Underline
-	mm, _ = m.Update(keyRunes("]"))
+	mm, _ = m.Update(keyRunes(" "))
 	m = mm.(Model)
 	if m.settings.Headings[0].Underline == underlineBefore {
-		t.Fatalf("] should cycle H1 underline, stayed %q", underlineBefore)
+		t.Fatalf("space should cycle H1 underline, stayed %q", underlineBefore)
 	}
 
 	// esc closes the popup (and persists to the temp config dir).
