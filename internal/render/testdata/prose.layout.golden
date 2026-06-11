@@ -1,731 +1,741 @@
-lines=334 outline=10 anchors=91
+lines=344 outline=10 anchors=91
 === OUTLINE ===
-  L0 h1 "# 😎 Core Applications 2026 Vision"
-  L2 h2 "## Why We're Building This"
-  L58 h2 "## The Beta Build (Launch Target TBD pending scoping)"
-  L60 h3 "### Individual Trader Beta - Q2 Target (Marketed as “The Helm”)"
-  L115 h3 "### 6-Month Vision (End of Q3 MVP)"
-  L140 h2 "## Application Suite 2-Year Vision (2026 – 2028)"
-  L142 h3 "### One Product That Grows With You"
-  L289 h3 "### What This Requires From the Platform"
-  L309 h2 "## How This Connects to Science & Algorithms + Trading Teams"
-  L328 h2 "## Open Questions"
+  L0 h1 "😎 Core Applications 2026 Vision"
+  L3 h2 "Why We're Building This"
+  L60 h2 "The Beta Build (Launch Target TBD pending scoping)"
+  L63 h3 "Individual Trader Beta - Q2 Target (Marketed as “The Helm”)"
+  L119 h3 "6-Month Vision (End of Q3 MVP)"
+  L145 h2 "Application Suite 2-Year Vision (2026 – 2028)"
+  L148 h3 "One Product That Grows With You"
+  L296 h3 "What This Requires From the Platform"
+  L317 h2 "How This Connects to Science & Algorithms + Trading Teams"
+  L337 h2 "Open Questions"
 === LINES ===
 [000] indent=0 block=335dbe27 H1
-      "# " {b fg=#337ea9}
       "😎 "
       "Core Applications 2026 Vision" {b fg=#337ea9}
-[001] indent=0 block=-
-[002] indent=2 block=335dbe27 H2
-      "## " {b fg=#337ea9}
+[001] indent=0 block=335dbe27
+      "========================================================================" {fg=#337ea9}
+[002] indent=0 block=-
+[003] indent=2 block=335dbe27 H2
       "Why We're Building This" {b fg=#337ea9}
-[003] indent=0 block=-
-[004] indent=4 block=335dbe27
-      "Through our design sprints, customer research, and direct work with "
-[005] indent=4 block=335dbe27
-      "enterprise customers, we heard the same pain point over and over: "
+[004] indent=2 block=335dbe27
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+[005] indent=0 block=-
 [006] indent=4 block=335dbe27
-      "workflow fragmentation. Traders spend hours every morning toggling "
+      "Through our design sprints, customer research, and direct work with "
 [007] indent=4 block=335dbe27
-      "between weather sites, market data platforms, spreadsheets, and "
+      "enterprise customers, we heard the same pain point over and over: "
 [008] indent=4 block=335dbe27
-      "internal tools just to build a picture of what kind of day it is. "
+      "workflow fragmentation. Traders spend hours every morning toggling "
 [009] indent=4 block=335dbe27
-      "The analysis that should take 10 minutes takes two hours, and most "
+      "between weather sites, market data platforms, spreadsheets, and "
 [010] indent=4 block=335dbe27
+      "internal tools just to build a picture of what kind of day it is. "
+[011] indent=4 block=335dbe27
+      "The analysis that should take 10 minutes takes two hours, and most "
+[012] indent=4 block=335dbe27
       "of that time is gathering context, not making decisions. "
-[011] indent=0 block=-
-[012] indent=4 block=33bdbe27
-      "Two things are driving this effort: we have emerging product-market "
-[013] indent=4 block=33bdbe27
-      "fit with our enterprise customers, and the competitive landscape has"
+[013] indent=0 block=-
 [014] indent=4 block=33bdbe27
-      "shifted with agentic AI. We're doubling down on what's working, with"
+      "Two things are driving this effort: we have emerging product-market "
 [015] indent=4 block=33bdbe27
+      "fit with our enterprise customers, and the competitive landscape has"
+[016] indent=4 block=33bdbe27
+      "shifted with agentic AI. We're doubling down on what's working, with"
+[017] indent=4 block=33bdbe27
       "some targeted tweaks."
-[016] indent=0 block=-
-[017] indent=4 block=335dbe27
-      "Our enterprise engagements (NRG, BP, Gunvor) have validated that "
-[018] indent=4 block=335dbe27
-      "EQ's platform solves real problems for real traders. But enterprise "
+[018] indent=0 block=-
 [019] indent=4 block=335dbe27
-      "sales cycles are long, resource-intensive, and vulnerable to single "
+      "Our enterprise engagements (NRG, BP, Gunvor) have validated that "
 [020] indent=4 block=335dbe27
-      "points of failure if there are skeptical users. We are targeting the"
+      "EQ's platform solves real problems for real traders. But enterprise "
 [021] indent=4 block=335dbe27
-      "hardest, most expensive place to enter a customer relationship: the "
+      "sales cycles are long, resource-intensive, and vulnerable to single "
 [022] indent=4 block=335dbe27
-      "top of the enterprise. A common application suite with progressive "
+      "points of failure if there are skeptical users. We are targeting the"
 [023] indent=4 block=335dbe27
-      "access levels changes this for our customers and for us.  An "
+      "hardest, most expensive place to enter a customer relationship: the "
 [024] indent=4 block=335dbe27
-      "individual trader signs up and immediately gets value of workflow "
+      "top of the enterprise. A common application suite with progressive "
 [025] indent=4 block=335dbe27
-      "fragmentation relief through unified market data, probabilistic "
+      "access levels changes this for our customers and for us.  An "
 [026] indent=4 block=335dbe27
-      "forecasts, AI-native capabilities, and full transparency into the "
+      "individual trader signs up and immediately gets value of workflow "
 [027] indent=4 block=335dbe27
-      "data behind every assumption (what we call \"glass box\"). No "
+      "fragmentation relief through unified market data, probabilistic "
 [028] indent=4 block=335dbe27
-      "enterprise sales cycle required. We build brand rapport with "
+      "forecasts, AI-native capabilities, and full transparency into the "
 [029] indent=4 block=335dbe27
-      "individual users, then provide the right hooks and carrots to "
+      "data behind every assumption (what we call \"glass box\"). No "
 [030] indent=4 block=335dbe27
-      "encourage them deeper into our enterprise solutions. This is the "
+      "enterprise sales cycle required. We build brand rapport with "
 [031] indent=4 block=335dbe27
-      "tweaked GTM motion: lower friction entry, brand recognition with "
+      "individual users, then provide the right hooks and carrots to "
 [032] indent=4 block=335dbe27
-      "individual users, and natural expansion into team and enterprise "
+      "encourage them deeper into our enterprise solutions. This is the "
 [033] indent=4 block=335dbe27
-      "contracts."
-[034] indent=0 block=-
+      "tweaked GTM motion: lower friction entry, brand recognition with "
+[034] indent=4 block=335dbe27
+      "individual users, and natural expansion into team and enterprise "
 [035] indent=4 block=335dbe27
-      "As customers invest more, the platform grows with them. Bring your "
-[036] indent=4 block=335dbe27
-      "own data, forecasts, and strategies into the same unified surface, "
+      "contracts."
+[036] indent=0 block=-
 [037] indent=4 block=335dbe27
-      "and our AI workflows seamlessly pick them up. Connect your existing "
+      "As customers invest more, the platform grows with them. Bring your "
 [038] indent=4 block=335dbe27
-      "pipelines through our APIs and SDKs. Our enterprise platform "
+      "own data, forecasts, and strategies into the same unified surface, "
 [039] indent=4 block=335dbe27
-      "offering is the infrastructure that enables traders to understand "
+      "and our AI workflows seamlessly pick them up. Connect your existing "
 [040] indent=4 block=335dbe27
-      "markets, evaluate positions, and take action, whether EQ develops "
+      "pipelines through our APIs and SDKs. Our enterprise platform "
 [041] indent=4 block=335dbe27
-      "strategies for them or they develop their own."
-[042] indent=0 block=-
+      "offering is the infrastructure that enables traders to understand "
+[042] indent=4 block=335dbe27
+      "markets, evaluate positions, and take action, whether EQ develops "
 [043] indent=4 block=335dbe27
-      "What makes this approach sticky is not any single feature. It's that"
-[044] indent=4 block=335dbe27
-      "each layer of investment compounds. Workflow embedding gets us in "
+      "strategies for them or they develop their own."
+[044] indent=0 block=-
 [045] indent=4 block=335dbe27
-      "(traders adopt because it replaces the 20-tab morning routine, not "
+      "What makes this approach sticky is not any single feature. It's that"
 [046] indent=4 block=335dbe27
-      "because we sold them a feature list). Speaking trader language from "
+      "each layer of investment compounds. Workflow embedding gets us in "
 [047] indent=4 block=335dbe27
-      "day one means zero learning curve due to exceptional UX. "
+      "(traders adopt because it replaces the 20-tab morning routine, not "
 [048] indent=4 block=335dbe27
-      "Co-optimization across market products (DART + CRRs + futures + gas "
+      "because we sold them a feature list). Speaking trader language from "
 [049] indent=4 block=335dbe27
-      "on one platform) creates value no individual tool can replicate. And"
+      "day one means zero learning curve due to exceptional UX. "
 [050] indent=4 block=335dbe27
-      "intelligence that learns, remembers, and compounds over time means a"
+      "Co-optimization across market products (DART + CRRs + futures + gas "
 [051] indent=4 block=335dbe27
-      "trader who's used the product for six months has a system that "
+      "on one platform) creates value no individual tool can replicate. And"
 [052] indent=4 block=335dbe27
-      "understands how they think. Switching means starting over."
-[053] indent=0 block=-
+      "intelligence that learns, remembers, and compounds over time means a"
+[053] indent=4 block=335dbe27
+      "trader who's used the product for six months has a system that "
 [054] indent=4 block=335dbe27
-      "────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+      "understands how they think. Switching means starting over."
 [055] indent=0 block=-
 [056] indent=4 block=335dbe27
+      "────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
 [057] indent=0 block=-
-[058] indent=2 block=335dbe27 H2
-      "## " {b fg=#337ea9}
-      "The Beta Build (Launch Target TBD pending scoping)" {b fg=#337ea9}
+[058] indent=4 block=335dbe27
 [059] indent=0 block=-
-[060] indent=4 block=335dbe27 H3
-      "### " {b}
+[060] indent=2 block=335dbe27 H2
+      "The Beta Build (Launch Target TBD pending scoping)" {b fg=#337ea9}
+[061] indent=2 block=335dbe27
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+[062] indent=0 block=-
+[063] indent=4 block=335dbe27 H3
       "Individual Trader Beta - Q2 Target (Marketed as “The Helm”)" {b}
-[061] indent=0 block=-
-[062] indent=6 block=335dbe27
-      "What it is:" {b}
-      " Invite-only beta, ~12-20 users, full-featured trial. "
-[063] indent=6 block=335dbe27
-      "Design partner program that validates the PLG motion and generates"
-[064] indent=6 block=335dbe27
-      "real usage data."
+[064] indent=4 block=335dbe27
+      "--------------------------------------------------------------------"
 [065] indent=0 block=-
 [066] indent=6 block=335dbe27
-      "Features Scope:" {b}
-[067] indent=0 block=-
+      "What it is:" {b}
+      " Invite-only beta, ~12-20 users, full-featured trial. "
+[067] indent=6 block=335dbe27
+      "Design partner program that validates the PLG motion and generates"
 [068] indent=6 block=335dbe27
+      "real usage data."
+[069] indent=0 block=-
+[070] indent=6 block=335dbe27
+      "Features Scope:" {b}
+[071] indent=0 block=-
+[072] indent=6 block=335dbe27
       "• "
       "Explorer:" {b}
       " Probabilistic price forecasts, market data, constraint"
-[069] indent=6 block=335dbe27
+[073] indent=6 block=335dbe27
       "  "
       "analysis, system-wide views. Unified data layer replacing the "
-[070] indent=6 block=335dbe27
+[074] indent=6 block=335dbe27
       "  "
       "20-tab workflow."
-[071] indent=6 block=335dbe27
+[075] indent=6 block=335dbe27
       "• "
       "AI Chat:" {b}
       " Agentic analysis grounded in EQ's 60+ code frameworks. "
-[072] indent=6 block=335dbe27
+[076] indent=6 block=335dbe27
       "  "
       "Not generic summaries; power-industry-native intelligence with "
-[073] indent=6 block=335dbe27
+[077] indent=6 block=335dbe27
       "  "
       "full transparency on reasoning."
-[074] indent=6 block=335dbe27
+[078] indent=6 block=335dbe27
       "• "
       "Constraints deep dive:" {b}
       " Automated backstory and context for "
-[075] indent=6 block=335dbe27
+[079] indent=6 block=335dbe27
       "  "
       "individual constraints (the \"hour of research in 10 minutes\" use"
-[076] indent=6 block=335dbe27
+[080] indent=6 block=335dbe27
       "  "
       "case)."
-[077] indent=6 block=335dbe27
+[081] indent=6 block=335dbe27
       "• "
       "Lineage (fast follow):" {b}
       " DAG visibility showing data sources, "
-[078] indent=6 block=335dbe27
+[082] indent=6 block=335dbe27
       "  "
       "transformations, and point-in-time correctness. Every number has"
-[079] indent=6 block=335dbe27
+[083] indent=6 block=335dbe27
       "  "
       "a receipt."
-[080] indent=0 block=-
-[081] indent=6 block=336dbe27
-      "JTBD Scope:" {b}
-[082] indent=0 block=-
-[083] indent=6 block=336dbe27
-      "• "
-      "As a user, I want to understand what kind of day tomorrow is as "
-[084] indent=6 block=336dbe27
-      "  "
-      "quickly as possible"
+[084] indent=0 block=-
 [085] indent=6 block=336dbe27
-      "• "
-      "As a user, I want to be able to do constraint analysis before "
-[086] indent=6 block=336dbe27
-      "  "
-      "bid close to find potential high-return opportunities"
+      "JTBD Scope:" {b}
+[086] indent=0 block=-
 [087] indent=6 block=336dbe27
       "• "
-      "As a user, I want to ask a question and get an answer grounded "
+      "As a user, I want to understand what kind of day tomorrow is as "
 [088] indent=6 block=336dbe27
       "  "
-      "in power market fundamentals, not generic AI"
+      "quickly as possible"
 [089] indent=6 block=336dbe27
       "• "
-      "As a user, I don’t trust others to understand the complexities "
+      "As a user, I want to be able to do constraint analysis before "
 [090] indent=6 block=336dbe27
       "  "
-      "of my work, so I want to be able to interrogate all of the "
+      "bid close to find potential high-return opportunities"
 [091] indent=6 block=336dbe27
-      "  "
-      "assumptions that i’m provided (forecasts, chat responses, market"
+      "• "
+      "As a user, I want to ask a question and get an answer grounded "
 [092] indent=6 block=336dbe27
       "  "
+      "in power market fundamentals, not generic AI"
+[093] indent=6 block=336dbe27
+      "• "
+      "As a user, I don’t trust others to understand the complexities "
+[094] indent=6 block=336dbe27
+      "  "
+      "of my work, so I want to be able to interrogate all of the "
+[095] indent=6 block=336dbe27
+      "  "
+      "assumptions that i’m provided (forecasts, chat responses, market"
+[096] indent=6 block=336dbe27
+      "  "
       "summaries, etc)"
-[093] indent=0 block=-
-[094] indent=6 block=335dbe27
+[097] indent=0 block=-
+[098] indent=6 block=335dbe27
       "What is NOT in beta:" {b}
-[095] indent=0 block=-
-[096] indent=6 block=335dbe27
+[099] indent=0 block=-
+[100] indent=6 block=335dbe27
       "• "
       "No portfolio data"
-[097] indent=6 block=335dbe27
+[101] indent=6 block=335dbe27
       "• "
       "No SCED what-if scenarios"
-[098] indent=6 block=335dbe27
+[102] indent=6 block=335dbe27
       "• "
       "No strategy/forecast workbench"
-[099] indent=6 block=335dbe27
+[103] indent=6 block=335dbe27
       "• "
       "No BYO Forecast integration"
-[100] indent=0 block=-
-[101] indent=6 block=335dbe27
-      "Science dependencies for beta:" {b}
-      " Minimal. Beta uses existing "
-[102] indent=6 block=335dbe27
-      "probabilistic forecasts and market data already in the platform. "
-[103] indent=6 block=335dbe27
-      "No new model development required."
 [104] indent=0 block=-
 [105] indent=6 block=335dbe27
-      "Architecture:" {b}
-      " Beta proceeds without ArchV2. Learnings from beta "
+      "Science dependencies for beta:" {b}
+      " Minimal. Beta uses existing "
 [106] indent=6 block=335dbe27
-      "feed ArchV2 requirements. Beta stack to be defined by engineering "
+      "probabilistic forecasts and market data already in the platform. "
 [107] indent=6 block=335dbe27
-      "& infrastructure."
+      "No new model development required."
 [108] indent=0 block=-
 [109] indent=6 block=335dbe27
+      "Architecture:" {b}
+      " Beta proceeds without ArchV2. Learnings from beta "
+[110] indent=6 block=335dbe27
+      "feed ArchV2 requirements. Beta stack to be defined by engineering "
+[111] indent=6 block=335dbe27
+      "& infrastructure."
+[112] indent=0 block=-
+[113] indent=6 block=335dbe27
       "Release cadence:" {b}
       " New feature every 1-2 weeks. Feedback loop "
-[110] indent=6 block=335dbe27
+[114] indent=6 block=335dbe27
       "through release notes + direct user feedback requests."
-[111] indent=0 block=-
-[112] indent=6 block=335dbe27
+[115] indent=0 block=-
+[116] indent=6 block=335dbe27
       "Beta users:" {b}
       " Currently users from 2+ companies. Max 20 users total."
-[113] indent=6 block=335dbe27
-      "Controlled rollout, not public."
-[114] indent=0 block=-
-[115] indent=4 block=335dbe27 H3
-      "### " {b}
-      "6-Month Vision (End of Q3 MVP)" {b}
-[116] indent=0 block=-
 [117] indent=6 block=335dbe27
-      "Q3 MVP (OKR2.2 Target: October)"
+      "Controlled rollout, not public."
 [118] indent=0 block=-
-[119] indent=6 block=335dbe27
-      "What it is:" {b}
-      " A self-serve, low friction entry point onto our "
-[120] indent=6 block=335dbe27
-      "platform and application suite not limited to design partners"
+[119] indent=4 block=335dbe27 H3
+      "6-Month Vision (End of Q3 MVP)" {b}
+[120] indent=4 block=335dbe27
+      "--------------------------------------------------------------------"
 [121] indent=0 block=-
 [122] indent=6 block=335dbe27
-      "What changes from beta to MVP:" {b}
+      "Q3 MVP (OKR2.2 Target: October)"
 [123] indent=0 block=-
 [124] indent=6 block=335dbe27
+      "What it is:" {b}
+      " A self-serve, low friction entry point onto our "
+[125] indent=6 block=335dbe27
+      "platform and application suite not limited to design partners"
+[126] indent=0 block=-
+[127] indent=6 block=335dbe27
+      "What changes from beta to MVP:" {b}
+[128] indent=0 block=-
+[129] indent=6 block=335dbe27
       "• "
       "Users can self-serve sign-up and pay with credit card"
-[125] indent=6 block=335dbe27
+[130] indent=6 block=335dbe27
       "• "
       "Core Applications & SA & Delivery propose feature graduation "
-[126] indent=6 block=335dbe27
+[131] indent=6 block=335dbe27
       "  "
       "criteria by end of beta based on customer usage and feedback"
-[127] indent=6 block=335dbe27
+[132] indent=6 block=335dbe27
       "• "
       "GTM finalize pricing plan"
-[128] indent=6 block=335dbe27
+[133] indent=6 block=335dbe27
       "• "
       "OKR1.5: […] The Helm "
       "MVP" {i}
       " by end of Q3’26. Add 20 paid "
-[129] indent=6 block=335dbe27
+[134] indent=6 block=335dbe27
       "  "
       "subscribers by the end of Q4’26 to drive $60K in new ARR."
-[130] indent=0 block=-
-[131] indent=6 block=335dbe27
+[135] indent=0 block=-
+[136] indent=6 block=335dbe27
       "Architecture" {b}
       ": Multi-tenant environment, detailed requirements to "
-[132] indent=6 block=335dbe27
+[137] indent=6 block=335dbe27
       "be put together with engineering & infrastructure"
-[133] indent=0 block=-
-[134] indent=6 block=335dbe27
+[138] indent=0 block=-
+[139] indent=6 block=335dbe27
       "Release cadence: " {b}
       "Continue our Beta momentum with new features "
-[135] indent=6 block=335dbe27
+[140] indent=6 block=335dbe27
       "every 1-2 weeks. Ideally SA & Delivery also can choose to release "
-[136] indent=6 block=335dbe27
+[141] indent=6 block=335dbe27
       "these features to enterprise customers."
-[137] indent=0 block=-
-[138] indent=6 block=335dbe27
+[142] indent=0 block=-
+[143] indent=6 block=335dbe27
       "──────────────────────────────────────────────────────────────────" {fg=#9b9a97}
-[139] indent=0 block=-
-[140] indent=2 block=335dbe27 H2
-      "## " {b fg=#337ea9}
+[144] indent=0 block=-
+[145] indent=2 block=335dbe27 H2
       "Application Suite 2-Year Vision (2026 – 2028)" {b fg=#337ea9}
-[141] indent=0 block=-
-[142] indent=4 block=335dbe27 H3
-      "### " {b}
+[146] indent=2 block=335dbe27
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+[147] indent=0 block=-
+[148] indent=4 block=335dbe27 H3
       "One Product That Grows With You" {b}
-[143] indent=0 block=-
-[144] indent=6 block=335dbe27
-      "This is one application suite. It starts as an individual trader's"
-[145] indent=6 block=335dbe27
-      "daily operating environment and scales as customers invest more: "
-[146] indent=6 block=335dbe27
-      "more data, more users, more automation, more integration. We use "
-[147] indent=6 block=335dbe27
-      "\"doors\" to describe natural expansion moments, not tiers or gates,"
-[148] indent=6 block=335dbe27
-      "because a customer can enter through any door and does not need to"
-[149] indent=6 block=335dbe27
-      "proceed sequentially. Each door is an \"I want more\" signal where "
-[150] indent=6 block=335dbe27
-      "the platform meets the customer where they are. There are value "
+[149] indent=4 block=335dbe27
+      "--------------------------------------------------------------------"
+[150] indent=0 block=-
 [151] indent=6 block=335dbe27
-      "levers that can be controlled throughout the application to help "
+      "This is one application suite. It starts as an individual trader's"
 [152] indent=6 block=335dbe27
-      "control the funnel and GTM motion as well (usage caps, limitations"
+      "daily operating environment and scales as customers invest more: "
 [153] indent=6 block=335dbe27
-      "on scenarios, limitations on agents, etc.)."
-[154] indent=0 block=-
+      "more data, more users, more automation, more integration. We use "
+[154] indent=6 block=335dbe27
+      "\"doors\" to describe natural expansion moments, not tiers or gates,"
 [155] indent=6 block=335dbe27
+      "because a customer can enter through any door and does not need to"
+[156] indent=6 block=335dbe27
+      "proceed sequentially. Each door is an \"I want more\" signal where "
+[157] indent=6 block=335dbe27
+      "the platform meets the customer where they are. There are value "
+[158] indent=6 block=335dbe27
+      "levers that can be controlled throughout the application to help "
+[159] indent=6 block=335dbe27
+      "control the funnel and GTM motion as well (usage caps, limitations"
+[160] indent=6 block=335dbe27
+      "on scenarios, limitations on agents, etc.)."
+[161] indent=0 block=-
+[162] indent=6 block=335dbe27
       "Door 1: Individual Trader" {b}
       " — "
       "\"I want an army of analysts at my " {i}
-[156] indent=6 block=335dbe27
-      "back\"" {i}
-[157] indent=0 block=-
-[158] indent=6 block=335dbe27
-      "An individual trader signs up and gets immediate value: unified "
-[159] indent=6 block=335dbe27
-      "market data, probabilistic forecasts at every node, constraint "
-[160] indent=6 block=335dbe27
-      "analysis with automated AI investigation, cross-commodity views, "
-[161] indent=6 block=335dbe27
-      "and full system visualization with weather, wind, and temperature "
-[162] indent=6 block=335dbe27
-      "layers over time. Glass box transparency on every number. But this"
 [163] indent=6 block=335dbe27
-      "isn't just a dashboard. From day one, traders have agents that "
-[164] indent=6 block=335dbe27
-      "help them explore: research a constraint move, investigate a price"
+      "back\"" {i}
+[164] indent=0 block=-
 [165] indent=6 block=335dbe27
-      "spike, run a scenario to test an intuition, generate a performance"
+      "An individual trader signs up and gets immediate value: unified "
 [166] indent=6 block=335dbe27
-      "attribution report. AI chat grounded in EQ's analytical frameworks"
+      "market data, probabilistic forecasts at every node, constraint "
 [167] indent=6 block=335dbe27
-      "turns questions into analysis, not just answers. The platform "
+      "analysis with automated AI investigation, cross-commodity views, "
 [168] indent=6 block=335dbe27
-      "learns the trader's patterns, preferences, and past analyses "
+      "and full system visualization with weather, wind, and temperature "
 [169] indent=6 block=335dbe27
-      "through personal context memory. Custom views, saved prompts, and "
+      "layers over time. Glass box transparency on every number. But this"
 [170] indent=6 block=335dbe27
+      "isn't just a dashboard. From day one, traders have agents that "
+[171] indent=6 block=335dbe27
+      "help them explore: research a constraint move, investigate a price"
+[172] indent=6 block=335dbe27
+      "spike, run a scenario to test an intuition, generate a performance"
+[173] indent=6 block=335dbe27
+      "attribution report. AI chat grounded in EQ's analytical frameworks"
+[174] indent=6 block=335dbe27
+      "turns questions into analysis, not just answers. The platform "
+[175] indent=6 block=335dbe27
+      "learns the trader's patterns, preferences, and past analyses "
+[176] indent=6 block=335dbe27
+      "through personal context memory. Custom views, saved prompts, and "
+[177] indent=6 block=335dbe27
       "personalized layouts make it theirs."
-[171] indent=0 block=-
-[172] indent=6 block=336dbe27
+[178] indent=0 block=-
+[179] indent=6 block=336dbe27
       "JTBD → grow from “Help me understand” (Beta) to “help me "
-[173] indent=6 block=336dbe27
+[180] indent=6 block=336dbe27
       "investigate and act on my thinking”"
-[174] indent=0 block=-
-[175] indent=6 block=336dbe27
+[181] indent=0 block=-
+[182] indent=6 block=336dbe27
       "• "
       "As a user, I want to test a hypothesis about what happens to my "
-[176] indent=6 block=336dbe27
+[183] indent=6 block=336dbe27
       "  "
       "positions if gas spikes or wind drops, without building a "
-[177] indent=6 block=336dbe27
+[184] indent=6 block=336dbe27
       "  "
       "spreadsheet"
-[178] indent=6 block=336dbe27
+[185] indent=6 block=336dbe27
       "• "
       "As a user, I want to be alerted when something changes that "
-[179] indent=6 block=336dbe27
+[186] indent=6 block=336dbe27
       "  "
       "affects my positions, not discover it during my morning routine"
-[180] indent=6 block=336dbe27
+[187] indent=6 block=336dbe27
       "• "
       "As a user, I want the system to remember my patterns and "
-[181] indent=6 block=336dbe27
+[188] indent=6 block=336dbe27
       "  "
       "preferences so it gets smarter the more I use it"
-[182] indent=0 block=-
-[183] indent=6 block=335dbe27
+[189] indent=0 block=-
+[190] indent=6 block=335dbe27
       "Door 2: My Data" {b}
       " — "
       "\"I want my data and forecasts in here\"" {i}
-[184] indent=0 block=-
-[185] indent=6 block=335dbe27
-      "Customers bring their own forecasts, proprietary data, and market "
-[186] indent=6 block=335dbe27
-      "views into the same unified surface. This triggers an isolated "
-[187] indent=6 block=335dbe27
-      "environment and unlocks a vertical AI for power which includes "
-[188] indent=6 block=335dbe27
-      "portfolio-aware AI and memory. The platform now reasons over their"
-[189] indent=6 block=335dbe27
-      "world, not just the market. Our AI workflows seamlessly pick up "
-[190] indent=6 block=335dbe27
-      "customer data alongside EQ's, organized, versioned, and queryable."
-[191] indent=6 block=335dbe27
-      "EQ offers white-glove service to make this an exceptional "
+[191] indent=0 block=-
 [192] indent=6 block=335dbe27
-      "experience for our customers with integrations starting at this "
+      "Customers bring their own forecasts, proprietary data, and market "
 [193] indent=6 block=335dbe27
-      "point and at every integration point in the additional doors. "
+      "views into the same unified surface. This triggers an isolated "
 [194] indent=6 block=335dbe27
-      "These engagements are where Product learns what to 'productize'. "
+      "environment and unlocks a vertical AI for power which includes "
 [195] indent=6 block=335dbe27
-      "The patterns SA & Delivery sees across enterprise customers become"
+      "portfolio-aware AI and memory. The platform now reasons over their"
 [196] indent=6 block=335dbe27
+      "world, not just the market. Our AI workflows seamlessly pick up "
+[197] indent=6 block=335dbe27
+      "customer data alongside EQ's, organized, versioned, and queryable."
+[198] indent=6 block=335dbe27
+      "EQ offers white-glove service to make this an exceptional "
+[199] indent=6 block=335dbe27
+      "experience for our customers with integrations starting at this "
+[200] indent=6 block=335dbe27
+      "point and at every integration point in the additional doors. "
+[201] indent=6 block=335dbe27
+      "These engagements are where Product learns what to 'productize'. "
+[202] indent=6 block=335dbe27
+      "The patterns SA & Delivery sees across enterprise customers become"
+[203] indent=6 block=335dbe27
       "the templates and workflows that scale through the offering."
-[197] indent=0 block=-
-[198] indent=6 block=336dbe27
+[204] indent=0 block=-
+[205] indent=6 block=336dbe27
       "JTBD → shifts from EQ’s world to the customer’s own alpha"
-[199] indent=0 block=-
-[200] indent=6 block=336dbe27
+[206] indent=0 block=-
+[207] indent=6 block=336dbe27
       "• "
       "As a user, I want the same AI and analysis capabilities applied "
-[201] indent=6 block=336dbe27
+[208] indent=6 block=336dbe27
       "  "
       "to my proprietary data, not just market data"
-[202] indent=6 block=336dbe27
+[209] indent=6 block=336dbe27
       "• "
       "As a user, I want to bring my own forecasts in and see them with"
-[203] indent=6 block=336dbe27
+[210] indent=6 block=336dbe27
       "  "
       "the same glass box treatment"
-[204] indent=0 block=-
-[205] indent=6 block=335dbe27
+[211] indent=0 block=-
+[212] indent=6 block=335dbe27
       "Door 3: My Strategies" {b}
       " — "
       "\"I want to build and run strategies on " {i}
-[206] indent=6 block=335dbe27
-      "this\"" {i}
-[207] indent=0 block=-
-[208] indent=6 block=335dbe27
-      "The shift from exploration to operations. Door 1 agents help you "
-[209] indent=6 block=335dbe27
-      "understand the market. Door 3 expands to run your trading "
-[210] indent=6 block=335dbe27
-      "business. Strategy pipelines, automated briefings, backtesting "
-[211] indent=6 block=335dbe27
-      "across historical conditions. Agents that follow Science and "
-[212] indent=6 block=335dbe27
-      "Strategy's proven analytical workflows: run a DART analysis, "
 [213] indent=6 block=335dbe27
-      "evaluate a CRR position, stress-test a gas portfolio using the "
-[214] indent=6 block=335dbe27
-      "same artifacts and methodologies our quants use internally. The "
+      "this\"" {i}
+[214] indent=0 block=-
 [215] indent=6 block=335dbe27
-      "platform tracks what worked and why through operational memory. "
+      "The shift from exploration to operations. Door 1 agents help you "
 [216] indent=6 block=335dbe27
-      "Co-optimization across market products (DART + CRRs + futures + "
+      "understand the market. Door 3 expands to run your trading "
 [217] indent=6 block=335dbe27
-      "gas) creates value no individual tool can replicate. The 2-year "
+      "business. Strategy pipelines, automated briefings, backtesting "
 [218] indent=6 block=335dbe27
-      "trajectory is from EQ-assisted to fully self-serve. Customers have"
+      "across historical conditions. Agents that follow Science and "
 [219] indent=6 block=335dbe27
-      "told us directly that they want to build it themselves. Product's "
+      "Strategy's proven analytical workflows: run a DART analysis, "
 [220] indent=6 block=335dbe27
-      "job is to make that possible by turning what we've learned from "
+      "evaluate a CRR position, stress-test a gas portfolio using the "
 [221] indent=6 block=335dbe27
-      "enterprise engagements into capabilities any user can access "
+      "same artifacts and methodologies our quants use internally. The "
 [222] indent=6 block=335dbe27
+      "platform tracks what worked and why through operational memory. "
+[223] indent=6 block=335dbe27
+      "Co-optimization across market products (DART + CRRs + futures + "
+[224] indent=6 block=335dbe27
+      "gas) creates value no individual tool can replicate. The 2-year "
+[225] indent=6 block=335dbe27
+      "trajectory is from EQ-assisted to fully self-serve. Customers have"
+[226] indent=6 block=335dbe27
+      "told us directly that they want to build it themselves. Product's "
+[227] indent=6 block=335dbe27
+      "job is to make that possible by turning what we've learned from "
+[228] indent=6 block=335dbe27
+      "enterprise engagements into capabilities any user can access "
+[229] indent=6 block=335dbe27
       "independently."
-[223] indent=0 block=-
-[224] indent=6 block=336dbe27
+[230] indent=0 block=-
+[231] indent=6 block=336dbe27
       "JTBD → shifts from analysis to operations"
-[225] indent=0 block=-
-[226] indent=6 block=336dbe27
+[232] indent=0 block=-
+[233] indent=6 block=336dbe27
       "• "
       "As a trader, I want to be able to easily research, build, "
-[227] indent=6 block=336dbe27
+[234] indent=6 block=336dbe27
       "  "
       "monitor, and deploy strategies"
-[228] indent=6 block=336dbe27
+[235] indent=6 block=336dbe27
       "• "
       "As a trader, I want to evaluate how my strategy performs across "
-[229] indent=6 block=336dbe27
+[236] indent=6 block=336dbe27
       "  "
       "a range of market conditions before I commit capital"
-[230] indent=6 block=336dbe27
+[237] indent=6 block=336dbe27
       "• "
       "As a trader, I want to know what's actually driving my PnL"
-[231] indent=6 block=336dbe27
+[238] indent=6 block=336dbe27
       "• "
       "As a desk, we want to see our portfolio together, understand our"
-[232] indent=6 block=336dbe27
+[239] indent=6 block=336dbe27
       "  "
       "strategy interactions and behaviors, and maximize risk adjusted "
-[233] indent=6 block=336dbe27
+[240] indent=6 block=336dbe27
       "  "
       "return across all of our individual work"
-[234] indent=0 block=-
-[235] indent=6 block=33bdbe27
+[241] indent=0 block=-
+[242] indent=6 block=33bdbe27
       "Door 4: My Team" {b}
       " — "
       "\"I want my team to have these capabilities\"" {i}
-[236] indent=0 block=-
-[237] indent=6 block=33bdbe27
+[243] indent=0 block=-
+[244] indent=6 block=33bdbe27
       "A desk lead notices the value. Shared workspaces, team memory that"
-[238] indent=6 block=33bdbe27
-      "cross-pollinates context across the desk, shared prompt libraries "
-[239] indent=6 block=33bdbe27
-      "and agent results. The buying authority shifts from personal "
-[240] indent=6 block=33bdbe27
-      "credit card to team budget. The transition is concierge-assisted, "
-[241] indent=6 block=33bdbe27
-      "not a migration."
-[242] indent=0 block=-
-[243] indent=6 block=33bdbe27
-      "JTBD → grows from individual to collective intelligence"
-[244] indent=0 block=-
 [245] indent=6 block=33bdbe27
+      "cross-pollinates context across the desk, shared prompt libraries "
+[246] indent=6 block=33bdbe27
+      "and agent results. The buying authority shifts from personal "
+[247] indent=6 block=33bdbe27
+      "credit card to team budget. The transition is concierge-assisted, "
+[248] indent=6 block=33bdbe27
+      "not a migration."
+[249] indent=0 block=-
+[250] indent=6 block=33bdbe27
+      "JTBD → grows from individual to collective intelligence"
+[251] indent=0 block=-
+[252] indent=6 block=33bdbe27
       "• "
       "As a desk lead, I want my team to share context without "
-[246] indent=6 block=33bdbe27
+[253] indent=6 block=33bdbe27
       "  "
       "scheduling a meeting"
-[247] indent=6 block=33bdbe27
+[254] indent=6 block=33bdbe27
       "• "
       "As a team, we want our best analyst's research to benefit "
-[248] indent=6 block=33bdbe27
+[255] indent=6 block=33bdbe27
       "  "
       "everyone, not live in one person's head or desktop"
-[249] indent=6 block=33bdbe27
+[256] indent=6 block=33bdbe27
       "• "
       "As a desk lead, I want visibility into what my team is watching "
-[250] indent=6 block=33bdbe27
+[257] indent=6 block=33bdbe27
       "  "
       "and what they might be missing"
-[251] indent=0 block=-
-[252] indent=6 block=335dbe27
+[258] indent=0 block=-
+[259] indent=6 block=335dbe27
       "Door 5: My Enterprise" {b}
       " — "
       "\"I want to embed PowerOS into my systems\"" {i}
-[253] indent=0 block=-
-[254] indent=6 block=335dbe27
+[260] indent=0 block=-
+[261] indent=6 block=335dbe27
       "The product is no longer standalone. SDK access, API integrations,"
-[255] indent=6 block=335dbe27
+[262] indent=6 block=335dbe27
       "ETRM/EMS connectors. Customer engineering teams build on EQ's "
-[256] indent=6 block=335dbe27
+[263] indent=6 block=335dbe27
       "primitives. DAG-driven real-time updates as new data arrives. "
-[257] indent=6 block=335dbe27
+[264] indent=6 block=335dbe27
       "Cross-system reasoning and memory span EQ and connected tools. "
-[258] indent=6 block=335dbe27
+[265] indent=6 block=335dbe27
       "SSO, compliance certifications, self-serve extensions."
-[259] indent=0 block=-
-[260] indent=6 block=336dbe27
+[266] indent=0 block=-
+[267] indent=6 block=336dbe27
       "• "
       "As a technical user, I want to build on EQ's capabilities with "
-[261] indent=6 block=336dbe27
+[268] indent=6 block=336dbe27
       "  "
       "my own tools and code, not be limited to what the UI offers"
-[262] indent=6 block=336dbe27
+[269] indent=6 block=336dbe27
       "• "
       "As a firm, I want my team to be able to build, modify, and "
-[263] indent=6 block=336dbe27
+[270] indent=6 block=336dbe27
       "  "
       "maintain our own workflows on this platform without submitting a"
-[264] indent=6 block=336dbe27
+[271] indent=6 block=336dbe27
       "  "
       "ticket and waiting for EQ to do it for us"
-[265] indent=6 block=336dbe27
+[272] indent=6 block=336dbe27
       "• "
       "As an engineering team, I want one API surface that works the "
-[266] indent=6 block=336dbe27
+[273] indent=6 block=336dbe27
       "  "
       "same way whether I'm powering a dashboard, an automated "
-[267] indent=6 block=336dbe27
+[274] indent=6 block=336dbe27
       "  "
       "pipeline, or an agent"
-[268] indent=0 block=-
-[269] indent=6 block=335dbe27
+[275] indent=0 block=-
+[276] indent=6 block=335dbe27
       "Door 6: Self-Service" {b}
       " — "
       "\"I want this running my org\"" {i}
-[270] indent=0 block=-
-[271] indent=6 block=335dbe27
-      "Org-wide deployment, cross-desk intelligence, institutional memory"
-[272] indent=6 block=335dbe27
-      "that compounds over years. Users build their own workflows, "
-[273] indent=6 block=335dbe27
-      "agents, and strategies on the platform. Full self-serve "
-[274] indent=6 block=335dbe27
-      "application customization: users vibe-code their own views and "
-[275] indent=6 block=335dbe27
-      "tools. A trader who's been on the Helm for six months has a system"
-[276] indent=6 block=335dbe27
-      "that understands how they think. An organization that's been on it"
-[277] indent=6 block=335dbe27
-      "for a year has an institutional memory that no individual "
+[277] indent=0 block=-
 [278] indent=6 block=335dbe27
-      "departure can erase. This is where EQ's moat becomes existential, "
+      "Org-wide deployment, cross-desk intelligence, institutional memory"
 [279] indent=6 block=335dbe27
+      "that compounds over years. Users build their own workflows, "
+[280] indent=6 block=335dbe27
+      "agents, and strategies on the platform. Full self-serve "
+[281] indent=6 block=335dbe27
+      "application customization: users vibe-code their own views and "
+[282] indent=6 block=335dbe27
+      "tools. A trader who's been on the Helm for six months has a system"
+[283] indent=6 block=335dbe27
+      "that understands how they think. An organization that's been on it"
+[284] indent=6 block=335dbe27
+      "for a year has an institutional memory that no individual "
+[285] indent=6 block=335dbe27
+      "departure can erase. This is where EQ's moat becomes existential, "
+[286] indent=6 block=335dbe27
       "because switching means starting over."
-[280] indent=0 block=-
-[281] indent=6 block=336dbe27
+[287] indent=0 block=-
+[288] indent=6 block=336dbe27
       "• "
       "As a head of trading, I want intelligence that compounds across "
-[282] indent=6 block=336dbe27
+[289] indent=6 block=336dbe27
       "  "
       "desks, not just within them. What the gas desk learns about a "
-[283] indent=6 block=336dbe27
+[290] indent=6 block=336dbe27
       "  "
       "regime shift should inform the power desk automatically."
-[284] indent=6 block=336dbe27
+[291] indent=6 block=336dbe27
       "• "
       "As a COO, I want institutional knowledge that survives when my "
-[285] indent=6 block=336dbe27
+[292] indent=6 block=336dbe27
       "  "
       "best trader leaves"
-[286] indent=6 block=336dbe27
+[293] indent=6 block=336dbe27
       "• "
       "As a firm, I want my people building their own tools and "
-[287] indent=6 block=336dbe27
+[294] indent=6 block=336dbe27
       "  "
       "workflows on this platform, not waiting for a vendor roadmap"
-[288] indent=0 block=-
-[289] indent=4 block=335dbe27 H3
-      "### " {b}
+[295] indent=0 block=-
+[296] indent=4 block=335dbe27 H3
       "What This Requires From the Platform" {b}
-[290] indent=0 block=-
-[291] indent=6 block=335dbe27
-      "The doors describe what customers experience. Underneath, the "
-[292] indent=6 block=335dbe27
-      "platform needs to evolve to support it. That's where architecture "
-[293] indent=6 block=335dbe27
-      "v2 comes in."
-[294] indent=0 block=-
-[295] indent=6 block=335dbe27
-      "We want to make sure SA & Delivery can easily deploy core features"
-[296] indent=6 block=335dbe27
-      "from the core application suite to enterprise customers, that we "
-[297] indent=6 block=335dbe27
-      "can grow our capabilities horizontally FAST, and that we can "
-[298] indent=6 block=335dbe27
-      "explore > build > ship new features in fast iteration. We also "
+[297] indent=4 block=335dbe27
+      "--------------------------------------------------------------------"
+[298] indent=0 block=-
 [299] indent=6 block=335dbe27
-      "want to make sure there's alignment between the APIs & primitives "
+      "The doors describe what customers experience. Underneath, the "
 [300] indent=6 block=335dbe27
-      "that power internal applications, customer-facing integrations, "
+      "platform needs to evolve to support it. That's where architecture "
 [301] indent=6 block=335dbe27
-      "and agents so we can provide a unified customer experience. Agents"
-[302] indent=6 block=335dbe27
-      "are present from Door 1 (scenario agents, research agents) and "
+      "v2 comes in."
+[302] indent=0 block=-
 [303] indent=6 block=335dbe27
-      "scale in sophistication through Door 6 (org-wide agent fleets, "
+      "We want to make sure SA & Delivery can easily deploy core features"
 [304] indent=6 block=335dbe27
-      "custom-trained models). The infrastructure needs to support the "
+      "from the core application suite to enterprise customers, that we "
 [305] indent=6 block=335dbe27
-      "full spectrum."
-[306] indent=0 block=-
+      "can grow our capabilities horizontally FAST, and that we can "
+[306] indent=6 block=335dbe27
+      "explore > build > ship new features in fast iteration. We also "
 [307] indent=6 block=335dbe27
+      "want to make sure there's alignment between the APIs & primitives "
+[308] indent=6 block=335dbe27
+      "that power internal applications, customer-facing integrations, "
+[309] indent=6 block=335dbe27
+      "and agents so we can provide a unified customer experience. Agents"
+[310] indent=6 block=335dbe27
+      "are present from Door 1 (scenario agents, research agents) and "
+[311] indent=6 block=335dbe27
+      "scale in sophistication through Door 6 (org-wide agent fleets, "
+[312] indent=6 block=335dbe27
+      "custom-trained models). The infrastructure needs to support the "
+[313] indent=6 block=335dbe27
+      "full spectrum."
+[314] indent=0 block=-
+[315] indent=6 block=335dbe27
       "──────────────────────────────────────────────────────────────────" {fg=#9b9a97}
-[308] indent=0 block=-
-[309] indent=2 block=335dbe27 H2
-      "## " {b fg=#337ea9}
+[316] indent=0 block=-
+[317] indent=2 block=335dbe27 H2
       "How This Connects to Science & Algorithms + Trading Teams" {b fg=#337ea9}
-[310] indent=0 block=-
-[311] indent=4 block=335dbe27
+[318] indent=2 block=335dbe27
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+[319] indent=0 block=-
+[320] indent=4 block=335dbe27
       "Beta (now – June):" {b}
       " Science dependencies are minimal. Existing "
-[312] indent=4 block=335dbe27
+[321] indent=4 block=335dbe27
       "probabilistic forecasts and market data. No new model development "
-[313] indent=4 block=335dbe27
+[322] indent=4 block=335dbe27
       "needed for beta scope."
-[314] indent=0 block=-
-[315] indent=4 block=335dbe27
+[323] indent=0 block=-
+[324] indent=4 block=335dbe27
       "MVP (Q3):" {b}
       " MVP Science scope to be defined jointly with Tyler based "
-[316] indent=4 block=335dbe27
+[325] indent=4 block=335dbe27
       "on beta signal. What-if is not critical path for MVP."
-[317] indent=0 block=-
-[318] indent=4 block=335dbe27
+[326] indent=0 block=-
+[327] indent=4 block=335dbe27
       "2-Year:" {b}
       " Central to the full vision. SCED what-if scenarios, "
-[319] indent=4 block=335dbe27
+[328] indent=4 block=335dbe27
       "co-optimization across market products, new market expansion (gas, "
-[320] indent=4 block=335dbe27
+[329] indent=4 block=335dbe27
       "futures, ftrs, etc.). EQ's application suite makes our best thinking"
-[321] indent=4 block=335dbe27
-      "accessible at scale. Workflows, skills, and predefined artifacts "
-[322] indent=4 block=335dbe27
-      "turn proven methodologies into capabilities any user can leverage, "
-[323] indent=4 block=335dbe27
-      "whether EQ develops the strategies or the customer develops their "
-[324] indent=4 block=335dbe27
-      "own."
-[325] indent=0 block=-
-[326] indent=4 block=335dbe27
-      "────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
-[327] indent=0 block=-
-[328] indent=2 block=335dbe27 H2
-      "## " {b fg=#337ea9}
-      "Open Questions" {b fg=#337ea9}
-[329] indent=0 block=-
 [330] indent=4 block=335dbe27
+      "accessible at scale. Workflows, skills, and predefined artifacts "
+[331] indent=4 block=335dbe27
+      "turn proven methodologies into capabilities any user can leverage, "
+[332] indent=4 block=335dbe27
+      "whether EQ develops the strategies or the customer develops their "
+[333] indent=4 block=335dbe27
+      "own."
+[334] indent=0 block=-
+[335] indent=4 block=335dbe27
+      "────────────────────────────────────────────────────────────────────" {fg=#9b9a97}
+[336] indent=0 block=-
+[337] indent=2 block=335dbe27 H2
+      "Open Questions" {b fg=#337ea9}
+[338] indent=2 block=335dbe27
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" {fg=#337ea9}
+[339] indent=0 block=-
+[340] indent=4 block=335dbe27
       "1. "
       "How do we communicate the application suite framing externally? "
-[331] indent=4 block=335dbe27
+[341] indent=4 block=335dbe27
       "   "
       "(naming is \"early discovery,\" not finalized for GTM)"
-[332] indent=4 block=335dbe27
+[342] indent=4 block=335dbe27
       "2. "
       "ArchV2 sequencing: how does Helm beta feed ArchV2 priorities vs. "
-[333] indent=4 block=335dbe27
+[343] indent=4 block=335dbe27
       "   "
       "other demand signals?"

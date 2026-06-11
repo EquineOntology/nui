@@ -24,8 +24,9 @@ import (
 
 // layoutOpts builds the layout options shared by the reader and preview: page
 // properties shown. Progressive heading-depth indentation (Nest) is OFF by
-// default now that headings carry markdown-style "#" markers; set NUI_NEST=1 to
-// bring the cascade back for comparison.
+// default — headings are set off by their per-level underline rule instead, so
+// the body stays flush-left; set NUI_NEST=1 to bring the indentation cascade
+// back for comparison.
 func layoutOpts() doc.LayoutOpts {
 	return doc.LayoutOpts{ShowProps: true, Nest: os.Getenv("NUI_NEST") == "1"}
 }

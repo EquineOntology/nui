@@ -242,31 +242,37 @@ func TestNumberedListSequences(t *testing.T) {
 	}
 }
 
-// TestHeadingMarkerByLevel guards the markdown-style level markers: "# " for H1,
-// "## " for H2, …, and that a heading renders as a single line (no underline rule).
-func TestHeadingMarkerByLevel(t *testing.T) {
+// TestHeadingUnderlineByLevel guards the per-level underline characters: H1 "=",
+// H2 "~", H3 "-", and no underline for H4+.
+func TestHeadingUnderlineByLevel(t *testing.T) {
 	r := newRenderer()
 	cases := []struct {
-		typ    doc.BlockType
-		lvl    int
-		marker string
+		typ  doc.BlockType
+		lvl  int
+		char string // "" = expect no underline rule
 	}{
-		{doc.BlockHeading1, 1, "# "},
-		{doc.BlockHeading2, 2, "## "},
-		{doc.BlockHeading3, 3, "### "},
-		{doc.BlockHeading4, 4, "#### "},
+		{doc.BlockHeading1, 1, "="},
+		{doc.BlockHeading2, 2, "~"},
+		{doc.BlockHeading3, 3, "-"},
+		{doc.BlockHeading4, 4, ""},
 	}
 	for _, c := range cases {
-		b := &doc.Block{ID: "h", Type: c.typ, HeadingLvl: c.lvl, RichText: []doc.RichText{{Text: "Title"}}}
-		lines := r.RenderBlock(b, 60, 0)
-		if len(lines) != 1 {
-			t.Fatalf("level %d: expected a single heading line (no rule), got %d", c.lvl, len(lines))
+		b := &doc.Block{ID: "h", Type: c.typ, HeadingLvl: c.lvl, RichText: []doc.RichText{{Text: "Heading"}}}
+		lines := r.RenderBlock(b, 40, 0)
+		rule := ""
+		for _, ln := range lines {
+			if !ln.IsHeading && strings.TrimSpace(ln.Text()) != "" {
+				rule = strings.TrimSpace(ln.Text())
+			}
 		}
-		if !lines[0].IsHeading {
-			t.Errorf("level %d: line not marked as a heading", c.lvl)
+		if c.char == "" {
+			if rule != "" {
+				t.Errorf("level %d: expected no underline, got %q", c.lvl, rule)
+			}
+			continue
 		}
-		if got := lines[0].Text(); !strings.HasPrefix(got, c.marker) {
-			t.Errorf("level %d: heading = %q, want prefix %q", c.lvl, got, c.marker)
+		if !strings.HasPrefix(rule, c.char) {
+			t.Errorf("level %d: underline = %q, want it to start with %q", c.lvl, rule, c.char)
 		}
 	}
 }
