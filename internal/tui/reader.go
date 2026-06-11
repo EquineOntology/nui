@@ -112,31 +112,35 @@ func (r *readerModel) bodyHeight() int {
 	return h
 }
 
-// stickyReserve is the fixed number of rows held for the pinned heading chain:
-// the document's deepest heading chain, capped at maxStickyRows.
+// stickyReserve is the FIXED number of rows held for the pinned region: the most
+// rows the chain can ever render — one per ancestor heading (capped at
+// maxStickyRows), plus one for each H1's underline rule, since the pinned heading
+// carries the same decoration it has in the body and H1 is the only level that
+// renders a rule (see render.renderHeading). Fixed for the document so the body
+// never shifts as the chain pins/unpins while scrolling.
 func (r *readerModel) stickyReserve() int {
 	if r.rendered == nil {
 		return 0
 	}
-	if d := maxChainDepth(r.rendered.Outline); d < maxStickyRows {
-		return d
-	}
-	return maxStickyRows
-}
-
-// maxChainDepth is the deepest ancestor-heading chain anywhere in the outline —
-// the largest the pinned breadcrumb can ever get — found by tracking the peak
-// size of the same level-stack stickyChain builds.
-func maxChainDepth(outline []doc.Heading) int {
 	var stack []doc.Heading
 	max := 0
-	for _, h := range outline {
+	for _, h := range r.rendered.Outline {
 		for len(stack) > 0 && stack[len(stack)-1].Level >= h.Level {
 			stack = stack[:len(stack)-1]
 		}
 		stack = append(stack, h)
-		if len(stack) > max {
-			max = len(stack)
+		c := stack
+		if len(c) > maxStickyRows {
+			c = c[len(c)-maxStickyRows:]
+		}
+		rows := len(c)
+		for _, hh := range c {
+			if hh.Level == 1 {
+				rows++ // an H1 also renders its underline rule row
+			}
+		}
+		if rows > max {
+			max = rows
 		}
 	}
 	return max
@@ -321,30 +325,44 @@ func (r readerModel) view() string {
 	return strings.Join(rows, "\n")
 }
 
-// stickyLines renders the pinned heading chain, one row per ancestor heading.
-// Each row is the ACTUAL rendered heading line (re-painted from Rendered.Lines at
-// the heading's outline index), so the pinned breadcrumb keeps the heading's own
-// per-level styling — color, bold, and the cascade indent — rather than a flat
-// re-styling of the plain text. The region is padded to the fixed stickyReserve
-// so the body below never shifts as the chain grows/shrinks while scrolling (the
-// chain is <= reserve by construction). Hyperlinks are off: the pinned bar is a
-// glance, not an interaction surface.
+// stickyLines renders the pinned heading chain. Each pinned heading is shown the
+// SAME way the body shows it: the painted heading text line (its own per-level
+// color/bold + cascade indent) PLUS its underline rule line when it has one (an
+// H1), so a pinned H1 keeps the underline that defines it in the body. Lines are
+// re-painted from Rendered.Lines, so styling carries through verbatim. The region
+// is padded to the fixed stickyReserve so the body never shifts as the chain
+// changes while scrolling. Hyperlinks off: the pinned bar is a glance.
 func (r readerModel) stickyLines() []string {
 	reserve := r.stickyReserve()
 	if reserve == 0 {
 		return nil
 	}
+	lines := r.rendered.Lines
 	chain := stickyChain(r.rendered.Outline, r.offset)
 	rows := make([]string, 0, reserve)
 	for _, h := range chain {
-		row := ""
-		if h.LineIdx >= 0 && h.LineIdx < len(r.rendered.Lines) {
-			row = truncateANSI(render.Paint(r.rendered.Lines[h.LineIdx], previewPaintOpts()), r.width)
+		if h.LineIdx < 0 || h.LineIdx >= len(lines) {
+			continue
 		}
-		rows = append(rows, row)
+		// The heading's first (text) line.
+		rows = append(rows, truncateANSI(render.Paint(lines[h.LineIdx], previewPaintOpts()), r.width))
+		// Its underline rule (if any): the first non-heading line sharing the
+		// heading's block id — present only for an H1. Wrapped heading continuation
+		// lines (same id, IsHeading) are skipped so the breadcrumb stays compact.
+		if bid := lines[h.LineIdx].BlockID; bid != "" {
+			for j := h.LineIdx + 1; j < len(lines) && lines[j].BlockID == bid; j++ {
+				if !lines[j].IsHeading {
+					rows = append(rows, truncateANSI(render.Paint(lines[j], previewPaintOpts()), r.width))
+					break
+				}
+			}
+		}
 	}
-	for len(rows) < reserve { // pad below the chain to keep the body anchored
+	for len(rows) < reserve { // pad to keep the body anchored
 		rows = append(rows, "")
+	}
+	if len(rows) > reserve { // safety: never exceed the reserved region
+		rows = rows[:reserve]
 	}
 	return rows
 }

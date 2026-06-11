@@ -163,3 +163,35 @@ func TestReaderGtoTopGtoBottom(t *testing.T) {
 		t.Fatalf("g should jump to top")
 	}
 }
+
+// TestStickyLinesIncludesH1Rule guards that a pinned H1 keeps its underline rule
+// (the decoration it has in the body), not just the bare text — and that the
+// reserve accounts for the extra rule row.
+func TestStickyLinesIncludesH1Rule(t *testing.T) {
+	r := newReaderModel()
+	r.width = 40
+	r.height = 20
+	lines := []doc.Line{
+		{Segments: []doc.Segment{{Text: "Big Heading"}}, BlockID: "h1", IsHeading: true, HeadingLevel: 1},
+		{Segments: []doc.Segment{{Text: "──────────"}}, BlockID: "h1"}, // the H1 rule (not a heading line)
+	}
+	for i := 0; i < 30; i++ {
+		lines = append(lines, doc.Line{Segments: []doc.Segment{{Text: "body"}}, BlockID: "p"})
+	}
+	r.rendered = &doc.Rendered{
+		Lines:   lines,
+		Outline: []doc.Heading{{Level: 1, Text: "Big Heading", LineIdx: 0}},
+	}
+	r.offset = 10 // H1 has scrolled off the top → it pins
+
+	if got := r.stickyReserve(); got != 2 {
+		t.Fatalf("stickyReserve = %d, want 2 (H1 text + rule)", got)
+	}
+	joined := strings.Join(r.stickyLines(), "\n")
+	if !strings.Contains(joined, "Big Heading") {
+		t.Fatalf("pinned H1 text missing:\n%q", joined)
+	}
+	if !strings.Contains(joined, "──────────") {
+		t.Fatalf("pinned H1 underline rule missing:\n%q", joined)
+	}
+}
