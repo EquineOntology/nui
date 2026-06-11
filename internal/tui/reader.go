@@ -45,10 +45,10 @@ type readerModel struct {
 	docGen int
 }
 
-// stickyRows is the number of top rows the reader reserves for the pinned
-// enclosing heading. One row in G2; the model supports more (G3 may pin a
-// heading chain).
-const stickyRows = 1
+// maxStickyRows caps the pinned heading chain (the breadcrumb of enclosing
+// headings) so a deeply-nested section cannot eat the screen; beyond it the
+// outermost headings are dropped so the immediate context stays visible.
+const maxStickyRows = 4
 
 // newReaderModel builds an empty reader sub-model with the default theme.
 func newReaderModel() readerModel {
@@ -99,14 +99,47 @@ func (r *readerModel) bodyWidth() int {
 	return r.width
 }
 
-// bodyHeight is the number of body rows: terminal height minus the sticky
-// heading rows and the status line.
+// bodyHeight is the number of body rows: terminal height minus the reserved
+// sticky region and the status line. The reserve is FIXED for the document (the
+// deepest heading chain, capped) rather than the current chain length, so the
+// body never shifts as headings pin/unpin while scrolling, and maxOffset/scroll
+// math stay stable.
 func (r *readerModel) bodyHeight() int {
-	h := r.height - stickyRows - 1 // sticky region + status line
+	h := r.height - r.stickyReserve() - 1 // sticky region + status line
 	if h < 1 {
 		return 1
 	}
 	return h
+}
+
+// stickyReserve is the fixed number of rows held for the pinned heading chain:
+// the document's deepest heading chain, capped at maxStickyRows.
+func (r *readerModel) stickyReserve() int {
+	if r.rendered == nil {
+		return 0
+	}
+	if d := maxChainDepth(r.rendered.Outline); d < maxStickyRows {
+		return d
+	}
+	return maxStickyRows
+}
+
+// maxChainDepth is the deepest ancestor-heading chain anywhere in the outline —
+// the largest the pinned breadcrumb can ever get — found by tracking the peak
+// size of the same level-stack stickyChain builds.
+func maxChainDepth(outline []doc.Heading) int {
+	var stack []doc.Heading
+	max := 0
+	for _, h := range outline {
+		for len(stack) > 0 && stack[len(stack)-1].Level >= h.Level {
+			stack = stack[:len(stack)-1]
+		}
+		stack = append(stack, h)
+		if len(stack) > max {
+			max = len(stack)
+		}
+	}
+	return max
 }
 
 // maxOffset is the largest valid scroll offset (so the last screen of content
@@ -237,29 +270,36 @@ func (r *readerModel) scroll(delta int) {
 	r.clampOffset()
 }
 
-// stickyHeading computes the heading to pin: the last heading that has scrolled
-// OFF the top of the body, i.e. whose line index is strictly above the first
-// visible line (LineIdx < offset). The strict comparison is deliberate — a
-// heading sitting exactly at the top of the viewport (LineIdx == offset) is
-// already drawn as the first body line, so pinning it too would draw it twice.
-// Pure function of the Outline and offset, unit-testable in isolation (SPEC §9).
-// Returns ok=false when no heading has scrolled off yet (top of doc).
-func stickyHeading(outline []doc.Heading, offset int) (doc.Heading, bool) {
-	var cur doc.Heading
-	found := false
+// stickyChain returns the chain of headings enclosing the current offset,
+// OUTERMOST first (H1 › H2 › H3 …): a breadcrumb of every ancestor heading that
+// has scrolled above the viewport. Each level is ADDITIVE — entering an H3 under
+// an H2 under an H1 pins all three, it does not replace the shallower ones.
+//
+// Built as a stack over headings strictly above the viewport (LineIdx < offset,
+// so a heading sitting at the top body row is still visible and not double-drawn):
+// a new heading pops every stack entry at its level or deeper (those sections
+// have closed) then pushes itself, leaving exactly the ancestor chain. Pure
+// function of the Outline and offset — unit-testable in isolation (SPEC §9).
+func stickyChain(outline []doc.Heading, offset int) []doc.Heading {
+	var stack []doc.Heading
 	for _, h := range outline {
-		if h.LineIdx < offset {
-			cur = h
-			found = true
-		} else {
-			break // outline is in document (line) order; at/past the offset
+		if h.LineIdx >= offset {
+			break // outline is in document order; nothing at/past the offset encloses it
 		}
+		for len(stack) > 0 && stack[len(stack)-1].Level >= h.Level {
+			stack = stack[:len(stack)-1]
+		}
+		stack = append(stack, h)
 	}
-	return cur, found
+	if len(stack) > maxStickyRows {
+		stack = stack[len(stack)-maxStickyRows:] // keep the innermost (closest) context
+	}
+	return stack
 }
 
-// view renders the reader: the pinned sticky heading row(s), the painted body
-// window, and the status line (title + scroll %).
+// view renders the reader: the pinned heading-chain rows, the painted body
+// window, and the status line (title + scroll %). The three regions sum to
+// exactly the terminal height (sticky chain + body + 1 status).
 func (r readerModel) view() string {
 	if r.width <= 0 || r.height <= 0 {
 		return ""
@@ -274,31 +314,41 @@ func (r readerModel) view() string {
 		return r.centered("(empty page)\n\nesc to go back")
 	}
 
-	var b strings.Builder
-	b.WriteString(r.stickyView())
-	b.WriteByte('\n')
-	b.WriteString(r.bodyView())
-	b.WriteByte('\n')
-	b.WriteString(r.statusView())
-	return b.String()
+	rows := make([]string, 0, r.height)
+	rows = append(rows, r.stickyLines()...)
+	rows = append(rows, r.bodyLines()...)
+	rows = append(rows, r.statusView())
+	return strings.Join(rows, "\n")
 }
 
-// stickyView renders the pinned heading row. When no heading encloses the
-// current offset, a dim rule keeps the layout stable (the row is always
-// reserved, so the body height never jumps).
-func (r readerModel) stickyView() string {
-	h, ok := stickyHeading(r.rendered.Outline, r.offset)
-	style := lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("#337ea9"))
-	if !ok {
-		return dimStyle.Render(strings.Repeat("─", r.width))
+// stickyLines renders the pinned heading chain, one row per ancestor heading,
+// each indented to mirror the body's heading-depth cascade so the pinned context
+// lines up with where the heading sits in the document. The region is padded to
+// the fixed stickyReserve so the body below it never shifts as the chain grows
+// and shrinks during scrolling (the chain is <= reserve by construction).
+func (r readerModel) stickyLines() []string {
+	reserve := r.stickyReserve()
+	if reserve == 0 {
+		return nil
 	}
-	prefix := strings.Repeat("#", h.Level) + " "
-	return truncate(style.Render(prefix+h.Text), r.width)
+	chain := stickyChain(r.rendered.Outline, r.offset)
+	rows := make([]string, 0, reserve)
+	for _, h := range chain {
+		pad := (h.Level - 1) * 2
+		if pad > 8 { // mirror the body cascade cap (doc.maxHeadingIndent)
+			pad = 8
+		}
+		rows = append(rows, truncate(strings.Repeat(" ", pad)+selStyle.Render(h.Text), r.width))
+	}
+	for len(rows) < reserve { // pad below the chain to keep the body anchored
+		rows = append(rows, "")
+	}
+	return rows
 }
 
-// bodyView paints the visible window of body lines, padded to the body height so
+// bodyLines paints the visible window of body lines, padded to the body height so
 // the status line stays anchored at the bottom.
-func (r readerModel) bodyView() string {
+func (r readerModel) bodyLines() []string {
 	h := r.bodyHeight()
 	end := r.offset + h
 	if end > len(r.rendered.Lines) {
@@ -311,7 +361,7 @@ func (r readerModel) bodyView() string {
 	for len(out) < h {
 		out = append(out, "")
 	}
-	return strings.Join(out, "\n")
+	return out
 }
 
 // statusView renders the bottom status line: the title and the scroll percent

@@ -1,6 +1,7 @@
 package tui
 
 import (
+	"strings"
 	"testing"
 
 	tea "github.com/charmbracelet/bubbletea"
@@ -47,9 +48,10 @@ func readerWithLines(n, w, h int) readerModel {
 }
 
 func TestScrollClampsAtBounds(t *testing.T) {
-	r := readerWithLines(100, 80, 12) // bodyHeight = 12 - 1 - 1 = 10
-	if r.bodyHeight() != 10 {
-		t.Fatalf("bodyHeight = %d, want 10", r.bodyHeight())
+	// No outline → stickyReserve 0 → bodyHeight = 12 - 0 - 1 = 11.
+	r := readerWithLines(100, 80, 12)
+	if r.bodyHeight() != 11 {
+		t.Fatalf("bodyHeight = %d, want 11", r.bodyHeight())
 	}
 
 	// Scroll up at the top stays at 0.
@@ -64,13 +66,13 @@ func TestScrollClampsAtBounds(t *testing.T) {
 		t.Fatalf("offset = %d, want 5", r.offset)
 	}
 
-	// Scroll past the end clamps at maxOffset (100 - 10 = 90).
+	// Scroll past the end clamps at maxOffset (100 - 11 = 89).
 	r.scroll(1000)
-	if r.offset != 90 {
-		t.Fatalf("offset clamped = %d, want 90", r.offset)
+	if r.offset != 89 {
+		t.Fatalf("offset clamped = %d, want 89", r.offset)
 	}
-	if r.maxOffset() != 90 {
-		t.Fatalf("maxOffset = %d, want 90", r.maxOffset())
+	if r.maxOffset() != 89 {
+		t.Fatalf("maxOffset = %d, want 89", r.maxOffset())
 	}
 }
 
@@ -88,50 +90,58 @@ func TestShortDocumentDoesNotScroll(t *testing.T) {
 	}
 }
 
-func TestStickyHeadingComputation(t *testing.T) {
-	// Outline in document order: a level-1 at line 0, a level-2 at line 10, a
-	// level-1 at line 30.
-	outline := []doc.Heading{
-		{Level: 1, Text: "Top", LineIdx: 0},
-		{Level: 2, Text: "Middle", LineIdx: 10},
-		{Level: 1, Text: "End", LineIdx: 30},
+func chainText(hs []doc.Heading) string {
+	parts := make([]string, len(hs))
+	for i, h := range hs {
+		parts[i] = h.Text
 	}
+	return strings.Join(parts, ">")
+}
 
+func TestStickyChain(t *testing.T) {
+	// H1 at 0, H2 at 10, H3 at 20, then a new H1 at 30 (closes the prior chain).
+	outline := []doc.Heading{
+		{Level: 1, Text: "H1", LineIdx: 0},
+		{Level: 2, Text: "H2", LineIdx: 10},
+		{Level: 3, Text: "H3", LineIdx: 20},
+		{Level: 1, Text: "H1b", LineIdx: 30},
+	}
 	cases := []struct {
-		offset   int
-		wantText string
-		wantOK   bool
+		offset int
+		want   string
 	}{
-		// stickyHeading pins a heading only once it has scrolled OFF the top
-		// (LineIdx < offset); a heading at exactly the top row is visible in the
-		// body and must not be pinned (else it draws twice).
-		{offset: 0, wantText: "", wantOK: false},       // Top is the first body line, not pinned
-		{offset: 5, wantText: "Top", wantOK: true},     // Top scrolled off
-		{offset: 10, wantText: "Top", wantOK: true},    // Middle is the top body line; Top still pinned
-		{offset: 11, wantText: "Middle", wantOK: true}, // Middle scrolled off
-		{offset: 29, wantText: "Middle", wantOK: true},
-		{offset: 30, wantText: "Middle", wantOK: true}, // End is the top body line; Middle still pinned
-		{offset: 100, wantText: "End", wantOK: true},
+		{0, ""},          // top: nothing scrolled off, no chain
+		{5, "H1"},        // inside H1
+		{10, "H1"},       // H2 is the top body line (visible); only H1 pinned
+		{15, "H1>H2"},    // inside H2: additive — H1 AND H2 pinned
+		{25, "H1>H2>H3"}, // inside H3: the full ancestor chain
+		{35, "H1b"},      // a sibling H1 closes the H1>H2>H3 chain
 	}
 	for _, c := range cases {
-		h, ok := stickyHeading(outline, c.offset)
-		if ok != c.wantOK {
-			t.Fatalf("offset %d: ok = %v, want %v", c.offset, ok, c.wantOK)
-		}
-		if h.Text != c.wantText {
-			t.Fatalf("offset %d: heading = %q, want %q", c.offset, h.Text, c.wantText)
+		if got := chainText(stickyChain(outline, c.offset)); got != c.want {
+			t.Errorf("offset %d: chain = %q, want %q", c.offset, got, c.want)
 		}
 	}
 }
 
-func TestStickyHeadingBeforeFirstHeading(t *testing.T) {
-	// A heading that begins below the offset means nothing is enclosing yet.
-	outline := []doc.Heading{{Level: 1, Text: "Later", LineIdx: 5}}
-	if _, ok := stickyHeading(outline, 0); ok {
-		t.Fatalf("no heading should enclose offset 0 when the first is at line 5")
+func TestStickyChainCapAndEmpty(t *testing.T) {
+	if got := stickyChain(nil, 10); len(got) != 0 {
+		t.Fatalf("empty outline should yield no chain, got %v", got)
 	}
-	if _, ok := stickyHeading(nil, 0); ok {
-		t.Fatalf("empty outline should yield no sticky heading")
+	// A chain deeper than maxStickyRows keeps the innermost levels.
+	deep := []doc.Heading{
+		{Level: 1, Text: "L1", LineIdx: 0},
+		{Level: 2, Text: "L2", LineIdx: 1},
+		{Level: 3, Text: "L3", LineIdx: 2},
+		{Level: 4, Text: "L4", LineIdx: 3},
+		{Level: 5, Text: "L5", LineIdx: 4},
+	}
+	got := stickyChain(deep, 100)
+	if len(got) != maxStickyRows {
+		t.Fatalf("chain should be capped at %d, got %d", maxStickyRows, len(got))
+	}
+	if got[len(got)-1].Text != "L5" {
+		t.Fatalf("capped chain must keep the innermost heading, got %q", got[len(got)-1].Text)
 	}
 }
 
