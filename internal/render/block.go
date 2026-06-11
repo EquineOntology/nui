@@ -134,15 +134,19 @@ func (r *Renderer) renderHeading(b *doc.Block, width, indent int) []doc.Line {
 		level = headingLevelFromType(b.Type)
 	}
 
-	var prefix []doc.Segment
-	if b.Icon != nil && b.Icon.Emoji != "" {
-		prefix = append(prefix, doc.Segment{Text: b.Icon.Emoji + " "})
-	}
-
 	// Per-level heading style: bold throughout, plus an accent colour that gives
 	// terminal headings the hierarchy that font size carries on the web (H1/H2
 	// blue, H3 default, H4+ dim gray). An explicit inline colour on a span wins.
 	headColor := r.headingColor(level)
+
+	// Markdown-style level marker: "#" per level ("# ", "## ", …), so the heading
+	// level reads from the marker (no underline rule). The page-title block also
+	// carries its emoji icon, shown after the marker.
+	prefix := []doc.Segment{{Text: strings.Repeat("#", level) + " ", Style: doc.Style{Bold: true, Fg: headColor}}}
+	if b.Icon != nil && b.Icon.Emoji != "" {
+		prefix = append(prefix, doc.Segment{Text: b.Icon.Emoji + " "})
+	}
+
 	segs := RichText(b.RichText, r.Theme)
 	for i := range segs {
 		segs[i].Style.Bold = true
@@ -180,35 +184,7 @@ func (r *Renderer) renderHeading(b *doc.Block, width, indent int) []doc.Line {
 			Indent: indent, BlockID: b.ID, IsHeading: true, HeadingLevel: level,
 		})
 	}
-	// Per-level underline rule (the terminal stand-in for font size): H1 "=", H2
-	// "~", H3 "-", H4+ none. Distinct glyphs give each level its own weight, so the
-	// hierarchy reads even where color is subtle. Anchored to the heading's block
-	// id so it scrolls (and pins) with the heading.
-	if ch := headingRuleChar(level); ch != "" && len(wrapped) > 0 {
-		if ruleW := width - indent; ruleW > 0 {
-			lines = append(lines, doc.Line{
-				Segments: []doc.Segment{{Text: strings.Repeat(ch, ruleW), Style: doc.Style{Fg: headColor}}},
-				Indent:   indent,
-				BlockID:  b.ID,
-			})
-		}
-	}
 	return lines
-}
-
-// headingRuleChar is the underline character for a heading level: H1 "=", H2 "~",
-// H3 "-", and none (no underline) for H4 and deeper.
-func headingRuleChar(level int) string {
-	switch level {
-	case 1:
-		return "="
-	case 2:
-		return "~"
-	case 3:
-		return "-"
-	default:
-		return ""
-	}
 }
 
 // headingColor returns the accent foreground for a heading level, or "" for the

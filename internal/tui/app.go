@@ -23,10 +23,11 @@ import (
 )
 
 // layoutOpts builds the layout options shared by the reader and preview: page
-// properties shown, and progressive heading-depth indentation on unless
-// NUI_NEST=0 (the same knob the bash nui used).
+// properties shown. Progressive heading-depth indentation (Nest) is OFF by
+// default now that headings carry markdown-style "#" markers; set NUI_NEST=1 to
+// bring the cascade back for comparison.
 func layoutOpts() doc.LayoutOpts {
-	return doc.LayoutOpts{ShowProps: true, Nest: os.Getenv("NUI_NEST") != "0"}
+	return doc.LayoutOpts{ShowProps: true, Nest: os.Getenv("NUI_NEST") == "1"}
 }
 
 // mode is the top-level screen the app shows. overlay (G3) is intentionally a
