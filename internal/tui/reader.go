@@ -321,11 +321,14 @@ func (r readerModel) view() string {
 	return strings.Join(rows, "\n")
 }
 
-// stickyLines renders the pinned heading chain, one row per ancestor heading,
-// each indented to mirror the body's heading-depth cascade so the pinned context
-// lines up with where the heading sits in the document. The region is padded to
-// the fixed stickyReserve so the body below it never shifts as the chain grows
-// and shrinks during scrolling (the chain is <= reserve by construction).
+// stickyLines renders the pinned heading chain, one row per ancestor heading.
+// Each row is the ACTUAL rendered heading line (re-painted from Rendered.Lines at
+// the heading's outline index), so the pinned breadcrumb keeps the heading's own
+// per-level styling — color, bold, and the cascade indent — rather than a flat
+// re-styling of the plain text. The region is padded to the fixed stickyReserve
+// so the body below never shifts as the chain grows/shrinks while scrolling (the
+// chain is <= reserve by construction). Hyperlinks are off: the pinned bar is a
+// glance, not an interaction surface.
 func (r readerModel) stickyLines() []string {
 	reserve := r.stickyReserve()
 	if reserve == 0 {
@@ -334,11 +337,11 @@ func (r readerModel) stickyLines() []string {
 	chain := stickyChain(r.rendered.Outline, r.offset)
 	rows := make([]string, 0, reserve)
 	for _, h := range chain {
-		pad := (h.Level - 1) * 2
-		if pad > 8 { // mirror the body cascade cap (doc.maxHeadingIndent)
-			pad = 8
+		row := ""
+		if h.LineIdx >= 0 && h.LineIdx < len(r.rendered.Lines) {
+			row = truncateANSI(render.Paint(r.rendered.Lines[h.LineIdx], previewPaintOpts()), r.width)
 		}
-		rows = append(rows, truncate(strings.Repeat(" ", pad)+selStyle.Render(h.Text), r.width))
+		rows = append(rows, row)
 	}
 	for len(rows) < reserve { // pad below the chain to keep the body anchored
 		rows = append(rows, "")
